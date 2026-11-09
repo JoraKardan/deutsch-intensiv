@@ -1,5 +1,71 @@
 import { useRef, useState } from 'react'
 import { getSlowRate, play, setSlowRate, SLOW_RATES } from '../lib/audio'
+import { downloadAllAudio, isInstalled, offlineSupported, useAudioCacheStatus, useInstallPrompt } from '../lib/offline'
+
+function AppOfflineCard() {
+  const { available, install } = useInstallPrompt()
+  const { status, refresh, setStatus } = useAudioCacheStatus()
+  const [busy, setBusy] = useState(false)
+  const [note, setNote] = useState<string | null>(null)
+  const installed = isInstalled()
+  const complete = status && status.total > 0 && status.cached >= status.total
+
+  return (
+    <div className="card">
+      <h3>📱 Aplicație și offline</h3>
+      {installed ? (
+        <p className="good">✓ Rulezi aplicația instalată.</p>
+      ) : available ? (
+        <p>
+          <button onClick={install}>⬇ Instalează aplicația</button>
+        </p>
+      ) : (
+        <p className="muted small">
+          <strong>Instalare:</strong> pe Android, în Chrome: meniul <strong>⋮</strong> → <em>Instalează aplicația</em> (sau
+          <em> Adaugă pe ecranul de pornire</em>). Pe iPhone, în Safari: <strong>Share</strong> → <em>Add to Home Screen</em>.
+        </p>
+      )}
+      {offlineSupported() ? (
+        <>
+          <p className="muted small">
+            Lecțiile se salvează automat pe dispozitiv. Pentru ca și <strong>audio</strong> să meargă fără internet, descarcă-l aici. După ce
+            apar lecții noi, apasă din nou ca să descarci doar ce lipsește.
+          </p>
+          {status && (
+            <>
+              <div className="row between small">
+                <span>Audio salvat pe acest dispozitiv</span>
+                <span>
+                  {status.cached} / {status.total}
+                </span>
+              </div>
+              <div className="bar" style={{ marginBottom: '0.8rem' }}>
+                <div style={{ width: `${status.total ? (status.cached / status.total) * 100 : 0}%` }} />
+              </div>
+            </>
+          )}
+          <button
+            className={complete ? 'ghost' : ''}
+            disabled={busy || !!complete}
+            onClick={async () => {
+              setBusy(true)
+              setNote(null)
+              const { failed } = await downloadAllAudio((cached, total) => setStatus({ cached, total }))
+              setBusy(false)
+              setNote(failed ? `${failed} fișiere n-au putut fi descărcate. Verifică internetul și mai apasă o dată.` : '✓ Tot audio-ul e salvat pentru offline.')
+              refresh()
+            }}
+          >
+            {busy ? 'Se descarcă…' : complete ? '✓ Audio complet pentru offline' : '⬇ Descarcă audio pentru offline'}
+          </button>
+          {note && <p className="small">{note}</p>}
+        </>
+      ) : (
+        <p className="muted small">Modul offline funcționează pe site-ul publicat (nu în modul de dezvoltare local).</p>
+      )}
+    </div>
+  )
+}
 import { exportProgress, importProgress, resetProgress, update, useProgress } from '../lib/store'
 
 export function SettingsPage() {
@@ -20,6 +86,8 @@ export function SettingsPage() {
   return (
     <div>
       <h1>Progres și setări</h1>
+
+      <AppOfflineCard />
 
       <div className="card">
         <h3>Copie de siguranță</h3>

@@ -48,7 +48,9 @@ Luni–sâmbătă: lecții noi. Duminică: doar repetiție, ascultare și conver
 
 Aplicația e publicată pe GitHub Pages: **https://jorakardan.github.io/deutsch-intensiv/**
 
-Pe iPhone: deschide linkul în Safari → Share → **Add to Home Screen**. Progresul de pe telefon e separat de cel de pe laptop (fiecare browser își ține propriul progres); se poate muta cu exportul/importul din pagina **Progres**.
+**Instalare ca aplicație:** pe Android, în Chrome: meniul ⋮ → *Instalează aplicația* (sau butonul din pagina **Progres**). Pe iPhone, în Safari: Share → *Add to Home Screen*.
+
+**Offline:** aplicația se salvează automat pe dispozitiv. Pentru audio fără internet: **Progres → Descarcă audio pentru offline** (repetă după ce apar lecții noi). Progresul de pe telefon e separat de cel de pe laptop (fiecare browser își ține propriul progres); se poate muta cu exportul/importul din pagina **Progres**.
 
 Publicarea e automată: la fiecare `git push` pe `main`, GitHub Actions construiește și actualizează site-ul (~1 min).
 

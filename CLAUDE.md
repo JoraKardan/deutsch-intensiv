@@ -29,6 +29,13 @@ Când utilizatorul cere „generează săptămâna N”:
 - Folosește `pronunciation` doar când lecția introduce sunete noi sau un set de vocabular care trebuie auzit (numere, zile etc.).
 - Exercițiile cu goluri acceptă mai multe variante (`answers: [["heiße","heisse"]]` nu e necesar: ä/ß se normalizează automat la ae/ss).
 
+## PWA / offline
+
+- `public/manifest.webmanifest`, `public/icons/` (generate din `icon.svg`), `public/sw.js` (service worker scris de mână, fără plugin).
+- `sw.js`: navigare = rețea-întâi; assets = cache; audio = cache `audio-v1` (+ răspunsuri 206 pentru Range, necesare pe Safari).
+- Lista fișierelor audio pentru descărcarea offline e în `src/lib/offline.ts` (`lessonAudioIds`) – trebuie să rămână sincronă cu `tools/gen-audio.mjs`.
+- Dacă se regenerează audio existent, crește numele cache-ului `audio-vN` în ambele locuri (sw.js și offline.ts).
+
 ## Comenzi
 
 - `npm run dev`: aplicația
