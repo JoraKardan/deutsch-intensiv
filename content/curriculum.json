@@ -1,0 +1,900 @@
+{
+  "weeks": [
+    {
+      "week": 1,
+      "phase": "A1",
+      "title": "Erste Kontakte",
+      "titleRo": "Primele contacte",
+      "lessons": [
+        {
+          "id": "w01-1",
+          "title": "Hallo! Wie heißen Sie?",
+          "titleRo": "Salut! Cum vă numiți?",
+          "focus": "Salutul, prezentarea; verbele sein și heißen; pronunția de bază"
+        },
+        {
+          "id": "w01-2",
+          "title": "Woher kommen Sie?",
+          "titleRo": "De unde sunteți?",
+          "focus": "Țări și limbi; verbele regulate la prezent; întrebări cu W-"
+        },
+        {
+          "id": "w01-3",
+          "title": "Zahlen und Telefonnummern",
+          "titleRo": "Numere și numere de telefon",
+          "focus": "Numerele 0–100; vârsta; verbul haben"
+        },
+        {
+          "id": "w01-4",
+          "title": "Im Café",
+          "titleRo": "La cafenea",
+          "focus": "Comanda politicoasă (ich möchte / ich hätte gern); genul substantivelor; ein / eine"
+        },
+        {
+          "id": "w01-5",
+          "title": "Was machen Sie beruflich?",
+          "titleRo": "Cu ce vă ocupați?",
+          "focus": "Profesii; arbeiten als / bei; negația cu nicht"
+        },
+        {
+          "id": "w01-6",
+          "title": "Wie spät ist es?",
+          "titleRo": "Cât e ceasul?",
+          "focus": "Ora; um, von … bis; zilele săptămânii"
+        },
+        {
+          "id": "w01-7",
+          "title": "Wie bitte?",
+          "titleRo": "Poftim?",
+          "focus": "Strategii de supraviețuire: rugăm să se repete, mai rar, să explice"
+        },
+        {
+          "id": "w01-8",
+          "title": "Wiederholung: Der erste Arbeitstag",
+          "titleRo": "Recapitulare: Prima zi de muncă",
+          "focus": "Recapitularea săptămânii 1 într-un dialog lung"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "phase": "A1",
+      "title": "Alltag und Einkaufen",
+      "titleRo": "Viața de zi cu zi și cumpărăturile",
+      "lessons": [
+        {
+          "id": "w02-1",
+          "title": "Mein Tag",
+          "titleRo": "Ziua mea",
+          "focus": "Rutina zilnică; verbele separabile (aufstehen, anfangen)"
+        },
+        {
+          "id": "w02-2",
+          "title": "Termine",
+          "titleRo": "Programări",
+          "focus": "am Montag; verbul pe poziția 2 (inversiunea)"
+        },
+        {
+          "id": "w02-3",
+          "title": "Meine Familie",
+          "titleRo": "Familia mea",
+          "focus": "Membrii familiei; posesivele mein, dein, Ihr"
+        },
+        {
+          "id": "w02-4",
+          "title": "Freizeit und Hobbys",
+          "titleRo": "Timp liber și hobby-uri",
+          "focus": "gern / nicht gern; verbe neregulate (lesen, fahren, sehen)"
+        },
+        {
+          "id": "w02-5",
+          "title": "Im Supermarkt",
+          "titleRo": "La supermarket",
+          "focus": "Alimente, cantități; pluralul substantivelor"
+        },
+        {
+          "id": "w02-6",
+          "title": "Was kostet das?",
+          "titleRo": "Cât costă?",
+          "focus": "Prețuri; acuzativul (einen, eine, ein; den)"
+        },
+        {
+          "id": "w02-7",
+          "title": "Im Restaurant",
+          "titleRo": "La restaurant",
+          "focus": "Comandă, nota; verbele modale möchten și können"
+        },
+        {
+          "id": "w02-8",
+          "title": "Wiederholung: Eine Woche im Leben",
+          "titleRo": "Recapitulare: O săptămână din viață",
+          "focus": "Recapitularea săptămânii 2"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "phase": "A1",
+      "title": "Wohnen und Stadt",
+      "titleRo": "Locuința și orașul",
+      "lessons": [
+        {
+          "id": "w03-1",
+          "title": "Meine Wohnung",
+          "titleRo": "Apartamentul meu",
+          "focus": "Camerele; es gibt + acuzativ; kein"
+        },
+        {
+          "id": "w03-2",
+          "title": "Wo ist …?",
+          "titleRo": "Unde este …?",
+          "focus": "Prepoziții de loc (in, auf, neben) + dativ, varianta simplă"
+        },
+        {
+          "id": "w03-3",
+          "title": "Das ist kaputt!",
+          "titleRo": "S-a stricat!",
+          "focus": "Probleme în locuință; verbul modal müssen"
+        },
+        {
+          "id": "w03-4",
+          "title": "Die Nachbarn",
+          "titleRo": "Vecinii",
+          "focus": "Regulile casei; imperativul politicos (Sie)"
+        },
+        {
+          "id": "w03-5",
+          "title": "Wie komme ich zum Bahnhof?",
+          "titleRo": "Cum ajung la gară?",
+          "focus": "Direcții; zum / zur; wo? / wohin?"
+        },
+        {
+          "id": "w03-6",
+          "title": "Bus und Bahn",
+          "titleRo": "Autobuz și tren",
+          "focus": "Transport public, bilete, întârzieri; mit + dativ"
+        },
+        {
+          "id": "w03-7",
+          "title": "Wetter und Kleidung",
+          "titleRo": "Vremea și haine",
+          "focus": "Vremea; verbul modal wollen"
+        },
+        {
+          "id": "w03-8",
+          "title": "Wiederholung: Ein Tag in der Stadt",
+          "titleRo": "Recapitulare: O zi în oraș",
+          "focus": "Recapitularea săptămânii 3"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "phase": "A1",
+      "title": "Ankommen und Gesundheit",
+      "titleRo": "Sosirea și sănătatea",
+      "lessons": [
+        {
+          "id": "w04-1",
+          "title": "Die Anmeldung",
+          "titleRo": "Înregistrarea domiciliului",
+          "focus": "Bürgeramt; spelling (buchstabieren); întrebări formale"
+        },
+        {
+          "id": "w04-2",
+          "title": "Formulare ausfüllen",
+          "titleRo": "Completarea formularelor",
+          "focus": "Date personale; data calendaristică; numerale ordinale"
+        },
+        {
+          "id": "w04-3",
+          "title": "Einen Termin machen",
+          "titleRo": "Facem o programare",
+          "focus": "La telefon; können + infinitiv"
+        },
+        {
+          "id": "w04-4",
+          "title": "Das Bankkonto",
+          "titleRo": "Contul bancar",
+          "focus": "La bancă; brauchen + acuzativ"
+        },
+        {
+          "id": "w04-5",
+          "title": "Mir geht's nicht gut",
+          "titleRo": "Nu mă simt bine",
+          "focus": "Corpul; Mir tut … weh (dativul pronumelor)"
+        },
+        {
+          "id": "w04-6",
+          "title": "Beim Arzt",
+          "titleRo": "La medic",
+          "focus": "Simptome; seit + dativ; la farmacie"
+        },
+        {
+          "id": "w04-7",
+          "title": "Ich bin krank",
+          "titleRo": "Sunt bolnav",
+          "focus": "Anunțarea bolii la muncă; verbul modal sollen"
+        },
+        {
+          "id": "w04-8",
+          "title": "Wiederholung: Die erste Woche in Deutschland",
+          "titleRo": "Recapitulare: Prima săptămână în Germania",
+          "focus": "Recapitularea săptămânii 4"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "phase": "A1",
+      "title": "Small Talk und Vergangenheit",
+      "titleRo": "Small talk și trecutul",
+      "lessons": [
+        {
+          "id": "w05-1",
+          "title": "Small Talk",
+          "titleRo": "Conversație ușoară",
+          "focus": "Întrebări de politețe; ja / nein / doch"
+        },
+        {
+          "id": "w05-2",
+          "title": "Was isst du gern?",
+          "titleRo": "Ce îți place să mănânci?",
+          "focus": "mögen, schmecken; exprimarea preferințelor"
+        },
+        {
+          "id": "w05-3",
+          "title": "Was hast du gemacht?",
+          "titleRo": "Ce ai făcut?",
+          "focus": "Perfectul compus (Perfekt) cu haben"
+        },
+        {
+          "id": "w05-4",
+          "title": "Wohin bist du gefahren?",
+          "titleRo": "Unde ai mers?",
+          "focus": "Perfekt cu sein"
+        },
+        {
+          "id": "w05-5",
+          "title": "Am Wochenende",
+          "titleRo": "În weekend",
+          "focus": "Perfekt cu verbe separabile și neregulate"
+        },
+        {
+          "id": "w05-6",
+          "title": "Wie war es?",
+          "titleRo": "Cum a fost?",
+          "focus": "Präteritum: war, hatte"
+        },
+        {
+          "id": "w05-7",
+          "title": "Was ist passiert?",
+          "titleRo": "Ce s-a întâmplat?",
+          "focus": "Povestirea unei întâmplări; zuerst, dann, danach"
+        },
+        {
+          "id": "w05-8",
+          "title": "A1-Test: Ein ganzer Tag",
+          "titleRo": "Test A1: O zi întreagă",
+          "focus": "Recapitularea întregii faze A1"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "phase": "A2",
+      "title": "Wohnungssuche",
+      "titleRo": "Căutarea unei locuințe",
+      "lessons": [
+        {
+          "id": "w06-1",
+          "title": "Wohnungsanzeigen",
+          "titleRo": "Anunțuri de închiriere",
+          "focus": "Abrevieri din anunțuri; Warmmiete / Kaltmiete"
+        },
+        {
+          "id": "w06-2",
+          "title": "Die Besichtigung",
+          "titleRo": "Vizionarea",
+          "focus": "Întrebări despre locuință; Wie viel? Wie groß?"
+        },
+        {
+          "id": "w06-3",
+          "title": "Mietvertrag und Nebenkosten",
+          "titleRo": "Contractul și utilitățile",
+          "focus": "Kaution, Nebenkosten, Hausordnung"
+        },
+        {
+          "id": "w06-4",
+          "title": "Der Umzug",
+          "titleRo": "Mutarea",
+          "focus": "stellen – stehen, legen – liegen (dativ / acuzativ)"
+        },
+        {
+          "id": "w06-5",
+          "title": "Größer, schöner, billiger",
+          "titleRo": "Mai mare, mai frumos, mai ieftin",
+          "focus": "Comparativul"
+        },
+        {
+          "id": "w06-6",
+          "title": "Am liebsten …",
+          "titleRo": "Cel mai mult îmi place …",
+          "focus": "Superlativul"
+        },
+        {
+          "id": "w06-7",
+          "title": "Ich interessiere mich für …",
+          "titleRo": "Mă interesează …",
+          "focus": "Verbele reflexive"
+        },
+        {
+          "id": "w06-8",
+          "title": "Wiederholung: Die neue Wohnung",
+          "titleRo": "Recapitulare: Locuința nouă",
+          "focus": "Recapitularea săptămânii 6"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "phase": "A2",
+      "title": "Arbeit",
+      "titleRo": "Munca",
+      "lessons": [
+        {
+          "id": "w07-1",
+          "title": "Der erste Tag im Team",
+          "titleRo": "Prima zi în echipă",
+          "focus": "Prezentarea în echipă; du sau Sie la muncă"
+        },
+        {
+          "id": "w07-2",
+          "title": "Die Kollegen",
+          "titleRo": "Colegii",
+          "focus": "Dativul pronumelor (mir, dir, ihm, ihr)"
+        },
+        {
+          "id": "w07-3",
+          "title": "Arbeitszeiten und Pausen",
+          "titleRo": "Program și pauze",
+          "focus": "Program, ture, ore suplimentare; dürfen"
+        },
+        {
+          "id": "w07-4",
+          "title": "Am Telefon in der Firma",
+          "titleRo": "La telefon la firmă",
+          "focus": "Formule de telefon; transmiterea unui mesaj"
+        },
+        {
+          "id": "w07-5",
+          "title": "Warum? – Weil …",
+          "titleRo": "De ce? – Pentru că …",
+          "focus": "Propoziții subordonate cu weil (verbul la final)"
+        },
+        {
+          "id": "w07-6",
+          "title": "Ich finde, dass …",
+          "titleRo": "Eu cred că …",
+          "focus": "Propoziții cu dass; exprimarea opiniei"
+        },
+        {
+          "id": "w07-7",
+          "title": "Da hast du recht!",
+          "titleRo": "Ai dreptate!",
+          "focus": "Acord și dezacord"
+        },
+        {
+          "id": "w07-8",
+          "title": "Wiederholung: Eine Woche im Büro",
+          "titleRo": "Recapitulare: O săptămână la birou",
+          "focus": "Recapitularea săptămânii 7"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "phase": "A2",
+      "title": "Gesundheit, Geld, Verträge",
+      "titleRo": "Sănătate, bani, contracte",
+      "lessons": [
+        {
+          "id": "w08-1",
+          "title": "Krankenkasse und Facharzt",
+          "titleRo": "Asigurarea și medicul specialist",
+          "focus": "Sistemul medical; Hausarzt, Überweisung"
+        },
+        {
+          "id": "w08-2",
+          "title": "Im Notfall",
+          "titleRo": "În caz de urgență",
+          "focus": "112; descrierea unei urgențe"
+        },
+        {
+          "id": "w08-3",
+          "title": "Du solltest …",
+          "titleRo": "Ar trebui să …",
+          "focus": "Sfaturi cu sollte"
+        },
+        {
+          "id": "w08-4",
+          "title": "Termine verschieben",
+          "titleRo": "Amânarea programărilor",
+          "focus": "Anulare și mutare; leider, stattdessen"
+        },
+        {
+          "id": "w08-5",
+          "title": "Bank und Überweisung",
+          "titleRo": "Banca și transferul",
+          "focus": "Operațiuni bancare; IBAN; facturi"
+        },
+        {
+          "id": "w08-6",
+          "title": "Kündigung und Reklamation",
+          "titleRo": "Reziliere și reclamație",
+          "focus": "Rezilierea contractelor; returnarea unui produs"
+        },
+        {
+          "id": "w08-7",
+          "title": "Rechnungen und Mahnungen",
+          "titleRo": "Facturi și somații",
+          "focus": "Înțelegerea facturilor; termene de plată"
+        },
+        {
+          "id": "w08-8",
+          "title": "Wiederholung: Papierkram",
+          "titleRo": "Recapitulare: Hârțogăraie",
+          "focus": "Recapitularea săptămânii 8"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "phase": "A2",
+      "title": "Soziales Leben",
+      "titleRo": "Viața socială",
+      "lessons": [
+        {
+          "id": "w09-1",
+          "title": "Die Einladung",
+          "titleRo": "Invitația",
+          "focus": "Invitații; acceptare și refuz politicos"
+        },
+        {
+          "id": "w09-2",
+          "title": "Wollen wir …?",
+          "titleRo": "Ce-ar fi să …?",
+          "focus": "Propuneri și înțelegeri; Hast du Lust?"
+        },
+        {
+          "id": "w09-3",
+          "title": "Feste und Feiertage",
+          "titleRo": "Sărbători",
+          "focus": "Sărbători germane; urări"
+        },
+        {
+          "id": "w09-4",
+          "title": "Geschenke",
+          "titleRo": "Cadouri",
+          "focus": "Dativ + acuzativ în aceeași propoziție"
+        },
+        {
+          "id": "w09-5",
+          "title": "Gefühle",
+          "titleRo": "Sentimente",
+          "focus": "sich freuen auf / über; exprimarea sentimentelor"
+        },
+        {
+          "id": "w09-6",
+          "title": "Medien und Nachrichten",
+          "titleRo": "Media și știri",
+          "focus": "Vorbim despre știri; întrebări indirecte cu ob"
+        },
+        {
+          "id": "w09-7",
+          "title": "Typisch deutsch?",
+          "titleRo": "Tipic german?",
+          "focus": "Diferențe culturale; reguli nescrise"
+        },
+        {
+          "id": "w09-8",
+          "title": "Wiederholung: Die Party",
+          "titleRo": "Recapitulare: Petrecerea",
+          "focus": "Recapitularea săptămânii 9"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "phase": "A2",
+      "title": "Reisen und A2-Abschluss",
+      "titleRo": "Călătorii și finalul A2",
+      "lessons": [
+        {
+          "id": "w10-1",
+          "title": "Urlaub planen",
+          "titleRo": "Planificăm concediul",
+          "focus": "Planuri; prepoziții pentru destinații"
+        },
+        {
+          "id": "w10-2",
+          "title": "Im Hotel",
+          "titleRo": "La hotel",
+          "focus": "Rezervări; cereri politicoase (Könnten Sie …?)"
+        },
+        {
+          "id": "w10-3",
+          "title": "Probleme auf Reisen",
+          "titleRo": "Probleme în călătorie",
+          "focus": "Întârzieri, bagaje pierdute, reclamații"
+        },
+        {
+          "id": "w10-4",
+          "title": "Wenn …, dann …",
+          "titleRo": "Dacă …, atunci …",
+          "focus": "Propoziții condiționale cu wenn"
+        },
+        {
+          "id": "w10-5",
+          "title": "Regeln im Alltag",
+          "titleRo": "Reguli de zi cu zi",
+          "focus": "Mülltrennung, Ruhezeiten; man darf / man muss"
+        },
+        {
+          "id": "w10-6",
+          "title": "Mein Urlaub",
+          "titleRo": "Concediul meu",
+          "focus": "Povestire liberă la trecut"
+        },
+        {
+          "id": "w10-7",
+          "title": "Hören wie im echten Leben",
+          "titleRo": "Ascultare ca în viața reală",
+          "focus": "Anunțuri, mesaje vocale, conversații rapide"
+        },
+        {
+          "id": "w10-8",
+          "title": "A2-Test: Unterwegs",
+          "titleRo": "Test A2: La drum",
+          "focus": "Recapitularea întregii faze A2"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "phase": "B1",
+      "title": "Die Bewerbung",
+      "titleRo": "Candidatura",
+      "lessons": [
+        {
+          "id": "w11-1",
+          "title": "Stellenanzeigen",
+          "titleRo": "Anunțuri de angajare",
+          "focus": "Citim anunțuri; cerințe, beneficii"
+        },
+        {
+          "id": "w11-2",
+          "title": "Mein Werdegang",
+          "titleRo": "Parcursul meu profesional",
+          "focus": "Descrierea experienței; Präteritum la verbele modale"
+        },
+        {
+          "id": "w11-3",
+          "title": "Das Vorstellungsgespräch (1)",
+          "titleRo": "Interviul de angajare (1)",
+          "focus": "Prezentarea profesională"
+        },
+        {
+          "id": "w11-4",
+          "title": "Das Vorstellungsgespräch (2)",
+          "titleRo": "Interviul de angajare (2)",
+          "focus": "Puncte forte și slabe; întrebări dificile"
+        },
+        {
+          "id": "w11-5",
+          "title": "Gehalt und Vertrag",
+          "titleRo": "Salariul și contractul",
+          "focus": "Negocierea; Brutto / Netto; Probezeit"
+        },
+        {
+          "id": "w11-6",
+          "title": "Der Kollege, der …",
+          "titleRo": "Colegul care …",
+          "focus": "Propoziții relative"
+        },
+        {
+          "id": "w11-7",
+          "title": "Weiterbildung",
+          "titleRo": "Formarea continuă",
+          "focus": "Cursuri, calificări; infinitiv cu zu"
+        },
+        {
+          "id": "w11-8",
+          "title": "Wiederholung: Ich bekomme den Job!",
+          "titleRo": "Recapitulare: Primesc jobul!",
+          "focus": "Recapitularea săptămânii 11"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "phase": "B1",
+      "title": "Im Team",
+      "titleRo": "În echipă",
+      "lessons": [
+        {
+          "id": "w12-1",
+          "title": "Das Meeting",
+          "titleRo": "Ședința",
+          "focus": "Formule de ședință; luarea cuvântului"
+        },
+        {
+          "id": "w12-2",
+          "title": "Wird erledigt!",
+          "titleRo": "Se rezolvă!",
+          "focus": "Diateza pasivă la prezent (wird gemacht)"
+        },
+        {
+          "id": "w12-3",
+          "title": "Probleme ansprechen",
+          "titleRo": "Abordarea problemelor",
+          "focus": "Formulări diplomatice"
+        },
+        {
+          "id": "w12-4",
+          "title": "Feedback",
+          "titleRo": "Feedback",
+          "focus": "Konjunktiv II de politețe (würde, könnte, hätte)"
+        },
+        {
+          "id": "w12-5",
+          "title": "In der Kaffeeküche",
+          "titleRo": "În bucătăria de la birou",
+          "focus": "Small talk colocvial cu colegii"
+        },
+        {
+          "id": "w12-6",
+          "title": "Halt, eben, mal, ja",
+          "titleRo": "Particulele modale",
+          "focus": "Particulele modale în vorbirea reală"
+        },
+        {
+          "id": "w12-7",
+          "title": "Hast'n Moment?",
+          "titleRo": "Ai o clipă?",
+          "focus": "Prescurtări și contracții din vorbirea rapidă"
+        },
+        {
+          "id": "w12-8",
+          "title": "Wiederholung: Projektstart",
+          "titleRo": "Recapitulare: Pornirea proiectului",
+          "focus": "Recapitularea săptămânii 12"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "phase": "B1",
+      "title": "Erzählen und Erinnern",
+      "titleRo": "Povestiri și amintiri",
+      "lessons": [
+        {
+          "id": "w13-1",
+          "title": "Es war einmal …",
+          "titleRo": "A fost odată …",
+          "focus": "Präteritum la verbele regulate și neregulate"
+        },
+        {
+          "id": "w13-2",
+          "title": "Meine Kindheit",
+          "titleRo": "Copilăria mea",
+          "focus": "Amintiri; als vs. wenn"
+        },
+        {
+          "id": "w13-3",
+          "title": "Nachdem ich angekommen war …",
+          "titleRo": "După ce am ajuns …",
+          "focus": "Mai-mult-ca-perfectul (Plusquamperfekt)"
+        },
+        {
+          "id": "w13-4",
+          "title": "Eine Geschichte erzählen",
+          "titleRo": "Spunem o poveste",
+          "focus": "Conectori narativi; plötzlich, schließlich"
+        },
+        {
+          "id": "w13-5",
+          "title": "Wendepunkte im Leben",
+          "titleRo": "Momente decisive în viață",
+          "focus": "Povestire personală extinsă"
+        },
+        {
+          "id": "w13-6",
+          "title": "Redewendungen",
+          "titleRo": "Expresii idiomatice",
+          "focus": "Cele mai folosite expresii idiomatice"
+        },
+        {
+          "id": "w13-7",
+          "title": "Humor und Ironie",
+          "titleRo": "Umor și ironie",
+          "focus": "Recunoașterea ironiei; reacții naturale"
+        },
+        {
+          "id": "w13-8",
+          "title": "Wiederholung: Meine Geschichte",
+          "titleRo": "Recapitulare: Povestea mea",
+          "focus": "Recapitularea săptămânii 13"
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "phase": "B1",
+      "title": "Diskutieren",
+      "titleRo": "Discuții",
+      "lessons": [
+        {
+          "id": "w14-1",
+          "title": "Argumente",
+          "titleRo": "Argumente",
+          "focus": "deshalb, deswegen, trotzdem"
+        },
+        {
+          "id": "w14-2",
+          "title": "Vor- und Nachteile",
+          "titleRo": "Avantaje și dezavantaje",
+          "focus": "Compararea opțiunilor"
+        },
+        {
+          "id": "w14-3",
+          "title": "Obwohl …",
+          "titleRo": "Deși …",
+          "focus": "Propoziții concesive cu obwohl"
+        },
+        {
+          "id": "w14-4",
+          "title": "Einen Kompromiss finden",
+          "titleRo": "Găsim un compromis",
+          "focus": "Negociere; Was hältst du davon, wenn …?"
+        },
+        {
+          "id": "w14-5",
+          "title": "Die Diskussion",
+          "titleRo": "Dezbaterea",
+          "focus": "Conducerea unei discuții; întreruperea politicoasă"
+        },
+        {
+          "id": "w14-6",
+          "title": "Ein Missverständnis",
+          "titleRo": "O neînțelegere",
+          "focus": "Clarificări; Ich meinte eigentlich …"
+        },
+        {
+          "id": "w14-7",
+          "title": "Ärger mit dem Nachbarn",
+          "titleRo": "Necazuri cu vecinul",
+          "focus": "Rezolvarea unui conflict; plângerea"
+        },
+        {
+          "id": "w14-8",
+          "title": "Wiederholung: Pro und Contra",
+          "titleRo": "Recapitulare: Pro și contra",
+          "focus": "Recapitularea săptămânii 14"
+        }
+      ]
+    },
+    {
+      "week": 15,
+      "phase": "B1",
+      "title": "Hypothesen und Pläne",
+      "titleRo": "Ipoteze și planuri",
+      "lessons": [
+        {
+          "id": "w15-1",
+          "title": "Wenn ich du wäre …",
+          "titleRo": "Dacă aș fi în locul tău …",
+          "focus": "Konjunktiv II: situații ipotetice"
+        },
+        {
+          "id": "w15-2",
+          "title": "Ratschläge geben",
+          "titleRo": "Dăm sfaturi",
+          "focus": "An deiner Stelle …; Es wäre besser, wenn …"
+        },
+        {
+          "id": "w15-3",
+          "title": "Was wirst du machen?",
+          "titleRo": "Ce vei face?",
+          "focus": "Viitorul cu werden"
+        },
+        {
+          "id": "w15-4",
+          "title": "Ich habe vor, …",
+          "titleRo": "Am de gând să …",
+          "focus": "Infinitiv cu zu; Plane und Absichten"
+        },
+        {
+          "id": "w15-5",
+          "title": "Um … zu / damit",
+          "titleRo": "Ca să …",
+          "focus": "Propoziții finale"
+        },
+        {
+          "id": "w15-6",
+          "title": "Meine Ziele",
+          "titleRo": "Obiectivele mele",
+          "focus": "Vorbim despre planuri pe termen lung"
+        },
+        {
+          "id": "w15-7",
+          "title": "Dialekte und Akzente",
+          "titleRo": "Dialecte și accente",
+          "focus": "Ascultare: bavareză, șvabă, berlineză, austriacă"
+        },
+        {
+          "id": "w15-8",
+          "title": "Wiederholung: In fünf Jahren",
+          "titleRo": "Recapitulare: Peste cinci ani",
+          "focus": "Recapitularea săptămânii 15"
+        }
+      ]
+    },
+    {
+      "week": 16,
+      "phase": "B1",
+      "title": "B1-Abschluss",
+      "titleRo": "Finalul B1",
+      "lessons": [
+        {
+          "id": "w16-1",
+          "title": "Eine Präsentation halten",
+          "titleRo": "Ținem o prezentare",
+          "focus": "Structura unei prezentări scurte"
+        },
+        {
+          "id": "w16-2",
+          "title": "Freies Gespräch: Arbeit",
+          "titleRo": "Conversație liberă: munca",
+          "focus": "Conversație liberă pe teme de muncă"
+        },
+        {
+          "id": "w16-3",
+          "title": "Freies Gespräch: Leben",
+          "titleRo": "Conversație liberă: viața",
+          "focus": "Conversație liberă pe teme personale"
+        },
+        {
+          "id": "w16-4",
+          "title": "Freies Gespräch: Meinungen",
+          "titleRo": "Conversație liberă: opinii",
+          "focus": "Discuție argumentată"
+        },
+        {
+          "id": "w16-5",
+          "title": "Echtes Deutsch hören",
+          "titleRo": "Ascultăm germană autentică",
+          "focus": "Interviuri și podcasturi reale, viteză normală"
+        },
+        {
+          "id": "w16-6",
+          "title": "Bilanz",
+          "titleRo": "Bilanț",
+          "focus": "Ce am învățat; plan pentru mai departe"
+        },
+        {
+          "id": "w16-7",
+          "title": "Alles zusammen",
+          "titleRo": "Totul la un loc",
+          "focus": "Recapitulare generală"
+        },
+        {
+          "id": "w16-8",
+          "title": "B1-Test",
+          "titleRo": "Test B1",
+          "focus": "Recapitularea întregului curs"
+        }
+      ]
+    }
+  ]
+}

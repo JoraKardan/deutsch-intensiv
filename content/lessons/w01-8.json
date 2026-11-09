@@ -1,0 +1,128 @@
+{
+  "id": "w01-8",
+  "week": 1,
+  "day": 8,
+  "phase": "A1",
+  "kind": "review",
+  "title": "Wiederholung: Der erste Arbeitstag",
+  "titleRo": "Recapitulare: Prima zi de muncă",
+  "goals": [
+    "să înțelegi un dialog mai lung care combină toată săptămâna",
+    "să ții o conversație de 3–4 minute despre tine: nume, origine, limbi, profesie, program",
+    "să consolidezi verbele săptămânii: sein, haben, heißen, kommen, arbeiten, können",
+    "să folosești strategiile de comunicare când nu înțelegi"
+  ],
+  "intro": "Felicitări, ai terminat prima săptămână! 🎉 Azi nu e mult material nou. Ascultă un dialog mai lung, în care apar aproape toate expresiile săptămânii, și verifică ce a rămas. **Încearcă să înțelegi dialogul de la prima ascultare, fără text.** Dacă înțelegi peste 60%, e un rezultat excelent pentru prima săptămână.",
+  "dialog": {
+    "title": "In der Kantine",
+    "situation": "Prânz la cantină. Andrei se așază la masă lângă Sophie, o colegă nouă din alt departament. Mai târziu vine și Tom.",
+    "speakers": {
+      "S": { "name": "Sophie", "voice": "Anna (Premium)" },
+      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "T": { "name": "Tom", "voice": "Reed (German (Germany))" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "A", "de": "Entschuldigung, ist hier noch frei?", "ro": "Scuzați, mai e liber aici?" },
+      { "id": "d2", "speaker": "S", "de": "Ja, klar! Setz dich. Ich bin Sophie.", "ro": "Da, sigur! Ia loc. Eu sunt Sophie." },
+      { "id": "d3", "speaker": "A", "de": "Danke! Ich heiße Andrei. Ich bin neu im IT-Team.", "ro": "Mulțumesc! Mă numesc Andrei. Sunt nou în echipa de IT." },
+      { "id": "d4", "speaker": "S", "de": "Ah, schön! Ich arbeite im Marketing. Woher kommst du, Andrei?", "ro": "A, frumos! Eu lucrez la marketing. De unde ești, Andrei?" },
+      { "id": "d5", "speaker": "A", "de": "Aus Moldau. Und du? Bist du aus Köln?", "ro": "Din Moldova. Și tu? Ești din Köln?" },
+      { "id": "d6", "speaker": "S", "de": "Nein, ich komme aus Leipzig. Aber ich wohne schon fünf Jahre hier.", "ro": "Nu, eu sunt din Leipzig. Dar locuiesc aici deja de cinci ani." },
+      { "id": "d7", "speaker": "A", "de": "Wie bitte? Fünf oder fünfzehn?", "ro": "Poftim? Cinci sau cincisprezece?" },
+      { "id": "d8", "speaker": "S", "de": "Fünf! So alt bin ich noch nicht! Ich bin achtundzwanzig.", "ro": "Cinci! Încă nu sunt așa de bătrână! Am douăzeci și opt." },
+      { "id": "d9", "speaker": "A", "de": "Ach so! Entschuldigung.", "ro": "A, așa! Scuze." },
+      { "id": "d10", "speaker": "S", "de": "Kein Problem! Du sprichst schon gut Deutsch.", "ro": "Nicio problemă! Vorbești deja bine germana." },
+      { "id": "d11", "speaker": "A", "de": "Danke, aber ich lerne erst eine Woche. Ich spreche Rumänisch, Russisch und Englisch.", "ro": "Mulțumesc, dar învăț abia de o săptămână. Vorbesc română, rusă și engleză." },
+      { "id": "d12", "speaker": "S", "de": "Wow, drei Sprachen! Ich kann nur Englisch und ein bisschen Französisch.", "ro": "Uau, trei limbi! Eu știu doar engleză și puțin franceză." },
+      { "id": "d13", "speaker": "T", "de": "Hallo zusammen! Andrei, hast du Zeit? Das Meeting ist heute um halb zwei.", "ro": "Salutare tuturor! Andrei, ai timp? Ședința e azi la unu și jumătate." },
+      { "id": "d14", "speaker": "A", "de": "Um halb zwei? Also um dreizehn Uhr dreißig?", "ro": "La unu și jumătate? Adică la 13:30?" },
+      { "id": "d15", "speaker": "T", "de": "Genau. Im Raum zwölf.", "ro": "Exact. În sala doisprezece." },
+      { "id": "d16", "speaker": "A", "de": "Alles klar. Sophie, möchtest du nach dem Essen einen Kaffee?", "ro": "Clar. Sophie, vrei o cafea după masă?" },
+      { "id": "d17", "speaker": "S", "de": "Heute habe ich leider keine Zeit. Aber morgen gern!", "ro": "Azi, din păcate, n-am timp. Dar mâine, cu plăcere!" },
+      { "id": "d18", "speaker": "A", "de": "Super! Dann bis morgen!", "ro": "Super! Atunci pe mâine!" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Ist hier noch frei?", "ro": "Mai e liber aici?" },
+    { "id": "p2", "de": "Ja, klar! Setz dich.", "ro": "Da, sigur! Ia loc." },
+    { "id": "p3", "de": "Hallo zusammen!", "ro": "Salutare tuturor!" },
+    { "id": "p4", "de": "Ich lerne erst eine Woche Deutsch.", "ro": "Învăț germana abia de o săptămână." },
+    { "id": "p5", "de": "leider", "ro": "din păcate" },
+    { "id": "p6", "de": "Morgen gern!", "ro": "Mâine, cu plăcere!" },
+    { "id": "p7", "de": "Also …?", "ro": "Adică …? / Deci …?", "note": "Bun pentru verificare: „Also um 13:30?”" },
+    { "id": "p8", "de": "Dann bis morgen!", "ro": "Atunci pe mâine!" }
+  ],
+  "grammar": {
+    "title": "Recapitulare: verbele săptămânii",
+    "explanation": [
+      "În prima săptămână ai învățat cele mai importante verbe ale limbii germane. **sein** și **haben** sunt complet neregulate și trebuie știute perfect: apar în aproape fiecare propoziție.",
+      "Verbele regulate (kommen, wohnen, lernen) urmează modelul **-e, -st, -t, -en, -t, -en**. Verbele cu rădăcina în **-t** (arbeiten) adaugă un -e-: du arbeit**e**st.",
+      "Câteva verbe schimbă vocala la **du** și **er/sie**: sprechen → du spr**i**chst. Vei mai întâlni: lesen → du l**ie**st, fahren → du f**ä**hrst.",
+      "Ordinea cuvintelor, pe scurt: în propoziția afirmativă **verbul e pe locul 2**. În întrebarea da/nu, **verbul e pe locul 1**. Cu un verb modal (können), **infinitivul merge la final**."
+    ],
+    "tables": [
+      {
+        "caption": "Verbele săptămânii la prezent",
+        "headers": ["", "sein", "haben", "heißen", "arbeiten", "sprechen", "können"],
+        "rows": [
+          ["ich", "bin", "habe", "heiße", "arbeite", "spreche", "kann"],
+          ["du", "bist", "hast", "heißt", "arbeitest", "sprichst", "kannst"],
+          ["er/sie/es", "ist", "hat", "heißt", "arbeitet", "spricht", "kann"],
+          ["wir", "sind", "haben", "heißen", "arbeiten", "sprechen", "können"],
+          ["ihr", "seid", "habt", "heißt", "arbeitet", "sprecht", "könnt"],
+          ["sie/Sie", "sind", "haben", "heißen", "arbeiten", "sprechen", "können"]
+        ]
+      },
+      {
+        "caption": "Ordinea cuvintelor",
+        "headers": ["tip", "exemplu"],
+        "rows": [
+          ["afirmativ (verb pe 2)", "Ich **wohne** in Köln. / Heute **habe** ich keine Zeit."],
+          ["întrebare W- (verb pe 2)", "Wo **wohnst** du?"],
+          ["întrebare da/nu (verb pe 1)", "**Wohnst** du in Köln?"],
+          ["cu verb modal", "Ich **kann** heute nicht **kommen**."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Wir **sind** Kollegen.", "ro": "Suntem colegi." },
+      { "de": "**Habt** ihr Zeit?", "ro": "Aveți timp?" },
+      { "de": "Heute **habe** ich keine Zeit.", "ro": "Azi n-am timp." },
+      { "de": "Sophie **spricht** ein bisschen Französisch.", "ro": "Sophie vorbește puțin franceză." },
+      { "de": "**Kannst** du morgen **kommen**?", "ro": "Poți veni mâine?" },
+      { "de": "Woher **kommt** ihr?", "ro": "De unde sunteți (voi)?" }
+    ],
+    "tip": "Test pentru tine: poți vorbi 2 minute fără pauză despre tine (nume, de unde ești, unde locuiești, ce limbi vorbești, ce lucrezi, programul tău)? Înregistrează-te pe telefon și ascultă. Peste o lună vei fi surprins de progres."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "În ce departament lucrează Sophie?", "audio": "d4", "options": ["IT", "Marketing", "Contabilitate"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "De câți ani locuiește Sophie în Köln?", "audio": "d6", "options": ["15", "5", "28"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Câți ani are Sophie?", "audio": "d8", "options": ["28", "82", "18"], "answer": 0 },
+    { "type": "mcq", "id": "e4", "question": "Când e ședința?", "audio": "d13", "options": ["La 14:30", "La 13:30", "La 12:30"], "answer": 1, "explain": "halb zwei = 1:30 = 13:30." },
+    { "type": "mcq", "id": "e5", "question": "Ce răspunde Sophie la invitația la cafea?", "audio": "d17", "options": ["Da, acum", "Nu, niciodată", "Azi nu, dar mâine da"], "answer": 2 },
+    { "type": "gap", "id": "e6", "text": "Wir ___ Kollegen.", "answers": [["sind"]], "ro": "Suntem colegi." },
+    { "type": "gap", "id": "e7", "text": "Sophie ___ ein bisschen Französisch.", "answers": [["spricht"]], "ro": "Sophie vorbește puțin franceză." },
+    { "type": "gap", "id": "e8", "text": "Heute ___ ich keine Zeit.", "answers": [["habe"]], "ro": "Azi n-am timp." },
+    { "type": "gap", "id": "e9", "text": "Wo ___ du? – Im Marketing.", "answers": [["arbeitest"]], "ro": "Unde lucrezi? – La marketing." },
+    { "type": "gap", "id": "e10", "text": "___ du morgen kommen?", "answers": [["Kannst"]], "ro": "Poți veni mâine?" },
+    { "type": "gap", "id": "e11", "text": "Ich ___ einunddreißig. (vârsta)", "answers": [["bin"]], "ro": "Am 31 de ani." },
+    { "type": "mcq", "id": "e12", "question": "Care propoziție e corectă?", "options": ["Heute ich habe keine Zeit.", "Heute habe ich keine Zeit.", "Heute ich keine Zeit habe."], "answer": 1, "explain": "Verbul stă pe locul 2, chiar dacă propoziția începe cu „Heute”." },
+    { "type": "mcq", "id": "e13", "question": "Ce comanzi corect?", "options": ["Ich hätte gern ein Kaffee.", "Ich hätte gern einen Kaffee.", "Ich hätte gern eine Kaffee."], "answer": 1, "explain": "der Kaffee, masculin → einen Kaffee." },
+    { "type": "order", "id": "e14", "ro": "Mai e liber aici?", "answer": "Ist hier noch frei?" },
+    { "type": "order", "id": "e15", "ro": "Azi, din păcate, n-am timp.", "answer": "Heute habe ich leider keine Zeit." },
+    { "type": "dictation", "id": "e16", "audio": "d11", "text": "Danke, aber ich lerne erst eine Woche. Ich spreche Rumänisch, Russisch und Englisch.", "ro": "Mulțumesc, dar învăț abia de o săptămână. Vorbesc română, rusă și engleză." },
+    { "type": "dictation", "id": "e17", "audio": "d14", "text": "Um halb zwei? Also um dreizehn Uhr dreißig?", "ro": "La unu și jumătate? Adică la 13:30?" }
+  ],
+  "speaking": {
+    "scenario": "Recapitulare mare: prima ta zi la o firmă nouă. Mai multe situații una după alta: te prezinți, vorbești la prânz, stabilești o întâlnire.",
+    "claudeRole": "Joci pe rând mai multe personaje la noua firmă: (1) Frau Neumann de la recepție, formal; (2) Paul, un coleg la prânz, informal, care vorbește puțin mai repede și folosește din când în când un cuvânt nou; (3) Paul propune apoi o întâlnire cu o oră informală (halb, Viertel). Anunță scurt, între paranteze, când schimbi personajul.",
+    "tasks": [
+      "Prezintă-te formal la recepție (nume, literat, de ce ești acolo)",
+      "La prânz: de unde ești, unde locuiești, limbi, profesie",
+      "Întreabă și tu cel puțin 4 lucruri",
+      "Folosește o strategie când nu înțelegi (Wie bitte? / Was bedeutet …?)",
+      "Stabilește o oră pentru o cafea și verifică ora („Also um …?”)"
+    ],
+    "starter": "(Frau Neumann, Empfang) Guten Morgen! Kann ich Ihnen helfen?"
+  }
+}

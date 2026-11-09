@@ -1,0 +1,129 @@
+{
+  "id": "w01-4",
+  "week": 1,
+  "day": 4,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Im Café",
+  "titleRo": "La cafenea",
+  "goals": [
+    "să comanzi politicos ceva de băut sau de mâncat",
+    "să ceri nota și să plătești, inclusiv cu bacșiș",
+    "să înțelegi întrebările ospătarului („Für hier oder zum Mitnehmen?”, „Zusammen oder getrennt?”)",
+    "să înțelegi genul substantivelor (der / die / das) și articolul nehotărât ein / eine"
+  ],
+  "intro": "Cafeneaua e locul perfect pentru primele conversații reale: situația e mereu aceeași, iar frazele se repetă. În plus, în germană fiecare substantiv are un **gen** (masculin, feminin sau neutru), iar genul se vede din articol. Azi înveți de ce să înveți **mereu substantivele împreună cu articolul**.",
+  "dialog": {
+    "title": "Kaffeepause",
+    "situation": "După muncă, Andrei și Lena intră într-o cafenea. Îi servește o ospătăriță.",
+    "speakers": {
+      "K": { "name": "Ospătărița", "voice": "Anna (Premium)" },
+      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "L": { "name": "Lena", "voice": "Petra (Premium)" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "K", "de": "Hallo! Was darf’s sein?", "ro": "Bună! Ce doriți?" },
+      { "id": "d2", "speaker": "L", "de": "Ich hätte gern einen Cappuccino, bitte.", "ro": "Aș dori un cappuccino, vă rog." },
+      { "id": "d3", "speaker": "A", "de": "Und ich möchte einen Tee und ein Stück Kuchen.", "ro": "Iar eu aș vrea un ceai și o felie de prăjitură." },
+      { "id": "d4", "speaker": "K", "de": "Gern. Wir haben Apfelkuchen und Käsekuchen.", "ro": "Cu plăcere. Avem plăcintă cu mere și cheesecake." },
+      { "id": "d5", "speaker": "A", "de": "Einen Apfelkuchen, bitte.", "ro": "O plăcintă cu mere, vă rog." },
+      { "id": "d6", "speaker": "K", "de": "Mit Sahne?", "ro": "Cu frișcă?" },
+      { "id": "d7", "speaker": "A", "de": "Nein, danke. Ohne Sahne.", "ro": "Nu, mulțumesc. Fără frișcă." },
+      { "id": "d8", "speaker": "K", "de": "Für hier oder zum Mitnehmen?", "ro": "Aici sau la pachet?" },
+      { "id": "d9", "speaker": "L", "de": "Für hier, bitte.", "ro": "Aici, vă rog." },
+      { "id": "d10", "speaker": "A", "de": "Entschuldigung! Wir möchten bezahlen, bitte.", "ro": "Scuzați-mă! Am dori să plătim, vă rog." },
+      { "id": "d11", "speaker": "K", "de": "Zusammen oder getrennt?", "ro": "Împreună sau separat?" },
+      { "id": "d12", "speaker": "A", "de": "Zusammen, bitte. Ich lade dich ein, Lena.", "ro": "Împreună, vă rog. Te invit eu, Lena." },
+      { "id": "d13", "speaker": "L", "de": "Oh, danke schön!", "ro": "O, mulțumesc frumos!" },
+      { "id": "d14", "speaker": "K", "de": "Das macht elf Euro achtzig.", "ro": "Face 11 euro și 80 de cenți." },
+      { "id": "d15", "speaker": "A", "de": "Zwölf, bitte. Stimmt so.", "ro": "Doisprezece, vă rog. E în regulă așa (păstrați restul)." },
+      { "id": "d16", "speaker": "K", "de": "Vielen Dank! Schönen Tag noch!", "ro": "Mulțumesc mult! O zi frumoasă în continuare!" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Was darf’s sein?", "ro": "Ce doriți?", "note": "Întrebarea standard a vânzătorului sau ospătarului." },
+    { "id": "p2", "de": "Ich hätte gern einen Kaffee, bitte.", "ro": "Aș dori o cafea, vă rog.", "note": "Cea mai politicoasă formulă." },
+    { "id": "p3", "de": "Ich möchte ein Wasser.", "ro": "Aș vrea o apă." },
+    { "id": "p4", "de": "ein Stück Kuchen", "ro": "o felie de prăjitură" },
+    { "id": "p5", "de": "mit / ohne", "ro": "cu / fără" },
+    { "id": "p6", "de": "Für hier oder zum Mitnehmen?", "ro": "Aici sau la pachet?" },
+    { "id": "p7", "de": "Zum Mitnehmen, bitte.", "ro": "La pachet, vă rog." },
+    { "id": "p8", "de": "Entschuldigung!", "ro": "Scuzați-mă!", "note": "Și pentru a chema ospătarul." },
+    { "id": "p9", "de": "Ich möchte bezahlen, bitte.", "ro": "Aș dori să plătesc, vă rog.", "note": "Mai scurt: „Zahlen, bitte!”" },
+    { "id": "p10", "de": "Zusammen oder getrennt?", "ro": "Împreună sau separat?" },
+    { "id": "p11", "de": "Das macht elf Euro achtzig.", "ro": "Face 11,80 €." },
+    { "id": "p12", "de": "Stimmt so.", "ro": "E în regulă așa (păstrați restul).", "note": "Bacșișul obișnuit: rotunjești cu 5–10%." },
+    { "id": "p13", "de": "Kann ich mit Karte zahlen?", "ro": "Pot plăti cu cardul?" },
+    { "id": "p14", "de": "Ich lade dich ein.", "ro": "Te invit eu (plătesc eu)." },
+    { "id": "p15", "de": "Schönen Tag noch!", "ro": "O zi frumoasă în continuare!" },
+    { "id": "p16", "de": "Danke schön! – Bitte schön!", "ro": "Mulțumesc frumos! – Cu plăcere!" }
+  ],
+  "grammar": {
+    "title": "Genul substantivelor: der, die, das + ein, eine",
+    "explanation": [
+      "Fiecare substantiv german are un gen: **masculin (der)**, **feminin (die)** sau **neutru (das)**. Genul nu corespunde mereu cu româna: das Mädchen (fata) e neutru, der Tisch (masa) e masculin.",
+      "De aceea **învață întotdeauna substantivul cu articolul**: nu „Kaffee”, ci „**der** Kaffee”. Un truc: imaginează-ți obiectele masculine albastre, pe cele feminine roșii și pe cele neutre verzi.",
+      "**Articolul nehotărât** (un / o): **ein** pentru masculin și neutru, **eine** pentru feminin.",
+      "Câteva indicii utile: substantivele în **-ung, -heit, -keit, -ion** sunt **die** (die Zeitung, die Information). Cele în **-chen** sunt **das** (das Mädchen, das Brötchen). Zilele, lunile și anotimpurile sunt **der**.",
+      "⚠️ Când comanzi (Ich möchte… / Ich hätte gern…), **doar masculinul se schimbă**: ein → **einen**. Ich möchte **einen** Kaffee. Feminin și neutru rămân la fel: **eine** Cola, **ein** Wasser. Acesta e acuzativul și îl vei relua în săptămâna 2."
+    ],
+    "tables": [
+      {
+        "caption": "Articolele",
+        "headers": ["", "masculin", "feminin", "neutru"],
+        "rows": [
+          ["hotărât (-ul, -a)", "**der** Kaffee", "**die** Cola", "**das** Wasser"],
+          ["nehotărât (un, o)", "**ein** Kaffee", "**eine** Cola", "**ein** Wasser"],
+          ["Ich möchte …", "**einen** Kaffee", "**eine** Cola", "**ein** Wasser"]
+        ]
+      },
+      {
+        "caption": "Vocabular de cafenea",
+        "headers": ["der (m)", "die (f)", "das (n)"],
+        "rows": [
+          ["der Kaffee (cafeaua)", "die Milch (laptele)", "das Wasser (apa)"],
+          ["der Tee (ceaiul)", "die Cola", "das Bier (berea)"],
+          ["der Kuchen (prăjitura)", "die Sahne (frișca)", "das Brötchen (chifla)"],
+          ["der Saft (sucul)", "die Rechnung (nota)", "das Croissant"],
+          ["der Zucker (zahărul)", "die Karte (meniul / cardul)", "das Stück (bucata)"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "**Der** Kaffee ist gut.", "ro": "Cafeaua e bună." },
+      { "de": "Ich hätte gern **einen** Tee.", "ro": "Aș dori un ceai." },
+      { "de": "Ich möchte **eine** Cola, bitte.", "ro": "Aș vrea o cola, vă rog." },
+      { "de": "**Das** Wasser ist kalt.", "ro": "Apa e rece." },
+      { "de": "Einen Kaffee **mit** Milch und **ohne** Zucker, bitte.", "ro": "O cafea cu lapte și fără zahăr, vă rog." },
+      { "de": "**Die** Rechnung, bitte!", "ro": "Nota, vă rog!" }
+    ],
+    "tip": "În Germania, la restaurante și cafenele, bacșișul se dă direct când plătești: spui suma rotunjită („Zwölf, bitte”) sau „Stimmt so”. Nu se lasă banii pe masă."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Ce comandă Lena?", "audio": "d2", "options": ["Un ceai", "Un cappuccino", "O apă"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Ce te întreabă ospătărița?", "audio": "d8", "options": ["Plătiți cu cardul?", "Aici sau la pachet?", "Cu sau fără zahăr?"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Cât costă totul?", "audio": "d14", "options": ["11,80 €", "18,11 €", "12,80 €"], "answer": 0 },
+    { "type": "mcq", "id": "e4", "question": "Ce înseamnă „Stimmt so”?", "options": ["Nu e corect", "Păstrați restul", "Vreau chitanța"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Ich hätte gern ___ Kaffee.", "answers": [["einen"]], "ro": "Aș dori o cafea.", "hint": "der Kaffee, masculin, după „Ich hätte gern”" },
+    { "type": "gap", "id": "e6", "text": "Ich möchte ___ Cola.", "answers": [["eine"]], "ro": "Aș vrea o cola." },
+    { "type": "gap", "id": "e7", "text": "___ Wasser ist kalt.", "answers": [["Das"]], "ro": "Apa e rece." },
+    { "type": "gap", "id": "e8", "text": "Einen Tee ___ Zucker, bitte. (fără)", "answers": [["ohne"]], "ro": "Un ceai fără zahăr, vă rog." },
+    { "type": "mcq", "id": "e9", "question": "Ce articol are „Rechnung”?", "options": ["der", "die", "das"], "answer": 1, "explain": "Substantivele în -ung sunt mereu feminine: die Rechnung, die Zeitung, die Wohnung." },
+    { "type": "order", "id": "e10", "ro": "Aș dori să plătesc, vă rog.", "answer": "Ich möchte bezahlen, bitte." },
+    { "type": "order", "id": "e11", "ro": "Pot plăti cu cardul?", "answer": "Kann ich mit Karte zahlen?" },
+    { "type": "dictation", "id": "e12", "audio": "p6", "text": "Für hier oder zum Mitnehmen?", "ro": "Aici sau la pachet?" },
+    { "type": "dictation", "id": "e13", "audio": "d11", "text": "Zusammen oder getrennt?", "ro": "Împreună sau separat?" }
+  ],
+  "speaking": {
+    "scenario": "Ești într-o cafenea din Köln cu un prieten. Comanzi pentru amândoi, iar la final plătești tu.",
+    "claudeRole": "Ești ospătarul unei cafenele. Vorbești formal (Sie), prietenos și natural. Pui întrebările tipice: ce doresc, mărimea (klein/groß), cu lapte/zahăr, aici sau la pachet, iar la final împreună sau separat. Spune un preț total cu zecimale (ex. 13,40 €).",
+    "tasks": [
+      "Comandă două băuturi diferite și o prăjitură",
+      "Răspunde la întrebările despre mărime, lapte, zahăr",
+      "Spune dacă e aici sau la pachet",
+      "Cere nota și plătește împreună",
+      "Lasă bacșiș rotunjind suma („… Euro, bitte” / „Stimmt so”)"
+    ],
+    "starter": "Guten Tag! Was darf’s sein?"
+  }
+}

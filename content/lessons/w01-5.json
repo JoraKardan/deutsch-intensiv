@@ -1,0 +1,132 @@
+{
+  "id": "w01-5",
+  "week": 1,
+  "day": 5,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Was machen Sie beruflich?",
+  "titleRo": "Cu ce vă ocupați?",
+  "goals": [
+    "să spui ce profesie ai, unde lucrezi și de când",
+    "să întrebi pe altcineva despre munca lui",
+    "să formezi femininul profesiilor (Lehrer → Lehrerin)",
+    "să neagi o propoziție cu „nicht”"
+  ],
+  "intro": "Imediat după „De unde ești?”, nemții te întreabă **„Was machst du beruflich?”**, adică cu ce te ocupi. Azi înveți să vorbești despre munca ta. Încă un lucru important: în germană profesia se spune **fără articol**. Nu „Ich bin ein Lehrer”, ci **„Ich bin Lehrer”**.",
+  "dialog": {
+    "title": "Beim Firmenfest",
+    "situation": "Petrecerea de vineri seara a firmei. Andrei vorbește cu un coleg dintr-un alt departament, domnul Krause.",
+    "speakers": {
+      "K": { "name": "Herr Krause", "voice": "Reed (German (Germany))" },
+      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "K", "de": "Guten Abend! Sind Sie auch neu hier?", "ro": "Bună seara! Sunteți și dumneavoastră nou aici?" },
+      { "id": "d2", "speaker": "A", "de": "Ja, ich arbeite seit Montag hier. Mein Name ist Andrei Popescu.", "ro": "Da, lucrez aici de luni. Numele meu e Andrei Popescu." },
+      { "id": "d3", "speaker": "K", "de": "Krause, freut mich. Was machen Sie beruflich?", "ro": "Krause, încântat. Cu ce vă ocupați?" },
+      { "id": "d4", "speaker": "A", "de": "Ich bin Softwareentwickler. Ich arbeite im IT-Team.", "ro": "Sunt programator. Lucrez în echipa de IT." },
+      { "id": "d5", "speaker": "K", "de": "Ah, interessant! Ich arbeite nicht in der IT. Ich bin Buchhalter.", "ro": "A, interesant! Eu nu lucrez la IT. Sunt contabil." },
+      { "id": "d6", "speaker": "A", "de": "Arbeiten Sie schon lange hier?", "ro": "Lucrați de mult aici?" },
+      { "id": "d7", "speaker": "K", "de": "Ja, schon zehn Jahre. Und Sie? Ist das Ihr erster Job in Deutschland?", "ro": "Da, deja de zece ani. Și dumneavoastră? E primul job în Germania?" },
+      { "id": "d8", "speaker": "A", "de": "Ja, genau. Meine Frau sucht noch Arbeit. Sie ist Krankenschwester.", "ro": "Da, exact. Soția mea încă își caută de lucru. E asistentă medicală." },
+      { "id": "d9", "speaker": "K", "de": "Oh, Krankenschwestern sucht man hier überall!", "ro": "O, asistente medicale se caută aici peste tot!" },
+      { "id": "d10", "speaker": "K", "de": "Und gefällt es Ihnen bei uns?", "ro": "Și vă place la noi?" },
+      { "id": "d11", "speaker": "A", "de": "Ja, sehr! Die Kollegen sind sehr nett. Aber Deutsch ist nicht leicht.", "ro": "Da, foarte! Colegii sunt foarte drăguți. Dar germana nu e ușoară." },
+      { "id": "d12", "speaker": "K", "de": "Keine Sorge, Sie sprechen schon gut!", "ro": "Nu vă faceți griji, vorbiți deja bine!" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Was machen Sie beruflich?", "ro": "Cu ce vă ocupați?" },
+    { "id": "p2", "de": "Was bist du von Beruf?", "ro": "Ce meserie ai?" },
+    { "id": "p3", "de": "Ich bin Softwareentwickler.", "ro": "Sunt programator.", "note": "Fără articol!" },
+    { "id": "p4", "de": "Ich arbeite als Ingenieur.", "ro": "Lucrez ca inginer." },
+    { "id": "p5", "de": "Ich arbeite bei Siemens.", "ro": "Lucrez la Siemens.", "note": "bei + numele firmei" },
+    { "id": "p6", "de": "Ich arbeite seit Montag hier.", "ro": "Lucrez aici de luni." },
+    { "id": "p7", "de": "Arbeiten Sie schon lange hier?", "ro": "Lucrați de mult aici?" },
+    { "id": "p8", "de": "Ich suche Arbeit.", "ro": "Îmi caut de lucru." },
+    { "id": "p9", "de": "Ich arbeite nicht in der IT.", "ro": "Nu lucrez în IT." },
+    { "id": "p10", "de": "Das ist nicht leicht.", "ro": "Nu e ușor." },
+    { "id": "p11", "de": "Gefällt es Ihnen hier?", "ro": "Vă place aici?" },
+    { "id": "p12", "de": "Die Kollegen sind sehr nett.", "ro": "Colegii sunt foarte drăguți." },
+    { "id": "p13", "de": "Keine Sorge!", "ro": "Nu-ți face griji! / Fără grijă!" },
+    { "id": "p14", "de": "Ja, genau.", "ro": "Da, exact." },
+    { "id": "p15", "de": "Mein Name ist …", "ro": "Numele meu este …" }
+  ],
+  "grammar": {
+    "title": "Profesii (masculin/feminin). Negația cu nicht",
+    "explanation": [
+      "Profesia după **sein** se spune **fără articol**: Ich bin Lehrer. Sie ist Ärztin. (Nu: „Ich bin ein Lehrer”.)",
+      "**Femininul** profesiilor se formează de obicei cu **-in**: der Lehrer → die Lehrer**in**, der Ingenieur → die Ingenieur**in**. Uneori apare și umlaut: der Arzt → die **Ä**rzt**in**. Excepții: der Krankenpfleger / die Krankenschwester (sau Pflegerin).",
+      "Verbul **arbeiten**: rădăcina se termină în **-t**, așa că la du, er și ihr se adaugă un **-e-** ca să se poată pronunța: du arbeit**e**st, er arbeit**e**t.",
+      "**nicht** = nu. Neagă un verb, un adjectiv sau un loc și stă de obicei **după verb** sau **înaintea** cuvântului negat: Ich arbeite **nicht**. Das ist **nicht** leicht. Ich wohne **nicht** in Bonn.",
+      "Pentru substantive cu „un/o” se folosește **kein/keine**, nu nicht (Ich habe **kein** Auto). Îl vei învăța în săptămâna 3, dar îl recunoști deja din „**Keine** Sorge!”"
+    ],
+    "tables": [
+      {
+        "caption": "arbeiten – prezent",
+        "headers": ["", "arbeiten (a lucra)"],
+        "rows": [
+          ["ich", "arbeit**e**"],
+          ["du", "arbeit**est**"],
+          ["er / sie / es", "arbeit**et**"],
+          ["wir", "arbeit**en**"],
+          ["ihr", "arbeit**et**"],
+          ["sie / Sie", "arbeit**en**"]
+        ]
+      },
+      {
+        "caption": "Profesii utile",
+        "headers": ["masculin", "feminin", "română"],
+        "rows": [
+          ["der Softwareentwickler", "die Softwareentwicklerin", "programator"],
+          ["der Ingenieur", "die Ingenieurin", "inginer"],
+          ["der Arzt", "die Ärztin", "medic"],
+          ["der Krankenpfleger", "die Krankenschwester", "asistent medical"],
+          ["der Lehrer", "die Lehrerin", "profesor"],
+          ["der Verkäufer", "die Verkäuferin", "vânzător"],
+          ["der Fahrer", "die Fahrerin", "șofer"],
+          ["der Koch", "die Köchin", "bucătar"],
+          ["der Elektriker", "die Elektrikerin", "electrician"],
+          ["der Buchhalter", "die Buchhalterin", "contabil"],
+          ["der Student", "die Studentin", "student"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Ich bin Ingenieur.", "ro": "Sunt inginer." },
+      { "de": "Sie ist **Ärztin**.", "ro": "Ea e medic." },
+      { "de": "Er **arbeitet** bei BMW.", "ro": "El lucrează la BMW." },
+      { "de": "Wo **arbeitest** du?", "ro": "Unde lucrezi?" },
+      { "de": "Ich arbeite **nicht** am Wochenende.", "ro": "Nu lucrez în weekend." },
+      { "de": "Das ist **nicht** schwer.", "ro": "Nu e greu." }
+    ],
+    "tip": "Pregătește-ți azi propoziția personală, de 3–4 fraze, despre munca ta: ce ești, unde lucrezi, de când. O vei folosi de sute de ori! Exemplu: „Ich bin … von Beruf. Ich arbeite bei … Ich arbeite seit … hier.”"
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Ce meserie are domnul Krause?", "audio": "d5", "options": ["Programator", "Contabil", "Asistent medical"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "De cât timp lucrează domnul Krause la firmă?", "audio": "d7", "options": ["De 2 ani", "De 10 ani", "De luni"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Ce face soția lui Andrei?", "audio": "d8", "options": ["Lucrează la aceeași firmă", "Își caută de lucru", "E profesoară"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Care propoziție e corectă?", "options": ["Ich bin ein Ingenieur.", "Ich bin Ingenieur.", "Ich habe Ingenieur."], "answer": 1, "explain": "Profesia după sein se spune fără articol." },
+    { "type": "gap", "id": "e5", "text": "Wo ___ du?", "answers": [["arbeitest"]], "ro": "Unde lucrezi?", "hint": "arbeiten la du: atenție la -e-" },
+    { "type": "gap", "id": "e6", "text": "Sie ist ___. (medic, feminin)", "answers": [["Ärztin", "Aerztin"]], "ro": "Ea e medic." },
+    { "type": "gap", "id": "e7", "text": "Ich arbeite ___ Siemens.", "answers": [["bei"]], "ro": "Lucrez la Siemens." },
+    { "type": "gap", "id": "e8", "text": "Das ist ___ leicht.", "answers": [["nicht"]], "ro": "Nu e ușor." },
+    { "type": "gap", "id": "e9", "text": "Er ___ als Fahrer.", "answers": [["arbeitet"]], "ro": "El lucrează ca șofer." },
+    { "type": "order", "id": "e10", "ro": "Lucrez aici de luni.", "answer": "Ich arbeite seit Montag hier." },
+    { "type": "order", "id": "e11", "ro": "Nu lucrez în weekend.", "answer": "Ich arbeite nicht am Wochenende." },
+    { "type": "dictation", "id": "e12", "audio": "p1", "text": "Was machen Sie beruflich?", "ro": "Cu ce vă ocupați?" },
+    { "type": "dictation", "id": "e13", "audio": "d11", "text": "Ja, sehr! Die Kollegen sind sehr nett. Aber Deutsch ist nicht leicht.", "ro": "Da, foarte! Colegii sunt foarte drăguți. Dar germana nu e ușoară." }
+  ],
+  "speaking": {
+    "scenario": "Ești la un eveniment de networking pentru străini, organizat de primăria din Köln. Cunoști pe cineva nou.",
+    "claudeRole": "Ești Frau Schulz, consilieră la un centru pentru imigranți (Integrationsberatung). Vorbești formal (Sie). Întrebi despre profesie, unde lucrează, de când, dacă îi place, și vorbești puțin despre tine. Spune și 1–2 propoziții negative (cu nicht), ca să le audă.",
+    "tasks": [
+      "Prezintă-te și spune ce profesie ai",
+      "Spune unde lucrezi și de când (sau că îți cauți de lucru)",
+      "Întreabă-o și tu despre munca ei",
+      "Folosește cel puțin 2 propoziții cu „nicht”",
+      "Spune ce îți place și ce e greu"
+    ],
+    "starter": "Guten Abend! Ich bin Frau Schulz. Und wer sind Sie?"
+  }
+}

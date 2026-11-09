@@ -1,0 +1,135 @@
+{
+  "id": "w01-6",
+  "week": 1,
+  "day": 6,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Wie spät ist es?",
+  "titleRo": "Cât e ceasul?",
+  "goals": [
+    "să întrebi și să spui ora, formal și informal",
+    "să eviți capcana „halb drei” = 2:30 (nu 3:30!)",
+    "să vorbești despre programul de lucru: von … bis, um …",
+    "să cunoști zilele săptămânii și momentele zilei"
+  ],
+  "intro": "Nemții sunt punctuali, iar ora apare peste tot: întâlniri, trenuri, programări. Există două sisteme. Cel **formal** (14:30 = vierzehn Uhr dreißig) e cel mai ușor și îl auzi la gară sau la radio. Cel **informal** (halb drei) e cel folosit în conversație. Capcana: **„halb drei” înseamnă „jumătate spre trei”, adică 2:30!**",
+  "pronunciation": {
+    "title": "Zilele săptămânii și momentele zilei",
+    "intro": "Toate zilele sunt masculine (der Montag) și, în afară de Mittwoch, se termină în **-tag**. „Am Montag” = luni (în ziua de luni). „Montags” = în fiecare luni.",
+    "items": [
+      { "id": "x1", "sound": "luni", "de": "Montag", "tip": "„moontaag”" },
+      { "id": "x2", "sound": "marți", "de": "Dienstag", "tip": "„diinstaag”" },
+      { "id": "x3", "sound": "miercuri", "de": "Mittwoch", "tip": "literal „mijlocul săptămânii”" },
+      { "id": "x4", "sound": "joi", "de": "Donnerstag", "tip": "ziua tunetului (Donner)" },
+      { "id": "x5", "sound": "vineri", "de": "Freitag", "tip": "„fraitaag”" },
+      { "id": "x6", "sound": "sâmbătă", "de": "Samstag", "tip": "„zamstaag”" },
+      { "id": "x7", "sound": "duminică", "de": "Sonntag", "tip": "„zontaag”" },
+      { "id": "x8", "sound": "weekend", "de": "das Wochenende", "tip": "„voh-ăn-ende”; am Wochenende = în weekend" },
+      { "id": "x9", "sound": "dimineața", "de": "morgens", "tip": "der Morgen = dimineața" },
+      { "id": "x10", "sound": "la prânz", "de": "mittags", "tip": "der Mittag" },
+      { "id": "x11", "sound": "după-amiaza", "de": "nachmittags", "tip": "der Nachmittag" },
+      { "id": "x12", "sound": "seara", "de": "abends", "tip": "der Abend" },
+      { "id": "x13", "sound": "azi / mâine", "de": "heute, morgen", "tip": "„morgen” = mâine; „der Morgen” = dimineața" }
+    ]
+  },
+  "dialog": {
+    "title": "Mittagspause",
+    "situation": "E dimineață la birou. Andrei o întreabă pe Lena cum arată o zi obișnuită de lucru.",
+    "speakers": {
+      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "L": { "name": "Lena", "voice": "Petra (Premium)" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "A", "de": "Lena, wann beginnt hier die Arbeit?", "ro": "Lena, când începe aici lucrul?" },
+      { "id": "d2", "speaker": "L", "de": "Wir arbeiten von neun bis siebzehn Uhr. Aber das ist flexibel.", "ro": "Lucrăm de la nouă la cinci. Dar e flexibil." },
+      { "id": "d3", "speaker": "A", "de": "Und wann ist Mittagspause?", "ro": "Și când e pauza de prânz?" },
+      { "id": "d4", "speaker": "L", "de": "Meistens um zwölf. Wir essen zusammen in der Kantine.", "ro": "De obicei la doisprezece. Mâncăm împreună la cantină." },
+      { "id": "d5", "speaker": "A", "de": "Und das Teammeeting?", "ro": "Și ședința echipei?" },
+      { "id": "d6", "speaker": "L", "de": "Jeden Montag um Viertel nach zehn.", "ro": "În fiecare luni la zece și un sfert." },
+      { "id": "d7", "speaker": "A", "de": "Am Freitag auch?", "ro": "Și vinerea?" },
+      { "id": "d8", "speaker": "L", "de": "Nein, am Freitag arbeiten viele von zu Hause.", "ro": "Nu, vinerea mulți lucrează de acasă." },
+      { "id": "d9", "speaker": "A", "de": "Super. Wie spät ist es jetzt?", "ro": "Super. Cât e ceasul acum?" },
+      { "id": "d10", "speaker": "L", "de": "Es ist schon Viertel vor zwölf.", "ro": "E deja douăsprezece fără un sfert." },
+      { "id": "d11", "speaker": "A", "de": "Oh, ich habe Hunger!", "ro": "O, mi-e foame!" },
+      { "id": "d12", "speaker": "L", "de": "Ich auch. Komm, wir gehen essen!", "ro": "Și mie. Hai, mergem să mâncăm!" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Wie spät ist es?", "ro": "Cât e ceasul?" },
+    { "id": "p2", "de": "Wie viel Uhr ist es?", "ro": "Cât e ora?", "note": "Variantă la fel de folosită." },
+    { "id": "p3", "de": "Es ist drei Uhr.", "ro": "E ora trei." },
+    { "id": "p4", "de": "Es ist halb drei.", "ro": "E două și jumătate (2:30)!", "note": "halb drei = jumătate spre trei" },
+    { "id": "p5", "de": "Es ist Viertel nach drei.", "ro": "E trei și un sfert." },
+    { "id": "p6", "de": "Es ist Viertel vor drei.", "ro": "E trei fără un sfert." },
+    { "id": "p7", "de": "um acht Uhr", "ro": "la ora opt" },
+    { "id": "p8", "de": "von neun bis fünf", "ro": "de la nouă la cinci" },
+    { "id": "p9", "de": "Wann beginnt das Meeting?", "ro": "Când începe ședința?" },
+    { "id": "p10", "de": "am Montag", "ro": "luni (în ziua de luni)" },
+    { "id": "p11", "de": "am Wochenende", "ro": "în weekend" },
+    { "id": "p12", "de": "jeden Tag", "ro": "în fiecare zi" },
+    { "id": "p13", "de": "Ich habe Hunger.", "ro": "Mi-e foame.", "note": "Literal: „am foame”. La fel: Ich habe Durst = mi-e sete." },
+    { "id": "p14", "de": "Ich habe keine Zeit.", "ro": "N-am timp." },
+    { "id": "p15", "de": "Komm, wir gehen essen!", "ro": "Hai, mergem să mâncăm!" }
+  ],
+  "grammar": {
+    "title": "Ora: formal și informal. um, am, von … bis",
+    "explanation": [
+      "**Formal** (gară, radio, programări): ora pe 24 de ore + **Uhr** + minutele. 14:30 = vierzehn **Uhr** dreißig. 8:05 = acht Uhr fünf. E sistemul cel mai sigur: dacă nu ești sigur, spune ora așa.",
+      "**Informal** (conversație): ora pe 12 ore, cu **nach** (după), **vor** (înainte), **Viertel** (sfert) și **halb** (jumătate).",
+      "⚠️ **halb** + ora **următoare**: halb drei = 2:30. Gândește-te „jumătate drum spre trei”. E cea mai frecventă greșeală a străinilor!",
+      "Prepoziții: **um** + oră (um acht Uhr = la ora opt) · **am** + zi sau moment al zilei (am Montag, am Abend, am Wochenende) · **von … bis** (von neun bis fünf = de la nouă la cinci).",
+      "Excepție: **in der Nacht** (noaptea)."
+    ],
+    "tables": [
+      {
+        "caption": "Ora informală (exemple pentru 3)",
+        "headers": ["ora", "germană", "literal"],
+        "rows": [
+          ["3:00", "drei (Uhr)", "trei"],
+          ["3:05", "fünf **nach** drei", "cinci după trei"],
+          ["3:15", "**Viertel nach** drei", "sfert după trei"],
+          ["3:20", "zwanzig **nach** drei", "douăzeci după trei"],
+          ["3:30", "**halb vier**", "jumătate (spre) patru ⚠️"],
+          ["3:45", "**Viertel vor** vier", "sfert înainte de patru"],
+          ["3:50", "zehn **vor** vier", "zece înainte de patru"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Das Meeting ist **um** zehn Uhr.", "ro": "Ședința e la ora zece." },
+      { "de": "**Am** Montag habe ich keine Zeit.", "ro": "Luni n-am timp." },
+      { "de": "Ich arbeite **von** acht **bis** sechzehn Uhr.", "ro": "Lucrez de la opt la patru." },
+      { "de": "Der Zug kommt um vierzehn Uhr dreißig.", "ro": "Trenul vine la 14:30." },
+      { "de": "Es ist **halb** acht.", "ro": "E șapte și jumătate." },
+      { "de": "**Am** Wochenende arbeite ich nicht.", "ro": "În weekend nu lucrez." }
+    ],
+    "tip": "Ai observat? „**Am** Montag **habe** ich keine Zeit.” Când propoziția începe cu altceva decât subiectul, verbul rămâne pe locul 2, iar subiectul trece după el. E o regulă de bază a germanei și o vei exersa săptămâna viitoare."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Cât e ora: „Es ist halb drei”?", "options": ["3:30", "2:30", "3:15"], "answer": 1, "explain": "halb + ora următoare: halb drei = 2:30." },
+    { "type": "mcq", "id": "e2", "question": "Când e ședința echipei?", "audio": "d6", "options": ["Luni la 10:15", "Luni la 10:45", "Vineri la 10:15"], "answer": 0 },
+    { "type": "mcq", "id": "e3", "question": "Ce fac mulți colegi vinerea?", "audio": "d8", "options": ["Nu lucrează", "Lucrează de acasă", "Merg la cantină"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Cât e ceasul?", "audio": "d10", "options": ["12:15", "11:45", "12:45"], "answer": 1 },
+    { "type": "mcq", "id": "e5", "question": "Cum spui 7:45 informal?", "options": ["Viertel nach sieben", "Viertel vor acht", "halb acht"], "answer": 1 },
+    { "type": "gap", "id": "e6", "text": "Das Meeting ist ___ zehn Uhr.", "answers": [["um"]], "ro": "Ședința e la ora zece." },
+    { "type": "gap", "id": "e7", "text": "___ Montag habe ich keine Zeit.", "answers": [["Am"]], "ro": "Luni n-am timp." },
+    { "type": "gap", "id": "e8", "text": "Ich arbeite ___ neun ___ fünf.", "answers": [["von"], ["bis"]], "ro": "Lucrez de la nouă la cinci." },
+    { "type": "gap", "id": "e9", "text": "6:30 = Es ist ___ sieben.", "answers": [["halb"]], "ro": "E șase și jumătate." },
+    { "type": "order", "id": "e10", "ro": "Când începe ședința?", "answer": "Wann beginnt das Meeting?" },
+    { "type": "order", "id": "e11", "ro": "În weekend nu lucrez.", "answer": "Am Wochenende arbeite ich nicht." },
+    { "type": "dictation", "id": "e12", "audio": "p1", "text": "Wie spät ist es?", "ro": "Cât e ceasul?" },
+    { "type": "dictation", "id": "e13", "audio": "d2", "text": "Wir arbeiten von neun bis siebzehn Uhr. Aber das ist flexibel.", "ro": "Lucrăm de la nouă la cinci. Dar e flexibil." }
+  ],
+  "speaking": {
+    "scenario": "Vrei să stabilești o întâlnire la o cafea cu un coleg săptămâna asta. Amândoi aveți un program încărcat.",
+    "claudeRole": "Ești Sophie, o colegă. Vă spuneți „du”. Ai un program plin: când colegul propune o zi sau o oră, uneori nu poți și propui altceva. Folosește atât ora informală (halb, Viertel), cât și cea formală, și zilele săptămânii.",
+    "tasks": [
+      "Propune o zi și o oră pentru cafea",
+      "Înțelege când colega nu poate și propune altă variantă",
+      "Folosește cel puțin o dată „halb …” și o dată „Viertel …”",
+      "Confirmă la final ziua și ora exactă",
+      "Întreabă-o cât e ceasul acum"
+    ],
+    "starter": "Hey! Du wolltest einen Kaffee trinken, oder? Wann hast du Zeit?"
+  }
+}

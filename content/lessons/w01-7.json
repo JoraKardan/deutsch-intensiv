@@ -1,0 +1,124 @@
+{
+  "id": "w01-7",
+  "week": 1,
+  "day": 7,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Wie bitte?",
+  "titleRo": "Poftim?",
+  "goals": [
+    "să ceri cuiva să repete, să vorbească mai rar sau să explice",
+    "să verifici că ai înțeles corect („Meinen Sie …?”)",
+    "să întrebi ce înseamnă un cuvânt sau cum se spune ceva în germană",
+    "să folosești „können” pentru rugăminți politicoase"
+  ],
+  "intro": "Aceasta e poate **cea mai importantă lecție din săptămână**. Nemții vor vorbi repede, cu cuvinte pe care nu le știi, și e normal. Diferența dintre cineva care „se pierde” și cineva care se descurcă nu e vocabularul, ci **strategiile**: să ceri politicos o repetare, o explicație, o confirmare. Cu frazele de azi poți ține o conversație chiar și când înțelegi doar jumătate.",
+  "dialog": {
+    "title": "Der Bericht",
+    "situation": "Șeful lui Andrei, domnul Weber, vine la biroul lui și îi spune ceva, cam repede.",
+    "speakers": {
+      "W": { "name": "Herr Weber", "voice": "Reed (German (Germany))" },
+      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "W", "de": "Herr Popescu, können Sie mir den Bericht bis heute Nachmittag um vier schicken?", "ro": "Domnule Popescu, îmi puteți trimite raportul până azi după-amiază la patru?" },
+      { "id": "d2", "speaker": "A", "de": "Entschuldigung, wie bitte? Können Sie das bitte wiederholen?", "ro": "Scuzați, poftim? Puteți repeta, vă rog?" },
+      { "id": "d3", "speaker": "W", "de": "Den Bericht. Bis vier Uhr. Heute.", "ro": "Raportul. Până la patru. Azi." },
+      { "id": "d4", "speaker": "A", "de": "Langsamer, bitte. Ich spreche noch nicht so gut Deutsch.", "ro": "Mai rar, vă rog. Încă nu vorbesc prea bine germana." },
+      { "id": "d5", "speaker": "W", "de": "Ach so, kein Problem! Der Bericht – das ist ein Dokument. Ein Report.", "ro": "A, așa, nicio problemă! Raportul, adică un document. Un raport." },
+      { "id": "d6", "speaker": "A", "de": "Ah, ich verstehe. Und was bedeutet „schicken“?", "ro": "A, înțeleg. Și ce înseamnă „schicken”?" },
+      { "id": "d7", "speaker": "W", "de": "Schicken … per E-Mail senden.", "ro": "Schicken … a trimite pe e-mail." },
+      { "id": "d8", "speaker": "A", "de": "Alles klar! Meinen Sie heute um sechzehn Uhr?", "ro": "Clar! Vă referiți la azi, la ora 16?" },
+      { "id": "d9", "speaker": "W", "de": "Genau. Danke, Herr Popescu!", "ro": "Exact. Mulțumesc, domnule Popescu!" },
+      { "id": "d10", "speaker": "A", "de": "Gern! Und wie schreibt man „Bericht“?", "ro": "Cu plăcere! Și cum se scrie „Bericht”?" },
+      { "id": "d11", "speaker": "W", "de": "B – E – R – I – C – H – T.", "ro": "B – E – R – I – C – H – T." },
+      { "id": "d12", "speaker": "A", "de": "Danke! Bis später!", "ro": "Mulțumesc! Pe mai târziu!" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Wie bitte?", "ro": "Poftim? / Cum ați spus?" },
+    { "id": "p2", "de": "Entschuldigung, ich verstehe das nicht.", "ro": "Scuzați, nu înțeleg asta." },
+    { "id": "p3", "de": "Können Sie das bitte wiederholen?", "ro": "Puteți repeta, vă rog?" },
+    { "id": "p4", "de": "Langsamer, bitte.", "ro": "Mai rar, vă rog." },
+    { "id": "p5", "de": "Können Sie bitte langsamer sprechen?", "ro": "Puteți vorbi mai rar, vă rog?" },
+    { "id": "p6", "de": "Was bedeutet „schicken“?", "ro": "Ce înseamnă „schicken”?" },
+    { "id": "p7", "de": "Wie sagt man … auf Deutsch?", "ro": "Cum se spune … în germană?" },
+    { "id": "p8", "de": "Wie schreibt man das?", "ro": "Cum se scrie asta?" },
+    { "id": "p9", "de": "Ich spreche noch nicht so gut Deutsch.", "ro": "Încă nu vorbesc prea bine germana." },
+    { "id": "p10", "de": "Sprechen Sie Englisch?", "ro": "Vorbiți engleză?", "note": "Ultima soluție! Încearcă întâi în germană." },
+    { "id": "p11", "de": "Ah, ich verstehe!", "ro": "A, înțeleg!" },
+    { "id": "p12", "de": "Ach so!", "ro": "A, așa deci!", "note": "Foarte folosit când înțelegi ceva." },
+    { "id": "p13", "de": "Meinen Sie …?", "ro": "Vă referiți la …? / Vreți să spuneți …?" },
+    { "id": "p14", "de": "Alles klar!", "ro": "Clar! / Am înțeles!" },
+    { "id": "p15", "de": "Moment, bitte.", "ro": "O clipă, vă rog." },
+    { "id": "p16", "de": "Kein Problem!", "ro": "Nicio problemă!" }
+  ],
+  "grammar": {
+    "title": "Rugăminți politicoase cu können. Verbul pe primul loc",
+    "explanation": [
+      "**können** (a putea) e un **verb modal**. Se folosește împreună cu un alt verb, iar al doilea verb trece la **infinitiv**, la **finalul propoziției**: Können Sie das **wiederholen**? Ich kann das nicht **verstehen**.",
+      "Gândește-te la o „ramă”: verbul conjugat (kann/können) deschide rama, infinitivul o închide, iar restul stă la mijloc. Această structură în ramă (Satzklammer) e tipică germanei și o vei întâlni peste tot.",
+      "**Können Sie …?** e cea mai simplă formulă pentru o rugăminte politicoasă. Verbul stă pe **primul loc**, ca la orice întrebare da/nu.",
+      "**können** e neregulat la singular: ich **kann**, du **kannst**, er **kann**. Atenție: la ich și er nu există terminație!"
+    ],
+    "tables": [
+      {
+        "caption": "können – prezent",
+        "headers": ["", "können (a putea)"],
+        "rows": [
+          ["ich", "**kann**"],
+          ["du", "**kannst**"],
+          ["er / sie / es", "**kann**"],
+          ["wir", "können"],
+          ["ihr", "könnt"],
+          ["sie / Sie", "können"]
+        ]
+      },
+      {
+        "caption": "Rama verbală",
+        "headers": ["poziția 1", "verbul modal", "mijloc", "final: infinitiv"],
+        "rows": [
+          ["—", "**Können**", "Sie das bitte", "**wiederholen**?"],
+          ["Ich", "**kann**", "das leider nicht", "**verstehen**."],
+          ["Du", "**kannst**", "langsamer", "**sprechen**."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "**Können** Sie das bitte **wiederholen**?", "ro": "Puteți repeta, vă rog?" },
+      { "de": "**Kannst** du langsamer **sprechen**?", "ro": "Poți vorbi mai rar?" },
+      { "de": "Ich **kann** das nicht **verstehen**.", "ro": "Nu pot să înțeleg asta." },
+      { "de": "**Können** Sie mir **helfen**?", "ro": "Mă puteți ajuta?" },
+      { "de": "Er **kann** gut Englisch.", "ro": "El știe bine engleză." },
+      { "de": "**Kann** ich mit Karte **zahlen**?", "ro": "Pot plăti cu cardul?" }
+    ],
+    "tip": "Strategia „ecou”: când nu ești sigur că ai înțeles, repetă ce ai înțeles, sub formă de întrebare: „Bis vier Uhr?” sau „Meinen Sie heute?”. Interlocutorul confirmă sau te corectează, iar tu câștigi timp."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Ce vrea domnul Weber?", "audio": "d1", "options": ["O ședință la ora patru", "Raportul până la ora patru", "Să plece acasă la patru"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Ce face Andrei la final, ca să fie sigur că a înțeles?", "audio": "d8", "options": ["Cere să i se scrie pe hârtie", "Repetă informația sub formă de întrebare", "Vorbește în engleză"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Cineva vorbește prea repede. Ce spui?", "options": ["Langsamer, bitte.", "Alles klar!", "Ach so!"], "answer": 0 },
+    { "type": "mcq", "id": "e4", "question": "Nu știi un cuvânt. Ce întrebi?", "options": ["Wie schreibt man das?", "Was bedeutet das?", "Wie spät ist es?"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "___ Sie das bitte wiederholen?", "answers": [["Können"]], "ro": "Puteți repeta, vă rog?" },
+    { "type": "gap", "id": "e6", "text": "Ich ___ das nicht verstehen.", "answers": [["kann"]], "ro": "Nu pot înțelege asta." },
+    { "type": "gap", "id": "e7", "text": "___ du langsamer sprechen?", "answers": [["Kannst"]], "ro": "Poți vorbi mai rar?" },
+    { "type": "gap", "id": "e8", "text": "Wie ___ man das? – B-E-R-I-C-H-T.", "answers": [["schreibt"]], "ro": "Cum se scrie asta?" },
+    { "type": "order", "id": "e9", "ro": "Puteți vorbi mai rar, vă rog?", "answer": "Können Sie bitte langsamer sprechen?" },
+    { "type": "order", "id": "e10", "ro": "Încă nu vorbesc prea bine germana.", "answer": "Ich spreche noch nicht so gut Deutsch." },
+    { "type": "order", "id": "e11", "ro": "Cum se spune „mulțumesc” în germană?", "answer": "Wie sagt man „mulțumesc“ auf Deutsch?" },
+    { "type": "dictation", "id": "e12", "audio": "p3", "text": "Können Sie das bitte wiederholen?", "ro": "Puteți repeta, vă rog?" },
+    { "type": "dictation", "id": "e13", "audio": "p2", "text": "Entschuldigung, ich verstehe das nicht.", "ro": "Scuzați, nu înțeleg asta." }
+  ],
+  "speaking": {
+    "scenario": "Antrenament de supraviețuire: vorbești cu un vecin foarte vorbăreț, care vorbește repede și folosește cuvinte pe care nu le știi.",
+    "claudeRole": "Ești Herr Hoffmann, un vecin în vârstă, foarte vorbăreț și prietenos. Vorbești formal (Sie). IMPORTANT: în fiecare replică folosește intenționat 1–2 cuvinte pe care un începător nu le știe (de ex. Treppenhaus, Hausmeister, Mülltonne, Paket, Nachbarschaft). Dacă cer să repeți, repetă mai simplu. Dacă întreb ce înseamnă un cuvânt, explică-l în germană foarte simplă, nu în română. Corecturile de la final rămân în română.",
+    "tasks": [
+      "Cere să repete cel puțin o dată („Wie bitte?”, „Können Sie das wiederholen?”)",
+      "Cere să vorbească mai rar",
+      "Întreabă ce înseamnă cel puțin 2 cuvinte („Was bedeutet …?”)",
+      "Verifică o informație cu „Meinen Sie …?” sau prin ecou",
+      "Nu trece la română sau engleză! Totul în germană"
+    ],
+    "starter": "Ach, guten Tag! Sie sind der neue Nachbar, oder? Willkommen im Haus! Haben Sie schon den Hausmeister kennengelernt?"
+  }
+}

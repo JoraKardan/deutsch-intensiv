@@ -1,0 +1,116 @@
+{
+  "id": "w01-2",
+  "week": 1,
+  "day": 2,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Woher kommen Sie?",
+  "titleRo": "De unde sunteți?",
+  "goals": [
+    "să spui de unde ești, unde locuiești și ce limbi vorbești",
+    "să pui aceleași întrebări altcuiva",
+    "să conjugi verbele regulate la prezent (kommen, wohnen, lernen)",
+    "să formulezi întrebări cu W- (wo, woher, wer, was, wie) și întrebări de tip da/nu"
+  ],
+  "intro": "Când ești nou într-o țară, prima întrebare pe care o auzi e aproape mereu **„Woher kommst du?”** (De unde ești?). Azi înveți să răspunzi și să continui conversația. Tot azi afli și cum funcționează verbele la prezent. E o regulă simplă care se aplică la sute de verbe.",
+  "dialog": {
+    "title": "In der Kaffeeküche",
+    "situation": "Pauză de cafea în bucătăria biroului. Lena i-l prezintă lui Andrei pe Tom, un coleg din echipă.",
+    "speakers": {
+      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "L": { "name": "Lena", "voice": "Petra (Premium)" },
+      "T": { "name": "Tom", "voice": "Reed (German (Germany))" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "L", "de": "Andrei, das ist Tom. Tom, das ist Andrei. Er ist neu im Team.", "ro": "Andrei, el e Tom. Tom, el e Andrei. E nou în echipă." },
+      { "id": "d2", "speaker": "T", "de": "Hallo Andrei! Woher kommst du?", "ro": "Salut, Andrei! De unde ești?" },
+      { "id": "d3", "speaker": "A", "de": "Hallo! Ich komme aus Moldau.", "ro": "Salut! Sunt din Moldova." },
+      { "id": "d4", "speaker": "T", "de": "Aus Moldau? Interessant! Sprichst du Rumänisch?", "ro": "Din Moldova? Interesant! Vorbești română?" },
+      { "id": "d5", "speaker": "A", "de": "Ja, Rumänisch und Russisch. Und ein bisschen Englisch.", "ro": "Da, română și rusă. Și puțin engleză." },
+      { "id": "d6", "speaker": "T", "de": "Toll! Ich komme aus Hamburg, aber ich wohne jetzt hier in Köln.", "ro": "Super! Eu sunt din Hamburg, dar acum locuiesc aici, în Köln." },
+      { "id": "d7", "speaker": "A", "de": "Und du, Lena? Kommst du auch aus Deutschland?", "ro": "Și tu, Lena? Ești și tu din Germania?" },
+      { "id": "d8", "speaker": "L", "de": "Nein, ich komme aus Österreich, aus Wien.", "ro": "Nu, eu sunt din Austria, din Viena." },
+      { "id": "d9", "speaker": "A", "de": "Und wo wohnst du?", "ro": "Și unde locuiești?" },
+      { "id": "d10", "speaker": "L", "de": "Ich wohne in Bonn. Das ist nicht weit.", "ro": "Locuiesc în Bonn. Nu e departe." },
+      { "id": "d11", "speaker": "T", "de": "Du sprichst schon gut Deutsch, Andrei!", "ro": "Vorbești deja bine germana, Andrei!" },
+      { "id": "d12", "speaker": "A", "de": "Danke! Ich lerne Deutsch. Aber noch nicht so gut.", "ro": "Mulțumesc! Învăț germana. Dar încă nu prea bine." }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Woher kommst du?", "ro": "De unde ești? (informal)" },
+    { "id": "p2", "de": "Woher kommen Sie?", "ro": "De unde sunteți? (formal)" },
+    { "id": "p3", "de": "Ich komme aus Moldau.", "ro": "Sunt din Moldova.", "note": "Oficial: „aus der Republik Moldau”." },
+    { "id": "p4", "de": "Ich komme aus Rumänien.", "ro": "Sunt din România." },
+    { "id": "p5", "de": "Wo wohnst du?", "ro": "Unde locuiești?" },
+    { "id": "p6", "de": "Ich wohne in Köln.", "ro": "Locuiesc în Köln." },
+    { "id": "p7", "de": "Welche Sprachen sprichst du?", "ro": "Ce limbi vorbești?" },
+    { "id": "p8", "de": "Ich spreche Rumänisch und Russisch.", "ro": "Vorbesc română și rusă." },
+    { "id": "p9", "de": "Ich lerne Deutsch.", "ro": "Învăț germana." },
+    { "id": "p10", "de": "ein bisschen", "ro": "puțin, un pic" },
+    { "id": "p11", "de": "Noch nicht so gut.", "ro": "Încă nu prea bine." },
+    { "id": "p12", "de": "Das ist Tom.", "ro": "El e Tom. / Acesta e Tom.", "note": "Așa prezinți pe cineva." },
+    { "id": "p13", "de": "Er ist neu im Team.", "ro": "E nou în echipă." },
+    { "id": "p14", "de": "Toll!", "ro": "Super! / Grozav!" },
+    { "id": "p15", "de": "Das ist nicht weit.", "ro": "Nu e departe." },
+    { "id": "p16", "de": "Sie kommt aus Österreich.", "ro": "Ea e din Austria." }
+  ],
+  "grammar": {
+    "title": "Verbele regulate la prezent. Întrebările",
+    "explanation": [
+      "Majoritatea verbelor germane se conjugă după același model: iei **rădăcina** (infinitivul fără -en: komm-en → **komm**) și adaugi terminația persoanei.",
+      "Terminațiile de reținut: **-e, -st, -t, -en, -t, -en**. Formele pentru **wir**, **sie** (ei) și **Sie** (dvs.) sunt identice cu infinitivul, deci ușor de ținut minte.",
+      "Atenție la **sprechen** (a vorbi): e neregulat la **du** și **er/sie**, unde e se schimbă în i: du spr**i**chst, er spr**i**cht. Restul formelor sunt regulate.",
+      "**Întrebări cu W-**: cuvântul interogativ + verbul + subiectul. **Wo** wohnst du? (Unde?) · **Woher** kommst du? (De unde?) · **Wer** ist das? (Cine?) · **Was** lernst du? (Ce?) · **Wie** heißt du? (Cum?)",
+      "**Întrebări da/nu**: verbul trece pe **primul loc**. Du wohnst in Köln. → **Wohnst** du in Köln? (Locuiești în Köln?)"
+    ],
+    "tables": [
+      {
+        "caption": "Terminațiile la prezent",
+        "headers": ["", "kommen (a veni)", "wohnen (a locui)", "sprechen (a vorbi)"],
+        "rows": [
+          ["ich (eu)", "komm**e**", "wohn**e**", "sprech**e**"],
+          ["du (tu)", "komm**st**", "wohn**st**", "spr**i**ch**st**"],
+          ["er / sie / es (el / ea)", "komm**t**", "wohn**t**", "spr**i**ch**t**"],
+          ["wir (noi)", "komm**en**", "wohn**en**", "sprech**en**"],
+          ["ihr (voi)", "komm**t**", "wohn**t**", "sprech**t**"],
+          ["sie / Sie (ei / dvs.)", "komm**en**", "wohn**en**", "sprech**en**"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Woher **kommst** du?", "ro": "De unde ești?" },
+      { "de": "Wir **wohnen** in Köln.", "ro": "Locuim în Köln." },
+      { "de": "Er **spricht** gut Deutsch.", "ro": "El vorbește bine germana." },
+      { "de": "**Lernst** du Deutsch?", "ro": "Înveți germana?" },
+      { "de": "Wo **wohnen** Sie?", "ro": "Unde locuiți?" },
+      { "de": "Lena **kommt** aus Österreich.", "ro": "Lena e din Austria." }
+    ],
+    "tip": "„Ich komme **aus** …” = sunt din … (țară sau oraș). „Ich wohne **in** …” = locuiesc în …. Limbile se scriu cu literă mare și se termină de obicei în **-isch**: Rumänisch, Russisch, Englisch. Excepție: **Deutsch**."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Ce limbi vorbește Andrei?", "audio": "d5", "options": ["Română și germană", "Română, rusă și puțin engleză", "Doar română"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "De unde este Lena?", "audio": "d8", "options": ["Din Germania", "Din Elveția", "Din Austria"], "answer": 2 },
+    { "type": "mcq", "id": "e3", "question": "Unde locuiește Tom acum?", "audio": "d6", "options": ["În Hamburg", "În Köln", "În Bonn"], "answer": 1 },
+    { "type": "gap", "id": "e4", "text": "Woher ___ du?", "answers": [["kommst"]], "ro": "De unde ești?" },
+    { "type": "gap", "id": "e5", "text": "Wir ___ in Köln.", "answers": [["wohnen"]], "ro": "Locuim în Köln." },
+    { "type": "gap", "id": "e6", "text": "Er ___ Rumänisch.", "answers": [["spricht"]], "ro": "El vorbește română.", "hint": "sprechen e neregulat la er/sie" },
+    { "type": "gap", "id": "e7", "text": "Ich ___ Deutsch.", "answers": [["lerne"]], "ro": "Învăț germana." },
+    { "type": "gap", "id": "e8", "text": "___ wohnst du? – In Bonn.", "answers": [["Wo"]], "ro": "Unde locuiești? – În Bonn." },
+    { "type": "mcq", "id": "e9", "question": "Cum întrebi: „Locuiești în Köln?”", "options": ["Du wohnst in Köln?", "Wohnst du in Köln?", "Wo wohnst du in Köln?"], "answer": 1, "explain": "La întrebările da/nu verbul trece pe primul loc." },
+    { "type": "order", "id": "e10", "ro": "Sunt din Moldova.", "answer": "Ich komme aus Moldau." },
+    { "type": "order", "id": "e11", "ro": "Vorbești deja bine germana!", "answer": "Du sprichst schon gut Deutsch!" },
+    { "type": "dictation", "id": "e12", "audio": "p5", "text": "Wo wohnst du?", "ro": "Unde locuiești?" },
+    { "type": "dictation", "id": "e13", "audio": "d12", "text": "Danke! Ich lerne Deutsch. Aber noch nicht so gut.", "ro": "Mulțumesc! Învăț germana. Dar încă nu prea bine." }
+  ],
+  "speaking": {
+    "scenario": "Pauză de cafea la birou. Un coleg nou, curios, vrea să afle mai multe despre tine.",
+    "claudeRole": "Ești Max, un coleg din München care lucrează acum la Köln. Vă spuneți „du”. Ești curios de Moldova/România și pui multe întrebări simple.",
+    "tasks": [
+      "Spune de unde ești și unde locuiești acum",
+      "Spune ce limbi vorbești și cât de bine",
+      "Întreabă-l și tu de unde e, unde locuiește, ce limbi vorbește",
+      "Folosește cel puțin o întrebare da/nu (ex. „Wohnst du in Köln?”)"
+    ],
+    "starter": "Hallo! Ich bin Max. Du bist neu hier, oder? Woher kommst du?"
+  }
+}
