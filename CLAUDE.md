@@ -4,7 +4,7 @@ Proiect personal: curs intensiv de germană (A1 → B1 în 16 săptămâni) pent
 
 - Comunică cu utilizatorul **în română**.
 - Aplicația: React + TS + Vite, `npm run dev` (port 5180). Progresul e în localStorage.
-- Conversațiile de vorbire au loc în aplicația Claude (scenariul se copiază). O integrare ulterioară prin `claude -p` e posibilă (varianta „c”).
+- Conversațiile de vorbire au loc în aplicația Claude, în proiectul „Deutsch – Vorbire” (instrucțiuni + Knowledge din `claude-project/`); scenariul lecției se copiază din aplicație. O integrare ulterioară prin `claude -p` e posibilă (varianta „c”).
 
 ## Generarea lecțiilor noi
 
@@ -13,11 +13,13 @@ Când utilizatorul cere „generează săptămâna N”:
 1. Citește `content/curriculum.json` (titlurile și focusul lecțiilor săptămânii N) și 1–2 lecții existente din `content/lessons/` ca model de format și nivel. Recitește și recapitularea săptămânii anterioare.
 2. Creează câte un fișier `content/lessons/wNN-D.json` (ex. `w02-3.json`) pentru fiecare lecție. Tipul exact e în `src/lib/types.ts`.
 3. Rulează `npm run check`, corectează erorile, apoi `npm run audio -- wNN-1 wNN-2 …` (rulează în fundal, ~30 s/lecție).
-4. Audio e inclus în git (GitHub Pages nu poate genera audio). Commit + push pe `main` (doar dacă utilizatorul cere) → site-ul se actualizează automat: https://jorakardan.github.io/deutsch-intensiv/
+4. Rulează `npm run claude-project` (actualizează `claude-project/`) și spune-i utilizatorului să reîncarce în proiectul Claude „Deutsch – Vorbire” fișierele `vocabular.md`, `gramatica.md` (și `personaje.md`, dacă apar personaje noi).
+5. Audio e inclus în git (GitHub Pages nu poate genera audio). Commit + push pe `main` (doar dacă utilizatorul cere) → site-ul se actualizează automat: https://jorakardan.github.io/deutsch-intensiv/
 
 ### Reguli de conținut
 
-- **Personajele continuă povestea**: Andrei (din Moldova, programator, nou la o firmă din Köln; soția lui e asistentă medicală și își caută de lucru), Lena (colegă, din Viena, locuiește în Bonn), Tom (coleg, din Hamburg), Sophie (marketing, din Leipzig, 28 de ani), Herr Weber (șeful), Herr Krause (contabil), Frau Becker (HR). Se pot adăuga personaje noi.
+- **Povestea** (urmează viața reală a elevului, vezi `claude-project/despre-mine.md`, local): în săptămâna 1, Andrei (din Moldova) e la ultimul lui proiect IT, la o firmă din Köln (colegii Lena, Tom, Sophie, Herr Weber, Herr Krause, Frau Becker). **Din săptămâna 2**, Andrei lasă IT-ul și se mută cu soția lui, **Elena** (asistentă medicală, cetățean român, își caută de lucru), la **Flensburg**. Acolo lucrează în ture la fabrica de mezeluri **Fördewurst GmbH** (fictivă). Personajele din Flensburg: **Jens Petersen** (șeful de tură, localnic, laconic, zice „Moin”), **Kasia** (colegă din Polonia, tot nou-venită, vorbește o germană simplă), **Ole** (coleg tânăr, fan metal, merge la Wacken), **Frau Hansen** (HR la fabrică), **Frau Jensen** (vecina în vârstă). Colegii din Köln apar doar rar (un telefon cu Lena sau Tom). Se pot adăuga personaje noi. Temele: munca în ture, autoritățile (Anmeldung, Aufenthaltskarte pentru membrul de familie al unei cetățene UE), viața în nord, muzica rock/metal și festivalurile.
+- Vocile personajelor noi: Elena, Kasia, Frau Hansen, Frau Jensen = `Petra (Premium)` / `Anna (Premium)` (alternează ca să se distingă în dialog); Jens, Ole = `Reed (German (Germany))` / `Flo (German (Germany))`.
 - **Voci** (`speakers[].voice`): `Markus (Enhanced)` = Andrei; `Petra (Premium)` și `Anna (Premium)` = femei; `Reed (German (Germany))` sau `Flo (German (Germany))` = alți bărbați. Expresiile și exemplele folosesc automat `Anna (Premium)`.
 - **Explicațiile sunt în română**, cu diacritice. Traducerile sunt naturale, nu cuvânt cu cuvânt. Ghilimele germane în textul german: „…“; în română: „…”.
 - În textele de conținut, `**bold**` evidențiază părțile importante (inclusiv în exemplele de gramatică; scriptul audio elimină `**`).
@@ -41,4 +43,5 @@ Când utilizatorul cere „generează săptămâna N”:
 - `npm run dev`: aplicația
 - `npm run check`: validarea lecțiilor
 - `npm run audio [-- id …] [--force]`: generarea audio (macOS). Varianta rară 🐢 se face în browser (playbackRate), vocile Premium ignoră `say -r`.
+- `npm run claude-project`: generează `claude-project/` (instrucțiunile și Knowledge pentru proiectul din aplicația Claude). Sursa instrucțiunilor: `tools/claude-project-instructions.md`.
 - `npm run build`: verificare TypeScript + build

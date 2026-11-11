@@ -59,32 +59,32 @@
     {
       "week": 2,
       "phase": "A1",
-      "title": "Alltag und Einkaufen",
-      "titleRo": "Viața de zi cu zi și cumpărăturile",
+      "title": "Neustart im Norden",
+      "titleRo": "Un nou început în nord",
       "lessons": [
         {
           "id": "w02-1",
-          "title": "Mein Tag",
-          "titleRo": "Ziua mea",
-          "focus": "Rutina zilnică; verbele separabile (aufstehen, anfangen)"
+          "title": "Mein neuer Tag",
+          "titleRo": "Noua mea zi",
+          "focus": "Mutarea la Flensburg; rutina zilnică în ture (Frühschicht); verbele separabile (aufstehen, anfangen)"
         },
         {
           "id": "w02-2",
-          "title": "Termine",
-          "titleRo": "Programări",
-          "focus": "am Montag; verbul pe poziția 2 (inversiunea)"
+          "title": "Der Schichtplan",
+          "titleRo": "Planificarea turelor",
+          "focus": "am Montag, diese Woche; planul de ture; verbul pe poziția 2 (inversiunea)"
         },
         {
           "id": "w02-3",
           "title": "Meine Familie",
           "titleRo": "Familia mea",
-          "focus": "Membrii familiei; posesivele mein, dein, Ihr"
+          "focus": "Membrii familiei (Elena, familia din Moldova); posesivele mein, dein, Ihr"
         },
         {
           "id": "w02-4",
-          "title": "Freizeit und Hobbys",
-          "titleRo": "Timp liber și hobby-uri",
-          "focus": "gern / nicht gern; verbe neregulate (lesen, fahren, sehen)"
+          "title": "Musik und Hobbys",
+          "titleRo": "Muzică și hobby-uri",
+          "focus": "Rock, metal, concerte, sport; gern / nicht gern; verbe neregulate (lesen, fahren, sehen)"
         },
         {
           "id": "w02-5",
@@ -100,14 +100,14 @@
         },
         {
           "id": "w02-7",
-          "title": "Im Restaurant",
-          "titleRo": "La restaurant",
-          "focus": "Comandă, nota; verbele modale möchten și können"
+          "title": "In der Kantine",
+          "titleRo": "La cantină",
+          "focus": "Cantina fabricii și chioșcul (Imbiss); comandă, plată; verbele modale möchten și können"
         },
         {
           "id": "w02-8",
-          "title": "Wiederholung: Eine Woche im Leben",
-          "titleRo": "Recapitulare: O săptămână din viață",
+          "title": "Wiederholung: Die erste Woche in Flensburg",
+          "titleRo": "Recapitulare: Prima săptămână în Flensburg",
           "focus": "Recapitularea săptămânii 2"
         }
       ]
@@ -122,7 +122,7 @@
           "id": "w03-1",
           "title": "Meine Wohnung",
           "titleRo": "Apartamentul meu",
-          "focus": "Camerele; es gibt + acuzativ; kein"
+          "focus": "Locuința provizorie; camerele; es gibt + acuzativ; kein"
         },
         {
           "id": "w03-2",
@@ -140,30 +140,30 @@
           "id": "w03-4",
           "title": "Die Nachbarn",
           "titleRo": "Vecinii",
-          "focus": "Regulile casei; imperativul politicos (Sie)"
+          "focus": "Vecina, regulile casei; imperativul politicos (Sie)"
         },
         {
           "id": "w03-5",
-          "title": "Wie komme ich zum Bahnhof?",
-          "titleRo": "Cum ajung la gară?",
-          "focus": "Direcții; zum / zur; wo? / wohin?"
+          "title": "Wie komme ich zum Hafen?",
+          "titleRo": "Cum ajung la port?",
+          "focus": "Direcții prin Flensburg; zum / zur; wo? / wohin?"
         },
         {
           "id": "w03-6",
           "title": "Bus und Bahn",
           "titleRo": "Autobuz și tren",
-          "focus": "Transport public, bilete, întârzieri; mit + dativ"
+          "focus": "Autobuzul spre fabrică la tura de dimineață; bilete, întârzieri; mit + dativ"
         },
         {
           "id": "w03-7",
           "title": "Wetter und Kleidung",
           "titleRo": "Vremea și haine",
-          "focus": "Vremea; verbul modal wollen"
+          "focus": "Vremea din nord (vânt, ploaie, „Schietwetter”), haine de lucru și de iarnă; verbul modal wollen"
         },
         {
           "id": "w03-8",
-          "title": "Wiederholung: Ein Tag in der Stadt",
-          "titleRo": "Recapitulare: O zi în oraș",
+          "title": "Wiederholung: Ein Tag in Flensburg",
+          "titleRo": "Recapitulare: O zi în Flensburg",
           "focus": "Recapitularea săptămânii 3"
         }
       ]
@@ -178,7 +178,7 @@
           "id": "w04-1",
           "title": "Die Anmeldung",
           "titleRo": "Înregistrarea domiciliului",
-          "focus": "Bürgeramt; spelling (buchstabieren); întrebări formale"
+          "focus": "Bürgeramt Flensburg: Anmeldung pentru Andrei și Elena; spelling (buchstabieren); întrebări formale"
         },
         {
           "id": "w04-2",
@@ -188,15 +188,15 @@
         },
         {
           "id": "w04-3",
-          "title": "Einen Termin machen",
-          "titleRo": "Facem o programare",
-          "focus": "La telefon; können + infinitiv"
+          "title": "Termin bei der Ausländerbehörde",
+          "titleRo": "Programare la Ausländerbehörde",
+          "focus": "La telefon: programare pentru Aufenthaltskarte (membru de familie al unei cetățene UE); können + infinitiv"
         },
         {
           "id": "w04-4",
           "title": "Das Bankkonto",
           "titleRo": "Contul bancar",
-          "focus": "La bancă; brauchen + acuzativ"
+          "focus": "La bancă (contul pentru salariu); brauchen + acuzativ"
         },
         {
           "id": "w04-5",
@@ -214,7 +214,7 @@
           "id": "w04-7",
           "title": "Ich bin krank",
           "titleRo": "Sunt bolnav",
-          "focus": "Anunțarea bolii la muncă; verbul modal sollen"
+          "focus": "Anunțarea bolii la șeful de tură (krankmelden, Krankmeldung); verbul modal sollen"
         },
         {
           "id": "w04-8",
@@ -234,7 +234,7 @@
           "id": "w05-1",
           "title": "Small Talk",
           "titleRo": "Conversație ușoară",
-          "focus": "Întrebări de politețe; ja / nein / doch"
+          "focus": "Small talk în pauză, la fabrică și cu vecinii; „Moin!”; ja / nein / doch"
         },
         {
           "id": "w05-2",
@@ -258,7 +258,7 @@
           "id": "w05-5",
           "title": "Am Wochenende",
           "titleRo": "În weekend",
-          "focus": "Perfekt cu verbe separabile și neregulate"
+          "focus": "Concert, ieșire cu Elena; Perfekt cu verbe separabile și neregulate"
         },
         {
           "id": "w05-6",
@@ -290,7 +290,7 @@
           "id": "w06-1",
           "title": "Wohnungsanzeigen",
           "titleRo": "Anunțuri de închiriere",
-          "focus": "Abrevieri din anunțuri; Warmmiete / Kaltmiete"
+          "focus": "Locuința definitivă în Flensburg; abrevieri din anunțuri; Warmmiete / Kaltmiete"
         },
         {
           "id": "w06-2",
@@ -326,7 +326,7 @@
           "id": "w06-7",
           "title": "Ich interessiere mich für …",
           "titleRo": "Mă interesează …",
-          "focus": "Verbele reflexive"
+          "focus": "Verbele reflexive; ich interessiere mich für Musik, ich freue mich auf …"
         },
         {
           "id": "w06-8",
@@ -339,32 +339,32 @@
     {
       "week": 7,
       "phase": "A2",
-      "title": "Arbeit",
-      "titleRo": "Munca",
+      "title": "Arbeit in der Produktion",
+      "titleRo": "Munca în producție",
       "lessons": [
         {
           "id": "w07-1",
-          "title": "Der erste Tag im Team",
-          "titleRo": "Prima zi în echipă",
-          "focus": "Prezentarea în echipă; du sau Sie la muncă"
+          "title": "Der erste Tag in der Produktion",
+          "titleRo": "Prima zi în producție",
+          "focus": "Instruirea: igienă, haine de lucru, siguranță; du sau Sie la fabrică"
         },
         {
           "id": "w07-2",
           "title": "Die Kollegen",
           "titleRo": "Colegii",
-          "focus": "Dativul pronumelor (mir, dir, ihm, ihr)"
+          "focus": "Colegii de tură; dativul pronumelor (mir, dir, ihm, ihr)"
         },
         {
           "id": "w07-3",
-          "title": "Arbeitszeiten und Pausen",
-          "titleRo": "Program și pauze",
-          "focus": "Program, ture, ore suplimentare; dürfen"
+          "title": "Schichtarbeit und Pausen",
+          "titleRo": "Lucrul în ture și pauzele",
+          "focus": "Früh-, Spät-, Nachtschicht; pauze, ore suplimentare, sporuri; dürfen"
         },
         {
           "id": "w07-4",
-          "title": "Am Telefon in der Firma",
-          "titleRo": "La telefon la firmă",
-          "focus": "Formule de telefon; transmiterea unui mesaj"
+          "title": "Arbeitsanweisungen",
+          "titleRo": "Instrucțiuni de lucru",
+          "focus": "Înțelegem instrucțiuni la linie și la mașini; imperativul cu du / ihr; Vorsicht!"
         },
         {
           "id": "w07-5",
@@ -386,8 +386,8 @@
         },
         {
           "id": "w07-8",
-          "title": "Wiederholung: Eine Woche im Büro",
-          "titleRo": "Recapitulare: O săptămână la birou",
+          "title": "Wiederholung: Eine Woche in der Fabrik",
+          "titleRo": "Recapitulare: O săptămână la fabrică",
           "focus": "Recapitularea săptămânii 7"
         }
       ]
@@ -436,9 +436,9 @@
         },
         {
           "id": "w08-7",
-          "title": "Rechnungen und Mahnungen",
-          "titleRo": "Facturi și somații",
-          "focus": "Înțelegerea facturilor; termene de plată"
+          "title": "Lohnabrechnung und Rechnungen",
+          "titleRo": "Fluturașul de salariu și facturile",
+          "focus": "Brutto / Netto, Steuerklasse, contribuții; facturi și termene de plată"
         },
         {
           "id": "w08-8",
@@ -462,15 +462,15 @@
         },
         {
           "id": "w09-2",
-          "title": "Wollen wir …?",
-          "titleRo": "Ce-ar fi să …?",
+          "title": "Wollen wir aufs Konzert?",
+          "titleRo": "Mergem la concert?",
           "focus": "Propuneri și înțelegeri; Hast du Lust?"
         },
         {
           "id": "w09-3",
           "title": "Feste und Feiertage",
           "titleRo": "Sărbători",
-          "focus": "Sărbători germane; urări"
+          "focus": "Sărbători germane și festivaluri de muzică; urări"
         },
         {
           "id": "w09-4",
@@ -512,9 +512,9 @@
       "lessons": [
         {
           "id": "w10-1",
-          "title": "Urlaub planen",
-          "titleRo": "Planificăm concediul",
-          "focus": "Planuri; prepoziții pentru destinații"
+          "title": "Festival und Urlaub planen",
+          "titleRo": "Planificăm festivalul și concediul",
+          "focus": "Bilete, camping, drumul; prepoziții pentru destinații"
         },
         {
           "id": "w10-2",
@@ -570,19 +570,19 @@
           "id": "w11-1",
           "title": "Stellenanzeigen",
           "titleRo": "Anunțuri de angajare",
-          "focus": "Citim anunțuri; cerințe, beneficii"
+          "focus": "Anunțuri pentru producție și logistică; cerințe, beneficii"
         },
         {
           "id": "w11-2",
           "title": "Mein Werdegang",
           "titleRo": "Parcursul meu profesional",
-          "focus": "Descrierea experienței; Präteritum la verbele modale"
+          "focus": "De la IT la producție: explicăm schimbarea de carieră; Präteritum la verbele modale"
         },
         {
           "id": "w11-3",
           "title": "Das Vorstellungsgespräch (1)",
           "titleRo": "Interviul de angajare (1)",
-          "focus": "Prezentarea profesională"
+          "focus": "Interviu pentru un post mai bun (operator de mașină, Staplerfahrer); prezentarea profesională"
         },
         {
           "id": "w11-4",
@@ -594,7 +594,7 @@
           "id": "w11-5",
           "title": "Gehalt und Vertrag",
           "titleRo": "Salariul și contractul",
-          "focus": "Negocierea; Brutto / Netto; Probezeit"
+          "focus": "Salariul pe oră, sporuri, Brutto / Netto; Probezeit; contractul"
         },
         {
           "id": "w11-6",
@@ -606,7 +606,7 @@
           "id": "w11-7",
           "title": "Weiterbildung",
           "titleRo": "Formarea continuă",
-          "focus": "Cursuri, calificări; infinitiv cu zu"
+          "focus": "Calificări: Staplerschein, cursuri, Ausbildung; infinitiv cu zu"
         },
         {
           "id": "w11-8",
@@ -624,8 +624,8 @@
       "lessons": [
         {
           "id": "w12-1",
-          "title": "Das Meeting",
-          "titleRo": "Ședința",
+          "title": "Die Schichtbesprechung",
+          "titleRo": "Ședința de tură",
           "focus": "Formule de ședință; luarea cuvântului"
         },
         {
@@ -648,8 +648,8 @@
         },
         {
           "id": "w12-5",
-          "title": "In der Kaffeeküche",
-          "titleRo": "În bucătăria de la birou",
+          "title": "Im Pausenraum",
+          "titleRo": "În camera de pauză",
           "focus": "Small talk colocvial cu colegii"
         },
         {
@@ -666,8 +666,8 @@
         },
         {
           "id": "w12-8",
-          "title": "Wiederholung: Projektstart",
-          "titleRo": "Recapitulare: Pornirea proiectului",
+          "title": "Wiederholung: Die neue Linie",
+          "titleRo": "Recapitulare: Linia nouă de producție",
           "focus": "Recapitularea săptămânii 12"
         }
       ]
@@ -706,7 +706,7 @@
           "id": "w13-5",
           "title": "Wendepunkte im Leben",
           "titleRo": "Momente decisive în viață",
-          "focus": "Povestire personală extinsă"
+          "focus": "Povestire personală extinsă: plecarea din IT și mutarea în Germania"
         },
         {
           "id": "w13-6",
@@ -830,7 +830,7 @@
           "id": "w15-7",
           "title": "Dialekte und Akzente",
           "titleRo": "Dialecte și accente",
-          "focus": "Ascultare: bavareză, șvabă, berlineză, austriacă"
+          "focus": "Ascultare: nordul (Plattdeutsch, „Moin”, „Schnack”), bavareză, șvabă, berlineză, austriacă"
         },
         {
           "id": "w15-8",
@@ -850,7 +850,7 @@
           "id": "w16-1",
           "title": "Eine Präsentation halten",
           "titleRo": "Ținem o prezentare",
-          "focus": "Structura unei prezentări scurte"
+          "focus": "Structura unei prezentări scurte: drumul meu spre Germania"
         },
         {
           "id": "w16-2",

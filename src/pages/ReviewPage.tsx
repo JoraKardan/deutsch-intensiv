@@ -1,15 +1,25 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { lessons } from '../lib/content'
-import { play, stopAll } from '../lib/audio'
-import { reviewCard, todayKey, useProgress } from '../lib/store'
+import { play, speak, stopAll } from '../lib/audio'
+import { MINE, reviewCard, todayKey, useProgress, type Progress } from '../lib/store'
 import { dueDate, formatInterval, GRADES, isNew, previewIntervals, type StoredCard } from '../lib/srs'
+
+/** Expresia din spatele unei fișe: din lecție sau din conversațiile cu Claude. */
+function phraseOf(p: Progress, c: StoredCard): { id: string; de: string; ro: string; note?: string; wrong?: string } | undefined {
+  if (c.lessonId === MINE) {
+    const x = p.custom?.[c.phraseId]
+    if (!x) return undefined
+    return { id: x.id, de: x.de, ro: x.ro || `(corectează) ${x.wrong ?? ''}`, note: x.why, wrong: x.wrong }
+  }
+  return lessons[c.lessonId]?.phrases.find((ph) => ph.id === c.phraseId)
+}
 
 export function dueCards(cards: Record<string, StoredCard>, now = new Date()): StoredCard[] {
   // Ordinea: întâi fișele deja învățate (după scadență), apoi cele noi:
   // toate „germană → română”, apoi „română → germană”, ca să nu apară perechea una după alta.
   const rank = (c: StoredCard) => (isNew(c) ? (c.dir === 'de-ro' ? 1 : 2) : 0)
   return Object.values(cards)
-    .filter((c) => lessons[c.lessonId] && dueDate(c) <= now)
+    .filter((c) => (lessons[c.lessonId] || c.lessonId === MINE) && dueDate(c) <= now)
     .sort((a, b) => rank(a) - rank(b) || dueDate(a).getTime() - dueDate(b).getTime())
 }
 
@@ -26,13 +36,17 @@ export function ReviewPage() {
 
   const queue = useMemo(() => dueCards(progress.cards, now), [progress.cards, now])
   const card = queue[0]
-  const lesson = card ? lessons[card.lessonId] : undefined
-  const phrase = lesson?.phrases.find((p) => p.id === card.phraseId)
+  const mine = card?.lessonId === MINE
+  const phrase = card ? phraseOf(progress, card) : undefined
+  const source = !card ? '' : mine ? '💬 Din conversații' : lessons[card.lessonId]?.title
   const intervals = useMemo(() => (card ? previewIntervals(card) : {}), [card])
 
   const say = useCallback(() => {
-    if (card && phrase) play(card.lessonId, phrase.id, phrase.de)
-  }, [card, phrase])
+    if (card && phrase) {
+      if (mine) speak(phrase.de)
+      else play(card.lessonId, phrase.id, phrase.de)
+    }
+  }, [card, phrase, mine])
 
   // germană → română: redăm audio la afișare; română → germană: la întoarcere
   useEffect(() => {
@@ -84,7 +98,7 @@ export function ReviewPage() {
     )
   }
 
-  if (!card || !phrase || !lesson) {
+  if (!card || !phrase) {
     return (
       <div className="card center">
         <h2>🎉 Gata pe moment!</h2>
@@ -108,7 +122,7 @@ export function ReviewPage() {
           Rămase: <strong>{queue.length}</strong> ({newCount} noi){todayReviews ? ` · azi: ${todayReviews}` : ''}
         </span>
         <span>
-          {lesson.title} · {card.dir === 'de-ro' ? 'Germană → Română' : 'Română → Germană'}
+          {source} · {card.dir === 'de-ro' ? 'Germană → Română' : 'Română → Germană'}
         </span>
       </div>
       <div className="card flash">
@@ -128,6 +142,7 @@ export function ReviewPage() {
                 🔊
               </button>
             )}
+            {phrase.wrong && <div className="muted small">❌ ai spus: „{phrase.wrong}“</div>}
             {phrase.note && <div className="muted small">{phrase.note}</div>}
           </>
         )}

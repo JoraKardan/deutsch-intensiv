@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import type { Lesson } from '../lib/types'
 import { flatLessons, hasContent, lessons } from '../lib/content'
-import { completeLesson, markSection, useProgress } from '../lib/store'
+import { addCustom, completeLesson, markSection, useProgress } from '../lib/store'
+import { parseAnalysis, type CustomItem } from '../lib/analysis'
 import { playSequence, stopAll } from '../lib/audio'
 import { buildSpeakingPrompt } from '../lib/prompt'
 import { rich } from '../lib/text'
@@ -256,18 +257,21 @@ function Speaking({ lesson }: { lesson: Lesson }) {
         <ol>
           <li>Apasă „Copiază scenariul”.</li>
           <li>
-            Deschide <strong>aplicația Claude pe telefon</strong> (sau claude.ai), pornește o conversație nouă și lipește textul.
+            Deschide <strong>aplicația Claude pe telefon</strong> (sau claude.ai), intră în proiectul <strong>Deutsch – Vorbire</strong>,
+            pornește o conversație nouă <strong>în proiect</strong> și lipește textul.
           </li>
           <li>
             Pe telefon, apasă butonul de <strong>mod vocal</strong> și vorbește. Pe calculator poți scrie sau dicta.
           </li>
+          <li>Claude îți arată la început comenzile (vezi mai jos). La final, spune „<em>stop</em>” ca să primești analiza.</li>
           <li>
-            Dacă nu înțelegi, spune „<em>Wie bitte?</em>” sau „<em>?</em>”. La final, spune „<em>stop</em>” ca să primești analiza
-            greșelilor.
+            Copiază analiza de la final și lipește-o mai jos, la „După conversație”: greșelile și expresiile noi intră în
+            repetiția zilnică.
           </li>
           <li>Ideal: fă scenariul de 2 ori. A doua oară încearcă să nu mai ceri ajutor.</li>
         </ol>
       </div>
+      <Commands />
       <div className="row">
         <button
           onClick={async () => {
@@ -287,6 +291,98 @@ function Speaking({ lesson }: { lesson: Lesson }) {
         </button>
       </div>
       {show && <pre className="prompt">{prompt}</pre>}
+      <ImportAnalysis lessonId={lesson.id} />
+    </div>
+  )
+}
+
+/** Comenzile din conversație (aceleași ca în claude-project/instructiuni.md). */
+const COMMANDS: [string, string][] = [
+  ['ajutor  (sau ?)', 'îți explică în română ce a spus + 2 variante de răspuns'],
+  ['mai rar', 'repetă mai simplu și mai scurt'],
+  ['cum se spune …?', 'îți dă expresia germană, apoi revine în rol'],
+  ['traducere', 'traduce în română ultima lui replică'],
+  ['stop', 'iese din rol și îți dă analiza greșelilor'],
+]
+
+function Commands() {
+  return (
+    <div className="card">
+      <strong>Comenzi în conversație</strong> <span className="muted small">(le poți spune și în română)</span>
+      <ul className="small">
+        {COMMANDS.map(([c, d]) => (
+          <li key={c}>
+            <strong>{c}</strong>: {d}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function ImportAnalysis({ lessonId }: { lessonId: string }) {
+  const [text, setText] = useState('')
+  const [items, setItems] = useState<CustomItem[] | null>(null)
+  const [added, setAdded] = useState<number | null>(null)
+  return (
+    <div className="card">
+      <h3>După conversație</h3>
+      <p className="small muted">
+        Lipește aici analiza de la final (sau toată conversația). Greșelile devin fișe „română → germană”, iar expresiile noi
+        intră în ambele direcții.
+      </p>
+      <textarea
+        rows={6}
+        style={{ width: '100%' }}
+        value={text}
+        placeholder="1. ❌ „…“ → ✅ „…“ (= …): …"
+        onChange={(e) => {
+          setText(e.target.value)
+          setItems(null)
+          setAdded(null)
+        }}
+      />
+      <div className="row">
+        <button disabled={!text.trim()} onClick={() => setItems(parseAnalysis(text))}>
+          Verifică
+        </button>
+        {items && items.length > 0 && (
+          <button
+            onClick={() => {
+              setAdded(addCustom(items, lessonId))
+              setItems(null)
+              setText('')
+            }}
+          >
+            ➕ Adaugă {items.length} în repetiție
+          </button>
+        )}
+      </div>
+      {items && items.length === 0 && (
+        <p className="small">N-am găsit greșeli sau expresii în formatul analizei (❌ … → ✅ … sau „…“ = …).</p>
+      )}
+      {items && items.length > 0 && (
+        <ul className="small">
+          {items.map((i, k) => (
+            <li key={k}>
+              {i.kind === 'fix' ? (
+                <>
+                  ❌ {i.wrong} → ✅ <strong>{i.de}</strong> {i.ro && <span className="muted">({i.ro})</span>}
+                </>
+              ) : (
+                <>
+                  💬 <strong>{i.de}</strong> = {i.ro}
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+      {added !== null && (
+        <p className="small">
+          ✓ {added === 0 ? 'Toate erau deja în repetiție.' : `Am adăugat ${added} în repetiție.`} <a href="#/review">Mergi la repetiție →</a>
+        </p>
+      )}
     </div>
   )
 }

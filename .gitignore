@@ -4,3 +4,6 @@ dist/
 *.aiff
 .playwright-mcp/
 *.tsbuildinfo
+
+# date personale pentru proiectul Claude (repo-ul e public)
+claude-project/despre-mine.md

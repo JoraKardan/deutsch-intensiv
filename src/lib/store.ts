@@ -2,6 +2,7 @@ import { useSyncExternalStore } from 'react'
 import type { Lesson } from './types'
 import { newCard, rate, type StoredCard } from './srs'
 import type { Grade } from 'ts-fsrs'
+import type { CustomItem } from './analysis'
 
 const KEY = 'deutsch-intensiv-v1'
 
@@ -23,6 +24,16 @@ export interface Progress {
   lessons: Record<string, LessonProgress>
   cards: Record<string, StoredCard>
   days: Record<string, DayLog>
+  /** Fișe din conversațiile cu Claude (greșeli + expresii noi); cardurile lor au lessonId = MINE. */
+  custom?: Record<string, CustomCard>
+}
+
+export const MINE = 'mine'
+
+export interface CustomCard extends CustomItem {
+  id: string
+  from: string // lecția la care s-a făcut conversația
+  added: string
 }
 
 export function todayKey(d = new Date()): string {
@@ -120,6 +131,29 @@ export function completeLesson(lesson: Lesson) {
     const d = day(p)
     if (!d.lessons.includes(lesson.id)) d.lessons.push(lesson.id)
   })
+}
+
+/** Adaugă în repetiție greșelile și expresiile din analiza unei conversații. Întoarce câte sunt noi. */
+export function addCustom(items: CustomItem[], from: string): number {
+  let added = 0
+  update((p) => {
+    const custom = (p.custom ??= {})
+    const existing = new Set(Object.values(custom).map((c) => `${c.kind}:${c.de.toLowerCase()}`))
+    let n = Object.keys(custom).length
+    for (const it of items) {
+      if (existing.has(`${it.kind}:${it.de.toLowerCase()}`)) continue
+      const id = `c${++n}`
+      custom[id] = { ...it, id, from, added: new Date().toISOString() }
+      // greșeala: doar română → germană (produci varianta corectă); expresia: ambele direcții
+      const dirs = it.kind === 'fix' ? (['ro-de'] as const) : (['de-ro', 'ro-de'] as const)
+      for (const dir of dirs) {
+        const c = newCard(MINE, id, dir)
+        p.cards[c.id] = c
+      }
+      added++
+    }
+  })
+  return added
 }
 
 export function reviewCard(id: string, grade: Grade) {
