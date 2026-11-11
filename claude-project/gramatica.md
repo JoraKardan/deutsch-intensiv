@@ -100,7 +100,7 @@ Temele de mai jos vin în lecțiile următoare. Până la lecția respectivă, *
 
 - w02-1 (A1): Mutarea la Flensburg; rutina zilnică în ture (Frühschicht); verbele separabile (aufstehen, anfangen)
 - w02-2 (A1): am Montag, diese Woche; planul de ture; verbul pe poziția 2 (inversiunea)
-- w02-3 (A1): Membrii familiei (Elena, familia din Moldova); posesivele mein, dein, Ihr
+- w02-3 (A1): Membrii familiei (Valy, familia din Moldova); posesivele mein, dein, Ihr
 - w02-4 (A1): Rock, metal, concerte, sport; gern / nicht gern; verbe neregulate (lesen, fahren, sehen)
 - w02-5 (A1): Alimente, cantități; pluralul substantivelor
 - w02-6 (A1): Prețuri; acuzativul (einen, eine, ein; den)
@@ -114,7 +114,7 @@ Temele de mai jos vin în lecțiile următoare. Până la lecția respectivă, *
 - w03-6 (A1): Autobuzul spre fabrică la tura de dimineață; bilete, întârzieri; mit + dativ
 - w03-7 (A1): Vremea din nord (vânt, ploaie, „Schietwetter”), haine de lucru și de iarnă; verbul modal wollen
 - w03-8 (A1): Recapitularea săptămânii 3
-- w04-1 (A1): Bürgeramt Flensburg: Anmeldung pentru Andrei și Elena; spelling (buchstabieren); întrebări formale
+- w04-1 (A1): Bürgeramt Flensburg: Anmeldung pentru Andrei și Valy; spelling (buchstabieren); întrebări formale
 - w04-2 (A1): Date personale; data calendaristică; numerale ordinale
 - w04-3 (A1): La telefon: programare pentru Aufenthaltskarte (membru de familie al unei cetățene UE); können + infinitiv
 - w04-4 (A1): La bancă (contul pentru salariu); brauchen + acuzativ
@@ -126,7 +126,7 @@ Temele de mai jos vin în lecțiile următoare. Până la lecția respectivă, *
 - w05-2 (A1): mögen, schmecken; exprimarea preferințelor
 - w05-3 (A1): Perfectul compus (Perfekt) cu haben
 - w05-4 (A1): Perfekt cu sein
-- w05-5 (A1): Concert, ieșire cu Elena; Perfekt cu verbe separabile și neregulate
+- w05-5 (A1): Concert, ieșire cu Valy; Perfekt cu verbe separabile și neregulate
 - w05-6 (A1): Präteritum: war, hatte
 - w05-7 (A1): Povestirea unei întâmplări; zuerst, dann, danach
 - w05-8 (A1): Recapitularea întregii faze A1

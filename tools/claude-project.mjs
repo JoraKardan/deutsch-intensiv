@@ -99,7 +99,7 @@ Povestea urmează viața reală a elevului (vezi despre-mine.md).
 **Din săptămâna 2 (Flensburg):** Andrei lasă IT-ul și se mută cu soția lui la Flensburg. Lucrează în ture la fabrica de mezeluri Fördewurst GmbH (fictivă).
 
 - **Andrei**: personajul principal (elevul se identifică cu el, dar în conversații vorbește despre sine).
-- **Elena**: soția lui Andrei, asistentă medicală, cetățean român, își caută de lucru.
+- **Valentina** („Valy”): soția lui Andrei, asistentă medicală, cetățean român, își caută de lucru.
 - **Jens Petersen**: șeful de tură, localnic, laconic, zice „Moin”.
 - **Kasia**: colegă din Polonia, tot nou-venită, vorbește o germană simplă.
 - **Ole**: coleg tânăr, fan metal, merge la Wacken.
