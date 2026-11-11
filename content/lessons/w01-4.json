@@ -15,10 +15,10 @@
   "intro": "Cafeneaua e locul perfect pentru primele conversații reale: situația e mereu aceeași, iar frazele se repetă. În plus, în germană fiecare substantiv are un **gen** (masculin, feminin sau neutru), iar genul se vede din articol. Azi înveți de ce să înveți **mereu substantivele împreună cu articolul**.",
   "dialog": {
     "title": "Kaffeepause",
-    "situation": "După muncă, Andrei și Lena intră într-o cafenea. Îi servește o ospătăriță.",
+    "situation": "După muncă, Radu și Lena intră într-o cafenea. Îi servește o ospătăriță.",
     "speakers": {
       "K": { "name": "Ospătărița", "voice": "Anna (Premium)" },
-      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
       "L": { "name": "Lena", "voice": "Petra (Premium)" }
     },
     "lines": [

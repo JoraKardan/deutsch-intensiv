@@ -12,7 +12,7 @@
     "să alegi între „du” (tu) și „Sie” (dumneavoastră)",
     "să pronunți sunetele specifice germanei: ä, ö, ü, ei, eu, ch, sch, z"
   ],
-  "intro": "Bine ai venit la prima lecție! Pe tot parcursul cursului îl vei urmări pe **Andrei**, care s-a mutat din Moldova în Germania, la Köln, și începe un job nou. Azi e prima lui zi la birou. Începem cu pronunția, pentru că germana se citește aproape mereu exact cum se scrie. Odată ce știi regulile, poți citi orice cuvânt.",
+  "intro": "Bine ai venit la prima lecție! Pe tot parcursul cursului îl vei urmări pe **Radu**, care s-a mutat din Moldova în Germania, la Köln, și începe un job nou. Azi e prima lui zi la birou. Începem cu pronunția, pentru că germana se citește aproape mereu exact cum se scrie. Odată ce știi regulile, poți citi orice cuvânt.",
   "pronunciation": {
     "title": "Sunetele de bază",
     "intro": "Vestea bună: majoritatea literelor se citesc ca în română. Mai jos sunt cele care diferă. Ascultă fiecare cuvânt, repetă-l de 3 ori cu voce tare și exagerează puțin la început.",
@@ -39,23 +39,23 @@
   },
   "dialog": {
     "title": "Der erste Tag",
-    "situation": "Prima zi a lui Andrei la noua firmă din Köln. La recepție îl întâmpină o colegă, Lena Schmidt.",
+    "situation": "Prima zi a lui Radu la noua firmă din Köln. La recepție îl întâmpină o colegă, Lena Schmidt.",
     "speakers": {
-      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
       "L": { "name": "Lena", "voice": "Petra (Premium)" }
     },
     "lines": [
       { "id": "d1", "speaker": "L", "de": "Guten Morgen!", "ro": "Bună dimineața!" },
-      { "id": "d2", "speaker": "A", "de": "Guten Morgen! Ich bin Andrei Popescu.", "ro": "Bună dimineața! Sunt Andrei Popescu." },
+      { "id": "d2", "speaker": "A", "de": "Guten Morgen! Ich bin Radu Popescu.", "ro": "Bună dimineața! Sunt Radu Popescu." },
       { "id": "d3", "speaker": "L", "de": "Ah, Herr Popescu! Herzlich willkommen! Ich heiße Lena Schmidt.", "ro": "A, domnul Popescu! Bun venit! Mă numesc Lena Schmidt." },
       { "id": "d4", "speaker": "A", "de": "Freut mich, Frau Schmidt.", "ro": "Încântat, doamnă Schmidt." },
       { "id": "d5", "speaker": "L", "de": "Freut mich auch. Wie geht es Ihnen?", "ro": "Încântată și eu. Ce mai faceți?" },
       { "id": "d6", "speaker": "A", "de": "Danke, gut. Und Ihnen?", "ro": "Mulțumesc, bine. Și dumneavoastră?" },
       { "id": "d7", "speaker": "L", "de": "Auch gut, danke. Hier sagen alle „du“. Ich bin Lena.", "ro": "Tot bine, mulțumesc. Aici toată lumea își spune „tu”. Eu sunt Lena." },
-      { "id": "d8", "speaker": "A", "de": "Okay, gern! Ich bin Andrei.", "ro": "Bine, cu plăcere! Eu sunt Andrei." },
+      { "id": "d8", "speaker": "A", "de": "Okay, gern! Ich bin Radu.", "ro": "Bine, cu plăcere! Eu sunt Radu." },
       { "id": "d9", "speaker": "L", "de": "Wie bitte? Wie heißt du?", "ro": "Poftim? Cum te numești?" },
-      { "id": "d10", "speaker": "A", "de": "Andrei. A – N – D – R – E – I.", "ro": "Andrei. A – N – D – R – E – I." },
-      { "id": "d11", "speaker": "L", "de": "Ah, Andrei. Schön! Bis später, Andrei!", "ro": "A, Andrei. Frumos! Pe mai târziu, Andrei!" },
+      { "id": "d10", "speaker": "A", "de": "Radu. R – A – D – U.", "ro": "Radu. R – A – D – U." },
+      { "id": "d11", "speaker": "L", "de": "Ah, Radu. Schön! Bis später, Radu!", "ro": "A, Radu. Frumos! Pe mai târziu, Radu!" },
       { "id": "d12", "speaker": "A", "de": "Bis später! Tschüss!", "ro": "Pe mai târziu! Pa!" }
     ]
   },
@@ -64,8 +64,8 @@
     { "id": "p2", "de": "Guten Tag!", "ro": "Bună ziua!" },
     { "id": "p3", "de": "Guten Abend!", "ro": "Bună seara!" },
     { "id": "p4", "de": "Hallo!", "ro": "Salut! / Bună!", "note": "Foarte folosit, chiar și cu necunoscuți." },
-    { "id": "p5", "de": "Ich heiße Andrei.", "ro": "Mă numesc Andrei." },
-    { "id": "p6", "de": "Ich bin Andrei.", "ro": "Sunt Andrei." },
+    { "id": "p5", "de": "Ich heiße Radu.", "ro": "Mă numesc Radu." },
+    { "id": "p6", "de": "Ich bin Radu.", "ro": "Sunt Radu." },
     { "id": "p7", "de": "Wie heißen Sie?", "ro": "Cum vă numiți?", "note": "Formal (Sie)." },
     { "id": "p8", "de": "Wie heißt du?", "ro": "Cum te numești?", "note": "Informal (du)." },
     { "id": "p9", "de": "Freut mich.", "ro": "Încântat(ă). / Îmi pare bine." },
@@ -97,21 +97,21 @@
       }
     ],
     "examples": [
-      { "de": "Ich **bin** Andrei.", "ro": "Sunt Andrei." },
+      { "de": "Ich **bin** Radu.", "ro": "Sunt Radu." },
       { "de": "Ich **heiße** Lena Schmidt.", "ro": "Mă numesc Lena Schmidt." },
       { "de": "Wie **heißen** Sie?", "ro": "Cum vă numiți?" },
       { "de": "Wer **bist** du?", "ro": "Cine ești?" },
       { "de": "**Sind** Sie Frau Schmidt?", "ro": "Sunteți doamna Schmidt?" },
       { "de": "Du **bist** Lena, oder?", "ro": "Tu ești Lena, nu?" }
     ],
-    "tip": "**Herr** = domnul, **Frau** = doamna. Se folosesc cu **numele de familie**: Herr Popescu, Frau Schmidt. Niciodată „Herr Andrei”!"
+    "tip": "**Herr** = domnul, **Frau** = doamna. Se folosesc cu **numele de familie**: Herr Popescu, Frau Schmidt. Niciodată „Herr Radu”!"
   },
   "exercises": [
-    { "type": "mcq", "id": "e1", "question": "Ce îl întreabă Lena pe Andrei?", "audio": "d5", "options": ["Cum vă numiți?", "Ce mai faceți?", "De unde sunteți?"], "answer": 1 },
-    { "type": "mcq", "id": "e2", "question": "Ce îi propune Lena lui Andrei?", "audio": "d7", "options": ["Să-și spună „tu”", "Să bea o cafea", "Să vină mai târziu"], "answer": 0 },
+    { "type": "mcq", "id": "e1", "question": "Ce îl întreabă Lena pe Radu?", "audio": "d5", "options": ["Cum vă numiți?", "Ce mai faceți?", "De unde sunteți?"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Ce îi propune Lena lui Radu?", "audio": "d7", "options": ["Să-și spună „tu”", "Să bea o cafea", "Să vină mai târziu"], "answer": 0 },
     { "type": "mcq", "id": "e3", "question": "Cu cine folosești „Sie”?", "options": ["Cu un prieten", "Cu un funcționar de la primărie", "Cu un copil"], "answer": 1, "explain": "Sie = formal: necunoscuți, autorități, clienți. Cu prietenii și copiii folosești du." },
     { "type": "mcq", "id": "e4", "question": "Pleci de la birou și îți iei rămas-bun de la șeful cu care vorbești cu „Sie”. Ce spui?", "options": ["Tschüss!", "Auf Wiedersehen!", "Hallo!"], "answer": 1, "explain": "Auf Wiedersehen e formal. Tschüss e informal (deși mulți nemți îl folosesc oricum)." },
-    { "type": "gap", "id": "e5", "text": "Ich ___ Andrei.", "answers": [["bin", "heiße"]], "ro": "Sunt / Mă numesc Andrei." },
+    { "type": "gap", "id": "e5", "text": "Ich ___ Radu.", "answers": [["bin", "heiße"]], "ro": "Sunt / Mă numesc Radu." },
     { "type": "gap", "id": "e6", "text": "Wie ___ du?", "answers": [["heißt"]], "ro": "Cum te numești?", "hint": "heißen, la persoana du" },
     { "type": "gap", "id": "e7", "text": "Wer ___ Sie?", "answers": [["sind"]], "ro": "Cine sunteți?" },
     { "type": "gap", "id": "e8", "text": "Du ___ Lena, oder?", "answers": [["bist"]], "ro": "Tu ești Lena, nu?" },

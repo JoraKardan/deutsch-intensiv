@@ -34,9 +34,9 @@
   },
   "dialog": {
     "title": "Mittagspause",
-    "situation": "E dimineață la birou. Andrei o întreabă pe Lena cum arată o zi obișnuită de lucru.",
+    "situation": "E dimineață la birou. Radu o întreabă pe Lena cum arată o zi obișnuită de lucru.",
     "speakers": {
-      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
       "L": { "name": "Lena", "voice": "Petra (Premium)" }
     },
     "lines": [

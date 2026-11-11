@@ -11,8 +11,8 @@ Expresii:
 - Guten Tag! = Bună ziua!
 - Guten Abend! = Bună seara!
 - Hallo! = Salut! / Bună!
-- Ich heiße Andrei. = Mă numesc Andrei.
-- Ich bin Andrei. = Sunt Andrei.
+- Ich heiße Radu. = Mă numesc Radu.
+- Ich bin Radu. = Sunt Radu.
 - Wie heißen Sie? = Cum vă numiți?
 - Wie heißt du? = Cum te numești?
 - Freut mich. = Încântat(ă). / Îmi pare bine.
@@ -24,7 +24,7 @@ Expresii:
 - Tschüss! = Pa!
 - Auf Wiedersehen! = La revedere!
 
-Cuvinte noi: Guten, Morgen, Ich, bin, Andrei, Popescu, Ah, Herr, Herzlich, willkommen, heiße, Lena, Schmidt, Freut, mich, Frau, auch, Wie, geht, es, Ihnen, Danke, gut, Und, Hier, sagen, alle, du, Okay, gern, bitte, heißt, Schön, Bis, später, Tschüss, Tag, Abend, Hallo, heißen, Sie, geht's, dir, Auf, Wiedersehen, Wer, bist, Sind, oder, Käse, Deutsch, Schule, acht, Wasser, Vater, Zeit, Sonne, Stadt, Straße, Lehrer, ja, Uhr
+Cuvinte noi: Guten, Morgen, Ich, bin, Radu, Popescu, Ah, Herr, Herzlich, willkommen, heiße, Lena, Schmidt, Freut, mich, Frau, auch, Wie, geht, es, Ihnen, Danke, gut, Und, Hier, sagen, alle, du, Okay, gern, bitte, heißt, Schön, Bis, später, Tschüss, Tag, Abend, Hallo, heißen, Sie, geht's, dir, Auf, Wiedersehen, Wer, bist, Sind, oder, Käse, Deutsch, Schule, acht, Wasser, Vater, Zeit, Sonne, Stadt, Straße, Lehrer, ja, Uhr
 
 Scenariu de vorbire: E prima ta zi la o firmă nouă în Germania. În bucătăria biroului vine spre tine un coleg pe care nu-l cunoști.
 

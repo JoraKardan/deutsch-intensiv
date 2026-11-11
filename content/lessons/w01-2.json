@@ -15,15 +15,15 @@
   "intro": "Când ești nou într-o țară, prima întrebare pe care o auzi e aproape mereu **„Woher kommst du?”** (De unde ești?). Azi înveți să răspunzi și să continui conversația. Tot azi afli și cum funcționează verbele la prezent. E o regulă simplă care se aplică la sute de verbe.",
   "dialog": {
     "title": "In der Kaffeeküche",
-    "situation": "Pauză de cafea în bucătăria biroului. Lena i-l prezintă lui Andrei pe Tom, un coleg din echipă.",
+    "situation": "Pauză de cafea în bucătăria biroului. Lena i-l prezintă lui Radu pe Tom, un coleg din echipă.",
     "speakers": {
-      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
       "L": { "name": "Lena", "voice": "Petra (Premium)" },
       "T": { "name": "Tom", "voice": "Reed (German (Germany))" }
     },
     "lines": [
-      { "id": "d1", "speaker": "L", "de": "Andrei, das ist Tom. Tom, das ist Andrei. Er ist neu im Team.", "ro": "Andrei, el e Tom. Tom, el e Andrei. E nou în echipă." },
-      { "id": "d2", "speaker": "T", "de": "Hallo Andrei! Woher kommst du?", "ro": "Salut, Andrei! De unde ești?" },
+      { "id": "d1", "speaker": "L", "de": "Radu, das ist Tom. Tom, das ist Radu. Er ist neu im Team.", "ro": "Radu, el e Tom. Tom, el e Radu. E nou în echipă." },
+      { "id": "d2", "speaker": "T", "de": "Hallo Radu! Woher kommst du?", "ro": "Salut, Radu! De unde ești?" },
       { "id": "d3", "speaker": "A", "de": "Hallo! Ich komme aus Moldau.", "ro": "Salut! Sunt din Moldova." },
       { "id": "d4", "speaker": "T", "de": "Aus Moldau? Interessant! Sprichst du Rumänisch?", "ro": "Din Moldova? Interesant! Vorbești română?" },
       { "id": "d5", "speaker": "A", "de": "Ja, Rumänisch und Russisch. Und ein bisschen Englisch.", "ro": "Da, română și rusă. Și puțin engleză." },
@@ -32,7 +32,7 @@
       { "id": "d8", "speaker": "L", "de": "Nein, ich komme aus Österreich, aus Wien.", "ro": "Nu, eu sunt din Austria, din Viena." },
       { "id": "d9", "speaker": "A", "de": "Und wo wohnst du?", "ro": "Și unde locuiești?" },
       { "id": "d10", "speaker": "L", "de": "Ich wohne in Bonn. Das ist nicht weit.", "ro": "Locuiesc în Bonn. Nu e departe." },
-      { "id": "d11", "speaker": "T", "de": "Du sprichst schon gut Deutsch, Andrei!", "ro": "Vorbești deja bine germana, Andrei!" },
+      { "id": "d11", "speaker": "T", "de": "Du sprichst schon gut Deutsch, Radu!", "ro": "Vorbești deja bine germana, Radu!" },
       { "id": "d12", "speaker": "A", "de": "Danke! Ich lerne Deutsch. Aber noch nicht so gut.", "ro": "Mulțumesc! Învăț germana. Dar încă nu prea bine." }
     ]
   },
@@ -88,7 +88,7 @@
     "tip": "„Ich komme **aus** …” = sunt din … (țară sau oraș). „Ich wohne **in** …” = locuiesc în …. Limbile se scriu cu literă mare și se termină de obicei în **-isch**: Rumänisch, Russisch, Englisch. Excepție: **Deutsch**."
   },
   "exercises": [
-    { "type": "mcq", "id": "e1", "question": "Ce limbi vorbește Andrei?", "audio": "d5", "options": ["Română și germană", "Română, rusă și puțin engleză", "Doar română"], "answer": 1 },
+    { "type": "mcq", "id": "e1", "question": "Ce limbi vorbește Radu?", "audio": "d5", "options": ["Română și germană", "Română, rusă și puțin engleză", "Doar română"], "answer": 1 },
     { "type": "mcq", "id": "e2", "question": "De unde este Lena?", "audio": "d8", "options": ["Din Germania", "Din Elveția", "Din Austria"], "answer": 2 },
     { "type": "mcq", "id": "e3", "question": "Unde locuiește Tom acum?", "audio": "d6", "options": ["În Hamburg", "În Köln", "În Bonn"], "answer": 1 },
     { "type": "gap", "id": "e4", "text": "Woher ___ du?", "answers": [["kommst"]], "ro": "De unde ești?" },

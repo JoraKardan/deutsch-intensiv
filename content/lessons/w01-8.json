@@ -15,17 +15,17 @@
   "intro": "Felicitări, ai terminat prima săptămână! 🎉 Azi nu e mult material nou. Ascultă un dialog mai lung, în care apar aproape toate expresiile săptămânii, și verifică ce a rămas. **Încearcă să înțelegi dialogul de la prima ascultare, fără text.** Dacă înțelegi peste 60%, e un rezultat excelent pentru prima săptămână.",
   "dialog": {
     "title": "In der Kantine",
-    "situation": "Prânz la cantină. Andrei se așază la masă lângă Sophie, o colegă nouă din alt departament. Mai târziu vine și Tom.",
+    "situation": "Prânz la cantină. Radu se așază la masă lângă Sophie, o colegă nouă din alt departament. Mai târziu vine și Tom.",
     "speakers": {
       "S": { "name": "Sophie", "voice": "Anna (Premium)" },
-      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
       "T": { "name": "Tom", "voice": "Reed (German (Germany))" }
     },
     "lines": [
       { "id": "d1", "speaker": "A", "de": "Entschuldigung, ist hier noch frei?", "ro": "Scuzați, mai e liber aici?" },
       { "id": "d2", "speaker": "S", "de": "Ja, klar! Setz dich. Ich bin Sophie.", "ro": "Da, sigur! Ia loc. Eu sunt Sophie." },
-      { "id": "d3", "speaker": "A", "de": "Danke! Ich heiße Andrei. Ich bin neu im IT-Team.", "ro": "Mulțumesc! Mă numesc Andrei. Sunt nou în echipa de IT." },
-      { "id": "d4", "speaker": "S", "de": "Ah, schön! Ich arbeite im Marketing. Woher kommst du, Andrei?", "ro": "A, frumos! Eu lucrez la marketing. De unde ești, Andrei?" },
+      { "id": "d3", "speaker": "A", "de": "Danke! Ich heiße Radu. Ich bin neu im IT-Team.", "ro": "Mulțumesc! Mă numesc Radu. Sunt nou în echipa de IT." },
+      { "id": "d4", "speaker": "S", "de": "Ah, schön! Ich arbeite im Marketing. Woher kommst du, Radu?", "ro": "A, frumos! Eu lucrez la marketing. De unde ești, Radu?" },
       { "id": "d5", "speaker": "A", "de": "Aus Moldau. Und du? Bist du aus Köln?", "ro": "Din Moldova. Și tu? Ești din Köln?" },
       { "id": "d6", "speaker": "S", "de": "Nein, ich komme aus Leipzig. Aber ich wohne schon fünf Jahre hier.", "ro": "Nu, eu sunt din Leipzig. Dar locuiesc aici deja de cinci ani." },
       { "id": "d7", "speaker": "A", "de": "Wie bitte? Fünf oder fünfzehn?", "ro": "Poftim? Cinci sau cincisprezece?" },
@@ -34,7 +34,7 @@
       { "id": "d10", "speaker": "S", "de": "Kein Problem! Du sprichst schon gut Deutsch.", "ro": "Nicio problemă! Vorbești deja bine germana." },
       { "id": "d11", "speaker": "A", "de": "Danke, aber ich lerne erst eine Woche. Ich spreche Rumänisch, Russisch und Englisch.", "ro": "Mulțumesc, dar învăț abia de o săptămână. Vorbesc română, rusă și engleză." },
       { "id": "d12", "speaker": "S", "de": "Wow, drei Sprachen! Ich kann nur Englisch und ein bisschen Französisch.", "ro": "Uau, trei limbi! Eu știu doar engleză și puțin franceză." },
-      { "id": "d13", "speaker": "T", "de": "Hallo zusammen! Andrei, hast du Zeit? Das Meeting ist heute um halb zwei.", "ro": "Salutare tuturor! Andrei, ai timp? Ședința e azi la unu și jumătate." },
+      { "id": "d13", "speaker": "T", "de": "Hallo zusammen! Radu, hast du Zeit? Das Meeting ist heute um halb zwei.", "ro": "Salutare tuturor! Radu, ai timp? Ședința e azi la unu și jumătate." },
       { "id": "d14", "speaker": "A", "de": "Um halb zwei? Also um dreizehn Uhr dreißig?", "ro": "La unu și jumătate? Adică la 13:30?" },
       { "id": "d15", "speaker": "T", "de": "Genau. Im Raum zwölf.", "ro": "Exact. În sala doisprezece." },
       { "id": "d16", "speaker": "A", "de": "Alles klar. Sophie, möchtest du nach dem Essen einen Kaffee?", "ro": "Clar. Sophie, vrei o cafea după masă?" },

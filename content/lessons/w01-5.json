@@ -15,14 +15,14 @@
   "intro": "Imediat după „De unde ești?”, nemții te întreabă **„Was machst du beruflich?”**, adică cu ce te ocupi. Azi înveți să vorbești despre munca ta. Încă un lucru important: în germană profesia se spune **fără articol**. Nu „Ich bin ein Lehrer”, ci **„Ich bin Lehrer”**.",
   "dialog": {
     "title": "Beim Firmenfest",
-    "situation": "Petrecerea de vineri seara a firmei. Andrei vorbește cu un coleg dintr-un alt departament, domnul Krause.",
+    "situation": "Petrecerea de vineri seara a firmei. Radu vorbește cu un coleg dintr-un alt departament, domnul Krause.",
     "speakers": {
       "K": { "name": "Herr Krause", "voice": "Reed (German (Germany))" },
-      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" }
+      "A": { "name": "Radu", "voice": "Markus (Enhanced)" }
     },
     "lines": [
       { "id": "d1", "speaker": "K", "de": "Guten Abend! Sind Sie auch neu hier?", "ro": "Bună seara! Sunteți și dumneavoastră nou aici?" },
-      { "id": "d2", "speaker": "A", "de": "Ja, ich arbeite seit Montag hier. Mein Name ist Andrei Popescu.", "ro": "Da, lucrez aici de luni. Numele meu e Andrei Popescu." },
+      { "id": "d2", "speaker": "A", "de": "Ja, ich arbeite seit Montag hier. Mein Name ist Radu Popescu.", "ro": "Da, lucrez aici de luni. Numele meu e Radu Popescu." },
       { "id": "d3", "speaker": "K", "de": "Krause, freut mich. Was machen Sie beruflich?", "ro": "Krause, încântat. Cu ce vă ocupați?" },
       { "id": "d4", "speaker": "A", "de": "Ich bin Softwareentwickler. Ich arbeite im IT-Team.", "ro": "Sunt programator. Lucrez în echipa de IT." },
       { "id": "d5", "speaker": "K", "de": "Ah, interessant! Ich arbeite nicht in der IT. Ich bin Buchhalter.", "ro": "A, interesant! Eu nu lucrez la IT. Sunt contabil." },
@@ -105,7 +105,7 @@
   "exercises": [
     { "type": "mcq", "id": "e1", "question": "Ce meserie are domnul Krause?", "audio": "d5", "options": ["Programator", "Contabil", "Asistent medical"], "answer": 1 },
     { "type": "mcq", "id": "e2", "question": "De cât timp lucrează domnul Krause la firmă?", "audio": "d7", "options": ["De 2 ani", "De 10 ani", "De luni"], "answer": 1 },
-    { "type": "mcq", "id": "e3", "question": "Ce face soția lui Andrei?", "audio": "d8", "options": ["Lucrează la aceeași firmă", "Își caută de lucru", "E profesoară"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Ce face soția lui Radu?", "audio": "d8", "options": ["Lucrează la aceeași firmă", "Își caută de lucru", "E profesoară"], "answer": 1 },
     { "type": "mcq", "id": "e4", "question": "Care propoziție e corectă?", "options": ["Ich bin ein Ingenieur.", "Ich bin Ingenieur.", "Ich habe Ingenieur."], "answer": 1, "explain": "Profesia după sein se spune fără articol." },
     { "type": "gap", "id": "e5", "text": "Wo ___ du?", "answers": [["arbeitest"]], "ro": "Unde lucrezi?", "hint": "arbeiten la du: atenție la -e-" },
     { "type": "gap", "id": "e6", "text": "Sie ist ___. (medic, feminin)", "answers": [["Ärztin", "Aerztin"]], "ro": "Ea e medic." },

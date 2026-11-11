@@ -4,7 +4,7 @@ import { flatLessons, lessons } from './content'
 import { audioUrl } from './audio'
 import type { Lesson } from './types'
 
-const AUDIO_CACHE = 'audio-v1' // același nume ca în public/sw.js
+const AUDIO_CACHE = 'audio-v2' // același nume ca în public/sw.js
 
 export function registerServiceWorker() {
   if (!import.meta.env.PROD || !('serviceWorker' in navigator)) return

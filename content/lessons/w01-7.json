@@ -15,10 +15,10 @@
   "intro": "Aceasta e poate **cea mai importantă lecție din săptămână**. Nemții vor vorbi repede, cu cuvinte pe care nu le știi, și e normal. Diferența dintre cineva care „se pierde” și cineva care se descurcă nu e vocabularul, ci **strategiile**: să ceri politicos o repetare, o explicație, o confirmare. Cu frazele de azi poți ține o conversație chiar și când înțelegi doar jumătate.",
   "dialog": {
     "title": "Der Bericht",
-    "situation": "Șeful lui Andrei, domnul Weber, vine la biroul lui și îi spune ceva, cam repede.",
+    "situation": "Șeful lui Radu, domnul Weber, vine la biroul lui și îi spune ceva, cam repede.",
     "speakers": {
       "W": { "name": "Herr Weber", "voice": "Reed (German (Germany))" },
-      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" }
+      "A": { "name": "Radu", "voice": "Markus (Enhanced)" }
     },
     "lines": [
       { "id": "d1", "speaker": "W", "de": "Herr Popescu, können Sie mir den Bericht bis heute Nachmittag um vier schicken?", "ro": "Domnule Popescu, îmi puteți trimite raportul până azi după-amiază la patru?" },
@@ -96,7 +96,7 @@
   },
   "exercises": [
     { "type": "mcq", "id": "e1", "question": "Ce vrea domnul Weber?", "audio": "d1", "options": ["O ședință la ora patru", "Raportul până la ora patru", "Să plece acasă la patru"], "answer": 1 },
-    { "type": "mcq", "id": "e2", "question": "Ce face Andrei la final, ca să fie sigur că a înțeles?", "audio": "d8", "options": ["Cere să i se scrie pe hârtie", "Repetă informația sub formă de întrebare", "Vorbește în engleză"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Ce face Radu la final, ca să fie sigur că a înțeles?", "audio": "d8", "options": ["Cere să i se scrie pe hârtie", "Repetă informația sub formă de întrebare", "Vorbește în engleză"], "answer": 1 },
     { "type": "mcq", "id": "e3", "question": "Cineva vorbește prea repede. Ce spui?", "options": ["Langsamer, bitte.", "Alles klar!", "Ach so!"], "answer": 0 },
     { "type": "mcq", "id": "e4", "question": "Nu știi un cuvânt. Ce întrebi?", "options": ["Wie schreibt man das?", "Was bedeutet das?", "Wie spät ist es?"], "answer": 1 },
     { "type": "gap", "id": "e5", "text": "___ Sie das bitte wiederholen?", "answers": [["Können"]], "ro": "Puteți repeta, vă rog?" },

@@ -45,9 +45,9 @@
   },
   "dialog": {
     "title": "Bei der Personalabteilung",
-    "situation": "Andrei e la departamentul de resurse umane (Personalabteilung). Doamna Becker îi completează datele pentru cardul de angajat.",
+    "situation": "Radu e la departamentul de resurse umane (Personalabteilung). Doamna Becker îi completează datele pentru cardul de angajat.",
     "speakers": {
-      "A": { "name": "Andrei", "voice": "Markus (Enhanced)" },
+      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
       "B": { "name": "Frau Becker", "voice": "Anna (Premium)" }
     },
     "lines": [
@@ -121,7 +121,7 @@
     { "type": "mcq", "id": "e3", "question": "Ce număr auzi?", "audio": "x45", "options": ["54", "45", "40"], "answer": 1 },
     { "type": "mcq", "id": "e4", "question": "Ce număr auzi?", "audio": "x17", "options": ["70", "17", "7"], "answer": 1 },
     { "type": "mcq", "id": "e5", "question": "Ce număr auzi?", "audio": "x99", "options": ["99", "19", "90"], "answer": 0 },
-    { "type": "mcq", "id": "e6", "question": "Câți ani are Andrei?", "audio": "d10", "options": ["23", "32", "22"], "answer": 1 },
+    { "type": "mcq", "id": "e6", "question": "Câți ani are Radu?", "audio": "d10", "options": ["23", "32", "22"], "answer": 1 },
     { "type": "mcq", "id": "e7", "question": "Cum spui corect „Am 25 de ani”?", "options": ["Ich habe fünfundzwanzig Jahre.", "Ich bin fünfundzwanzig.", "Ich bin zwanzigfünf."], "answer": 1, "explain": "Vârsta se spune cu sein: Ich bin 25 (Jahre alt)." },
     { "type": "gap", "id": "e8", "text": "___ du Zeit?", "answers": [["Hast"]], "ro": "Ai timp?" },
     { "type": "gap", "id": "e9", "text": "Er ___ eine Frage.", "answers": [["hat"]], "ro": "El are o întrebare." },

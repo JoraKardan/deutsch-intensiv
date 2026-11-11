@@ -114,7 +114,7 @@ Temele de mai jos vin în lecțiile următoare. Până la lecția respectivă, *
 - w03-6 (A1): Autobuzul spre fabrică la tura de dimineață; bilete, întârzieri; mit + dativ
 - w03-7 (A1): Vremea din nord (vânt, ploaie, „Schietwetter”), haine de lucru și de iarnă; verbul modal wollen
 - w03-8 (A1): Recapitularea săptămânii 3
-- w04-1 (A1): Bürgeramt Flensburg: Anmeldung pentru Andrei și Valy; spelling (buchstabieren); întrebări formale
+- w04-1 (A1): Bürgeramt Flensburg: Anmeldung pentru Radu și Valy; spelling (buchstabieren); întrebări formale
 - w04-2 (A1): Date personale; data calendaristică; numerale ordinale
 - w04-3 (A1): La telefon: programare pentru Aufenthaltskarte (membru de familie al unei cetățene UE); können + infinitiv
 - w04-4 (A1): La bancă (contul pentru salariu); brauchen + acuzativ
