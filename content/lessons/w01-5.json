@@ -17,8 +17,8 @@
     "title": "Beim Firmenfest",
     "situation": "Petrecerea de vineri seara a firmei. Radu vorbește cu un coleg dintr-un alt departament, domnul Krause.",
     "speakers": {
-      "K": { "name": "Herr Krause", "voice": "Reed (German (Germany))" },
-      "A": { "name": "Radu", "voice": "Markus (Enhanced)" }
+      "K": { "name": "Herr Krause", "voice": "de-DE-KillianNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
     },
     "lines": [
       { "id": "d1", "speaker": "K", "de": "Guten Abend! Sind Sie auch neu hier?", "ro": "Bună seara! Sunteți și dumneavoastră nou aici?" },

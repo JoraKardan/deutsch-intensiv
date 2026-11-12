@@ -10,7 +10,7 @@ npm run audio      # generează audio pentru lecțiile noi (sare peste ce exist�
 npm run dev        # pornește aplicația → http://localhost:5180
 ```
 
-Audio se generează cu vocile germane din macOS. Pentru calitate maximă, descarcă vocile *Premium/Enhanced* (Anna, Petra, Markus) din System Settings → Accessibility → Read & Speak → ⓘ lângă System voice.
+Audio se generează cu vocile neurale Azure Speech (planul gratuit F0). Cheia se pune în `.env` (exclus din git): `AZURE_SPEECH_KEY=…`, `AZURE_SPEECH_REGION=…`. Vocile macOS (`say`) rămân ca alternativă.
 
 ## Structura cursului
 
@@ -75,6 +75,6 @@ content/
 public/audio/            # audio generat cu npm run audio (inclus în git, pentru GitHub Pages)
 src/                     # aplicația (React + TypeScript + Vite)
 tools/
-  gen-audio.mjs          # generare audio cu `say` + `afconvert` (macOS)
+  gen-audio.mjs          # generare audio: Azure Speech sau `say` (macOS), apoi `afconvert`
   check-content.mjs      # validarea lecțiilor
 ```

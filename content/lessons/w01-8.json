@@ -17,9 +17,9 @@
     "title": "In der Kantine",
     "situation": "Prânz la cantină. Radu se așază la masă lângă Sophie, o colegă nouă din alt departament. Mai târziu vine și Tom.",
     "speakers": {
-      "S": { "name": "Sophie", "voice": "Anna (Premium)" },
-      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
-      "T": { "name": "Tom", "voice": "Reed (German (Germany))" }
+      "S": { "name": "Sophie", "voice": "de-DE-LouisaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "T": { "name": "Tom", "voice": "de-DE-FlorianMultilingualNeural" }
     },
     "lines": [
       { "id": "d1", "speaker": "A", "de": "Entschuldigung, ist hier noch frei?", "ro": "Scuzați, mai e liber aici?" },

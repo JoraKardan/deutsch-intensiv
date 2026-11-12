@@ -17,9 +17,9 @@
     "title": "Kaffeepause",
     "situation": "După muncă, Radu și Lena intră într-o cafenea. Îi servește o ospătăriță.",
     "speakers": {
-      "K": { "name": "Ospătărița", "voice": "Anna (Premium)" },
-      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
-      "L": { "name": "Lena", "voice": "Petra (Premium)" }
+      "K": { "name": "Ospătărița", "voice": "de-DE-AmalaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "L": { "name": "Lena", "voice": "de-DE-KatjaNeural" }
     },
     "lines": [
       { "id": "d1", "speaker": "K", "de": "Hallo! Was darf’s sein?", "ro": "Bună! Ce doriți?" },

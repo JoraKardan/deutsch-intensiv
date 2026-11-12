@@ -6,7 +6,7 @@
 //   (Safari le face pentru audio) primesc răspuns parțial 206 din copia salvată.
 
 const SHELL = 'shell-v1'
-const AUDIO = 'audio-v2'
+const AUDIO = 'audio-v3'
 const BASE = new URL('./', self.location).pathname // ex. /deutsch-intensiv/
 
 self.addEventListener('install', (event) => {

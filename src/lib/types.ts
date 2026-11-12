@@ -32,7 +32,7 @@ export interface Phrase {
 
 export interface Speaker {
   name: string
-  voice: string // vocea macOS, ex. "Anna (Premium)"
+  voice: string // vocea Azure (ex. "de-DE-KatjaNeural") sau macOS (ex. "Anna (Premium)")
 }
 
 export interface DialogLine {

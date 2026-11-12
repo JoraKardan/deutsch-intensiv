@@ -17,8 +17,8 @@
     "title": "Der Bericht",
     "situation": "Șeful lui Radu, domnul Weber, vine la biroul lui și îi spune ceva, cam repede.",
     "speakers": {
-      "W": { "name": "Herr Weber", "voice": "Reed (German (Germany))" },
-      "A": { "name": "Radu", "voice": "Markus (Enhanced)" }
+      "W": { "name": "Herr Weber", "voice": "de-DE-ChristophNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
     },
     "lines": [
       { "id": "d1", "speaker": "W", "de": "Herr Popescu, können Sie mir den Bericht bis heute Nachmittag um vier schicken?", "ro": "Domnule Popescu, îmi puteți trimite raportul până azi după-amiază la patru?" },

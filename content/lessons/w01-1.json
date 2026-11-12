@@ -41,8 +41,8 @@
     "title": "Der erste Tag",
     "situation": "Prima zi a lui Radu la noua firmă din Köln. La recepție îl întâmpină o colegă, Lena Schmidt.",
     "speakers": {
-      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
-      "L": { "name": "Lena", "voice": "Petra (Premium)" }
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "L": { "name": "Lena", "voice": "de-DE-KatjaNeural" }
     },
     "lines": [
       { "id": "d1", "speaker": "L", "de": "Guten Morgen!", "ro": "Bună dimineața!" },

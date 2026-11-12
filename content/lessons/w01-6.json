@@ -36,8 +36,8 @@
     "title": "Mittagspause",
     "situation": "E dimineață la birou. Radu o întreabă pe Lena cum arată o zi obișnuită de lucru.",
     "speakers": {
-      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
-      "L": { "name": "Lena", "voice": "Petra (Premium)" }
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "L": { "name": "Lena", "voice": "de-DE-KatjaNeural" }
     },
     "lines": [
       { "id": "d1", "speaker": "A", "de": "Lena, wann beginnt hier die Arbeit?", "ro": "Lena, când începe aici lucrul?" },

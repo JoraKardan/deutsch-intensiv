@@ -7,3 +7,6 @@ dist/
 
 # date personale pentru proiectul Claude (repo-ul e public)
 claude-project/despre-mine.md
+
+# chei API (Azure Speech)
+.env

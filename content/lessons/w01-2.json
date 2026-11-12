@@ -17,9 +17,9 @@
     "title": "In der Kaffeeküche",
     "situation": "Pauză de cafea în bucătăria biroului. Lena i-l prezintă lui Radu pe Tom, un coleg din echipă.",
     "speakers": {
-      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
-      "L": { "name": "Lena", "voice": "Petra (Premium)" },
-      "T": { "name": "Tom", "voice": "Reed (German (Germany))" }
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "L": { "name": "Lena", "voice": "de-DE-KatjaNeural" },
+      "T": { "name": "Tom", "voice": "de-DE-FlorianMultilingualNeural" }
     },
     "lines": [
       { "id": "d1", "speaker": "L", "de": "Radu, das ist Tom. Tom, das ist Radu. Er ist neu im Team.", "ro": "Radu, el e Tom. Tom, el e Radu. E nou în echipă." },

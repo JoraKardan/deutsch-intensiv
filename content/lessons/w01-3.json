@@ -47,8 +47,8 @@
     "title": "Bei der Personalabteilung",
     "situation": "Radu e la departamentul de resurse umane (Personalabteilung). Doamna Becker îi completează datele pentru cardul de angajat.",
     "speakers": {
-      "A": { "name": "Radu", "voice": "Markus (Enhanced)" },
-      "B": { "name": "Frau Becker", "voice": "Anna (Premium)" }
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "B": { "name": "Frau Becker", "voice": "de-DE-TanjaNeural" }
     },
     "lines": [
       { "id": "d1", "speaker": "B", "de": "So, Herr Popescu. Ich brauche noch Ihre Telefonnummer.", "ro": "Deci, domnule Popescu. Mai am nevoie de numărul dumneavoastră de telefon." },
