@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Lesson } from '../lib/types'
 import { play, stopAll } from '../lib/audio'
-import { matchWords, similarity } from '../lib/text'
+import { speechMatch, speechSimilarity } from '../lib/text'
 
 // Recunoașterea vocală a browserului (Chrome / Safari), fără tipuri oficiale în TS.
 type Recognition = {
@@ -95,7 +95,7 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
     r.start()
   }
 
-  const score = heard !== null ? Math.round(similarity(de, heard) * 100) : null
+  const score = heard !== null ? Math.round(speechSimilarity(de, heard) * 100) : null
 
   return (
     <div className="card shadow-line">
@@ -124,7 +124,7 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
             Am înțeles: „<em>{heard}</em>“ — <strong className={score! >= 80 ? 'good' : score! >= 50 ? 'warn' : 'bad'}>{score}%</strong>
           </div>
           <div className="diff">
-            {matchWords(de, heard).map((w, i) => (
+            {speechMatch(de, heard).map((w, i) => (
               <span key={i} className={w.ok ? 'ok' : 'miss'}>
                 {w.word}{' '}
               </span>
