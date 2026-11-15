@@ -13,7 +13,7 @@ export const ROUTINE = [
 export const RESOURCES = [
   {
     title: 'Nicos Weg (DW)',
-    url: 'https://learngerman.dw.com/de/nicos-weg/c-36519789',
+    url: 'https://learngerman.dw.com/de/nicos-weg/c-36519687',
     note: 'Curs video gratuit A1–B1, cu exerciții. Ideal ca „ascultare externă” în fazele A1 și A2.',
   },
   {
@@ -28,7 +28,7 @@ export const RESOURCES = [
   },
   {
     title: 'Langsam gesprochene Nachrichten (DW)',
-    url: 'https://www.dw.com/de/deutsch-lernen/nachrichten/s-8030',
+    url: 'https://learngerman.dw.com/de/langsam-gesprochene-nachrichten/s-60040332',
     note: 'Știri citite rar. De la A2 încolo.',
   },
   {

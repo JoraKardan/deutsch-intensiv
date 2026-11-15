@@ -119,7 +119,7 @@ function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, {
         <AudioButtons lessonId={lesson.id} id={ex.audio} text={ex.text} /> Ascultă (de câte ori ai nevoie) și scrie ce auzi.
       </p>
       <form
-        className="row"
+        className="row wrap dictation"
         onSubmit={(e) => {
           e.preventDefault()
           if (!checked) check()

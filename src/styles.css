@@ -286,6 +286,16 @@ input:focus {
 .umlaut-input input.wide {
   min-width: min(420px, 70vw);
 }
+/* Dictarea: câmpul ocupă rândul, iar „Verifică” trece dedesubt pe ecrane înguste. */
+form.dictation > .umlaut-input {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+form.dictation input.wide {
+  flex: 1 1 100%;
+  min-width: 0;
+  width: 100%;
+}
 .key {
   background: var(--surface-2);
   color: var(--text);
