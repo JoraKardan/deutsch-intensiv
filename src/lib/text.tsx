@@ -102,6 +102,19 @@ function speechTokens(w: string): string[] {
   return n === null ? [w] : String(n).split('')
 }
 
+/** Prețuri, ore, procente scrise cu cifre și simboluri → ordinea în care se rostesc în germană. */
+export function spokenForm(s: string): string {
+  return s
+    .replace(/(\d+)(?:,(\d{2}))?\s*(?:€|euro\b)/gi, (_, a, b) => ` ${a} Euro ${b && b !== '00' ? b : ''} `)
+    .replace(/€\s*(\d+)(?:,(\d{2}))?/g, (_, a, b) => ` ${a} Euro ${b && b !== '00' ? b : ''} `)
+    .replace(/(\d{1,2})[:.](\d{2})(?:\s*Uhr\b)?/gi, (_, h, m) => ` ${h} Uhr ${m !== '00' ? m : ''} `)
+    .replace(/(\d+)\s*%/g, ' $1 Prozent ')
+    .replace(/(\d),(\d)/g, '$1 Komma $2')
+    .replace(/€/g, ' Euro ')
+    .replace(/%/g, ' Prozent ')
+    .replace(/&/g, ' und ')
+}
+
 /** Ca matchWords, dar pentru recunoașterea vocală: „fünfzig” = „50”, „null eins sieben” = „017”, oricum ar fi grupate cifrele. */
 export function speechMatch(target: string, heard: string): { word: string; ok: boolean }[] {
   const raw = target.split(/\s+/).filter(Boolean)
@@ -115,7 +128,7 @@ export function speechMatch(target: string, heard: string): { word: string; ok: 
       }),
     ),
   )
-  const u = words(heard).flatMap(speechTokens)
+  const u = words(spokenForm(heard)).flatMap(speechTokens)
   const n = t.length
   const m = u.length
   const L: number[][] = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0))
@@ -157,8 +170,8 @@ export function shuffle<T>(arr: T[]): T[] {
 
 /** Același text, dacă numerele pot fi scrise și cu cifre („21” = „einundzwanzig”, „13:30” = „dreizehn Uhr dreißig” nu, dar „13 Uhr 30” da). */
 export function sameWithNumbers(target: string, typed: string): boolean {
-  const a = words(target).flatMap(speechTokens)
-  const b = words(typed).flatMap(speechTokens)
+  const a = words(spokenForm(target)).flatMap(speechTokens)
+  const b = words(spokenForm(typed)).flatMap(speechTokens)
   return a.length === b.length && a.every((x, i) => x === b[i])
 }
 
