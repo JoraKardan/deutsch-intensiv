@@ -154,3 +154,19 @@ export function shuffle<T>(arr: T[]): T[] {
   }
   return a
 }
+
+/** Același text, dacă numerele pot fi scrise și cu cifre („21” = „einundzwanzig”, „13:30” = „dreizehn Uhr dreißig” nu, dar „13 Uhr 30” da). */
+export function sameWithNumbers(target: string, typed: string): boolean {
+  const a = words(target).flatMap(speechTokens)
+  const b = words(typed).flatMap(speechTokens)
+  return a.length === b.length && a.every((x, i) => x === b[i])
+}
+
+/** Numerele din țintă, în forma „21 = einundzwanzig” (pentru corectură, când elevul a scris cu cifre). */
+export function numbersSpelled(target: string): string[] {
+  return target
+    .split(/\s+/)
+    .map((w) => w.replace(/[.,!?;:„“”"]/g, ''))
+    .filter((w) => w && germanNumber(words(w)[0] ?? '') !== null)
+    .map((w) => `${germanNumber(words(w)[0])} = ${w}`)
+}

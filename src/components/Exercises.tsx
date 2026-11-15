@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Exercise, Lesson } from '../lib/types'
-import { matchWords, normalize, shuffle } from '../lib/text'
+import { normalize, numbersSpelled, sameWithNumbers, shuffle, speechMatch } from '../lib/text'
 import { recordExercise, resetExercises, useProgress } from '../lib/store'
 import { AudioButtons } from './Audio'
 import { UmlautInput } from './UmlautInput'
@@ -108,10 +108,11 @@ function Mcq({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, { type:
 function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, { type: 'dictation' }> }) {
   const [value, setValue] = useState('')
   const [checked, setChecked] = useState(false)
-  const result = useMemo(() => (checked ? matchWords(ex.text, value) : null), [checked, ex.text, value])
+  const result = useMemo(() => (checked ? speechMatch(ex.text, value) : null), [checked, ex.text, value])
+  const usedDigits = /\d/.test(value)
   const check = () => {
     setChecked(true)
-    onResult(normalize(value) === normalize(ex.text))
+    onResult(sameWithNumbers(ex.text, value))
   }
   return (
     <div>
@@ -137,6 +138,9 @@ function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, {
               </span>
             ))}
           </div>
+          {usedDigits && numbersSpelled(ex.text).length > 0 && (
+            <div className="small">🔢 În litere: {numbersSpelled(ex.text).join(', ')}</div>
+          )}
           {ex.ro && <div className="muted">{ex.ro}</div>}
         </div>
       )}

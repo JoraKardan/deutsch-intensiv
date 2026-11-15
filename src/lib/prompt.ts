@@ -22,5 +22,7 @@ ${vocab}
 
 GRAMATICA LECȚIEI: ${lesson.grammar.title}
 
+LIMBA: doar germană și română, niciodată engleză sau rusă. Tot ce ține de lecție (replici, expresii, corecturi, exemple), inclusiv cifrele, orele, prețurile, literele și simbolurile (=, +, -, →, %) din ele, se spune obligatoriu în germană și în cuvinte, chiar și când e citat într-o explicație în română. În română rămân doar explicațiile și traducerile tale.
+
 Începe tu, direct în rol${s.starter ? `, cu: „${s.starter}“` : ''}`
 }
