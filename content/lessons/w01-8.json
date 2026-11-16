@@ -22,35 +22,35 @@
       "T": { "name": "Tom", "voice": "de-DE-FlorianMultilingualNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "A", "de": "Entschuldigung, ist hier noch frei?", "ro": "Scuzați, mai e liber aici?" },
-      { "id": "d2", "speaker": "S", "de": "Ja, klar! Setz dich. Ich bin Sophie.", "ro": "Da, sigur! Ia loc. Eu sunt Sophie." },
-      { "id": "d3", "speaker": "A", "de": "Danke! Ich heiße Radu. Ich bin neu im IT-Team.", "ro": "Mulțumesc! Mă numesc Radu. Sunt nou în echipa de IT." },
-      { "id": "d4", "speaker": "S", "de": "Ah, schön! Ich arbeite im Marketing. Woher kommst du, Radu?", "ro": "A, frumos! Eu lucrez la marketing. De unde ești, Radu?" },
-      { "id": "d5", "speaker": "A", "de": "Aus Moldau. Und du? Bist du aus Köln?", "ro": "Din Moldova. Și tu? Ești din Köln?" },
-      { "id": "d6", "speaker": "S", "de": "Nein, ich komme aus Leipzig. Aber ich wohne schon fünf Jahre hier.", "ro": "Nu, eu sunt din Leipzig. Dar locuiesc aici deja de cinci ani." },
-      { "id": "d7", "speaker": "A", "de": "Wie bitte? Fünf oder fünfzehn?", "ro": "Poftim? Cinci sau cincisprezece?" },
-      { "id": "d8", "speaker": "S", "de": "Fünf! So alt bin ich noch nicht! Ich bin achtundzwanzig.", "ro": "Cinci! Încă nu sunt așa de bătrână! Am douăzeci și opt." },
-      { "id": "d9", "speaker": "A", "de": "Ach so! Entschuldigung.", "ro": "A, așa! Scuze." },
-      { "id": "d10", "speaker": "S", "de": "Kein Problem! Du sprichst schon gut Deutsch.", "ro": "Nicio problemă! Vorbești deja bine germana." },
-      { "id": "d11", "speaker": "A", "de": "Danke, aber ich lerne erst eine Woche. Ich spreche Rumänisch, Russisch und Englisch.", "ro": "Mulțumesc, dar învăț abia de o săptămână. Vorbesc română, rusă și engleză." },
-      { "id": "d12", "speaker": "S", "de": "Wow, drei Sprachen! Ich kann nur Englisch und ein bisschen Französisch.", "ro": "Uau, trei limbi! Eu știu doar engleză și puțin franceză." },
-      { "id": "d13", "speaker": "T", "de": "Hallo zusammen! Radu, hast du Zeit? Das Meeting ist heute um halb zwei.", "ro": "Salutare tuturor! Radu, ai timp? Ședința e azi la unu și jumătate." },
-      { "id": "d14", "speaker": "A", "de": "Um halb zwei? Also um dreizehn Uhr dreißig?", "ro": "La unu și jumătate? Adică la 13:30?" },
-      { "id": "d15", "speaker": "T", "de": "Genau. Im Raum zwölf.", "ro": "Exact. În sala doisprezece." },
-      { "id": "d16", "speaker": "A", "de": "Alles klar. Sophie, möchtest du nach dem Essen einen Kaffee?", "ro": "Clar. Sophie, vrei o cafea după masă?" },
-      { "id": "d17", "speaker": "S", "de": "Heute habe ich leider keine Zeit. Aber morgen gern!", "ro": "Azi, din păcate, n-am timp. Dar mâine, cu plăcere!" },
-      { "id": "d18", "speaker": "A", "de": "Super! Dann bis morgen!", "ro": "Super! Atunci pe mâine!" }
+      { "id": "d1", "speaker": "A", "de": "Entschuldigung, ist hier noch frei?", "ro": "Scuzați, mai e liber aici?", "lit": "scuze | e | aici | încă | liber" },
+      { "id": "d2", "speaker": "S", "de": "Ja, klar! Setz dich. Ich bin Sophie.", "ro": "Da, sigur! Ia loc. Eu sunt Sophie.", "lit": "da | clar | așază | te | eu | sunt | " },
+      { "id": "d3", "speaker": "A", "de": "Danke! Ich heiße Radu. Ich bin neu im IT-Team.", "ro": "Mulțumesc! Mă numesc Radu. Sunt nou în echipa de IT.", "lit": "mulțumesc | eu | mă numesc |  | eu | sunt | nou | în (+art.) | IT-echipă" },
+      { "id": "d4", "speaker": "S", "de": "Ah, schön! Ich arbeite im Marketing. Woher kommst du, Radu?", "ro": "A, frumos! Eu lucrez la marketing. De unde ești, Radu?", "lit": "a | frumos | eu | lucrez | în (+art.) | marketing | de unde | vii | tu | " },
+      { "id": "d5", "speaker": "A", "de": "Aus Moldau. Und du? Bist du aus Köln?", "ro": "Din Moldova. Și tu? Ești din Köln?", "lit": "din | Moldova | și | tu | ești | tu | din | " },
+      { "id": "d6", "speaker": "S", "de": "Nein, ich komme aus Leipzig. Aber ich wohne schon fünf Jahre hier.", "ro": "Nu, eu sunt din Leipzig. Dar locuiesc aici deja de cinci ani.", "lit": "nu | eu | vin | din |  | dar | eu | locuiesc | deja | cinci | ani | aici" },
+      { "id": "d7", "speaker": "A", "de": "Wie bitte? Fünf oder fünfzehn?", "ro": "Poftim? Cinci sau cincisprezece?", "lit": "cum | vă rog | cinci | sau | cincisprezece" },
+      { "id": "d8", "speaker": "S", "de": "Fünf! So alt bin ich noch nicht! Ich bin achtundzwanzig.", "ro": "Cinci! Încă nu sunt așa de bătrână! Am douăzeci și opt.", "lit": "cinci | așa | bătrână | sunt | eu | încă | nu | eu | sunt | opt-și-douăzeci" },
+      { "id": "d9", "speaker": "A", "de": "Ach so! Entschuldigung.", "ro": "A, așa! Scuze.", "lit": "a | așa | scuze" },
+      { "id": "d10", "speaker": "S", "de": "Kein Problem! Du sprichst schon gut Deutsch.", "ro": "Nicio problemă! Vorbești deja bine germana.", "lit": "nicio | problemă | tu | vorbești | deja | bine | germană" },
+      { "id": "d11", "speaker": "A", "de": "Danke, aber ich lerne erst eine Woche. Ich spreche Rumänisch, Russisch und Englisch.", "ro": "Mulțumesc, dar învăț abia de o săptămână. Vorbesc română, rusă și engleză.", "lit": "mulțumesc | dar | eu | învăț | abia | o | săptămână | eu | vorbesc | română | rusă | și | engleză" },
+      { "id": "d12", "speaker": "S", "de": "Wow, drei Sprachen! Ich kann nur Englisch und ein bisschen Französisch.", "ro": "Uau, trei limbi! Eu știu doar engleză și puțin franceză.", "lit": "uau | trei | limbi | eu | pot | doar | engleză | și | un | pic | franceză" },
+      { "id": "d13", "speaker": "T", "de": "Hallo zusammen! Radu, hast du Zeit? Das Meeting ist heute um halb zwei.", "ro": "Salutare tuturor! Radu, ai timp? Ședința e azi la unu și jumătate.", "lit": "salut | împreună |  | ai | tu | timp | (art.) | ședința | e | azi | la | jumătate | două" },
+      { "id": "d14", "speaker": "A", "de": "Um halb zwei? Also um dreizehn Uhr dreißig?", "ro": "La unu și jumătate? Adică la 13:30?", "lit": "la | jumătate | două | deci | la | treisprezece | ora | treizeci" },
+      { "id": "d15", "speaker": "T", "de": "Genau. Im Raum zwölf.", "ro": "Exact. În sala doisprezece.", "lit": "exact | în (+art.) | sala | doisprezece" },
+      { "id": "d16", "speaker": "A", "de": "Alles klar. Sophie, möchtest du nach dem Essen einen Kaffee?", "ro": "Clar. Sophie, vrei o cafea după masă?", "lit": "totul | clar |  | ai vrea | tu | după | (art.) | mâncare | o | cafea" },
+      { "id": "d17", "speaker": "S", "de": "Heute habe ich leider keine Zeit. Aber morgen gern!", "ro": "Azi, din păcate, n-am timp. Dar mâine, cu plăcere!", "lit": "azi | am | eu | din păcate | niciun | timp | dar | mâine | cu plăcere" },
+      { "id": "d18", "speaker": "A", "de": "Super! Dann bis morgen!", "ro": "Super! Atunci pe mâine!", "lit": "super | atunci | până | mâine" }
     ]
   },
   "phrases": [
-    { "id": "p1", "de": "Ist hier noch frei?", "ro": "Mai e liber aici?" },
-    { "id": "p2", "de": "Ja, klar! Setz dich.", "ro": "Da, sigur! Ia loc." },
-    { "id": "p3", "de": "Hallo zusammen!", "ro": "Salutare tuturor!" },
-    { "id": "p4", "de": "Ich lerne erst eine Woche Deutsch.", "ro": "Învăț germana abia de o săptămână." },
+    { "id": "p1", "de": "Ist hier noch frei?", "ro": "Mai e liber aici?", "lit": "e | aici | încă | liber" },
+    { "id": "p2", "de": "Ja, klar! Setz dich.", "ro": "Da, sigur! Ia loc.", "lit": "da | clar | așază | te" },
+    { "id": "p3", "de": "Hallo zusammen!", "ro": "Salutare tuturor!", "lit": "salut | împreună" },
+    { "id": "p4", "de": "Ich lerne erst eine Woche Deutsch.", "ro": "Învăț germana abia de o săptămână.", "lit": "eu | învăț | abia | o | săptămână | germană" },
     { "id": "p5", "de": "leider", "ro": "din păcate" },
-    { "id": "p6", "de": "Morgen gern!", "ro": "Mâine, cu plăcere!" },
-    { "id": "p7", "de": "Also …?", "ro": "Adică …? / Deci …?", "note": "Bun pentru verificare: „Also um 13:30?”" },
-    { "id": "p8", "de": "Dann bis morgen!", "ro": "Atunci pe mâine!" }
+    { "id": "p6", "de": "Morgen gern!", "ro": "Mâine, cu plăcere!", "lit": "mâine | cu plăcere" },
+    { "id": "p7", "de": "Also …?", "ro": "Adică …? / Deci …?", "lit": "deci | …", "note": "Bun pentru verificare: „Also um 13:30?”" },
+    { "id": "p8", "de": "Dann bis morgen!", "ro": "Atunci pe mâine!", "lit": "atunci | până | mâine" }
   ],
   "grammar": {
     "title": "Recapitulare: verbele săptămânii",
@@ -63,6 +63,7 @@
     "tables": [
       {
         "caption": "Verbele săptămânii la prezent",
+        "audio": "conjugation",
         "headers": ["", "sein", "haben", "heißen", "arbeiten", "sprechen", "können"],
         "rows": [
           ["ich", "bin", "habe", "heiße", "arbeite", "spreche", "kann"],
@@ -75,6 +76,7 @@
       },
       {
         "caption": "Ordinea cuvintelor",
+        "audio": [1],
         "headers": ["tip", "exemplu"],
         "rows": [
           ["afirmativ (verb pe 2)", "Ich **wohne** in Köln. / Heute **habe** ich keine Zeit."],

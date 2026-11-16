@@ -16,6 +16,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { tmpdir } from 'node:os'
+import { lessonTableClips } from '../src/lib/tableAudio.ts'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const LESSONS = join(ROOT, 'content', 'lessons')
@@ -66,6 +67,7 @@ function items(lesson) {
   for (const p of lesson.phrases) list.push({ id: p.id, text: p.de, voice: DEFAULT_VOICE })
   for (const p of lesson.pronunciation?.items ?? []) list.push({ id: p.id, text: p.de, voice: DEFAULT_VOICE })
   lesson.grammar.examples.forEach((e, i) => list.push({ id: `g${i + 1}`, text: e.de, voice: DEFAULT_VOICE }))
+  for (const c of lessonTableClips(lesson)) list.push({ ...c, voice: DEFAULT_VOICE })
   return list.map((x) => ({ ...x, text: clean(x.text) }))
 }
 

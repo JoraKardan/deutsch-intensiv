@@ -28,6 +28,8 @@ export interface Phrase {
   de: string
   ro: string
   note?: string // explicație scurtă în română
+  /** traducerea mot-à-mot: câte o glosă pentru fiecare cuvânt din `de`, separate prin „ | ” */
+  lit?: string
 }
 
 export interface Speaker {
@@ -40,6 +42,8 @@ export interface DialogLine {
   speaker: string // cheie din `speakers`
   de: string
   ro: string
+  /** traducerea mot-à-mot (ca la Phrase) */
+  lit?: string
 }
 
 export interface Dialog {
@@ -53,6 +57,9 @@ export interface GrammarTable {
   caption?: string
   headers: string[]
   rows: string[][]
+  /** audio pentru celule: "conjugation" (prima coloană = pronumele), "row" (rândul = o propoziție)
+   *  sau indicii coloanelor în germană, ex. [0, 1]. Vezi src/lib/tableAudio.ts. */
+  audio?: 'conjugation' | 'row' | number[]
 }
 
 export interface Grammar {

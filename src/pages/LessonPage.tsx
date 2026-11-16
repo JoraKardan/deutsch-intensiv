@@ -10,6 +10,7 @@ import { AudioButtons } from '../components/Audio'
 import { ExerciseList } from '../components/Exercises'
 import { GrammarView } from '../components/GrammarView'
 import { Shadowing } from '../components/Shadowing'
+import { Interlinear, useLitPref } from '../components/Interlinear'
 import { go } from '../router'
 
 const SECTIONS = [
@@ -150,14 +151,17 @@ function DialogView({ lesson }: { lesson: Lesson }) {
   const [showDe, setShowDe] = useState(false)
   const [showRo, setShowRo] = useState(false)
   const [active, setActive] = useState<string | null>(null)
+  const [lit, setLit] = useLitPref()
+  const hasLit = d.lines.some((l) => l.lit)
   const items = d.lines.map((l) => ({ id: l.id, text: l.de }))
   return (
     <div>
       <h3>{d.title}</h3>
       <p className="muted">{d.situation}</p>
       <div className="card note small">
-        <strong>Pași:</strong> ① Ascultă de 2 ori <em>fără text</em>: ce ai înțeles? ② Ascultă cu textul german. ③ Citește traducerea și
-        ascultă încă o dată. ④ Ascultă replicile grele rar (🐢).
+        <strong>Pași:</strong> ① Ascultă de 2 ori <em>fără text</em>: ce ai înțeles? ② Ascultă cu textul german. ③ La replicile grele, pornește
+        <em> Mot-à-mot</em> ca să vezi ordinea cuvintelor, apoi oprește-l și ascultă din nou. ④ Citește traducerea și ascultă încă o
+        dată. ⑤ Ascultă replicile grele rar (🐢).
       </div>
       <div className="row wrap sticky-controls">
         <button onClick={() => playSequence(lesson.id, items, false, setActive)}>▶ Ascultă tot</button>
@@ -179,13 +183,24 @@ function DialogView({ lesson }: { lesson: Lesson }) {
         <label className="toggle">
           <input type="checkbox" checked={showRo} onChange={(e) => setShowRo(e.target.checked)} /> Traducere
         </label>
+        {hasLit && (
+          <label className="toggle" title="Traducerea fiecărui cuvânt, sub textul german">
+            <input type="checkbox" checked={lit} disabled={!showDe} onChange={(e) => setLit(e.target.checked)} /> Mot-à-mot
+          </label>
+        )}
       </div>
       <div className="dialog">
         {d.lines.map((l) => (
           <div key={l.id} className={`line ${active === l.id ? 'active' : ''}`}>
             <div className="speaker">{d.speakers[l.speaker]?.name ?? l.speaker}</div>
             <div className="body">
-              <div className="de">{showDe ? l.de : <span className="hidden-text">{l.de.replace(/[^\s.,!?]/g, '•')}</span>}</div>
+              {showDe ? (
+                <Interlinear de={l.de} lit={lit ? l.lit : undefined} />
+              ) : (
+                <div className="de">
+                  <span className="hidden-text">{l.de.replace(/[^\s.,!?]/g, '•')}</span>
+                </div>
+              )}
               {showRo && <div className="muted small">{l.ro}</div>}
             </div>
             <AudioButtons lessonId={lesson.id} id={l.id} text={l.de} />
@@ -199,6 +214,8 @@ function DialogView({ lesson }: { lesson: Lesson }) {
 function Phrases({ lesson }: { lesson: Lesson }) {
   const [hideRo, setHideRo] = useState(false)
   const [revealed, setRevealed] = useState<string[]>([])
+  const [lit, toggleLit] = useLitPref()
+  const hasLit = lesson.phrases.some((p) => p.lit)
   return (
     <div>
       <div className="row between wrap">
@@ -214,13 +231,18 @@ function Phrases({ lesson }: { lesson: Lesson }) {
           />{' '}
           Ascunde traducerea (autotest)
         </label>
+        {hasLit && (
+          <label className="toggle">
+            <input type="checkbox" checked={lit} onChange={(e) => toggleLit(e.target.checked)} /> Mot-à-mot
+          </label>
+        )}
       </div>
       <div className="phrases">
         {lesson.phrases.map((p) => (
           <div key={p.id} className="phrase">
             <AudioButtons lessonId={lesson.id} id={p.id} text={p.de} />
             <div className="body">
-              <div className="de">{p.de}</div>
+              <Interlinear de={p.de} lit={lit && (!hideRo || revealed.includes(p.id)) ? p.lit : undefined} />
               {hideRo && !revealed.includes(p.id) ? (
                 <button className="link small" onClick={() => setRevealed([...revealed, p.id])}>
                   arată traducerea

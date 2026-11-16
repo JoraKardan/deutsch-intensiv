@@ -22,37 +22,37 @@
       "T": { "name": "Tom", "voice": "de-DE-FlorianMultilingualNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "L", "de": "Radu, das ist Tom. Tom, das ist Radu. Er ist neu im Team.", "ro": "Radu, el e Tom. Tom, el e Radu. E nou în echipă." },
-      { "id": "d2", "speaker": "T", "de": "Hallo Radu! Woher kommst du?", "ro": "Salut, Radu! De unde ești?" },
-      { "id": "d3", "speaker": "A", "de": "Hallo! Ich komme aus Moldau.", "ro": "Salut! Sunt din Moldova." },
-      { "id": "d4", "speaker": "T", "de": "Aus Moldau? Interessant! Sprichst du Rumänisch?", "ro": "Din Moldova? Interesant! Vorbești română?" },
-      { "id": "d5", "speaker": "A", "de": "Ja, Rumänisch und Russisch. Und ein bisschen Englisch.", "ro": "Da, română și rusă. Și puțin engleză." },
-      { "id": "d6", "speaker": "T", "de": "Toll! Ich komme aus Hamburg, aber ich wohne jetzt hier in Köln.", "ro": "Super! Eu sunt din Hamburg, dar acum locuiesc aici, în Köln." },
-      { "id": "d7", "speaker": "A", "de": "Und du, Lena? Kommst du auch aus Deutschland?", "ro": "Și tu, Lena? Ești și tu din Germania?" },
-      { "id": "d8", "speaker": "L", "de": "Nein, ich komme aus Österreich, aus Wien.", "ro": "Nu, eu sunt din Austria, din Viena." },
-      { "id": "d9", "speaker": "A", "de": "Und wo wohnst du?", "ro": "Și unde locuiești?" },
-      { "id": "d10", "speaker": "L", "de": "Ich wohne in Bonn. Das ist nicht weit.", "ro": "Locuiesc în Bonn. Nu e departe." },
-      { "id": "d11", "speaker": "T", "de": "Du sprichst schon gut Deutsch, Radu!", "ro": "Vorbești deja bine germana, Radu!" },
-      { "id": "d12", "speaker": "A", "de": "Danke! Ich lerne Deutsch. Aber noch nicht so gut.", "ro": "Mulțumesc! Învăț germana. Dar încă nu prea bine." }
+      { "id": "d1", "speaker": "L", "de": "Radu, das ist Tom. Tom, das ist Radu. Er ist neu im Team.", "ro": "Radu, el e Tom. Tom, el e Radu. E nou în echipă.", "lit": " | acesta | e |  |  | acesta | e |  | el | e | nou | în (+art.) | echipă" },
+      { "id": "d2", "speaker": "T", "de": "Hallo Radu! Woher kommst du?", "ro": "Salut, Radu! De unde ești?", "lit": "salut |  | de unde | vii | tu" },
+      { "id": "d3", "speaker": "A", "de": "Hallo! Ich komme aus Moldau.", "ro": "Salut! Sunt din Moldova.", "lit": "salut | eu | vin | din | Moldova" },
+      { "id": "d4", "speaker": "T", "de": "Aus Moldau? Interessant! Sprichst du Rumänisch?", "ro": "Din Moldova? Interesant! Vorbești română?", "lit": "din | Moldova | interesant | vorbești | tu | română" },
+      { "id": "d5", "speaker": "A", "de": "Ja, Rumänisch und Russisch. Und ein bisschen Englisch.", "ro": "Da, română și rusă. Și puțin engleză.", "lit": "da | română | și | rusă | și | un | pic | engleză" },
+      { "id": "d6", "speaker": "T", "de": "Toll! Ich komme aus Hamburg, aber ich wohne jetzt hier in Köln.", "ro": "Super! Eu sunt din Hamburg, dar acum locuiesc aici, în Köln.", "lit": "super | eu | vin | din |  | dar | eu | locuiesc | acum | aici | în | " },
+      { "id": "d7", "speaker": "A", "de": "Und du, Lena? Kommst du auch aus Deutschland?", "ro": "Și tu, Lena? Ești și tu din Germania?", "lit": "și | tu |  | vii | tu | și | din | Germania" },
+      { "id": "d8", "speaker": "L", "de": "Nein, ich komme aus Österreich, aus Wien.", "ro": "Nu, eu sunt din Austria, din Viena.", "lit": "nu | eu | vin | din | Austria | din | Viena" },
+      { "id": "d9", "speaker": "A", "de": "Und wo wohnst du?", "ro": "Și unde locuiești?", "lit": "și | unde | locuiești | tu" },
+      { "id": "d10", "speaker": "L", "de": "Ich wohne in Bonn. Das ist nicht weit.", "ro": "Locuiesc în Bonn. Nu e departe.", "lit": "eu | locuiesc | în |  | asta | e | nu | departe" },
+      { "id": "d11", "speaker": "T", "de": "Du sprichst schon gut Deutsch, Radu!", "ro": "Vorbești deja bine germana, Radu!", "lit": "tu | vorbești | deja | bine | germană | " },
+      { "id": "d12", "speaker": "A", "de": "Danke! Ich lerne Deutsch. Aber noch nicht so gut.", "ro": "Mulțumesc! Învăț germana. Dar încă nu prea bine.", "lit": "mulțumesc | eu | învăț | germană | dar | încă | nu | așa | bine" }
     ]
   },
   "phrases": [
-    { "id": "p1", "de": "Woher kommst du?", "ro": "De unde ești? (informal)" },
-    { "id": "p2", "de": "Woher kommen Sie?", "ro": "De unde sunteți? (formal)" },
-    { "id": "p3", "de": "Ich komme aus Moldau.", "ro": "Sunt din Moldova.", "note": "Oficial: „aus der Republik Moldau”." },
-    { "id": "p4", "de": "Ich komme aus Rumänien.", "ro": "Sunt din România." },
-    { "id": "p5", "de": "Wo wohnst du?", "ro": "Unde locuiești?" },
-    { "id": "p6", "de": "Ich wohne in Köln.", "ro": "Locuiesc în Köln." },
-    { "id": "p7", "de": "Welche Sprachen sprichst du?", "ro": "Ce limbi vorbești?" },
-    { "id": "p8", "de": "Ich spreche Rumänisch und Russisch.", "ro": "Vorbesc română și rusă." },
-    { "id": "p9", "de": "Ich lerne Deutsch.", "ro": "Învăț germana." },
-    { "id": "p10", "de": "ein bisschen", "ro": "puțin, un pic" },
-    { "id": "p11", "de": "Noch nicht so gut.", "ro": "Încă nu prea bine." },
-    { "id": "p12", "de": "Das ist Tom.", "ro": "El e Tom. / Acesta e Tom.", "note": "Așa prezinți pe cineva." },
-    { "id": "p13", "de": "Er ist neu im Team.", "ro": "E nou în echipă." },
+    { "id": "p1", "de": "Woher kommst du?", "ro": "De unde ești? (informal)", "lit": "de unde | vii | tu" },
+    { "id": "p2", "de": "Woher kommen Sie?", "ro": "De unde sunteți? (formal)", "lit": "de unde | veniți | dvs." },
+    { "id": "p3", "de": "Ich komme aus Moldau.", "ro": "Sunt din Moldova.", "lit": "eu | vin | din | Moldova", "note": "Oficial: „aus der Republik Moldau”." },
+    { "id": "p4", "de": "Ich komme aus Rumänien.", "ro": "Sunt din România.", "lit": "eu | vin | din | România" },
+    { "id": "p5", "de": "Wo wohnst du?", "ro": "Unde locuiești?", "lit": "unde | locuiești | tu" },
+    { "id": "p6", "de": "Ich wohne in Köln.", "ro": "Locuiesc în Köln.", "lit": "eu | locuiesc | în | Köln" },
+    { "id": "p7", "de": "Welche Sprachen sprichst du?", "ro": "Ce limbi vorbești?", "lit": "care | limbi | vorbești | tu" },
+    { "id": "p8", "de": "Ich spreche Rumänisch und Russisch.", "ro": "Vorbesc română și rusă.", "lit": "eu | vorbesc | română | și | rusă" },
+    { "id": "p9", "de": "Ich lerne Deutsch.", "ro": "Învăț germana.", "lit": "eu | învăț | germană" },
+    { "id": "p10", "de": "ein bisschen", "ro": "puțin, un pic", "lit": "un | pic" },
+    { "id": "p11", "de": "Noch nicht so gut.", "ro": "Încă nu prea bine.", "lit": "încă | nu | așa | bine" },
+    { "id": "p12", "de": "Das ist Tom.", "ro": "El e Tom. / Acesta e Tom.", "lit": "acesta | e | Tom", "note": "Așa prezinți pe cineva." },
+    { "id": "p13", "de": "Er ist neu im Team.", "ro": "E nou în echipă.", "lit": "el | e | nou | în (+art.) | echipă" },
     { "id": "p14", "de": "Toll!", "ro": "Super! / Grozav!" },
-    { "id": "p15", "de": "Das ist nicht weit.", "ro": "Nu e departe." },
-    { "id": "p16", "de": "Sie kommt aus Österreich.", "ro": "Ea e din Austria." }
+    { "id": "p15", "de": "Das ist nicht weit.", "ro": "Nu e departe.", "lit": "asta | e | nu | departe" },
+    { "id": "p16", "de": "Sie kommt aus Österreich.", "ro": "Ea e din Austria.", "lit": "ea | vine | din | Austria" }
   ],
   "grammar": {
     "title": "Verbele regulate la prezent. Întrebările",
@@ -66,6 +66,7 @@
     "tables": [
       {
         "caption": "Terminațiile la prezent",
+        "audio": "conjugation",
         "headers": ["", "kommen (a veni)", "wohnen (a locui)", "sprechen (a vorbi)"],
         "rows": [
           ["ich (eu)", "komm**e**", "wohn**e**", "sprech**e**"],

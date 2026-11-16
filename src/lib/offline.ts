@@ -3,6 +3,7 @@ import { useEffect, useState, useSyncExternalStore } from 'react'
 import { flatLessons, lessons } from './content'
 import { audioUrl } from './audio'
 import type { Lesson } from './types'
+import { lessonTableClips } from './tableAudio'
 
 const AUDIO_CACHE = 'audio-v3' // același nume ca în public/sw.js
 
@@ -22,6 +23,7 @@ export function lessonAudioIds(l: Lesson): string[] {
     ...l.phrases.map((x) => x.id),
     ...(l.pronunciation?.items.map((x) => x.id) ?? []),
     ...l.grammar.examples.map((_, i) => `g${i + 1}`),
+    ...lessonTableClips(l).map((c) => c.id),
   ]
 }
 

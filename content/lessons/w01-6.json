@@ -40,36 +40,36 @@
       "L": { "name": "Lena", "voice": "de-DE-KatjaNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "A", "de": "Lena, wann beginnt hier die Arbeit?", "ro": "Lena, când începe aici lucrul?" },
-      { "id": "d2", "speaker": "L", "de": "Wir arbeiten von neun bis siebzehn Uhr. Aber das ist flexibel.", "ro": "Lucrăm de la nouă la cinci. Dar e flexibil." },
-      { "id": "d3", "speaker": "A", "de": "Und wann ist Mittagspause?", "ro": "Și când e pauza de prânz?" },
-      { "id": "d4", "speaker": "L", "de": "Meistens um zwölf. Wir essen zusammen in der Kantine.", "ro": "De obicei la doisprezece. Mâncăm împreună la cantină." },
-      { "id": "d5", "speaker": "A", "de": "Und das Teammeeting?", "ro": "Și ședința echipei?" },
-      { "id": "d6", "speaker": "L", "de": "Jeden Montag um Viertel nach zehn.", "ro": "În fiecare luni la zece și un sfert." },
-      { "id": "d7", "speaker": "A", "de": "Am Freitag auch?", "ro": "Și vinerea?" },
-      { "id": "d8", "speaker": "L", "de": "Nein, am Freitag arbeiten viele von zu Hause.", "ro": "Nu, vinerea mulți lucrează de acasă." },
-      { "id": "d9", "speaker": "A", "de": "Super. Wie spät ist es jetzt?", "ro": "Super. Cât e ceasul acum?" },
-      { "id": "d10", "speaker": "L", "de": "Es ist schon Viertel vor zwölf.", "ro": "E deja douăsprezece fără un sfert." },
-      { "id": "d11", "speaker": "A", "de": "Oh, ich habe Hunger!", "ro": "O, mi-e foame!" },
-      { "id": "d12", "speaker": "L", "de": "Ich auch. Komm, wir gehen essen!", "ro": "Și mie. Hai, mergem să mâncăm!" }
+      { "id": "d1", "speaker": "A", "de": "Lena, wann beginnt hier die Arbeit?", "ro": "Lena, când începe aici lucrul?", "lit": " | când | începe | aici | (art.) | munca" },
+      { "id": "d2", "speaker": "L", "de": "Wir arbeiten von neun bis siebzehn Uhr. Aber das ist flexibel.", "ro": "Lucrăm de la nouă la cinci. Dar e flexibil.", "lit": "noi | lucrăm | de la | nouă | până la | șaptesprezece | ora | dar | asta | e | flexibil" },
+      { "id": "d3", "speaker": "A", "de": "Und wann ist Mittagspause?", "ro": "Și când e pauza de prânz?", "lit": "și | când | e | prânz-pauză" },
+      { "id": "d4", "speaker": "L", "de": "Meistens um zwölf. Wir essen zusammen in der Kantine.", "ro": "De obicei la doisprezece. Mâncăm împreună la cantină.", "lit": "de obicei | la | doisprezece | noi | mâncăm | împreună | în | (art.) | cantină" },
+      { "id": "d5", "speaker": "A", "de": "Und das Teammeeting?", "ro": "Și ședința echipei?", "lit": "și | (art.) | echipă-ședința" },
+      { "id": "d6", "speaker": "L", "de": "Jeden Montag um Viertel nach zehn.", "ro": "În fiecare luni la zece și un sfert.", "lit": "fiecare | luni | la | sfert | după | zece" },
+      { "id": "d7", "speaker": "A", "de": "Am Freitag auch?", "ro": "Și vinerea?", "lit": "la (+art.) | vineri | și" },
+      { "id": "d8", "speaker": "L", "de": "Nein, am Freitag arbeiten viele von zu Hause.", "ro": "Nu, vinerea mulți lucrează de acasă.", "lit": "nu | la (+art.) | vineri | lucrează | mulți | de | la | casă" },
+      { "id": "d9", "speaker": "A", "de": "Super. Wie spät ist es jetzt?", "ro": "Super. Cât e ceasul acum?", "lit": "super | cât de | târziu | e | (asta) | acum" },
+      { "id": "d10", "speaker": "L", "de": "Es ist schon Viertel vor zwölf.", "ro": "E deja douăsprezece fără un sfert.", "lit": "(asta) | e | deja | sfert | înainte de | doisprezece" },
+      { "id": "d11", "speaker": "A", "de": "Oh, ich habe Hunger!", "ro": "O, mi-e foame!", "lit": "o | eu | am | foame" },
+      { "id": "d12", "speaker": "L", "de": "Ich auch. Komm, wir gehen essen!", "ro": "Și mie. Hai, mergem să mâncăm!", "lit": "eu | și | vino | noi | mergem | a mânca" }
     ]
   },
   "phrases": [
-    { "id": "p1", "de": "Wie spät ist es?", "ro": "Cât e ceasul?" },
-    { "id": "p2", "de": "Wie viel Uhr ist es?", "ro": "Cât e ora?", "note": "Variantă la fel de folosită." },
-    { "id": "p3", "de": "Es ist drei Uhr.", "ro": "E ora trei." },
-    { "id": "p4", "de": "Es ist halb drei.", "ro": "E două și jumătate (2:30)!", "note": "halb drei = jumătate spre trei" },
-    { "id": "p5", "de": "Es ist Viertel nach drei.", "ro": "E trei și un sfert." },
-    { "id": "p6", "de": "Es ist Viertel vor drei.", "ro": "E trei fără un sfert." },
-    { "id": "p7", "de": "um acht Uhr", "ro": "la ora opt" },
-    { "id": "p8", "de": "von neun bis fünf", "ro": "de la nouă la cinci" },
-    { "id": "p9", "de": "Wann beginnt das Meeting?", "ro": "Când începe ședința?" },
-    { "id": "p10", "de": "am Montag", "ro": "luni (în ziua de luni)" },
-    { "id": "p11", "de": "am Wochenende", "ro": "în weekend" },
-    { "id": "p12", "de": "jeden Tag", "ro": "în fiecare zi" },
-    { "id": "p13", "de": "Ich habe Hunger.", "ro": "Mi-e foame.", "note": "Literal: „am foame”. La fel: Ich habe Durst = mi-e sete." },
-    { "id": "p14", "de": "Ich habe keine Zeit.", "ro": "N-am timp." },
-    { "id": "p15", "de": "Komm, wir gehen essen!", "ro": "Hai, mergem să mâncăm!" }
+    { "id": "p1", "de": "Wie spät ist es?", "ro": "Cât e ceasul?", "lit": "cât de | târziu | e | (asta)" },
+    { "id": "p2", "de": "Wie viel Uhr ist es?", "ro": "Cât e ora?", "lit": "cât | mult | oră | e | (asta)", "note": "Variantă la fel de folosită." },
+    { "id": "p3", "de": "Es ist drei Uhr.", "ro": "E ora trei.", "lit": "(asta) | e | trei | ora" },
+    { "id": "p4", "de": "Es ist halb drei.", "ro": "E două și jumătate (2:30)!", "lit": "(asta) | e | jumătate | trei", "note": "halb drei = jumătate spre trei" },
+    { "id": "p5", "de": "Es ist Viertel nach drei.", "ro": "E trei și un sfert.", "lit": "(asta) | e | sfert | după | trei" },
+    { "id": "p6", "de": "Es ist Viertel vor drei.", "ro": "E trei fără un sfert.", "lit": "(asta) | e | sfert | înainte de | trei" },
+    { "id": "p7", "de": "um acht Uhr", "ro": "la ora opt", "lit": "la | opt | ora" },
+    { "id": "p8", "de": "von neun bis fünf", "ro": "de la nouă la cinci", "lit": "de la | nouă | până la | cinci" },
+    { "id": "p9", "de": "Wann beginnt das Meeting?", "ro": "Când începe ședința?", "lit": "când | începe | (art.) | ședința" },
+    { "id": "p10", "de": "am Montag", "ro": "luni (în ziua de luni)", "lit": "la (+art.) | luni" },
+    { "id": "p11", "de": "am Wochenende", "ro": "în weekend", "lit": "la (+art.) | sfârșit-de-săptămână" },
+    { "id": "p12", "de": "jeden Tag", "ro": "în fiecare zi", "lit": "fiecare | zi" },
+    { "id": "p13", "de": "Ich habe Hunger.", "ro": "Mi-e foame.", "lit": "eu | am | foame", "note": "Literal: „am foame”. La fel: Ich habe Durst = mi-e sete." },
+    { "id": "p14", "de": "Ich habe keine Zeit.", "ro": "N-am timp.", "lit": "eu | am | niciun | timp" },
+    { "id": "p15", "de": "Komm, wir gehen essen!", "ro": "Hai, mergem să mâncăm!", "lit": "vino | noi | mergem | a mânca" }
   ],
   "grammar": {
     "title": "Ora: formal și informal. um, am, von … bis",
@@ -83,6 +83,7 @@
     "tables": [
       {
         "caption": "Ora informală (exemple pentru 3)",
+        "audio": [1],
         "headers": ["ora", "germană", "literal"],
         "rows": [
           ["3:00", "drei (Uhr)", "trei"],

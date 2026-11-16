@@ -36,6 +36,16 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
     if (L[k] === undefined) err(f, `lipsește câmpul „${k}”`)
   if (!L.dialog || !L.phrases || !L.exercises) continue
 
+  // `lit` e obligatoriu, cu excepția replicilor dintr-un cuvânt și a celor spuse pe litere („R – A – D – U”)
+  const checkLit = (x, where) => {
+    const w = x.de.trim().split(/\s+/).length
+    if (x.lit === undefined) {
+      if (w > 1 && !/\b[A-ZÄÖÜ] – [A-ZÄÖÜ]\b/.test(x.de)) err(f, `${where}: lipsește lit (traducerea mot-à-mot)`)
+      return
+    }
+    const g = x.lit.split('|').length
+    if (w !== g) err(f, `${where}: ${w} cuvinte în „${x.de}”, dar ${g} glose în lit`)
+  }
   const ids = new Set()
   const add = (id, where) => {
     if (ids.has(id)) err(f, `id duplicat „${id}” (${where})`)
@@ -45,9 +55,22 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
     add(l.id, 'dialog')
     if (!L.dialog.speakers[l.speaker]) err(f, `replica ${l.id}: vorbitor necunoscut „${l.speaker}”`)
     if (!l.de || !l.ro) err(f, `replica ${l.id}: lipsește de/ro`)
+    checkLit(l, `replica ${l.id}`)
   }
-  for (const p of L.phrases) add(p.id, 'expresii')
+  for (const p of L.phrases) {
+    add(p.id, 'expresii')
+    checkLit(p, `expresia ${p.id}`)
+  }
   for (const p of L.pronunciation?.items ?? []) add(p.id, 'pronunție')
+
+  ;(L.grammar?.tables ?? []).forEach((t, ti) => {
+    const where = `tabelul ${ti + 1}${t.caption ? ` („${t.caption}”)` : ''}`
+    for (const r of t.rows) if (r.length !== t.headers.length) err(f, `${where}: rând cu ${r.length} celule, antet cu ${t.headers.length}`)
+    const a = t.audio
+    if (a === undefined || a === 'conjugation' || a === 'row') return
+    if (!Array.isArray(a) || a.some((c) => !Number.isInteger(c) || c < 0 || c >= t.headers.length))
+      err(f, `${where}: audio trebuie să fie "conjugation", "row" sau indici de coloane 0…${t.headers.length - 1}`)
+  })
 
   const exIds = new Set()
   for (const e of L.exercises) {

@@ -51,35 +51,35 @@
       "B": { "name": "Frau Becker", "voice": "de-DE-TanjaNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "B", "de": "So, Herr Popescu. Ich brauche noch Ihre Telefonnummer.", "ro": "Deci, domnule Popescu. Mai am nevoie de numărul dumneavoastră de telefon." },
-      { "id": "d2", "speaker": "A", "de": "Meine Handynummer ist null eins sieben sechs, zwei drei vier, fünfzig, neunundachtzig.", "ro": "Numărul meu de mobil este 0176 234 50 89." },
-      { "id": "d3", "speaker": "B", "de": "Langsam, bitte. Null eins sieben sechs …", "ro": "Mai rar, vă rog. Zero unu șapte șase…" },
-      { "id": "d4", "speaker": "A", "de": "… zwei drei vier, fünfzig, neunundachtzig.", "ro": "… doi trei patru, cincizeci, optzeci și nouă." },
-      { "id": "d5", "speaker": "B", "de": "Danke. Und wie ist Ihre Adresse?", "ro": "Mulțumesc. Și care e adresa dumneavoastră?" },
-      { "id": "d6", "speaker": "A", "de": "Ringstraße zwölf, in Köln.", "ro": "Ringstraße 12, în Köln." },
-      { "id": "d7", "speaker": "B", "de": "Und die Postleitzahl?", "ro": "Și codul poștal?" },
-      { "id": "d8", "speaker": "A", "de": "Fünf null sechs sieben acht.", "ro": "5 0 6 7 8." },
-      { "id": "d9", "speaker": "B", "de": "Gut. Und wie alt sind Sie? Das brauche ich für die Versicherung.", "ro": "Bine. Și câți ani aveți? Am nevoie de asta pentru asigurare." },
-      { "id": "d10", "speaker": "A", "de": "Ich bin zweiunddreißig.", "ro": "Am 32 de ani." },
-      { "id": "d11", "speaker": "B", "de": "Super. Haben Sie noch Fragen?", "ro": "Super. Mai aveți întrebări?" },
-      { "id": "d12", "speaker": "A", "de": "Nein, im Moment nicht. Vielen Dank!", "ro": "Nu, momentan nu. Mulțumesc mult!" }
+      { "id": "d1", "speaker": "B", "de": "So, Herr Popescu. Ich brauche noch Ihre Telefonnummer.", "ro": "Deci, domnule Popescu. Mai am nevoie de numărul dumneavoastră de telefon.", "lit": "deci | domnule |  | eu | am nevoie de | încă | al dvs. | număr-de-telefon" },
+      { "id": "d2", "speaker": "A", "de": "Meine Handynummer ist null eins sieben sechs, zwei drei vier, fünfzig, neunundachtzig.", "ro": "Numărul meu de mobil este 0176 234 50 89.", "lit": "al meu | număr-de-mobil | e | zero | unu | șapte | șase | doi | trei | patru | cincizeci | nouă-și-optzeci" },
+      { "id": "d3", "speaker": "B", "de": "Langsam, bitte. Null eins sieben sechs …", "ro": "Mai rar, vă rog. Zero unu șapte șase…", "lit": "încet | vă rog | zero | unu | șapte | șase | …" },
+      { "id": "d4", "speaker": "A", "de": "… zwei drei vier, fünfzig, neunundachtzig.", "ro": "… doi trei patru, cincizeci, optzeci și nouă.", "lit": "… | doi | trei | patru | cincizeci | nouă-și-optzeci" },
+      { "id": "d5", "speaker": "B", "de": "Danke. Und wie ist Ihre Adresse?", "ro": "Mulțumesc. Și care e adresa dumneavoastră?", "lit": "mulțumesc | și | cum | e | a dvs. | adresa" },
+      { "id": "d6", "speaker": "A", "de": "Ringstraße zwölf, in Köln.", "ro": "Ringstraße 12, în Köln.", "lit": "inel-stradă | doisprezece | în | " },
+      { "id": "d7", "speaker": "B", "de": "Und die Postleitzahl?", "ro": "Și codul poștal?", "lit": "și | (art. f) | poștă-dirijare-număr" },
+      { "id": "d8", "speaker": "A", "de": "Fünf null sechs sieben acht.", "ro": "5 0 6 7 8.", "lit": "cinci | zero | șase | șapte | opt" },
+      { "id": "d9", "speaker": "B", "de": "Gut. Und wie alt sind Sie? Das brauche ich für die Versicherung.", "ro": "Bine. Și câți ani aveți? Am nevoie de asta pentru asigurare.", "lit": "bine | și | cât de | bătrân | sunteți | dvs. | asta | am nevoie de | eu | pentru | (art.) | asigurare" },
+      { "id": "d10", "speaker": "A", "de": "Ich bin zweiunddreißig.", "ro": "Am 32 de ani.", "lit": "eu | sunt | doi-și-treizeci" },
+      { "id": "d11", "speaker": "B", "de": "Super. Haben Sie noch Fragen?", "ro": "Super. Mai aveți întrebări?", "lit": "super | aveți | dvs. | încă | întrebări" },
+      { "id": "d12", "speaker": "A", "de": "Nein, im Moment nicht. Vielen Dank!", "ro": "Nu, momentan nu. Mulțumesc mult!", "lit": "nu | în (+art.) | moment | nu | multe | mulțumiri" }
     ]
   },
   "phrases": [
-    { "id": "p1", "de": "Wie ist Ihre Telefonnummer?", "ro": "Care e numărul dvs. de telefon?" },
-    { "id": "p2", "de": "Meine Handynummer ist …", "ro": "Numărul meu de mobil este …", "note": "das Handy = telefonul mobil" },
-    { "id": "p3", "de": "Wie ist Ihre Adresse?", "ro": "Care e adresa dvs.?" },
-    { "id": "p4", "de": "die Postleitzahl", "ro": "codul poștal", "note": "Prescurtat: PLZ" },
-    { "id": "p5", "de": "Wie alt bist du?", "ro": "Câți ani ai?" },
-    { "id": "p6", "de": "Ich bin zweiunddreißig.", "ro": "Am 32 de ani.", "note": "Cu „sein”, nu cu „haben”!" },
-    { "id": "p7", "de": "Langsam, bitte.", "ro": "Mai rar, vă rog." },
-    { "id": "p8", "de": "Noch einmal, bitte.", "ro": "Încă o dată, vă rog." },
-    { "id": "p9", "de": "Ich brauche …", "ro": "Am nevoie de …" },
-    { "id": "p10", "de": "Haben Sie noch Fragen?", "ro": "Mai aveți întrebări?" },
-    { "id": "p11", "de": "Im Moment nicht.", "ro": "Momentan nu." },
-    { "id": "p12", "de": "Vielen Dank!", "ro": "Mulțumesc mult!" },
-    { "id": "p13", "de": "Ich habe eine Frage.", "ro": "Am o întrebare." },
-    { "id": "p14", "de": "Hast du Zeit?", "ro": "Ai timp?" }
+    { "id": "p1", "de": "Wie ist Ihre Telefonnummer?", "ro": "Care e numărul dvs. de telefon?", "lit": "cum | e | al dvs. | număr-de-telefon" },
+    { "id": "p2", "de": "Meine Handynummer ist …", "ro": "Numărul meu de mobil este …", "lit": "al meu | număr-de-mobil | e | …", "note": "das Handy = telefonul mobil" },
+    { "id": "p3", "de": "Wie ist Ihre Adresse?", "ro": "Care e adresa dvs.?", "lit": "cum | e | a dvs. | adresa" },
+    { "id": "p4", "de": "die Postleitzahl", "ro": "codul poștal", "lit": "(art. f) | poștă-dirijare-număr", "note": "Prescurtat: PLZ" },
+    { "id": "p5", "de": "Wie alt bist du?", "ro": "Câți ani ai?", "lit": "cât de | bătrân | ești | tu" },
+    { "id": "p6", "de": "Ich bin zweiunddreißig.", "ro": "Am 32 de ani.", "lit": "eu | sunt | doi-și-treizeci", "note": "Cu „sein”, nu cu „haben”!" },
+    { "id": "p7", "de": "Langsam, bitte.", "ro": "Mai rar, vă rog.", "lit": "încet | vă rog" },
+    { "id": "p8", "de": "Noch einmal, bitte.", "ro": "Încă o dată, vă rog.", "lit": "încă | o dată | vă rog" },
+    { "id": "p9", "de": "Ich brauche …", "ro": "Am nevoie de …", "lit": "eu | am nevoie de | …" },
+    { "id": "p10", "de": "Haben Sie noch Fragen?", "ro": "Mai aveți întrebări?", "lit": "aveți | dvs. | încă | întrebări" },
+    { "id": "p11", "de": "Im Moment nicht.", "ro": "Momentan nu.", "lit": "în (+art.) | moment | nu" },
+    { "id": "p12", "de": "Vielen Dank!", "ro": "Mulțumesc mult!", "lit": "multe | mulțumiri" },
+    { "id": "p13", "de": "Ich habe eine Frage.", "ro": "Am o întrebare.", "lit": "eu | am | o | întrebare" },
+    { "id": "p14", "de": "Hast du Zeit?", "ro": "Ai timp?", "lit": "ai | tu | timp" }
   ],
   "grammar": {
     "title": "Numerele. Verbul haben. Vârsta",
@@ -94,6 +94,7 @@
     "tables": [
       {
         "caption": "haben – prezent",
+        "audio": "conjugation",
         "headers": ["", "haben (a avea)"],
         "rows": [
           ["ich", "hab**e**"],

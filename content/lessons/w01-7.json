@@ -21,37 +21,37 @@
       "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "W", "de": "Herr Popescu, können Sie mir den Bericht bis heute Nachmittag um vier schicken?", "ro": "Domnule Popescu, îmi puteți trimite raportul până azi după-amiază la patru?" },
-      { "id": "d2", "speaker": "A", "de": "Entschuldigung, wie bitte? Können Sie das bitte wiederholen?", "ro": "Scuzați, poftim? Puteți repeta, vă rog?" },
-      { "id": "d3", "speaker": "W", "de": "Den Bericht. Bis vier Uhr. Heute.", "ro": "Raportul. Până la patru. Azi." },
-      { "id": "d4", "speaker": "A", "de": "Langsamer, bitte. Ich spreche noch nicht so gut Deutsch.", "ro": "Mai rar, vă rog. Încă nu vorbesc prea bine germana." },
-      { "id": "d5", "speaker": "W", "de": "Ach so, kein Problem! Der Bericht – das ist ein Dokument. Ein Report.", "ro": "A, așa, nicio problemă! Raportul, adică un document. Un raport." },
-      { "id": "d6", "speaker": "A", "de": "Ah, ich verstehe. Und was bedeutet „schicken“?", "ro": "A, înțeleg. Și ce înseamnă „schicken”?" },
-      { "id": "d7", "speaker": "W", "de": "Schicken … per E-Mail senden.", "ro": "Schicken … a trimite pe e-mail." },
-      { "id": "d8", "speaker": "A", "de": "Alles klar! Meinen Sie heute um sechzehn Uhr?", "ro": "Clar! Vă referiți la azi, la ora 16?" },
-      { "id": "d9", "speaker": "W", "de": "Genau. Danke, Herr Popescu!", "ro": "Exact. Mulțumesc, domnule Popescu!" },
-      { "id": "d10", "speaker": "A", "de": "Gern! Und wie schreibt man „Bericht“?", "ro": "Cu plăcere! Și cum se scrie „Bericht”?" },
+      { "id": "d1", "speaker": "W", "de": "Herr Popescu, können Sie mir den Bericht bis heute Nachmittag um vier schicken?", "ro": "Domnule Popescu, îmi puteți trimite raportul până azi după-amiază la patru?", "lit": "domnule |  | puteți | dvs. | mie | (art.) | raportul | până | azi | după-amiază | la | patru | trimite" },
+      { "id": "d2", "speaker": "A", "de": "Entschuldigung, wie bitte? Können Sie das bitte wiederholen?", "ro": "Scuzați, poftim? Puteți repeta, vă rog?", "lit": "scuze | cum | vă rog | puteți | dvs. | asta | vă rog | repeta" },
+      { "id": "d3", "speaker": "W", "de": "Den Bericht. Bis vier Uhr. Heute.", "ro": "Raportul. Până la patru. Azi.", "lit": "(art.) | raportul | până la | patru | ora | azi" },
+      { "id": "d4", "speaker": "A", "de": "Langsamer, bitte. Ich spreche noch nicht so gut Deutsch.", "ro": "Mai rar, vă rog. Încă nu vorbesc prea bine germana.", "lit": "mai încet | vă rog | eu | vorbesc | încă | nu | așa | bine | germană" },
+      { "id": "d5", "speaker": "W", "de": "Ach so, kein Problem! Der Bericht – das ist ein Dokument. Ein Report.", "ro": "A, așa, nicio problemă! Raportul, adică un document. Un raport.", "lit": "a | așa | nicio | problemă | (art.) | raportul | – | asta | e | un | document | un | raport" },
+      { "id": "d6", "speaker": "A", "de": "Ah, ich verstehe. Und was bedeutet „schicken“?", "ro": "A, înțeleg. Și ce înseamnă „schicken”?", "lit": "a | eu | înțeleg | și | ce | înseamnă | „a trimite”" },
+      { "id": "d7", "speaker": "W", "de": "Schicken … per E-Mail senden.", "ro": "Schicken … a trimite pe e-mail.", "lit": "a trimite | … | prin | e-mail | a expedia" },
+      { "id": "d8", "speaker": "A", "de": "Alles klar! Meinen Sie heute um sechzehn Uhr?", "ro": "Clar! Vă referiți la azi, la ora 16?", "lit": "totul | clar | vă referiți | dvs. | azi | la | șaisprezece | ora" },
+      { "id": "d9", "speaker": "W", "de": "Genau. Danke, Herr Popescu!", "ro": "Exact. Mulțumesc, domnule Popescu!", "lit": "exact | mulțumesc | domnule | " },
+      { "id": "d10", "speaker": "A", "de": "Gern! Und wie schreibt man „Bericht“?", "ro": "Cu plăcere! Și cum se scrie „Bericht”?", "lit": "cu plăcere | și | cum | scrie | cineva | „raport”" },
       { "id": "d11", "speaker": "W", "de": "B – E – R – I – C – H – T.", "ro": "B – E – R – I – C – H – T." },
-      { "id": "d12", "speaker": "A", "de": "Danke! Bis später!", "ro": "Mulțumesc! Pe mai târziu!" }
+      { "id": "d12", "speaker": "A", "de": "Danke! Bis später!", "ro": "Mulțumesc! Pe mai târziu!", "lit": "mulțumesc | până | mai târziu" }
     ]
   },
   "phrases": [
-    { "id": "p1", "de": "Wie bitte?", "ro": "Poftim? / Cum ați spus?" },
-    { "id": "p2", "de": "Entschuldigung, ich verstehe das nicht.", "ro": "Scuzați, nu înțeleg asta." },
-    { "id": "p3", "de": "Können Sie das bitte wiederholen?", "ro": "Puteți repeta, vă rog?" },
-    { "id": "p4", "de": "Langsamer, bitte.", "ro": "Mai rar, vă rog." },
-    { "id": "p5", "de": "Können Sie bitte langsamer sprechen?", "ro": "Puteți vorbi mai rar, vă rog?" },
-    { "id": "p6", "de": "Was bedeutet „schicken“?", "ro": "Ce înseamnă „schicken”?" },
-    { "id": "p7", "de": "Wie sagt man … auf Deutsch?", "ro": "Cum se spune … în germană?" },
-    { "id": "p8", "de": "Wie schreibt man das?", "ro": "Cum se scrie asta?" },
-    { "id": "p9", "de": "Ich spreche noch nicht so gut Deutsch.", "ro": "Încă nu vorbesc prea bine germana." },
-    { "id": "p10", "de": "Sprechen Sie Englisch?", "ro": "Vorbiți engleză?", "note": "Ultima soluție! Încearcă întâi în germană." },
-    { "id": "p11", "de": "Ah, ich verstehe!", "ro": "A, înțeleg!" },
-    { "id": "p12", "de": "Ach so!", "ro": "A, așa deci!", "note": "Foarte folosit când înțelegi ceva." },
-    { "id": "p13", "de": "Meinen Sie …?", "ro": "Vă referiți la …? / Vreți să spuneți …?" },
-    { "id": "p14", "de": "Alles klar!", "ro": "Clar! / Am înțeles!" },
-    { "id": "p15", "de": "Moment, bitte.", "ro": "O clipă, vă rog." },
-    { "id": "p16", "de": "Kein Problem!", "ro": "Nicio problemă!" }
+    { "id": "p1", "de": "Wie bitte?", "ro": "Poftim? / Cum ați spus?", "lit": "cum | vă rog" },
+    { "id": "p2", "de": "Entschuldigung, ich verstehe das nicht.", "ro": "Scuzați, nu înțeleg asta.", "lit": "scuze | eu | înțeleg | asta | nu" },
+    { "id": "p3", "de": "Können Sie das bitte wiederholen?", "ro": "Puteți repeta, vă rog?", "lit": "puteți | dvs. | asta | vă rog | repeta" },
+    { "id": "p4", "de": "Langsamer, bitte.", "ro": "Mai rar, vă rog.", "lit": "mai încet | vă rog" },
+    { "id": "p5", "de": "Können Sie bitte langsamer sprechen?", "ro": "Puteți vorbi mai rar, vă rog?", "lit": "puteți | dvs. | vă rog | mai încet | vorbi" },
+    { "id": "p6", "de": "Was bedeutet „schicken“?", "ro": "Ce înseamnă „schicken”?", "lit": "ce | înseamnă | „a trimite”" },
+    { "id": "p7", "de": "Wie sagt man … auf Deutsch?", "ro": "Cum se spune … în germană?", "lit": "cum | spune | cineva | … | pe | germană" },
+    { "id": "p8", "de": "Wie schreibt man das?", "ro": "Cum se scrie asta?", "lit": "cum | scrie | cineva | asta" },
+    { "id": "p9", "de": "Ich spreche noch nicht so gut Deutsch.", "ro": "Încă nu vorbesc prea bine germana.", "lit": "eu | vorbesc | încă | nu | așa | bine | germană" },
+    { "id": "p10", "de": "Sprechen Sie Englisch?", "ro": "Vorbiți engleză?", "lit": "vorbiți | dvs. | engleză", "note": "Ultima soluție! Încearcă întâi în germană." },
+    { "id": "p11", "de": "Ah, ich verstehe!", "ro": "A, înțeleg!", "lit": "a | eu | înțeleg" },
+    { "id": "p12", "de": "Ach so!", "ro": "A, așa deci!", "lit": "a | așa", "note": "Foarte folosit când înțelegi ceva." },
+    { "id": "p13", "de": "Meinen Sie …?", "ro": "Vă referiți la …? / Vreți să spuneți …?", "lit": "vă referiți | dvs. | …" },
+    { "id": "p14", "de": "Alles klar!", "ro": "Clar! / Am înțeles!", "lit": "totul | clar" },
+    { "id": "p15", "de": "Moment, bitte.", "ro": "O clipă, vă rog.", "lit": "moment | vă rog" },
+    { "id": "p16", "de": "Kein Problem!", "ro": "Nicio problemă!", "lit": "nicio | problemă" }
   ],
   "grammar": {
     "title": "Rugăminți politicoase cu können. Verbul pe primul loc",
@@ -64,6 +64,7 @@
     "tables": [
       {
         "caption": "können – prezent",
+        "audio": "conjugation",
         "headers": ["", "können (a putea)"],
         "rows": [
           ["ich", "**kann**"],
@@ -76,6 +77,7 @@
       },
       {
         "caption": "Rama verbală",
+        "audio": "row",
         "headers": ["poziția 1", "verbul modal", "mijloc", "final: infinitiv"],
         "rows": [
           ["—", "**Können**", "Sie das bitte", "**wiederholen**?"],

@@ -14,6 +14,7 @@
   --bad: #c0392b;
   --bad-soft: #fbe9e7;
   --warn: #b26a00;
+  --gloss: #2f6db0;
   --note: #fff8e1;
   --radius: 12px;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -36,6 +37,7 @@
     --bad: #ff6b5b;
     --bad-soft: #3a1c18;
     --warn: #f0a640;
+    --gloss: #82b8f5;
     --note: #2a2618;
     --shadow: none;
     color-scheme: dark;
@@ -565,6 +567,22 @@ ul.checks li::before {
 .phrase .de {
   font-size: 1.05rem;
 }
+/* traducerea mot-à-mot: glosa sub fiecare cuvânt */
+.interlinear {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.55rem;
+  row-gap: 0.25rem;
+}
+.interlinear .w {
+  display: inline-flex;
+  flex-direction: column;
+}
+.interlinear .gl {
+  font-size: 0.78rem;
+  line-height: 1.2;
+  color: var(--gloss);
+}
 .note-inline {
   color: var(--warn);
   margin-top: 0.15rem;
@@ -608,6 +626,34 @@ td {
 }
 th {
   background: var(--surface-2);
+}
+/* celule cu audio: tot conținutul e apăsabil */
+button.cell-play {
+  all: unset;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+button.cell-play:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.cell-icon {
+  font-size: 0.65rem;
+  color: var(--accent);
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+button.cell-play:hover .cell-icon,
+button.cell-play.playing .cell-icon {
+  opacity: 1;
+}
+button.cell-play.playing {
+  color: var(--accent);
 }
 .examples {
   list-style: none;

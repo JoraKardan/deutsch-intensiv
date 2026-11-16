@@ -21,36 +21,36 @@
       "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "K", "de": "Guten Abend! Sind Sie auch neu hier?", "ro": "Bună seara! Sunteți și dumneavoastră nou aici?" },
-      { "id": "d2", "speaker": "A", "de": "Ja, ich arbeite seit Montag hier. Mein Name ist Radu Popescu.", "ro": "Da, lucrez aici de luni. Numele meu e Radu Popescu." },
-      { "id": "d3", "speaker": "K", "de": "Krause, freut mich. Was machen Sie beruflich?", "ro": "Krause, încântat. Cu ce vă ocupați?" },
-      { "id": "d4", "speaker": "A", "de": "Ich bin Softwareentwickler. Ich arbeite im IT-Team.", "ro": "Sunt programator. Lucrez în echipa de IT." },
-      { "id": "d5", "speaker": "K", "de": "Ah, interessant! Ich arbeite nicht in der IT. Ich bin Buchhalter.", "ro": "A, interesant! Eu nu lucrez la IT. Sunt contabil." },
-      { "id": "d6", "speaker": "A", "de": "Arbeiten Sie schon lange hier?", "ro": "Lucrați de mult aici?" },
-      { "id": "d7", "speaker": "K", "de": "Ja, schon zehn Jahre. Und Sie? Ist das Ihr erster Job in Deutschland?", "ro": "Da, deja de zece ani. Și dumneavoastră? E primul job în Germania?" },
-      { "id": "d8", "speaker": "A", "de": "Ja, genau. Meine Frau sucht noch Arbeit. Sie ist Krankenschwester.", "ro": "Da, exact. Soția mea încă își caută de lucru. E asistentă medicală." },
-      { "id": "d9", "speaker": "K", "de": "Oh, Krankenschwestern sucht man hier überall!", "ro": "O, asistente medicale se caută aici peste tot!" },
-      { "id": "d10", "speaker": "K", "de": "Und gefällt es Ihnen bei uns?", "ro": "Și vă place la noi?" },
-      { "id": "d11", "speaker": "A", "de": "Ja, sehr! Die Kollegen sind sehr nett. Aber Deutsch ist nicht leicht.", "ro": "Da, foarte! Colegii sunt foarte drăguți. Dar germana nu e ușoară." },
-      { "id": "d12", "speaker": "K", "de": "Keine Sorge, Sie sprechen schon gut!", "ro": "Nu vă faceți griji, vorbiți deja bine!" }
+      { "id": "d1", "speaker": "K", "de": "Guten Abend! Sind Sie auch neu hier?", "ro": "Bună seara! Sunteți și dumneavoastră nou aici?", "lit": "bună | seara | sunteți | dvs. | și | nou | aici" },
+      { "id": "d2", "speaker": "A", "de": "Ja, ich arbeite seit Montag hier. Mein Name ist Radu Popescu.", "ro": "Da, lucrez aici de luni. Numele meu e Radu Popescu.", "lit": "da | eu | lucrez | de la | luni | aici | al meu | nume | e |  | " },
+      { "id": "d3", "speaker": "K", "de": "Krause, freut mich. Was machen Sie beruflich?", "ro": "Krause, încântat. Cu ce vă ocupați?", "lit": " | bucură | pe mine | ce | faceți | dvs. | profesional" },
+      { "id": "d4", "speaker": "A", "de": "Ich bin Softwareentwickler. Ich arbeite im IT-Team.", "ro": "Sunt programator. Lucrez în echipa de IT.", "lit": "eu | sunt | software-dezvoltator | eu | lucrez | în (+art.) | IT-echipă" },
+      { "id": "d5", "speaker": "K", "de": "Ah, interessant! Ich arbeite nicht in der IT. Ich bin Buchhalter.", "ro": "A, interesant! Eu nu lucrez la IT. Sunt contabil.", "lit": "a | interesant | eu | lucrez | nu | în | (art.) | IT | eu | sunt | carte-ținător" },
+      { "id": "d6", "speaker": "A", "de": "Arbeiten Sie schon lange hier?", "ro": "Lucrați de mult aici?", "lit": "lucrați | dvs. | deja | lung | aici" },
+      { "id": "d7", "speaker": "K", "de": "Ja, schon zehn Jahre. Und Sie? Ist das Ihr erster Job in Deutschland?", "ro": "Da, deja de zece ani. Și dumneavoastră? E primul job în Germania?", "lit": "da | deja | zece | ani | și | dvs. | e | asta | al dvs. | primul | job | în | Germania" },
+      { "id": "d8", "speaker": "A", "de": "Ja, genau. Meine Frau sucht noch Arbeit. Sie ist Krankenschwester.", "ro": "Da, exact. Soția mea încă își caută de lucru. E asistentă medicală.", "lit": "da | exact | a mea | soție | caută | încă | lucru | ea | e | bolnavi-soră" },
+      { "id": "d9", "speaker": "K", "de": "Oh, Krankenschwestern sucht man hier überall!", "ro": "O, asistente medicale se caută aici peste tot!", "lit": "o | bolnavi-surori | caută | cineva | aici | peste tot" },
+      { "id": "d10", "speaker": "K", "de": "Und gefällt es Ihnen bei uns?", "ro": "Și vă place la noi?", "lit": "și | place | (asta) | dvs. | la | noi" },
+      { "id": "d11", "speaker": "A", "de": "Ja, sehr! Die Kollegen sind sehr nett. Aber Deutsch ist nicht leicht.", "ro": "Da, foarte! Colegii sunt foarte drăguți. Dar germana nu e ușoară.", "lit": "da | foarte | (art.) | colegii | sunt | foarte | drăguți | dar | germana | e | nu | ușor" },
+      { "id": "d12", "speaker": "K", "de": "Keine Sorge, Sie sprechen schon gut!", "ro": "Nu vă faceți griji, vorbiți deja bine!", "lit": "nicio | grijă | dvs. | vorbiți | deja | bine" }
     ]
   },
   "phrases": [
-    { "id": "p1", "de": "Was machen Sie beruflich?", "ro": "Cu ce vă ocupați?" },
-    { "id": "p2", "de": "Was bist du von Beruf?", "ro": "Ce meserie ai?" },
-    { "id": "p3", "de": "Ich bin Softwareentwickler.", "ro": "Sunt programator.", "note": "Fără articol!" },
-    { "id": "p4", "de": "Ich arbeite als Ingenieur.", "ro": "Lucrez ca inginer." },
-    { "id": "p5", "de": "Ich arbeite bei Siemens.", "ro": "Lucrez la Siemens.", "note": "bei + numele firmei" },
-    { "id": "p6", "de": "Ich arbeite seit Montag hier.", "ro": "Lucrez aici de luni." },
-    { "id": "p7", "de": "Arbeiten Sie schon lange hier?", "ro": "Lucrați de mult aici?" },
-    { "id": "p8", "de": "Ich suche Arbeit.", "ro": "Îmi caut de lucru." },
-    { "id": "p9", "de": "Ich arbeite nicht in der IT.", "ro": "Nu lucrez în IT." },
-    { "id": "p10", "de": "Das ist nicht leicht.", "ro": "Nu e ușor." },
-    { "id": "p11", "de": "Gefällt es Ihnen hier?", "ro": "Vă place aici?" },
-    { "id": "p12", "de": "Die Kollegen sind sehr nett.", "ro": "Colegii sunt foarte drăguți." },
-    { "id": "p13", "de": "Keine Sorge!", "ro": "Nu-ți face griji! / Fără grijă!" },
-    { "id": "p14", "de": "Ja, genau.", "ro": "Da, exact." },
-    { "id": "p15", "de": "Mein Name ist …", "ro": "Numele meu este …" }
+    { "id": "p1", "de": "Was machen Sie beruflich?", "ro": "Cu ce vă ocupați?", "lit": "ce | faceți | dvs. | profesional" },
+    { "id": "p2", "de": "Was bist du von Beruf?", "ro": "Ce meserie ai?", "lit": "ce | ești | tu | de | meserie" },
+    { "id": "p3", "de": "Ich bin Softwareentwickler.", "ro": "Sunt programator.", "lit": "eu | sunt | software-dezvoltator", "note": "Fără articol!" },
+    { "id": "p4", "de": "Ich arbeite als Ingenieur.", "ro": "Lucrez ca inginer.", "lit": "eu | lucrez | ca | inginer" },
+    { "id": "p5", "de": "Ich arbeite bei Siemens.", "ro": "Lucrez la Siemens.", "lit": "eu | lucrez | la | Siemens", "note": "bei + numele firmei" },
+    { "id": "p6", "de": "Ich arbeite seit Montag hier.", "ro": "Lucrez aici de luni.", "lit": "eu | lucrez | de la | luni | aici" },
+    { "id": "p7", "de": "Arbeiten Sie schon lange hier?", "ro": "Lucrați de mult aici?", "lit": "lucrați | dvs. | deja | lung | aici" },
+    { "id": "p8", "de": "Ich suche Arbeit.", "ro": "Îmi caut de lucru.", "lit": "eu | caut | lucru" },
+    { "id": "p9", "de": "Ich arbeite nicht in der IT.", "ro": "Nu lucrez în IT.", "lit": "eu | lucrez | nu | în | (art.) | IT" },
+    { "id": "p10", "de": "Das ist nicht leicht.", "ro": "Nu e ușor.", "lit": "asta | e | nu | ușor" },
+    { "id": "p11", "de": "Gefällt es Ihnen hier?", "ro": "Vă place aici?", "lit": "place | (asta) | dvs. | aici" },
+    { "id": "p12", "de": "Die Kollegen sind sehr nett.", "ro": "Colegii sunt foarte drăguți.", "lit": "(art.) | colegii | sunt | foarte | drăguți" },
+    { "id": "p13", "de": "Keine Sorge!", "ro": "Nu-ți face griji! / Fără grijă!", "lit": "nicio | grijă" },
+    { "id": "p14", "de": "Ja, genau.", "ro": "Da, exact.", "lit": "da | exact" },
+    { "id": "p15", "de": "Mein Name ist …", "ro": "Numele meu este …", "lit": "al meu | nume | e | …" }
   ],
   "grammar": {
     "title": "Profesii (masculin/feminin). Negația cu nicht",
@@ -64,6 +64,7 @@
     "tables": [
       {
         "caption": "arbeiten – prezent",
+        "audio": "conjugation",
         "headers": ["", "arbeiten (a lucra)"],
         "rows": [
           ["ich", "arbeit**e**"],
@@ -76,6 +77,7 @@
       },
       {
         "caption": "Profesii utile",
+        "audio": [0,1],
         "headers": ["masculin", "feminin", "română"],
         "rows": [
           ["der Softwareentwickler", "die Softwareentwicklerin", "programator"],

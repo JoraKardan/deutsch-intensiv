@@ -45,37 +45,37 @@
       "L": { "name": "Lena", "voice": "de-DE-KatjaNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "L", "de": "Guten Morgen!", "ro": "Bună dimineața!" },
-      { "id": "d2", "speaker": "A", "de": "Guten Morgen! Ich bin Radu Popescu.", "ro": "Bună dimineața! Sunt Radu Popescu." },
-      { "id": "d3", "speaker": "L", "de": "Ah, Herr Popescu! Herzlich willkommen! Ich heiße Lena Schmidt.", "ro": "A, domnul Popescu! Bun venit! Mă numesc Lena Schmidt." },
-      { "id": "d4", "speaker": "A", "de": "Freut mich, Frau Schmidt.", "ro": "Încântat, doamnă Schmidt." },
-      { "id": "d5", "speaker": "L", "de": "Freut mich auch. Wie geht es Ihnen?", "ro": "Încântată și eu. Ce mai faceți?" },
-      { "id": "d6", "speaker": "A", "de": "Danke, gut. Und Ihnen?", "ro": "Mulțumesc, bine. Și dumneavoastră?" },
-      { "id": "d7", "speaker": "L", "de": "Auch gut, danke. Hier sagen alle „du“. Ich bin Lena.", "ro": "Tot bine, mulțumesc. Aici toată lumea își spune „tu”. Eu sunt Lena." },
-      { "id": "d8", "speaker": "A", "de": "Okay, gern! Ich bin Radu.", "ro": "Bine, cu plăcere! Eu sunt Radu." },
-      { "id": "d9", "speaker": "L", "de": "Wie bitte? Wie heißt du?", "ro": "Poftim? Cum te numești?" },
+      { "id": "d1", "speaker": "L", "de": "Guten Morgen!", "ro": "Bună dimineața!", "lit": "bună | dimineața" },
+      { "id": "d2", "speaker": "A", "de": "Guten Morgen! Ich bin Radu Popescu.", "ro": "Bună dimineața! Sunt Radu Popescu.", "lit": "bună | dimineața | eu | sunt |  | " },
+      { "id": "d3", "speaker": "L", "de": "Ah, Herr Popescu! Herzlich willkommen! Ich heiße Lena Schmidt.", "ro": "A, domnul Popescu! Bun venit! Mă numesc Lena Schmidt.", "lit": "a | domnul |  | din inimă | bine ai venit | eu | mă numesc |  | " },
+      { "id": "d4", "speaker": "A", "de": "Freut mich, Frau Schmidt.", "ro": "Încântat, doamnă Schmidt.", "lit": "bucură | pe mine | doamnă | " },
+      { "id": "d5", "speaker": "L", "de": "Freut mich auch. Wie geht es Ihnen?", "ro": "Încântată și eu. Ce mai faceți?", "lit": "bucură | pe mine | și | cum | merge | (asta) | (pentru) dvs." },
+      { "id": "d6", "speaker": "A", "de": "Danke, gut. Und Ihnen?", "ro": "Mulțumesc, bine. Și dumneavoastră?", "lit": "mulțumesc | bine | și | (pentru) dvs." },
+      { "id": "d7", "speaker": "L", "de": "Auch gut, danke. Hier sagen alle „du“. Ich bin Lena.", "ro": "Tot bine, mulțumesc. Aici toată lumea își spune „tu”. Eu sunt Lena.", "lit": "și | bine | mulțumesc | aici | spun | toți | „tu” | eu | sunt | " },
+      { "id": "d8", "speaker": "A", "de": "Okay, gern! Ich bin Radu.", "ro": "Bine, cu plăcere! Eu sunt Radu.", "lit": "ok | cu plăcere | eu | sunt | " },
+      { "id": "d9", "speaker": "L", "de": "Wie bitte? Wie heißt du?", "ro": "Poftim? Cum te numești?", "lit": "cum | vă rog | cum | te numești | tu" },
       { "id": "d10", "speaker": "A", "de": "Radu. R – A – D – U.", "ro": "Radu. R – A – D – U." },
-      { "id": "d11", "speaker": "L", "de": "Ah, Radu. Schön! Bis später, Radu!", "ro": "A, Radu. Frumos! Pe mai târziu, Radu!" },
-      { "id": "d12", "speaker": "A", "de": "Bis später! Tschüss!", "ro": "Pe mai târziu! Pa!" }
+      { "id": "d11", "speaker": "L", "de": "Ah, Radu. Schön! Bis später, Radu!", "ro": "A, Radu. Frumos! Pe mai târziu, Radu!", "lit": "a |  | frumos | până | mai târziu | " },
+      { "id": "d12", "speaker": "A", "de": "Bis später! Tschüss!", "ro": "Pe mai târziu! Pa!", "lit": "până | mai târziu | pa" }
     ]
   },
   "phrases": [
-    { "id": "p1", "de": "Guten Morgen!", "ro": "Bună dimineața!", "note": "Până pe la 10–11." },
-    { "id": "p2", "de": "Guten Tag!", "ro": "Bună ziua!" },
-    { "id": "p3", "de": "Guten Abend!", "ro": "Bună seara!" },
+    { "id": "p1", "de": "Guten Morgen!", "ro": "Bună dimineața!", "lit": "bună | dimineața", "note": "Până pe la 10–11." },
+    { "id": "p2", "de": "Guten Tag!", "ro": "Bună ziua!", "lit": "bună | ziua" },
+    { "id": "p3", "de": "Guten Abend!", "ro": "Bună seara!", "lit": "bună | seara" },
     { "id": "p4", "de": "Hallo!", "ro": "Salut! / Bună!", "note": "Foarte folosit, chiar și cu necunoscuți." },
-    { "id": "p5", "de": "Ich heiße Radu.", "ro": "Mă numesc Radu." },
-    { "id": "p6", "de": "Ich bin Radu.", "ro": "Sunt Radu." },
-    { "id": "p7", "de": "Wie heißen Sie?", "ro": "Cum vă numiți?", "note": "Formal (Sie)." },
-    { "id": "p8", "de": "Wie heißt du?", "ro": "Cum te numești?", "note": "Informal (du)." },
-    { "id": "p9", "de": "Freut mich.", "ro": "Încântat(ă). / Îmi pare bine." },
-    { "id": "p10", "de": "Wie geht es Ihnen?", "ro": "Ce mai faceți?", "note": "Formal." },
-    { "id": "p11", "de": "Wie geht's?", "ro": "Ce mai faci?", "note": "Informal: prescurtare de la „Wie geht es?”." },
-    { "id": "p12", "de": "Danke, gut. Und dir?", "ro": "Mulțumesc, bine. Și ție?", "note": "Formal: „Und Ihnen?”." },
-    { "id": "p13", "de": "Herzlich willkommen!", "ro": "Bun venit!" },
-    { "id": "p14", "de": "Bis später!", "ro": "Pe mai târziu!" },
+    { "id": "p5", "de": "Ich heiße Radu.", "ro": "Mă numesc Radu.", "lit": "eu | mă numesc | Radu" },
+    { "id": "p6", "de": "Ich bin Radu.", "ro": "Sunt Radu.", "lit": "eu | sunt | Radu" },
+    { "id": "p7", "de": "Wie heißen Sie?", "ro": "Cum vă numiți?", "lit": "cum | vă numiți | dvs.", "note": "Formal (Sie)." },
+    { "id": "p8", "de": "Wie heißt du?", "ro": "Cum te numești?", "lit": "cum | te numești | tu", "note": "Informal (du)." },
+    { "id": "p9", "de": "Freut mich.", "ro": "Încântat(ă). / Îmi pare bine.", "lit": "bucură | pe mine" },
+    { "id": "p10", "de": "Wie geht es Ihnen?", "ro": "Ce mai faceți?", "lit": "cum | merge | (asta) | (pentru) dvs.", "note": "Formal." },
+    { "id": "p11", "de": "Wie geht's?", "ro": "Ce mai faci?", "lit": "cum | merge-(asta)", "note": "Informal: prescurtare de la „Wie geht es?”." },
+    { "id": "p12", "de": "Danke, gut. Und dir?", "ro": "Mulțumesc, bine. Și ție?", "lit": "mulțumesc | bine | și | ție", "note": "Formal: „Und Ihnen?”." },
+    { "id": "p13", "de": "Herzlich willkommen!", "ro": "Bun venit!", "lit": "din inimă | bine ai venit" },
+    { "id": "p14", "de": "Bis später!", "ro": "Pe mai târziu!", "lit": "până | mai târziu" },
     { "id": "p15", "de": "Tschüss!", "ro": "Pa!", "note": "Informal, dar folosit foarte des." },
-    { "id": "p16", "de": "Auf Wiedersehen!", "ro": "La revedere!", "note": "Formal." }
+    { "id": "p16", "de": "Auf Wiedersehen!", "ro": "La revedere!", "lit": "la | re-vedere", "note": "Formal." }
   ],
   "grammar": {
     "title": "„du” sau „Sie”? Verbele sein și heißen",
@@ -88,6 +88,7 @@
     "tables": [
       {
         "caption": "Prezentul",
+        "audio": "conjugation",
         "headers": ["", "sein (a fi)", "heißen (a se numi)"],
         "rows": [
           ["ich (eu)", "**bin**", "heiß**e**"],
