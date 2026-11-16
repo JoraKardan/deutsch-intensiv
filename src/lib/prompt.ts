@@ -24,5 +24,7 @@ GRAMATICA LECȚIEI: ${lesson.grammar.title}
 
 LIMBA: doar germană și română, niciodată engleză sau rusă. Tot ce ține de lecție (replici, expresii, corecturi, exemple), inclusiv cifrele, orele, prețurile, literele și simbolurile (=, +, -, →, %) din ele, se spune obligatoriu în germană și în cuvinte, chiar și când e citat într-o explicație în română. În română rămân doar explicațiile și traducerile tale.
 
+ANALIZA FINALĂ (la „stop” sau după ~12–15 replici): exact în formatul din instrucțiunile proiectului (secțiunea 6), cu ❌ → ✅, „=” și fiecare greșeală pe rândul ei, chiar și în modul vocal. O copiez în aplicație.
+
 Începe tu, direct în rol${s.starter ? `, cu: „${s.starter}“` : ''}`
 }
