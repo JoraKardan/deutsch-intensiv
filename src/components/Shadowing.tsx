@@ -74,23 +74,70 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
     }
   }
 
+  // Recunoașterea browserului se oprește la prima pauză (ex. după „.”). Cât timp n-am prins
+  // aproape toate cuvintele și n-a expirat timpul frazei, o repornim și lipim bucățile.
+  const session = useRef<{ parts: string[]; userStop: boolean } | null>(null)
+  const [partial, setPartial] = useState('')
+
   const check = () => {
     if (!RecognitionCtor) return
     if (listening) {
+      if (session.current) session.current.userStop = true
       recog.current?.stop()
       return
     }
     stopAll()
+    const expected = de.trim().split(/\s+/).length
+    const deadline = Date.now() + Math.min(25000, 4000 + expected * 900)
+    const sess = { parts: [] as string[], userStop: false }
+    session.current = sess
+    let fatal: string | null = null
+
+    const finish = () => {
+      if (session.current !== sess) return
+      session.current = null
+      setListening(false)
+      setPartial('')
+      if (sess.parts.length) setHeard(sess.parts.join(' '))
+      else if (fatal) setErr(fatal)
+    }
+
     const r = new RecognitionCtor()
     r.lang = 'de-DE'
     r.interimResults = false
     r.maxAlternatives = 1
-    r.onresult = (e) => setHeard(e.results[0][0].transcript)
-    r.onerror = (e) => setErr(e.error === 'no-speech' ? 'Nu s-a auzit nimic. Mai încearcă.' : `Eroare recunoaștere: ${e.error}`)
-    r.onend = () => setListening(false)
+    r.onresult = (e) => {
+      const t = e.results[0][0].transcript.trim()
+      if (!t) return
+      sess.parts.push(t)
+      setPartial(sess.parts.join(' '))
+    }
+    r.onerror = (e) => {
+      if (e.error === 'no-speech') fatal = 'Nu s-a auzit nimic. Mai încearcă.'
+      else if (e.error !== 'aborted') {
+        fatal = `Eroare recunoaștere: ${e.error}`
+        sess.userStop = true // erori ca „not-allowed”: nu mai repornim
+      }
+    }
+    r.onend = () => {
+      const got = sess.parts.join(' ').split(/\s+/).filter(Boolean).length
+      const more = !sess.userStop && got < expected * 0.8 && Date.now() < deadline
+      // după o pauză fără vorbire, dacă avem deja ceva, considerăm că ai terminat
+      if (more && !(fatal && sess.parts.length)) {
+        fatal = null
+        try {
+          r.start()
+          return
+        } catch {
+          /* browserul nu permite repornirea – încheiem cu ce avem */
+        }
+      }
+      finish()
+    }
     recog.current = r
     setHeard(null)
     setErr(null)
+    setPartial('')
     setListening(true)
     r.start()
   }
@@ -118,6 +165,7 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
           </button>
         )}
       </div>
+      {listening && partial && <p className="muted small">Am prins până acum: „{partial}“ … continuă</p>}
       {heard !== null && (
         <div className="explain">
           <div>
