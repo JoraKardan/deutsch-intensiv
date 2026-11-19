@@ -154,6 +154,10 @@ function canonTimes(x: Tok[]): Tok[] {
       const m = isNum(v(i + 2)) && n(i + 2) <= 59
       len = m ? 3 : 2
       t = timeTok(n(i), m ? n(i + 2) : 0)
+    } else if (out[out.length - 1]?.w === 'um' && hour(i)) {
+      // Recunoașterea omite adesea „Uhr”: „um 16” = „um sechzehn Uhr”.
+      len = 1
+      t = timeTok(n(i), 0)
     }
     if (len) {
       out.push({ w: t, own: x.slice(i, i + len).flatMap((y) => y.own) })
