@@ -66,6 +66,7 @@ function AppOfflineCard() {
     </div>
   )
 }
+import { getKeepAwake, setKeepAwake, wakeLockSupported } from '../lib/wakeLock'
 import { exportProgress, importProgress, resetProgress, update, useProgress } from '../lib/store'
 
 export function SettingsPage() {
@@ -73,6 +74,7 @@ export function SettingsPage() {
   const file = useRef<HTMLInputElement>(null)
   const [msg, setMsg] = useState<string | null>(null)
   const [slowRate, setSlowRateState] = useState(getSlowRate)
+  const [awake, setAwake] = useState(getKeepAwake)
 
   const download = () => {
     const blob = new Blob([exportProgress()], { type: 'application/json' })
@@ -88,6 +90,27 @@ export function SettingsPage() {
       <h1>Progres și setări</h1>
 
       <AppOfflineCard />
+
+      {wakeLockSupported() && (
+        <div className="card">
+          <h3>🔆 Ecranul rămâne aprins</h3>
+          <p className="muted">
+            Cât timp aplicația e deschisă, ecranul nu se stinge singur (util la ascultare și shadowing). Bateria se consumă puțin mai
+            repede.
+          </p>
+          <label className="row">
+            <input
+              type="checkbox"
+              checked={awake}
+              onChange={(e) => {
+                setKeepAwake(e.target.checked)
+                setAwake(e.target.checked)
+              }}
+            />
+            <span>{awake ? 'Pornit' : 'Oprit'}</span>
+          </label>
+        </div>
+      )}
 
       <div className="card">
         <h3>Copie de siguranță</h3>
