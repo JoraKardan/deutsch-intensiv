@@ -224,6 +224,12 @@ export function speechMatch(target: string, heard: string, recognizer = false): 
   })
 }
 
+/** Replică formată doar din litere rostite pe rând („B – E – R – I – C – H – T.”): recunoașterea vocală nu le prinde. */
+export function isSpelling(s: string): boolean {
+  const w = words(s)
+  return w.length >= 2 && w.every((x) => /^[a-z]$/.test(x))
+}
+
 export function speechSimilarity(target: string, heard: string, recognizer = false): number {
   const r = speechMatch(target, heard, recognizer).filter((x) => !x.skip)
   return r.length ? r.filter((x) => x.ok).length / r.length : 0

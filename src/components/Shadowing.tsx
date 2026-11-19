@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Lesson } from '../lib/types'
 import { play, stopAll } from '../lib/audio'
-import { speechMatch, speechSimilarity } from '../lib/text'
+import { isSpelling, speechMatch, speechSimilarity } from '../lib/text'
 
 // Recunoașterea vocală a browserului (Chrome / Safari), fără tipuri oficiale în TS.
 type Recognition = {
@@ -159,7 +159,7 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
             ▶ Vocea mea
           </button>
         )}
-        {RecognitionCtor && (
+        {RecognitionCtor && !isSpelling(de) && (
           <button className={listening ? 'danger' : 'ghost'} onClick={check}>
             {listening ? '⏹ Ascult…' : '🗣 Verifică'}
           </button>
