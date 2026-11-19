@@ -142,7 +142,7 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
     r.start()
   }
 
-  const score = heard !== null ? Math.round(speechSimilarity(de, heard) * 100) : null
+  const score = heard !== null ? Math.round(speechSimilarity(de, heard, true) * 100) : null
 
   return (
     <div className="card shadow-line">
@@ -172,8 +172,8 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
             Am înțeles: „<em>{heard}</em>“ — <strong className={score! >= 80 ? 'good' : score! >= 50 ? 'warn' : 'bad'}>{score}%</strong>
           </div>
           <div className="diff">
-            {speechMatch(de, heard).map((w, i) => (
-              <span key={i} className={w.ok ? 'ok' : 'miss'}>
+            {speechMatch(de, heard, true).map((w, i) => (
+              <span key={i} className={w.skip ? '' : w.ok ? 'ok' : 'miss'}>
                 {w.word}{' '}
               </span>
             ))}

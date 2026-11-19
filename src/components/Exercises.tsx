@@ -133,7 +133,7 @@ function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, {
         <div className="explain">
           <div className="diff">
             {result.map((w, i) => (
-              <span key={i} className={w.ok ? 'ok' : 'miss'}>
+              <span key={i} className={w.skip ? '' : w.ok ? 'ok' : 'miss'}>
                 {w.word}{' '}
               </span>
             ))}

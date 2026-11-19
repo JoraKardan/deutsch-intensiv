@@ -115,41 +115,113 @@ export function spokenForm(s: string): string {
     .replace(/&/g, ' und ')
 }
 
-/** Ca matchWords, dar pentru recunoașterea vocală: „fünfzig” = „50”, „null eins sieben” = „017”, oricum ar fi grupate cifrele. */
-export function speechMatch(target: string, heard: string): { word: string; ok: boolean }[] {
-  const raw = target.split(/\s+/).filter(Boolean)
-  const t: string[] = []
-  const owner: number[] = []
-  raw.forEach((w, k) =>
-    words(w).forEach((nw) =>
-      speechTokens(nw).forEach((tok) => {
-        t.push(tok)
-        owner.push(k)
-      }),
-    ),
+type Tok = { w: string; own: number[] }
+
+const isNum = (s: string | undefined) => s !== undefined && /^\d+$/.test(s)
+
+/** Ora ca token unic, în format de 12 ore: „Viertel vor zwölf” = „11:45” = „23:45” → „t11:45”. */
+function timeTok(h: number, m: number): string {
+  const hh = ((h % 12) + 12) % 12 || 12
+  return `t${hh}:${String(m).padStart(2, '0')}`
+}
+
+/** Recunoașterea vocală scrie ora cu cifre („11:45 Uhr”), textul o are în cuvinte („Viertel vor zwölf”, „halb acht”). */
+function canonTimes(x: Tok[]): Tok[] {
+  const out: Tok[] = []
+  const v = (k: number) => x[k]?.w
+  const n = (k: number) => Number(x[k].w)
+  const hour = (k: number) => isNum(v(k)) && n(k) >= 0 && n(k) <= 24
+  const min = (k: number) => isNum(v(k)) && n(k) >= 1 && n(k) <= 29
+  for (let i = 0; i < x.length; ) {
+    let len = 0
+    let t = ''
+    if (v(i) === 'viertel' && (v(i + 1) === 'nach' || v(i + 1) === 'vor') && hour(i + 2)) {
+      len = 3
+      t = v(i + 1) === 'nach' ? timeTok(n(i + 2), 15) : timeTok(n(i + 2) - 1, 45)
+    } else if (v(i) === 'dreiviertel' && hour(i + 1)) {
+      len = 2
+      t = timeTok(n(i + 1) - 1, 45)
+    } else if (min(i) && (v(i + 1) === 'vor' || v(i + 1) === 'nach') && v(i + 2) === 'halb' && hour(i + 3)) {
+      len = 4
+      t = timeTok(n(i + 3) - 1, v(i + 1) === 'vor' ? 30 - n(i) : 30 + n(i))
+    } else if (v(i) === 'halb' && hour(i + 1)) {
+      len = 2
+      t = timeTok(n(i + 1) - 1, 30)
+    } else if (min(i) && (v(i + 1) === 'vor' || v(i + 1) === 'nach') && hour(i + 2)) {
+      len = 3
+      t = v(i + 1) === 'nach' ? timeTok(n(i + 2), n(i)) : timeTok(n(i + 2) - 1, 60 - n(i))
+    } else if (hour(i) && v(i + 1) === 'uhr') {
+      const m = isNum(v(i + 2)) && n(i + 2) <= 59
+      len = m ? 3 : 2
+      t = timeTok(n(i), m ? n(i + 2) : 0)
+    }
+    if (len) {
+      out.push({ w: t, own: x.slice(i, i + len).flatMap((y) => y.own) })
+      i += len
+    } else out.push(x[i++])
+  }
+  return out
+}
+
+/** Literele rostite pe rând („B – E – R …”) – recunoașterea le lipește („Bericht”); comparăm cuvântul întreg. */
+function joinLetters(x: Tok[]): Tok[] {
+  const out: Tok[] = []
+  for (let i = 0; i < x.length; ) {
+    let j = i
+    while (j < x.length && /^[a-z]$/.test(x[j].w)) j++
+    if (j - i >= 2) {
+      out.push({ w: x.slice(i, j).map((y) => y.w).join(''), own: x.slice(i, j).flatMap((y) => y.own) })
+      i = j
+    } else out.push(x[i++])
+  }
+  return out
+}
+
+function toks(raw: string[], recognizer: boolean): Tok[] {
+  let x: Tok[] = raw.flatMap((w, k) =>
+    words(w).map((nw) => {
+      const num = /^\d+$/.test(nw) ? null : germanNumber(nw)
+      return { w: num === null ? nw : String(num), own: [k] }
+    }),
   )
-  const u = words(spokenForm(heard)).flatMap(speechTokens)
+  if (recognizer) x = canonTimes(joinLetters(x))
+  // Numerele devin cifre separate: „null eins sieben” = „017”, oricum ar fi grupate.
+  return x.flatMap((y) => (isNum(y.w) ? y.w.split('').map((c) => ({ w: c, own: y.own })) : [y]))
+}
+
+/**
+ * Ca matchWords, dar pentru recunoașterea vocală: „fünfzig” = „50”, „null eins sieben” = „017”.
+ * Cu `recognizer`: și orele colocviale („Viertel vor zwölf” = „11:45”) și literele rostite pe rând.
+ * `skip`: cuvinte fără conținut (ex. „–”), care nu se notează.
+ */
+export function speechMatch(target: string, heard: string, recognizer = false): { word: string; ok: boolean; skip: boolean }[] {
+  const raw = target.split(/\s+/).filter(Boolean)
+  const t = toks(raw, recognizer)
+  const u = toks(spokenForm(heard).split(/\s+/).filter(Boolean), recognizer)
   const n = t.length
   const m = u.length
   const L: number[][] = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0))
   for (let i = n - 1; i >= 0; i--)
-    for (let j = m - 1; j >= 0; j--) L[i][j] = t[i] === u[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1])
+    for (let j = m - 1; j >= 0; j--) L[i][j] = t[i].w === u[j].w ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1])
   const hit = new Array(n).fill(false)
   let i = 0
   let j = 0
   while (i < n && j < m) {
-    if (t[i] === u[j]) {
+    if (t[i].w === u[j].w) {
       hit[i++] = true
       j++
     } else if (L[i + 1][j] >= L[i][j + 1]) i++
     else j++
   }
   // Un cuvânt e corect dacă toate token-urile lui au fost găsite.
-  return raw.map((word, k) => ({ word, ok: owner.every((o, x) => o !== k || hit[x]) }))
+  return raw.map((word, k) => {
+    const mine = t.map((x, idx) => (x.own.includes(k) ? idx : -1)).filter((idx) => idx >= 0)
+    return { word, ok: mine.every((idx) => hit[idx]), skip: mine.length === 0 }
+  })
 }
 
-export function speechSimilarity(target: string, heard: string): number {
-  const r = speechMatch(target, heard)
+export function speechSimilarity(target: string, heard: string, recognizer = false): number {
+  const r = speechMatch(target, heard, recognizer).filter((x) => !x.skip)
   return r.length ? r.filter((x) => x.ok).length / r.length : 0
 }
 
