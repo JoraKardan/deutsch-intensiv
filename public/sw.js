@@ -61,7 +61,9 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       (async () => {
         try {
-          const res = await fetch(req)
+          // „no-cache”: GitHub Pages trimite max-age=600, iar fără asta browserul ar da
+          // timp de 10 minute pagina veche (cu JS-ul vechi) după o actualizare.
+          const res = await fetch(req.url, { cache: 'no-cache', credentials: 'same-origin' })
           if (res.ok && url.pathname === BASE) event.waitUntil(cacheShell(res.clone()))
           return res
         } catch {
