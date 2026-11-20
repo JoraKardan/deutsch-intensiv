@@ -31,9 +31,11 @@ export function setLang(l: Lang) {
   } catch {
     /* stocare indisponibilă */
   }
+  // Scoatem ?lang= din adresă și reîncărcăm explicit: o adresă identică (cu #/…) n-ar reîncărca pagina.
   const url = new URL(window.location.href)
   url.searchParams.delete('lang')
-  window.location.replace(url.toString())
+  window.history.replaceState(null, '', url.toString())
+  window.location.reload()
 }
 
 /** Pluralul rusesc: 1 карточка, 2 карточки, 5 карточек. */

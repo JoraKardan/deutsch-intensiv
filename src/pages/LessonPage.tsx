@@ -15,7 +15,7 @@ import { Shadowing } from '../components/Shadowing'
 import { Interlinear, useLitPref } from '../components/Interlinear'
 import { Say, SlowButton } from '../components/Say'
 import { ChevronDownIcon, CloseIcon, GearIcon, PauseIcon, PlayIcon } from '../components/Icons'
-import { go } from '../router'
+import { go, settingsHref } from '../router'
 
 const SECTIONS = (['intro', 'pron', 'dialog', 'phrases', 'grammar', 'exercises', 'shadowing', 'speaking', 'finish'] as const).map((key) => ({
   key,
@@ -143,7 +143,7 @@ function LessonShell({ lesson, current, children }: { lesson: Lesson; current: S
           </span>
           <strong>{lesson.title}</strong>
         </div>
-        <a href="#/settings" className="square-btn" aria-label={t.nav.settings} title={t.nav.settings}>
+        <a href={settingsHref()} className="square-btn" aria-label={t.nav.settings} title={t.nav.settings}>
           <GearIcon size={22} />
         </a>
       </header>

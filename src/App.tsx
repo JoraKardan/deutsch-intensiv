@@ -1,4 +1,4 @@
-import { useRoute } from './router'
+import { settingsHref, useRoute } from './router'
 import { Dashboard } from './pages/Dashboard'
 import { PlanPage } from './pages/PlanPage'
 import { LessonPage } from './pages/LessonPage'
@@ -31,7 +31,7 @@ export function App() {
           <FlagDE size={24} />
           <span>Deutsch Intensiv</span>
         </a>
-        <a href="#/settings" className={`square-btn ${page === 'settings' ? 'active' : ''}`} aria-label={t.nav.settings} title={t.nav.settings}>
+        <a href={settingsHref()} className={`square-btn ${page === 'settings' ? 'active' : ''}`} aria-label={t.nav.settings} title={t.nav.settings}>
           <GearIcon size={22} />
         </a>
       </header>
