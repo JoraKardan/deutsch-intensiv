@@ -22,7 +22,7 @@
       "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "T", "de": "Moin! Was möchtet ihr?", "ro": "Moin! Ce doriți?", "lit": "bună | ce | ați vrea | voi" },
+      { "id": "d1", "speaker": "T", "de": "Moin! Was möchtet ihr?", "ro": "Bună! Ce doriți?", "lit": "bună | ce | ați vrea | voi" },
       { "id": "d2", "speaker": "K", "de": "Ich möchte das Hähnchen mit Reis, bitte.", "ro": "Aș vrea puiul cu orez, vă rog.", "lit": "eu | aș vrea | (art.) | puiul | cu | orez | vă rog" },
       { "id": "d3", "speaker": "T", "de": "Gern. Und du?", "ro": "Cu plăcere. Și tu?", "lit": "cu plăcere | și | tu" },
       { "id": "d4", "speaker": "A", "de": "Was ist das Tagesgericht heute?", "ro": "Care e meniul zilei azi?", "lit": "ce | e | (art.) | zi-felul | azi" },

@@ -37,8 +37,8 @@
       "K": { "name": "Kasia", "voice": "de-DE-MajaNeural" }
     },
     "lines": [
-      { "id": "d1", "speaker": "J", "de": "Moin. Du bist Radu, oder?", "ro": "Moin. Tu ești Radu, nu?", "lit": "bună | tu | ești |  | sau" },
-      { "id": "d2", "speaker": "A", "de": "Ja, Moin! Heute ist mein erster Tag.", "ro": "Da, moin! Azi e prima mea zi.", "lit": "da | bună | azi | e | al meu | prima | zi" },
+      { "id": "d1", "speaker": "J", "de": "Moin. Du bist Radu, oder?", "ro": "Salut. Tu ești Radu, nu?", "lit": "bună | tu | ești |  | sau" },
+      { "id": "d2", "speaker": "A", "de": "Ja, Moin! Heute ist mein erster Tag.", "ro": "Da, salut! Azi e prima mea zi.", "lit": "da | bună | azi | e | al meu | prima | zi" },
       { "id": "d3", "speaker": "J", "de": "Gut. Wir fangen um sechs an. Pünktlich.", "ro": "Bine. Începem la șase. Punctual.", "lit": "bine | noi | începem… | la | șase | …(an-fangen) | punctual" },
       { "id": "d4", "speaker": "K", "de": "Hallo, ich bin Kasia. Ich bin auch neu hier.", "ro": "Salut, eu sunt Kasia. Și eu sunt nouă aici.", "lit": "salut | eu | sunt |  | eu | sunt | și | nou | aici" },
       { "id": "d5", "speaker": "A", "de": "Freut mich! Woher kommst du?", "ro": "Încântat! De unde ești?", "lit": "bucură | pe mine | de unde | vii | tu" },

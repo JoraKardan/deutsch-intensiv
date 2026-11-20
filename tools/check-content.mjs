@@ -16,6 +16,12 @@ const err = (f, m) => {
   console.error(`✗ ${f}: ${m}`)
 }
 
+// Saluturi și interjecții germane care trebuie TRADUSE (ex. „Moin. Tu ești Radu?” e greșit → „Salut. …”).
+// Rămân în germană doar între ghilimele, când replica vorbește despre cuvântul însuși („Moin”? …).
+const UNTRANSLATED = /(^|[^\p{L}])(moin|tschüss|tschüs|tja|servus|mahlzeit|мойн|чюс|тюс|тья)(?![\p{L}])/iu
+const outsideQuotes = (s) => s.replace(/„[^“”]*[“”]|«[^»]*»|"[^"]*"/g, ' ')
+const greetingLeft = (tr) => tr && UNTRANSLATED.test(outsideQuotes(tr))
+
 for (const f of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
   let L
   try {
@@ -55,6 +61,7 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
     add(l.id, 'dialog')
     if (!L.dialog.speakers[l.speaker]) err(f, `replica ${l.id}: vorbitor necunoscut „${l.speaker}”`)
     if (!l.de || !l.ro) err(f, `replica ${l.id}: lipsește de/ro`)
+    if (greetingLeft(l.ro)) err(f, `replica ${l.id}: salut german netradus în traducere: „${l.ro}”`)
     checkLit(l, `replica ${l.id}`)
   }
   for (const p of L.phrases) {
@@ -138,6 +145,7 @@ function checkTranslation(L, lang) {
   if (!T.dialog.situation) err(f, 'lipsește dialog.situation')
   for (const l of L.dialog.lines) {
     const x = T.dialog.lines?.[l.id]
+    if (greetingLeft(x?.tr)) err(f, `replica ${l.id}: salut german netradus în traducere: „${x.tr}”`)
     if (!x?.tr) err(f, `replica ${l.id}: lipsește tr`)
     else litOk(l.de, x.lit, `replica ${l.id}`)
   }

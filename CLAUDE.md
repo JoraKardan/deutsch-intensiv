@@ -27,7 +27,7 @@ Când utilizatorul cere „generează săptămâna N”:
   - Personaje secundare: voci libere (`RalfNeural`, `KlausNeural`, `ElkeNeural`, `KlarissaNeural`), diferite de ale celorlalți din același dialog.
   - Expresiile și exemplele folosesc automat `de-DE-SeraphinaMultilingualNeural`. Vocile macOS (ex. `Anna (Premium)`) încă merg în script, dar nu le mai folosi.
 - **Designul** (mobile-first, paleta Teracotă, tema Automat/Luminos/Întunecat în `src/lib/theme.ts`): culorile sunt variabile CSS în `src/styles.css`; audio „click pe text” cu `Say` / `SlowButton` (`src/components/Say.tsx`); regulile de „secțiune efectuată” (80% la exerciții și shadowing) în `src/lib/rules.ts`.
-- **Explicațiile sunt în română**, cu diacritice. Traducerile sunt naturale, nu cuvânt cu cuvânt. Ghilimele germane în textul german: „…“; în română: „…”.
+- **Explicațiile sunt în română**, cu diacritice. Traducerile sunt naturale, nu cuvânt cu cuvânt. **Saluturile și interjecțiile germane se traduc** (Moin → „Salut”/„Привет”, Tschüss, Tja, Jo…); rămân în germană doar între ghilimele, când replica vorbește despre cuvântul însuși. În rusă nu se transliterează („Мойн” e greșit). `check` verifică asta. Ghilimele germane în textul german: „…“; în română: „…”.
 - În textele de conținut, `**bold**` evidențiază părțile importante (inclusiv în exemplele de gramatică; scriptul audio elimină `**`).
 - **Numerele din replici se scriu în litere** („zweiunddreißig”, nu „32”), ca TTS-ul să le citească corect și elevul să le vadă scrise.
 - Germana trebuie să fie **naturală și corectă**, potrivită nivelului: în A1 propoziții scurte; spre B1 se adaugă vorbire colocvială (particule modale, contracții).
