@@ -18,10 +18,24 @@ export const go = (path: string) => {
 }
 
 // Roata dințată e un comutator: din Setări, a doua apăsare te duce înapoi unde erai.
+// Pagina de dinainte se ține în sessionStorage, ca să supraviețuiască reîncărcării
+// (schimbarea limbii reîncarcă aplicația).
+const BACK_KEY = 'deutsch-intensiv-before-settings'
 let beforeSettings = '#/'
 if (typeof window !== 'undefined') {
+  try {
+    beforeSettings = sessionStorage.getItem(BACK_KEY) ?? '#/'
+  } catch {
+    /* stocare indisponibilă */
+  }
   const remember = () => {
-    if (!getHash().startsWith('/settings')) beforeSettings = window.location.hash || '#/'
+    if (getHash().startsWith('/settings')) return
+    beforeSettings = window.location.hash || '#/'
+    try {
+      sessionStorage.setItem(BACK_KEY, beforeSettings)
+    } catch {
+      /* stocare indisponibilă */
+    }
   }
   remember()
   window.addEventListener('hashchange', remember)
