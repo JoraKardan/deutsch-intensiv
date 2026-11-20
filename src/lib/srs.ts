@@ -1,3 +1,4 @@
+import { t } from './i18n'
 import { createEmptyCard, fsrs, generatorParameters, Rating, type Card, type Grade } from 'ts-fsrs'
 
 const scheduler = fsrs(generatorParameters({ enable_fuzz: true, request_retention: 0.9 }))
@@ -14,10 +15,10 @@ export interface StoredCard {
 }
 
 export const GRADES: { grade: Grade; label: string; key: string; cls: string }[] = [
-  { grade: Rating.Again, label: 'Din nou', key: '1', cls: 'again' },
-  { grade: Rating.Hard, label: 'Greu', key: '2', cls: 'hard' },
-  { grade: Rating.Good, label: 'Bine', key: '3', cls: 'good' },
-  { grade: Rating.Easy, label: 'Ușor', key: '4', cls: 'easy' },
+  { grade: Rating.Again, label: t.review.grades[0], key: '1', cls: 'again' },
+  { grade: Rating.Hard, label: t.review.grades[1], key: '2', cls: 'hard' },
+  { grade: Rating.Good, label: t.review.grades[2], key: '3', cls: 'good' },
+  { grade: Rating.Easy, label: t.review.grades[3], key: '4', cls: 'easy' },
 ]
 
 function toCard(s: StoredCard): Card {
@@ -64,11 +65,10 @@ export function previewIntervals(s: StoredCard, now = new Date()): Record<number
 
 export function formatInterval(ms: number): string {
   const min = Math.max(1, Math.round(ms / 60000))
-  if (min < 60) return `${min} min`
+  if (min < 60) return t.interval.min(min)
   const h = Math.round(min / 60)
-  if (h < 24) return `${h} h`
+  if (h < 24) return t.interval.h(h)
   const d = Math.round(h / 24)
-  if (d < 31) return `${d} ${d === 1 ? 'zi' : 'zile'}`
-  const mo = Math.round(d / 30)
-  return `${mo} ${mo === 1 ? 'lună' : 'luni'}`
+  if (d < 31) return t.interval.d(d)
+  return t.interval.mo(Math.round(d / 30))
 }

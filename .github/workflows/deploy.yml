@@ -26,6 +26,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - run: npm run claude-project # fișierele pentru asistent, descărcabile din Setări
       - run: npm run build
       - name: Publish to gh-pages
         working-directory: dist

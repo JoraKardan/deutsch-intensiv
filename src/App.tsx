@@ -6,6 +6,8 @@ import { LessonPage } from './pages/LessonPage'
 import { ReviewPage, dueCards } from './pages/ReviewPage'
 import { GrammarPage } from './pages/GrammarPage'
 import { SettingsPage } from './pages/SettingsPage'
+import { t } from './lib/i18n'
+import { lang, LANGS, setLang } from './lib/lang'
 
 export function App() {
   const route = useRoute()
@@ -14,11 +16,11 @@ export function App() {
   const [page, a, b] = route
 
   const nav = [
-    { href: '#/', label: 'Acasă', active: !page },
-    { href: '#/review', label: `Repetiție${due ? ` (${due})` : ''}`, active: page === 'review' },
-    { href: '#/plan', label: 'Plan', active: page === 'plan' || page === 'lesson' },
-    { href: '#/grammar', label: 'Gramatică', active: page === 'grammar' },
-    { href: '#/settings', label: 'Progres', active: page === 'settings' },
+    { href: '#/', label: t.nav.home, active: !page },
+    { href: '#/review', label: `${t.nav.review}${due ? ` (${due})` : ''}`, active: page === 'review' },
+    { href: '#/plan', label: t.nav.plan, active: page === 'plan' || page === 'lesson' },
+    { href: '#/grammar', label: t.nav.grammar, active: page === 'grammar' },
+    { href: '#/settings', label: t.nav.progress, active: page === 'settings' },
   ]
 
   return (
@@ -34,6 +36,13 @@ export function App() {
             </a>
           ))}
         </nav>
+        <span className="lang-switch">
+          {LANGS.map((l) => (
+            <button key={l} className={l === lang ? 'active' : ''} onClick={() => setLang(l)} aria-pressed={l === lang}>
+              {l.toUpperCase()}
+            </button>
+          ))}
+        </span>
       </header>
       <main>
         {!page && <Dashboard />}

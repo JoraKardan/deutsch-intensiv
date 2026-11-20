@@ -1,15 +1,35 @@
 import curriculumJson from '../../content/curriculum.json'
-import type { Curriculum, CurriculumLesson, Lesson, Phase } from './types'
+import type { Curriculum, CurriculumLesson, CurriculumTranslation, Lesson, LessonTranslation, Phase } from './types'
+import { lang } from './lang'
+import { localizeCurriculum, localizeLesson } from './localize'
+import { t } from './i18n'
 
 const modules = import.meta.glob<Lesson>('../../content/lessons/*.json', {
   eager: true,
   import: 'default',
 })
+const ruLessons = import.meta.glob<LessonTranslation>('../../content/ru/lessons/*.json', {
+  eager: true,
+  import: 'default',
+})
+const ruCurriculum = import.meta.glob<CurriculumTranslation>('../../content/ru/curriculum.json', {
+  eager: true,
+  import: 'default',
+})
 
-export const curriculum = curriculumJson as Curriculum
+const translations: Record<string, LessonTranslation> = {}
+if (lang === 'ru') for (const m of Object.values(ruLessons)) translations[m.id] = m
+
+export const curriculum: Curriculum = localizeCurriculum(
+  curriculumJson as Curriculum,
+  lang === 'ru' ? Object.values(ruCurriculum)[0] : undefined,
+)
 
 export const lessons: Record<string, Lesson> = {}
-for (const m of Object.values(modules)) lessons[m.id] = m
+for (const m of Object.values(modules)) lessons[m.id] = localizeLesson(m, translations[m.id])
+
+/** Lecțiile care încă n-au traducere în limba aleasă (se afișează în română). */
+export const untranslated = lang === 'ro' ? [] : Object.keys(lessons).filter((id) => !translations[id])
 
 export type FlatLesson = CurriculumLesson & { week: number; phase: Phase; index: number }
 
@@ -22,9 +42,9 @@ export const lessonMeta = (id: string) => flatLessons.find((l) => l.id === id)
 export const hasContent = (id: string) => Boolean(lessons[id])
 
 export const PHASES: { phase: Phase; label: string; weeks: string }[] = [
-  { phase: 'A1', label: 'A1 – Fundația', weeks: 'săpt. 1–5' },
-  { phase: 'A2', label: 'A2 – Viața de zi cu zi', weeks: 'săpt. 6–10' },
-  { phase: 'B1', label: 'B1 – Conversație', weeks: 'săpt. 11–16' },
+  { phase: 'A1', label: t.phases.A1, weeks: t.phases.weeks(1, 5) },
+  { phase: 'A2', label: t.phases.A2, weeks: t.phases.weeks(6, 10) },
+  { phase: 'B1', label: t.phases.B1, weeks: t.phases.weeks(11, 16) },
 ]
 
 /** Ritmul cursului: 8 unități pe săptămână (7 lecții + recapitulare). */

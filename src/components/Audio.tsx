@@ -1,4 +1,5 @@
 import { play } from '../lib/audio'
+import { t } from '../lib/i18n'
 
 interface Props {
   lessonId: string
@@ -11,11 +12,11 @@ interface Props {
 export function AudioButtons({ lessonId, id, text, slowToo = true }: Props) {
   return (
     <span className="audio-btns">
-      <button className="icon" title="Ascultă" onClick={() => play(lessonId, id, text)}>
+      <button className="icon" title={t.audio.listen} onClick={() => play(lessonId, id, text)}>
         ▶
       </button>
       {slowToo && (
-        <button className="icon" title="Ascultă rar" onClick={() => play(lessonId, id, text, true)}>
+        <button className="icon" title={t.audio.slow} onClick={() => play(lessonId, id, text, true)}>
           🐢
         </button>
       )}

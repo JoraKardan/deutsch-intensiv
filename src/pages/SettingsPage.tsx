@@ -1,6 +1,71 @@
 import { useRef, useState } from 'react'
 import { getSlowRate, play, setSlowRate, SLOW_RATES } from '../lib/audio'
+import { t } from '../lib/i18n'
+import { lang, LANGS, setLang } from '../lib/lang'
+import { rich } from '../lib/text'
 import { downloadAllAudio, isInstalled, offlineSupported, useAudioCacheStatus, useInstallPrompt } from '../lib/offline'
+
+// Fișierele pentru asistentul de conversație (generate de `npm run claude-project`), în limba aleasă.
+// Se încarcă doar la click. despre-mine.md (personal) NU e inclus: se oferă un șablon gol.
+const projectFiles = import.meta.glob<string>('../../claude-project/{,ru/}{instructiuni,vocabular,gramatica,personaje}.md', {
+  query: '?raw',
+  import: 'default',
+})
+const templates = import.meta.glob<string>('../../tools/despre-mine-template{,.ru}.md', { query: '?raw', import: 'default' })
+
+async function projectFile(name: string): Promise<string> {
+  const load =
+    name === 'despre-mine'
+      ? templates[`../../tools/despre-mine-template${lang === 'ru' ? '.ru' : ''}.md`]
+      : projectFiles[`../../claude-project/${lang === 'ru' ? 'ru/' : ''}${name}.md`]
+  return load ? load() : ''
+}
+
+function saveText(filename: string, text: string) {
+  const a = document.createElement('a')
+  a.href = URL.createObjectURL(new Blob([text], { type: 'text/markdown;charset=utf-8' }))
+  a.download = filename
+  a.click()
+  URL.revokeObjectURL(a.href)
+}
+
+function AssistantCard() {
+  const [copied, setCopied] = useState(false)
+  const files = ['instructiuni', 'vocabular', 'gramatica', 'personaje']
+  return (
+    <div className="card">
+      <h3>{t.settings.assistant}</h3>
+      <p className="muted">{rich(t.settings.assistantText)}</p>
+      <div className="row wrap">
+        <button
+          onClick={async () => {
+            try {
+              await navigator.clipboard.writeText(await projectFile('instructiuni'))
+              setCopied(true)
+              setTimeout(() => setCopied(false), 2500)
+            } catch {
+              saveText('instructiuni.md', await projectFile('instructiuni'))
+            }
+          }}
+        >
+          {copied ? t.settings.copiedInstructions : t.settings.copyInstructions}
+        </button>
+      </div>
+      <div className="row wrap" style={{ marginTop: '0.6rem' }}>
+        {files.map((f) => (
+          <button key={f} className="ghost" onClick={async () => saveText(`${f}.md`, await projectFile(f))}>
+            ⬇ {f}.md
+          </button>
+        ))}
+        <button className="ghost" onClick={async () => saveText('despre-mine.md', await projectFile('despre-mine'))}>
+          ⬇ {t.settings.aboutTemplate}
+        </button>
+      </div>
+      <p className="muted small">{rich(t.settings.assistantUpdate)}</p>
+      <p className="muted small">{rich(t.settings.assistantAbout)}</p>
+    </div>
+  )
+}
 
 function AppOfflineCard() {
   const { available, install } = useInstallPrompt()
@@ -12,29 +77,23 @@ function AppOfflineCard() {
 
   return (
     <div className="card">
-      <h3>📱 Aplicație și offline</h3>
+      <h3>{t.settings.app}</h3>
       {installed ? (
-        <p className="good">✓ Rulezi aplicația instalată.</p>
+        <p className="good">{t.settings.installed}</p>
       ) : available ? (
         <p>
-          <button onClick={install}>⬇ Instalează aplicația</button>
+          <button onClick={install}>{t.settings.install}</button>
         </p>
       ) : (
-        <p className="muted small">
-          <strong>Instalare:</strong> pe Android, în Chrome: meniul <strong>⋮</strong> → <em>Instalează aplicația</em> (sau
-          <em> Adaugă pe ecranul de pornire</em>). Pe iPhone, în Safari: <strong>Share</strong> → <em>Add to Home Screen</em>.
-        </p>
+        <p className="muted small">{rich(t.settings.installHelp)}</p>
       )}
       {offlineSupported() ? (
         <>
-          <p className="muted small">
-            Lecțiile se salvează automat pe dispozitiv. Pentru ca și <strong>audio</strong> să meargă fără internet, descarcă-l aici. După ce
-            apar lecții noi, apasă din nou ca să descarci doar ce lipsește.
-          </p>
+          <p className="muted small">{rich(t.settings.offlineText)}</p>
           {status && (
             <>
               <div className="row between small">
-                <span>Audio salvat pe acest dispozitiv</span>
+                <span>{t.settings.audioSaved}</span>
                 <span>
                   {status.cached} / {status.total}
                 </span>
@@ -52,16 +111,16 @@ function AppOfflineCard() {
               setNote(null)
               const { failed } = await downloadAllAudio((cached, total) => setStatus({ cached, total }))
               setBusy(false)
-              setNote(failed ? `${failed} fișiere n-au putut fi descărcate. Verifică internetul și mai apasă o dată.` : '✓ Tot audio-ul e salvat pentru offline.')
+              setNote(failed ? t.settings.failed(failed) : t.settings.allSaved)
               refresh()
             }}
           >
-            {busy ? 'Se descarcă…' : complete ? '✓ Audio complet pentru offline' : '⬇ Descarcă audio pentru offline'}
+            {busy ? t.settings.downloading : complete ? t.settings.audioComplete : t.settings.downloadAudio}
           </button>
           {note && <p className="small">{note}</p>}
         </>
       ) : (
-        <p className="muted small">Modul offline funcționează pe site-ul publicat (nu în modul de dezvoltare local).</p>
+        <p className="muted small">{t.settings.devOnly}</p>
       )}
     </div>
   )
@@ -87,17 +146,28 @@ export function SettingsPage() {
 
   return (
     <div>
-      <h1>Progres și setări</h1>
+      <h1>{t.settings.title}</h1>
+
+      <div className="card">
+        <h3>{t.settings.language}</h3>
+        <p className="muted">{t.settings.languageText}</p>
+        <div className="row wrap">
+          {LANGS.map((l) => (
+            <button key={l} className={l === lang ? '' : 'ghost'} onClick={() => setLang(l)}>
+              {l === 'ro' ? '🇷🇴 Română' : '🇷🇺 Русский'}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <AssistantCard />
 
       <AppOfflineCard />
 
       {wakeLockSupported() && (
         <div className="card">
-          <h3>🔆 Ecranul rămâne aprins</h3>
-          <p className="muted">
-            Cât timp aplicația e deschisă, ecranul nu se stinge singur (util la ascultare și shadowing). Bateria se consumă puțin mai
-            repede.
-          </p>
+          <h3>{t.settings.awake}</h3>
+          <p className="muted">{t.settings.awakeText}</p>
           <label className="row">
             <input
               type="checkbox"
@@ -107,21 +177,18 @@ export function SettingsPage() {
                 setAwake(e.target.checked)
               }}
             />
-            <span>{awake ? 'Pornit' : 'Oprit'}</span>
+            <span>{awake ? t.settings.on : t.settings.off}</span>
           </label>
         </div>
       )}
 
       <div className="card">
-        <h3>Copie de siguranță</h3>
-        <p className="muted">
-          Progresul se salvează automat în acest browser. Descarcă din când în când o copie (de ex. o dată pe săptămână), ca să nu-l pierzi
-          dacă ștergi datele browserului sau schimbi calculatorul.
-        </p>
+        <h3>{t.settings.backup}</h3>
+        <p className="muted">{t.settings.backupText}</p>
         <div className="row wrap">
-          <button onClick={download}>⬇ Descarcă progresul</button>
+          <button onClick={download}>{t.settings.download}</button>
           <button className="ghost" onClick={() => file.current?.click()}>
-            ⬆ Încarcă dintr-un fișier
+            {t.settings.upload}
           </button>
           <input
             ref={file}
@@ -133,7 +200,7 @@ export function SettingsPage() {
               if (!f) return
               try {
                 importProgress(await f.text())
-                setMsg('✓ Progres încărcat.')
+                setMsg(t.settings.loaded)
               } catch (err) {
                 setMsg(`✗ ${(err as Error).message}`)
               }
@@ -145,8 +212,8 @@ export function SettingsPage() {
       </div>
 
       <div className="card">
-        <h3>Data de început a cursului</h3>
-        <p className="muted">Folosită pentru a calcula dacă ești în ritm (8 lecții pe săptămână).</p>
+        <h3>{t.settings.start}</h3>
+        <p className="muted">{t.settings.startText}</p>
         <input
           type="date"
           value={p.startedAt}
@@ -160,8 +227,8 @@ export function SettingsPage() {
       </div>
 
       <div className="card">
-        <h3>Viteza pentru 🐢 (redare rară)</h3>
-        <p className="muted">Cât de rar se redă audio la butoanele 🐢 și „Tot, rar”. Începe cu 0,7×; când devine prea ușor, crește viteza.</p>
+        <h3>{t.settings.slow}</h3>
+        <p className="muted">{t.settings.slowText}</p>
         <div className="row wrap">
           {SLOW_RATES.map((r) => (
             <button
@@ -177,27 +244,19 @@ export function SettingsPage() {
             </button>
           ))}
         </div>
-        <p className="muted small">La click auzi o mostră la viteza aleasă.</p>
-      </div>
-
-      <div className="card">
-        <h3>Audio</h3>
-        <p className="muted">
-          Fișierele audio se generează local cu vocile germane din macOS: <code>npm run audio</code>. Dacă un fișier lipsește, aplicația
-          folosește vocea germană a browserului. Calitatea e mai slabă, dar funcționează.
-        </p>
+        <p className="muted small">{t.settings.slowSample}</p>
       </div>
 
       <div className="card danger-zone">
-        <h3>Resetare</h3>
-        <p className="muted">Șterge tot progresul: lecții, fișe, istoric. Nu se poate anula.</p>
+        <h3>{t.settings.reset}</h3>
+        <p className="muted">{t.settings.resetText}</p>
         <button
           className="danger"
           onClick={() => {
-            if (confirm('Sigur ștergi tot progresul? Descarcă întâi o copie de siguranță.')) resetProgress()
+            if (confirm(t.settings.resetConfirm)) resetProgress()
           }}
         >
-          Șterge progresul
+          {t.settings.resetBtn}
         </button>
       </div>
     </div>

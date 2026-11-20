@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { flatLessons, lessons } from '../lib/content'
 import { GrammarView } from '../components/GrammarView'
+import { t } from '../lib/i18n'
 
 export function GrammarPage() {
   const available = flatLessons.filter((l) => lessons[l.id])
   const [open, setOpen] = useState<string | null>(null)
   return (
     <div>
-      <h1>Gramatică</h1>
-      <p className="muted">Toate fișele de gramatică din lecțiile create până acum, pe scurt și cu exemple.</p>
+      <h1>{t.grammarPage.title}</h1>
+      <p className="muted">{t.grammarPage.intro}</p>
       {available.map((l) => {
         const lesson = lessons[l.id]
         const isOpen = open === l.id

@@ -1,6 +1,6 @@
 # Personajele cursului
 
-Povestea urmează viața reală a elevului (vezi despre-mine.md).
+Povestea urmează viața reală a autorului cursului (vezi despre-mine.md, dacă există).
 
 **Săptămâna 1 (Köln):** Radu Popescu, din Moldova, e la ultimul lui proiect IT, la o firmă din Köln. Colegii de acolo: Lena (din Viena, locuiește în Bonn), Tom (din Hamburg), Sophie (marketing, din Leipzig), Herr Weber (șeful), Herr Krause (contabil), Frau Becker (HR). Apar doar rar de acum înainte (un telefon cu Lena sau Tom).
 

@@ -3,6 +3,7 @@ import type { Lesson } from './types'
 import { isNew, newCard, rate, type StoredCard } from './srs'
 import type { Grade } from 'ts-fsrs'
 import type { CustomItem } from './analysis'
+import { t } from './i18n'
 
 const KEY = 'deutsch-intensiv-v1'
 
@@ -198,7 +199,7 @@ export function exportProgress(): string {
 
 export function importProgress(json: string) {
   const p = JSON.parse(json) as Progress
-  if (!p || p.version !== 1 || typeof p.cards !== 'object') throw new Error('Fișier invalid')
+  if (!p || p.version !== 1 || typeof p.cards !== 'object') throw new Error(t.settings.invalidFile)
   update((d) => Object.assign(d, p))
 }
 

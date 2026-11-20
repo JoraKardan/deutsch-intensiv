@@ -3,13 +3,15 @@ import { lessons } from '../lib/content'
 import { play, speak, stopAll } from '../lib/audio'
 import { MINE, reviewCard, todayKey, useProgress, type Progress } from '../lib/store'
 import { dueDate, formatInterval, GRADES, isNew, previewIntervals, type StoredCard } from '../lib/srs'
+import { t } from '../lib/i18n'
+import { rich } from '../lib/text'
 
 /** Expresia din spatele unei fișe: din lecție sau din conversațiile cu Claude. */
 function phraseOf(p: Progress, c: StoredCard): { id: string; de: string; ro: string; note?: string; wrong?: string } | undefined {
   if (c.lessonId === MINE) {
     const x = p.custom?.[c.phraseId]
     if (!x) return undefined
-    return { id: x.id, de: x.de, ro: x.ro || `(corectează) ${x.wrong ?? ''}`, note: x.why, wrong: x.wrong }
+    return { id: x.id, de: x.de, ro: x.ro || t.review.fixIt(x.wrong ?? ''), note: x.why, wrong: x.wrong }
   }
   return lessons[c.lessonId]?.phrases.find((ph) => ph.id === c.phraseId)
 }
@@ -46,35 +48,18 @@ export function dueCards(p: Progress, now = new Date()): StoredCard[] {
 }
 
 function GradeHelp() {
+  const [intro, items, limit, keys] = t.review.help(NEW_PER_DAY)
   return (
     <details className="grade-help">
-      <summary>Ce fac butoanele?</summary>
-      <p>
-        Nicio fișă nu dispare definitiv: fiecare revine, la intervale tot mai mari. Timpul de pe buton arată când revine fișa dacă îl apeși. Algoritmul
-        (FSRS) alege intervalele astfel încât, când fișa revine, să ai ~90% șanse s-o știi încă.
-      </p>
+      <summary>{t.review.helpTitle}</summary>
+      <p>{rich(intro)}</p>
       <ul>
-        <li>
-          <strong>Din nou</strong>: n-ai știut. Fișa revine peste ~1–10 minute, în aceeași sesiune. Dacă o știai deja de mai demult, intervalul următor scade
-          mult: algoritmul o consideră „fragilă”.
-        </li>
-        <li>
-          <strong>Greu</strong>: ai știut, dar cu efort. Fișa nouă revine tot azi, peste câteva minute; una învățată revine puțin mai târziu decât data trecută.
-          Dacă n-ai știut deloc, apasă „Din nou”, nu „Greu”.
-        </li>
-        <li>
-          <strong>Bine</strong>: ai știut. <em>Butonul normal.</em> O fișă nouă mai revine o dată peste ~10 minute, apoi peste 1–3 zile. La fiecare „Bine”
-          intervalul crește de ~2–3 ori (ex.: 3 zile → 1 săptămână → 3 săptămâni → 2 luni…).
-        </li>
-        <li>
-          <strong>Ușor</strong>: ai știut instant, fără să te gândești. Fișa sare peste etape și revine abia peste multe zile. Folosește-l doar când ești sigur.
-        </li>
+        {items.map((x, i) => (
+          <li key={i}>{rich(x)}</li>
+        ))}
       </ul>
-      <p>
-        Fișele grele le vezi des, cele ușoare tot mai rar. Pe zi intră cel mult <strong>{NEW_PER_DAY} fișe noi</strong> din lecții, ca repetiția să nu se
-        adune. Restul așteaptă în ordine pentru zilele următoare. Fișele din conversații (💬) intră toate imediat.
-      </p>
-      <p className="muted">Taste: Space = arată răspunsul · 1–4 = butoanele · R = ascultă din nou.</p>
+      <p>{rich(limit)}</p>
+      <p className="muted">{keys}</p>
     </details>
   )
 }
@@ -94,7 +79,7 @@ export function ReviewPage() {
   const card = queue[0]
   const mine = card?.lessonId === MINE
   const phrase = card ? phraseOf(progress, card) : undefined
-  const source = !card ? '' : mine ? '💬 Din conversații' : lessons[card.lessonId]?.title
+  const source = !card ? '' : mine ? t.review.fromChat : lessons[card.lessonId]?.title
   const intervals = useMemo(() => (card ? previewIntervals(card) : {}), [card])
 
   const say = useCallback(() => {
@@ -145,10 +130,10 @@ export function ReviewPage() {
   if (!all.length) {
     return (
       <div className="card">
-        <h2>Repetiția zilnică</h2>
-        <p>Nu ai încă fișe. Ele apar automat după ce finalizezi prima lecție.</p>
+        <h2>{t.review.empty}</h2>
+        <p>{t.review.emptyText}</p>
         <a className="btn" href="#/">
-          ← Acasă
+          {t.review.home}
         </a>
       </div>
     )
@@ -157,16 +142,12 @@ export function ReviewPage() {
   if (!card || !phrase) {
     return (
       <div className="card center">
-        <h2>🎉 Gata pe moment!</h2>
-        <p>Ai terminat toate fișele scadente.</p>
-        {waitingNew > 0 && (
-          <p className="muted">
-            Ai atins limita de {NEW_PER_DAY} fișe noi pe azi. Încă {waitingNew} fișe noi așteaptă pentru zilele următoare.
-          </p>
-        )}
-        {nextDue && <p className="muted">Următoarea fișă revine peste {formatInterval(nextDue.getTime() - now.getTime())}.</p>}
+        <h2>{t.review.done}</h2>
+        <p>{t.review.doneText}</p>
+        {waitingNew > 0 && <p className="muted">{t.review.limitReached(NEW_PER_DAY, waitingNew)}</p>}
+        {nextDue && <p className="muted">{t.review.nextIn(formatInterval(nextDue.getTime() - now.getTime()))}</p>}
         <a className="btn" href="#/">
-          ← Acasă
+          {t.review.home}
         </a>
       </div>
     )
@@ -180,18 +161,19 @@ export function ReviewPage() {
     <div className="review">
       <div className="row between muted small">
         <span>
-          Rămase: <strong>{queue.length}</strong> ({newCount} noi){todayReviews ? ` · azi: ${todayReviews}` : ''}
-          {waitingNew > 0 && <span title={`Limita: ${NEW_PER_DAY} fișe noi pe zi`}> · în așteptare: {waitingNew}</span>}
+          {rich(t.review.status(queue.length, newCount))}
+          {todayReviews ? t.review.today(todayReviews) : ''}
+          {waitingNew > 0 && <span title={t.review.limitTitle(NEW_PER_DAY)}>{t.review.waiting(waitingNew)}</span>}
         </span>
         <span>
-          {source} · {card.dir === 'de-ro' ? 'Germană → Română' : 'Română → Germană'}
+          {source} · {card.dir === 'de-ro' ? `${t.de} → ${t.tr}` : `${t.tr} → ${t.de}`}
         </span>
       </div>
       <div className="card flash">
-        <div className="hint muted small">{card.dir === 'de-ro' ? 'Ce înseamnă?' : 'Spune cu voce tare în germană:'}</div>
+        <div className="hint muted small">{card.dir === 'de-ro' ? t.review.whatMeans : t.review.sayIt}</div>
         <div className={card.dir === 'de-ro' ? 'front de' : 'front'}>{front}</div>
         {card.dir === 'de-ro' && (
-          <button className="icon" onClick={say} title="Ascultă (R)">
+          <button className="icon" onClick={say} title={t.review.listenR}>
             🔊
           </button>
         )}
@@ -200,18 +182,18 @@ export function ReviewPage() {
             <hr />
             <div className={card.dir === 'ro-de' ? 'back de' : 'back'}>{back}</div>
             {card.dir === 'ro-de' && (
-              <button className="icon" onClick={say} title="Ascultă (R)">
+              <button className="icon" onClick={say} title={t.review.listenR}>
                 🔊
               </button>
             )}
-            {phrase.wrong && <div className="muted small">❌ ai spus: „{phrase.wrong}“</div>}
+            {phrase.wrong && <div className="muted small">{t.review.youSaid(phrase.wrong)}</div>}
             {phrase.note && <div className="muted small">{phrase.note}</div>}
           </>
         )}
       </div>
       {!revealed ? (
         <button className="big-btn" onClick={reveal}>
-          Arată răspunsul <span className="kbd">Space</span>
+          {t.review.reveal} <span className="kbd">Space</span>
         </button>
       ) : (
         <div className="grades">
@@ -225,7 +207,7 @@ export function ReviewPage() {
         </div>
       )}
       <p className="muted small center">
-        „Din nou” = n-am știut · „Greu” = cu efort · „Bine” = am știut · „Ușor” = instant. Fii sincer cu tine: algoritmul se adaptează.
+        {t.review.legend}
       </p>
       <GradeHelp />
     </div>

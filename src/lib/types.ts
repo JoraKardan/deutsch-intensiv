@@ -140,3 +140,37 @@ export interface Lesson {
   speaking: Speaking
   external?: ExternalResource[]
 }
+
+// ── Traduceri ────────────────────────────────────────────────────────────────
+// Lecțiile de bază (content/lessons) au traducerile în română (`ro`, `titleRo` etc.).
+// O altă limbă (ex. rusa) stă în content/<lang>/lessons/<id>.json și conține DOAR textele de
+// tradus, legate de lecția de bază prin id-uri. La încărcare, src/lib/localize.ts le pune în
+// câmpurile `ro`, `titleRo`… (care înseamnă deci „traducerea în limba elevului”).
+// `null` într-un tabel sau într-o listă de opțiuni = celula / opțiunea rămâne ca în lecția de bază (germana).
+
+export interface LessonTranslation {
+  id: string
+  titleTr: string
+  goals: string[]
+  intro: string
+  pronunciation?: { title: string; intro: string; items: Record<string, { sound?: string; tip: string }> }
+  dialog: { situation: string; lines: Record<string, { tr: string; lit?: string }> }
+  phrases: Record<string, { tr: string; lit?: string; note?: string }>
+  grammar: {
+    title: string
+    explanation: string[]
+    tables?: { caption?: string; headers?: (string | null)[]; rows?: (string | null)[][] }[]
+    /** traducerea fiecărui exemplu, în ordine */
+    examples: string[]
+    tip?: string
+  }
+  /** pe id-ul exercițiului: mcq → question / options / explain; gap → tr / hint / text; order, dictation → tr */
+  exercises: Record<string, { question?: string; options?: (string | null)[]; explain?: string; tr?: string; hint?: string; text?: string }>
+  speaking: { scenario: string; claudeRole: string; tasks: string[]; starter?: string }
+  /** nota fiecărei resurse externe, în ordine */
+  external?: string[]
+}
+
+export interface CurriculumTranslation {
+  weeks: Record<string, { titleTr: string; lessons: Record<string, { titleTr: string; focus: string }> }>
+}

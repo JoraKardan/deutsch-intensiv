@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import type { Lesson } from '../lib/types'
-import { flatLessons, hasContent, lessons } from '../lib/content'
+import { flatLessons, hasContent, lessons, untranslated } from '../lib/content'
+import { t } from '../lib/i18n'
+import { locale } from '../lib/lang'
 import { addCustom, completeLesson, markSection, useProgress } from '../lib/store'
 import { parseAnalysis, type CustomItem } from '../lib/analysis'
 import { playSequence, stopAll } from '../lib/audio'
@@ -13,17 +15,10 @@ import { Shadowing } from '../components/Shadowing'
 import { Interlinear, useLitPref } from '../components/Interlinear'
 import { go } from '../router'
 
-const SECTIONS = [
-  { key: 'intro', label: 'Start' },
-  { key: 'pron', label: 'Pronunție' },
-  { key: 'dialog', label: 'Dialog' },
-  { key: 'phrases', label: 'Expresii' },
-  { key: 'grammar', label: 'Gramatică' },
-  { key: 'exercises', label: 'Exerciții' },
-  { key: 'shadowing', label: 'Shadowing' },
-  { key: 'speaking', label: 'Vorbire' },
-  { key: 'finish', label: 'Final' },
-] as const
+const SECTIONS = (['intro', 'pron', 'dialog', 'phrases', 'grammar', 'exercises', 'shadowing', 'speaking', 'finish'] as const).map((key) => ({
+  key,
+  label: t.lesson.sections[key],
+}))
 
 type SectionKey = (typeof SECTIONS)[number]['key']
 
@@ -33,9 +28,9 @@ export function LessonPage({ id, section }: { id: string; section?: string }) {
   if (!lesson) {
     return (
       <div className="card">
-        <h2>Lecția nu există încă</h2>
-        <p>Lecția „{id}” nu a fost creată încă. Vezi planul cursului.</p>
-        <a href="#/plan">← Planul cursului</a>
+        <h2>{t.lesson.notFound}</h2>
+        <p>{t.lesson.notFoundText(id)}</p>
+        <a href="#/plan">{t.lesson.backToPlan}</a>
       </div>
     )
   }
@@ -65,7 +60,7 @@ export function LessonPage({ id, section }: { id: string; section?: string }) {
         {current === 'grammar' && <GrammarView lesson={lesson} />}
         {current === 'exercises' && (
           <>
-            <p className="muted small">Poți scrie ä ö ü ß cu butoanele sau ca ae, oe, ue, ss. Majusculele și punctuația nu contează.</p>
+            <p className="muted small">{t.lesson.exercisesTip}</p>
             <ExerciseList lesson={lesson} />
           </>
         )}
@@ -95,12 +90,13 @@ function LessonShell({ lesson, current, children }: { lesson: Lesson; current: S
     <div>
       <div className="lesson-head">
         <div className="muted small">
-          {lesson.phase} · Săptămâna {lesson.week} · Lecția {lesson.day}
-          {lesson.kind === 'review' && ' · Recapitulare'}
+          {lesson.phase} · {t.lesson.head(lesson.week, lesson.day)}
+          {lesson.kind === 'review' && t.lesson.review}
         </div>
         <h1>{lesson.title}</h1>
         <div className="subtitle">{lesson.titleRo}</div>
       </div>
+      {untranslated.includes(lesson.id) && <div className="card note small">{t.lesson.untranslated}</div>}
       {children}
     </div>
   )
@@ -110,16 +106,13 @@ function Intro({ lesson }: { lesson: Lesson }) {
   return (
     <div>
       <p>{rich(lesson.intro)}</p>
-      <h3>La finalul lecției vei putea:</h3>
+      <h3>{t.lesson.goals}</h3>
       <ul className="checks">
         {lesson.goals.map((g, i) => (
           <li key={i}>{g}</li>
         ))}
       </ul>
-      <div className="card note">
-        <strong>Cum parcurgi lecția (~60–75 min):</strong> Mergi prin secțiuni în ordine. La dialog, ascultă întâi <em>fără text</em>, apoi
-        cu text, apoi cu traducere. Spune totul cu voce tare: cu cât vorbești mai mult, cu atât reții mai bine.
-      </div>
+      <div className="card note">{rich(t.lesson.howTo)}</div>
     </div>
   )
 }
@@ -158,15 +151,11 @@ function DialogView({ lesson }: { lesson: Lesson }) {
     <div>
       <h3>{d.title}</h3>
       <p className="muted">{d.situation}</p>
-      <div className="card note small">
-        <strong>Pași:</strong> ① Ascultă de 2 ori <em>fără text</em>: ce ai înțeles? ② Ascultă cu textul german. ③ La replicile grele, pornește
-        <em> Mot-à-mot</em> ca să vezi ordinea cuvintelor, apoi oprește-l și ascultă din nou. ④ Citește traducerea și ascultă încă o
-        dată. ⑤ Ascultă replicile grele rar (🐢).
-      </div>
+      <div className="card note small">{rich(t.dialog.steps)}</div>
       <div className="row wrap sticky-controls">
-        <button onClick={() => playSequence(lesson.id, items, false, setActive)}>▶ Ascultă tot</button>
+        <button onClick={() => playSequence(lesson.id, items, false, setActive)}>{t.dialog.playAll}</button>
         <button className="ghost" onClick={() => playSequence(lesson.id, items, true, setActive)}>
-          🐢 Tot, rar
+          {t.dialog.allSlow}
         </button>
         <button
           className="ghost"
@@ -175,17 +164,17 @@ function DialogView({ lesson }: { lesson: Lesson }) {
             setActive(null)
           }}
         >
-          ⏹ Stop
+          {t.dialog.stop}
         </button>
         <label className="toggle">
-          <input type="checkbox" checked={showDe} onChange={(e) => setShowDe(e.target.checked)} /> Text german
+          <input type="checkbox" checked={showDe} onChange={(e) => setShowDe(e.target.checked)} /> {t.dialog.germanText}
         </label>
         <label className="toggle">
-          <input type="checkbox" checked={showRo} onChange={(e) => setShowRo(e.target.checked)} /> Traducere
+          <input type="checkbox" checked={showRo} onChange={(e) => setShowRo(e.target.checked)} /> {t.dialog.translation}
         </label>
         {hasLit && (
-          <label className="toggle" title="Traducerea fiecărui cuvânt, sub textul german">
-            <input type="checkbox" checked={lit} disabled={!showDe} onChange={(e) => setLit(e.target.checked)} /> Mot-à-mot
+          <label className="toggle" title={t.dialog.litTitle}>
+            <input type="checkbox" checked={lit} disabled={!showDe} onChange={(e) => setLit(e.target.checked)} /> {t.dialog.lit}
           </label>
         )}
       </div>
@@ -219,7 +208,7 @@ function Phrases({ lesson }: { lesson: Lesson }) {
   return (
     <div>
       <div className="row between wrap">
-        <p className="muted">Acestea sunt expresiile de reținut. Când finalizezi lecția, intră automat în repetiția zilnică.</p>
+        <p className="muted">{t.phrases.intro}</p>
         <label className="toggle">
           <input
             type="checkbox"
@@ -229,11 +218,11 @@ function Phrases({ lesson }: { lesson: Lesson }) {
               setRevealed([])
             }}
           />{' '}
-          Ascunde traducerea (autotest)
+          {t.phrases.hide}
         </label>
         {hasLit && (
           <label className="toggle">
-            <input type="checkbox" checked={lit} onChange={(e) => toggleLit(e.target.checked)} /> Mot-à-mot
+            <input type="checkbox" checked={lit} onChange={(e) => toggleLit(e.target.checked)} /> {t.dialog.lit}
           </label>
         )}
       </div>
@@ -245,7 +234,7 @@ function Phrases({ lesson }: { lesson: Lesson }) {
               <Interlinear de={p.de} lit={lit && (!hideRo || revealed.includes(p.id)) ? p.lit : undefined} />
               {hideRo && !revealed.includes(p.id) ? (
                 <button className="link small" onClick={() => setRevealed([...revealed, p.id])}>
-                  arată traducerea
+                  {t.phrases.show}
                 </button>
               ) : (
                 <div className="muted">{p.ro}</div>
@@ -266,31 +255,20 @@ function Speaking({ lesson }: { lesson: Lesson }) {
   const [show, setShow] = useState(false)
   return (
     <div>
-      <h3>Situația</h3>
+      <h3>{t.speaking.situation}</h3>
       <p>{s.scenario}</p>
-      <h4>Ce trebuie să reușești:</h4>
+      <h4>{t.speaking.tasks}</h4>
       <ul className="checks">
         {s.tasks.map((t, i) => (
           <li key={i}>{t}</li>
         ))}
       </ul>
       <div className="card note">
-        <strong>Cum exersezi cu Claude:</strong>
+        <strong>{t.speaking.how}</strong>
         <ol>
-          <li>Apasă „Copiază scenariul”.</li>
-          <li>
-            Deschide <strong>aplicația Claude pe telefon</strong> (sau claude.ai), intră în proiectul <strong>Deutsch – Vorbire</strong>,
-            pornește o conversație nouă <strong>în proiect</strong> și lipește textul.
-          </li>
-          <li>
-            Pe telefon, apasă butonul de <strong>mod vocal</strong> și vorbește. Pe calculator poți scrie sau dicta.
-          </li>
-          <li>Claude îți arată la început comenzile (vezi mai jos). La final, spune „<em>stop</em>” ca să primești analiza.</li>
-          <li>
-            Copiază analiza de la final și lipește-o mai jos, la „După conversație”: greșelile și expresiile noi intră în
-            repetiția zilnică.
-          </li>
-          <li>Ideal: fă scenariul de 2 ori. A doua oară încearcă să nu mai ceri ajutor.</li>
+          {t.speaking.steps.map((x, i) => (
+            <li key={i}>{rich(x)}</li>
+          ))}
         </ol>
       </div>
       <Commands />
@@ -306,10 +284,10 @@ function Speaking({ lesson }: { lesson: Lesson }) {
             }
           }}
         >
-          {copied ? '✓ Copiat!' : '📋 Copiază scenariul'}
+          {copied ? t.speaking.copied : t.speaking.copy}
         </button>
         <button className="ghost" onClick={() => setShow(!show)}>
-          {show ? 'Ascunde textul' : 'Vezi textul'}
+          {show ? t.speaking.hideText : t.speaking.showText}
         </button>
       </div>
       {show && <pre className="prompt">{prompt}</pre>}
@@ -318,21 +296,12 @@ function Speaking({ lesson }: { lesson: Lesson }) {
   )
 }
 
-/** Comenzile din conversație (aceleași ca în claude-project/instructiuni.md). */
-const COMMANDS: [string, string][] = [
-  ['ajutor  (sau ?)', 'îți explică în română ce a spus + 2 variante de răspuns'],
-  ['mai rar', 'repetă mai simplu și mai scurt'],
-  ['cum se spune …?', 'îți dă expresia germană, apoi revine în rol'],
-  ['traducere', 'traduce în română ultima lui replică'],
-  ['stop', 'iese din rol și îți dă analiza greșelilor'],
-]
-
 function Commands() {
   return (
     <div className="card">
-      <strong>Comenzi în conversație</strong> <span className="muted small">(le poți spune și în română)</span>
+      <strong>{t.speaking.commands}</strong> <span className="muted small">{t.speaking.commandsNote}</span>
       <ul className="small">
-        {COMMANDS.map(([c, d]) => (
+        {t.speaking.commandList.map(([c, d]) => (
           <li key={c}>
             <strong>{c}</strong>: {d}
           </li>
@@ -348,11 +317,8 @@ function ImportAnalysis({ lessonId }: { lessonId: string }) {
   const [added, setAdded] = useState<number | null>(null)
   return (
     <div className="card">
-      <h3>După conversație</h3>
-      <p className="small muted">
-        Lipește aici analiza de la final (sau toată conversația). Greșelile devin fișe „română → germană”, iar expresiile noi
-        intră în ambele direcții.
-      </p>
+      <h3>{t.analysis.title}</h3>
+      <p className="small muted">{t.analysis.intro}</p>
       <textarea
         rows={6}
         style={{ width: '100%' }}
@@ -366,7 +332,7 @@ function ImportAnalysis({ lessonId }: { lessonId: string }) {
       />
       <div className="row">
         <button disabled={!text.trim()} onClick={() => setItems(parseAnalysis(text))}>
-          Verifică
+          {t.analysis.check}
         </button>
         {items && items.length > 0 && (
           <button
@@ -376,12 +342,12 @@ function ImportAnalysis({ lessonId }: { lessonId: string }) {
               setText('')
             }}
           >
-            ➕ Adaugă {items.length} în repetiție
+            {t.analysis.add(items.length)}
           </button>
         )}
       </div>
       {items && items.length === 0 && (
-        <p className="small">N-am găsit greșeli sau expresii în formatul analizei (❌ … → ✅ … sau „…“ = …).</p>
+        <p className="small">{t.analysis.none}</p>
       )}
       {items && items.length > 0 && (
         <ul className="small">
@@ -402,7 +368,7 @@ function ImportAnalysis({ lessonId }: { lessonId: string }) {
       )}
       {added !== null && (
         <p className="small">
-          ✓ {added === 0 ? 'Toate erau deja în repetiție.' : `Am adăugat ${added} în repetiție.`} <a href="#/review">Mergi la repetiție →</a>
+          ✓ {added === 0 ? t.analysis.allThere : t.analysis.added(added)} <a href="#/review">{t.analysis.goReview}</a>
         </p>
       )}
     </div>
@@ -421,24 +387,24 @@ function Finish({ lesson }: { lesson: Lesson }) {
   )
   return (
     <div>
-      <h3>Bilanțul lecției</h3>
+      <h3>{t.finish.title}</h3>
       <ul>
-        <li>
-          Exerciții: <strong>{correct}</strong> / {lesson.exercises.length} corecte
-        </li>
-        <li>
-          Expresii noi pentru repetiție: <strong>{lesson.phrases.length}</strong> (× 2 direcții: germană → română și română → germană)
-        </li>
-        {missing.length > 0 && <li className="warn">Secțiuni neparcurse: {missing.map((s) => s.label).join(', ')}</li>}
+        <li>{rich(t.finish.exercises(correct, lesson.exercises.length))}</li>
+        <li>{rich(t.finish.phrases(lesson.phrases.length))}</li>
+        {missing.length > 0 && (
+          <li className="warn">
+            {t.finish.missing} {missing.map((s) => s.label).join(', ')}
+          </li>
+        )}
       </ul>
       {done ? (
         <div className="card good-bg">
-          ✓ Lecție finalizată pe {new Date(done).toLocaleDateString('ro-RO')}.{' '}
+          {t.finish.doneOn(new Date(done).toLocaleDateString(locale))}{' '}
           {next &&
             (hasContent(next.id) ? (
-              <a href={`#/lesson/${next.id}`}>Următoarea: {next.title} →</a>
+              <a href={`#/lesson/${next.id}`}>{t.finish.next(next.title)}</a>
             ) : (
-              <span className="muted">Următoarea lecție („{next.title}”) nu e creată încă.</span>
+              <span className="muted">{t.finish.nextMissing(next.title)}</span>
             ))}
         </div>
       ) : (
@@ -448,12 +414,12 @@ function Finish({ lesson }: { lesson: Lesson }) {
             completeLesson(lesson)
           }}
         >
-          ✓ Finalizează lecția și adaugă expresiile în repetiție
+          {t.finish.complete}
         </button>
       )}
       {lesson.external && lesson.external.length > 0 && (
         <div className="card" style={{ marginTop: '1rem' }}>
-          <h4 style={{ marginTop: 0 }}>Ascultare externă recomandată</h4>
+          <h4 style={{ marginTop: 0 }}>{t.finish.external}</h4>
           <ul className="resources">
             {lesson.external.map((r) => (
               <li key={r.url}>
@@ -467,11 +433,11 @@ function Finish({ lesson }: { lesson: Lesson }) {
         </div>
       )}
       <p className="muted small" style={{ marginTop: '1.5rem' }}>
-        Sfat: mâine, înainte de lecția nouă, fă repetiția (fișele) și reascultă o dată dialogul de azi.
+        {t.finish.tip}
       </p>
       {done && (
         <button className="ghost" onClick={() => go('/review')}>
-          Mergi la repetiție →
+          {t.finish.goReview}
         </button>
       )}
     </div>

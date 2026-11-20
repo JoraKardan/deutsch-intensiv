@@ -3,8 +3,9 @@
 Proiect personal: curs intensiv de germană (A1 → B1 în 16 săptămâni) pentru un vorbitor nativ de **română** (înțelege și rusă și engleză). Scopul principal este **înțelegerea vorbirii** și **conversația**, la muncă și în viața de zi cu zi în Germania. Momentan nu se pregătește pentru un examen.
 
 - Comunică cu utilizatorul **în română**.
+- Aplicația e **bilingvă: română și rusă** (pentru doi prieteni ai utilizatorului care vorbesc doar rusă). Limba se alege în bara de sus (RO/RU) sau cu linkul `?lang=ru`. Textele interfeței sunt în `src/lib/i18n.ts` (dicționarele `ro` și `ru`); nu scrie texte direct în componente.
 - Aplicația: React + TS + Vite, `npm run dev` (port 5180). Progresul e în localStorage.
-- Conversațiile de vorbire au loc în aplicația Claude, în proiectul „Deutsch – Vorbire” (instrucțiuni + Knowledge din `claude-project/`); scenariul lecției se copiază din aplicație. O integrare ulterioară prin `claude -p` e posibilă (varianta „c”).
+- Conversațiile de vorbire au loc cu un asistent AI (testat cu Claude; merge și cu ChatGPT Projects / Gemini Gems), într-un proiect cu instrucțiunile și fișierele din `claude-project/` (română) sau `claude-project/ru/` (rusă). Utilizatorii le descarcă din aplicație: **Setări → Asistentul pentru conversație**. Scenariul lecției se copiază din aplicație. O integrare ulterioară prin `claude -p` e posibilă (varianta „c”).
 
 ## Generarea lecțiilor noi
 
@@ -12,8 +13,9 @@ Când utilizatorul cere „generează săptămâna N”:
 
 1. Citește `content/curriculum.json` (titlurile și focusul lecțiilor săptămânii N) și 1–2 lecții existente din `content/lessons/` ca model de format și nivel. Recitește și recapitularea săptămânii anterioare.
 2. Creează câte un fișier `content/lessons/wNN-D.json` (ex. `w02-3.json`) pentru fiecare lecție. Tipul exact e în `src/lib/types.ts`.
-3. Rulează `npm run check`, corectează erorile, apoi `npm run audio -- wNN-1 wNN-2 …` (rulează în fundal; Azure F0 ≈ 20 cereri/min → ~3–4 min/lecție).
-4. Rulează `npm run claude-project` (actualizează `claude-project/`) și spune-i utilizatorului să reîncarce în proiectul Claude „Deutsch – Vorbire” fișierele `vocabular.md`, `gramatica.md` (și `personaje.md`, dacă apar personaje noi).
+2b. Creează și **traducerea în rusă**: `content/ru/lessons/wNN-D.json` (tipul `LessonTranslation` din `src/lib/types.ts`; model: lecțiile existente din `content/ru/lessons/`). Conține doar textele de tradus, legate prin id-uri: `titleTr`, `goals`, `intro`, pronunția (`tip`, iar `sound` doar dacă e în română), `dialog.situation` + `lines.dN.tr/lit`, `phrases.pN.tr/lit/note`, gramatica (`explanation` întreagă, `examples` = traducerile în ordine, `tables`: `null` = celula rămâne ca în bază, deci pune text doar în celulele românești), `exercises` (mcq: `question`, `options` doar dacă sunt în română, `explain`; gap: `tr`, `hint`, `text` dacă textul are o paranteză în română; order/dictation: `tr`), `speaking` (fără `starter`, care e în germană), `external`. Glosele `lit` în rusă, cu aceleași convenții (`в (+арт.)`, `вста… | … | …(auf-stehen)`, `(это)`). **Explicațiile se adaptează pentru vorbitorii de rusă, nu se traduc mot-à-mot**: rusa are cazuri (acuzativul e familiar), dar nu are articole; pronunția se explică cu sunete și transcrieri rusești (fără „ă”, „ș” etc.). Personajele se scriu în rusă în traduceri (Раду, Вали, Кася, Оле, Йенс). La o programă nouă (săptămână nouă în `curriculum.json`), actualizează și `content/ru/curriculum.json`.
+3. Rulează `npm run check` (verifică și traducerile în rusă: lipsă, glose, celule germane schimbate, text românesc scăpat), corectează erorile, apoi `npm run audio -- wNN-1 wNN-2 …` (rulează în fundal; Azure F0 ≈ 20 cereri/min → ~3–4 min/lecție).
+4. Rulează `npm run claude-project` (actualizează `claude-project/` și `claude-project/ru/`; la publicare se regenerează oricum în CI) și spune-i utilizatorului să reîncarce în proiectul „Deutsch – Vorbire” fișierele `vocabular.md`, `gramatica.md` (și `personaje.md`, dacă apar personaje noi). Le poate descărca și din Setări. Instrucțiunile proiectului: `tools/claude-project-instructions.md` (română) și `.ru.md` (rusă); modificările se fac în ambele.
 5. Audio e inclus în git (GitHub Pages nu poate genera audio). Commit + push pe `main` (doar dacă utilizatorul cere) → site-ul se actualizează automat: https://jorakardan.github.io/deutsch-intensiv/
 
 ### Reguli de conținut
@@ -48,5 +50,5 @@ Când utilizatorul cere „generează săptămâna N”:
 - `npm run dev`: aplicația
 - `npm run check`: validarea lecțiilor
 - `npm run audio [-- id …] [--force]`: generarea audio (Azure Speech, cheia în `.env` exclus din git; vocile macOS rămân ca alternativă). Varianta rară 🐢 se face în browser (playbackRate).
-- `npm run claude-project`: generează `claude-project/` (instrucțiunile și Knowledge pentru proiectul din aplicația Claude). Sursa instrucțiunilor: `tools/claude-project-instructions.md`.
+- `npm run claude-project`: generează `claude-project/` (română) și `claude-project/ru/` (rusă): instrucțiunile și fișierele pentru proiectul asistentului AI. Sursa instrucțiunilor: `tools/claude-project-instructions.md` și `tools/claude-project-instructions.ru.md`. Șabloanele „despre mine” (descărcabile din Setări): `tools/despre-mine-template{,.ru}.md`.
 - `npm run build`: verificare TypeScript + build

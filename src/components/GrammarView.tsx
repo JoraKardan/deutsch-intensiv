@@ -4,6 +4,7 @@ import { rich } from '../lib/text'
 import { play, playSequence } from '../lib/audio'
 import { tableAudio, type TableClip } from '../lib/tableAudio'
 import { AudioButtons } from './Audio'
+import { t } from '../lib/i18n'
 
 export function GrammarView({ lesson }: { lesson: Lesson }) {
   const g = lesson.grammar
@@ -64,8 +65,8 @@ export function GrammarView({ lesson }: { lesson: Lesson }) {
           </div>
         )
       })}
-      {g.tables?.some((t) => t.audio) && <p className="muted small">▶ Atinge un cuvânt din tabel ca să-l asculți.</p>}
-      <h4>Exemple</h4>
+      {g.tables?.some((t) => t.audio) && <p className="muted small">{t.grammar.tapHint}</p>}
+      <h4>{t.grammar.examples}</h4>
       <ul className="examples">
         {g.examples.map((e, i) => (
           <li key={i}>

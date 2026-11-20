@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { curriculum, hasContent } from '../lib/content'
+import { curriculum, hasContent, untranslated } from '../lib/content'
+import { t } from '../lib/i18n'
 import { useProgress } from '../lib/store'
 
 export function PlanPage() {
@@ -8,11 +9,8 @@ export function PlanPage() {
   const [open, setOpen] = useState<number[]>([firstOpen])
   return (
     <div>
-      <h1>Planul cursului</h1>
-      <p className="muted">
-        16 săptămâni · 8 lecții pe săptămână (7 noi + recapitulare). Ritm recomandat: luni–sâmbătă câte 1–2 lecții, duminică doar repetiție,
-        ascultare și conversație.
-      </p>
+      <h1>{t.plan.title}</h1>
+      <p className="muted">{t.plan.intro}</p>
       {curriculum.weeks.map((w) => {
         const d = w.lessons.filter((l) => p.lessons[l.id]?.completedAt).length
         const isOpen = open.includes(w.week)
@@ -21,7 +19,7 @@ export function PlanPage() {
             <button className="week-head" onClick={() => setOpen(isOpen ? open.filter((x) => x !== w.week) : [...open, w.week])}>
               <span className="badge">{w.phase}</span>
               <span className="grow">
-                <strong>Săptămâna {w.week}:</strong> {w.title} <span className="muted">· {w.titleRo}</span>
+                <strong>{t.plan.week(w.week)}</strong> {w.title} <span className="muted">· {w.titleRo}</span>
               </span>
               <span className="muted small">
                 {d}/{w.lessons.length}
@@ -39,6 +37,7 @@ export function PlanPage() {
                       <span className="grow">
                         {avail ? <a href={`#/lesson/${l.id}`}>{l.title}</a> : <span>{l.title}</span>}
                         <span className="muted"> — {l.titleRo}</span>
+                        {avail && untranslated.includes(l.id) && <span className="muted small"> {t.plan.untranslated}</span>}
                         <div className="muted small">{l.focus}</div>
                       </span>
                     </li>
@@ -49,7 +48,7 @@ export function PlanPage() {
           </div>
         )
       })}
-      <p className="muted small">🔒 = lecție încă necreată. Lecțiile se generează pe săptămâni, pe măsură ce avansezi.</p>
+      <p className="muted small">{t.plan.locked}</p>
     </div>
   )
 }

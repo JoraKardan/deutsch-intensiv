@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { Exercise, Lesson } from '../lib/types'
-import { normalize, numbersSpelled, sameWithNumbers, shuffle, speechMatch } from '../lib/text'
+import { normalize, numbersSpelled, rich, sameWithNumbers, shuffle, speechMatch } from '../lib/text'
+import { t } from '../lib/i18n'
 import { recordExercise, resetExercises, useProgress } from '../lib/store'
 import { AudioButtons } from './Audio'
 import { UmlautInput } from './UmlautInput'
@@ -15,12 +16,7 @@ export function audioText(lesson: Lesson, id: string): string {
   )
 }
 
-const TYPE_LABEL: Record<Exercise['type'], string> = {
-  mcq: 'Alege răspunsul',
-  dictation: 'Dictare: ascultă și scrie',
-  order: 'Ordonează cuvintele',
-  gap: 'Completează',
-}
+const TYPE_LABEL: Record<Exercise['type'], string> = t.ex.types
 
 export function ExerciseList({ lesson }: { lesson: Lesson }) {
   const progress = useProgress()
@@ -33,9 +29,7 @@ export function ExerciseList({ lesson }: { lesson: Lesson }) {
   return (
     <div>
       <div className="row between">
-        <p className="muted">
-          Rezultat: <strong>{correct}</strong> corecte din {total} {done < total && `(${total - done} rămase)`}
-        </p>
+        <p className="muted">{rich(t.ex.result(correct, total, total - done))}</p>
         {done > 0 && (
           <button
             className="ghost"
@@ -44,7 +38,7 @@ export function ExerciseList({ lesson }: { lesson: Lesson }) {
               setRound((r) => r + 1)
             }}
           >
-            ↺ Reia exercițiile
+            {t.ex.retry}
           </button>
         )}
       </div>
@@ -117,7 +111,7 @@ function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, {
   return (
     <div>
       <p className="question">
-        <AudioButtons lessonId={lesson.id} id={ex.audio} text={ex.text} /> Ascultă (de câte ori ai nevoie) și scrie ce auzi.
+        <AudioButtons lessonId={lesson.id} id={ex.audio} text={ex.text} /> {t.ex.dictation}
       </p>
       <form
         className="row wrap dictation"
@@ -126,8 +120,8 @@ function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, {
           if (!checked) check()
         }}
       >
-        <UmlautInput value={value} onChange={setValue} disabled={checked} placeholder="Scrie în germană…" className="wide" />
-        {!checked && <button type="submit">Verifică</button>}
+        <UmlautInput value={value} onChange={setValue} disabled={checked} placeholder={t.ex.placeholder} className="wide" />
+        {!checked && <button type="submit">{t.ex.check}</button>}
       </form>
       {result && (
         <div className="explain">
@@ -139,7 +133,9 @@ function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, {
             ))}
           </div>
           {usedDigits && numbersSpelled(ex.text).length > 0 && (
-            <div className="small">🔢 În litere: {numbersSpelled(ex.text).join(', ')}</div>
+            <div className="small">
+              {t.ex.inWords} {numbersSpelled(ex.text).join(', ')}
+            </div>
           )}
           {ex.ro && <div className="muted">{ex.ro}</div>}
         </div>
@@ -166,7 +162,7 @@ function Order({ ex, onResult }: ExProps & { ex: Extract<Exercise, { type: 'orde
   return (
     <div>
       <p className="question">„{ex.ro}“</p>
-      <div className="built">{built || <span className="muted">Apasă cuvintele în ordinea corectă…</span>}</div>
+      <div className="built">{built || <span className="muted">{t.ex.orderHint}</span>}</div>
       <div className="chips">
         {tokens.map((t, k) => (
           <button key={k} className="chip" disabled={picked.includes(k) || checked !== null} onClick={() => setPicked([...picked, k])}>
@@ -177,14 +173,14 @@ function Order({ ex, onResult }: ExProps & { ex: Extract<Exercise, { type: 'orde
       {checked === null ? (
         <div className="row">
           <button className="ghost" onClick={() => setPicked(picked.slice(0, -1))} disabled={!picked.length}>
-            ⌫ Înapoi
+            {t.ex.back}
           </button>
           <button onClick={check} disabled={picked.length !== tokens.length}>
-            Verifică
+            {t.ex.check}
           </button>
         </div>
       ) : (
-        <p className={`explain ${checked ? 'good' : 'bad'}`}>{checked ? '✓ Corect!' : `✗ Corect: ${ex.answer}`}</p>
+        <p className={`explain ${checked ? 'good' : 'bad'}`}>{checked ? t.ex.correct : t.ex.correctIs(ex.answer)}</p>
       )}
     </div>
   )
@@ -227,8 +223,8 @@ function Gap({ ex, onResult }: ExProps & { ex: Extract<Exercise, { type: 'gap' }
         ))}
       </p>
       {ex.hint && !checked && <p className="muted small">💡 {ex.hint}</p>}
-      {!checked && <button type="submit">Verifică</button>}
-      {checked && <p className={`explain ${checked.every(Boolean) ? 'good' : 'bad'}`}>{checked.every(Boolean) ? '✓ Corect!' : '✗ Vezi corectura mai sus.'}</p>}
+      {!checked && <button type="submit">{t.ex.check}</button>}
+      {checked && <p className={`explain ${checked.every(Boolean) ? 'good' : 'bad'}`}>{checked.every(Boolean) ? t.ex.correct : t.ex.seeFix}</p>}
     </form>
   )
 }

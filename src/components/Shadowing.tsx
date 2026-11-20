@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Lesson } from '../lib/types'
 import { play, stopAll } from '../lib/audio'
-import { isSpelling, speechMatch, speechSimilarity } from '../lib/text'
+import { isSpelling, rich, speechMatch, speechSimilarity } from '../lib/text'
+import { t } from '../lib/i18n'
 
 // Recunoașterea vocală a browserului (Chrome / Safari), fără tipuri oficiale în TS.
 type Recognition = {
@@ -22,13 +23,11 @@ export function Shadowing({ lesson }: { lesson: Lesson }) {
   return (
     <div>
       <div className="card note">
-        <strong>Cum faci shadowing:</strong>
+        <strong>{t.shadow.how}</strong>
         <ol>
-          <li>Ascultă replica rar (🐢), apoi normal (▶).</li>
-          <li>Repet-o cu voce tare, imitând intonația și ritmul, nu doar cuvintele. Fă asta de 3–5 ori.</li>
-          <li>Înregistrează-te (🎙) și compară cu originalul.</li>
-          <li>Opțional: „Verifică” transcrie ce ai spus. Dacă te înțelege calculatorul, te înțelege și un neamț.</li>
-          <li>La final, încearcă să repeți <em>în același timp</em> cu audio-ul, fără să te uiți la text.</li>
+          {t.shadow.steps.map((x, i) => (
+            <li key={i}>{rich(x)}</li>
+          ))}
         </ol>
       </div>
       {lesson.dialog.lines.map((l) => (
@@ -70,7 +69,7 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
       setRec(r)
       setErr(null)
     } catch {
-      setErr('Nu am acces la microfon. Permite-l în browser.')
+      setErr(t.shadow.noMic)
     }
   }
 
@@ -113,9 +112,9 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
       setPartial(sess.parts.join(' '))
     }
     r.onerror = (e) => {
-      if (e.error === 'no-speech') fatal = 'Nu s-a auzit nimic. Mai încearcă.'
+      if (e.error === 'no-speech') fatal = t.shadow.noSpeech
       else if (e.error !== 'aborted') {
-        fatal = `Eroare recunoaștere: ${e.error}`
+        fatal = t.shadow.error(e.error)
         sess.userStop = true // erori ca „not-allowed”: nu mai repornim
       }
     }
@@ -149,27 +148,27 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
       <div className="de">{de}</div>
       <div className="muted small">{ro}</div>
       <div className="row wrap">
-        <button className="ghost" onClick={() => play(lessonId, id, de, true)}>🐢 Rar</button>
-        <button className="ghost" onClick={() => play(lessonId, id, de)}>▶ Normal</button>
+        <button className="ghost" onClick={() => play(lessonId, id, de, true)}>{t.shadow.slow}</button>
+        <button className="ghost" onClick={() => play(lessonId, id, de)}>{t.shadow.normal}</button>
         <button className={rec ? 'danger' : 'ghost'} onClick={toggleRecord}>
-          {rec ? '⏹ Stop' : '🎙 Înregistrează'}
+          {rec ? t.shadow.stop : t.shadow.record}
         </button>
         {mine && (
           <button className="ghost" onClick={() => new Audio(mine).play()}>
-            ▶ Vocea mea
+            {t.shadow.mine}
           </button>
         )}
         {RecognitionCtor && !isSpelling(de) && (
           <button className={listening ? 'danger' : 'ghost'} onClick={check}>
-            {listening ? '⏹ Ascult…' : '🗣 Verifică'}
+            {listening ? t.shadow.listening : t.shadow.check}
           </button>
         )}
       </div>
-      {listening && partial && <p className="muted small">Am prins până acum: „{partial}“ … continuă</p>}
+      {listening && partial && <p className="muted small">{t.shadow.partial(partial)}</p>}
       {heard !== null && (
         <div className="explain">
           <div>
-            Am înțeles: „<em>{heard}</em>“ — <strong className={score! >= 80 ? 'good' : score! >= 50 ? 'warn' : 'bad'}>{score}%</strong>
+            {t.shadow.heard} „<em>{heard}</em>“ — <strong className={score! >= 80 ? 'good' : score! >= 50 ? 'warn' : 'bad'}>{score}%</strong>
           </div>
           <div className="diff">
             {speechMatch(de, heard, true).map((w, i) => (
