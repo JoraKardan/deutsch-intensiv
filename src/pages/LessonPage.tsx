@@ -48,6 +48,14 @@ export function LessonPage({ id, section }: { id: string; section?: string }) {
   const prev = sections[idx - 1]
   const next = sections[idx + 1]
   const score = sectionScore(current, lesson, lp)
+  // starea fiecărui pas: efectuat (verde), început dar sub 80% (chihlimbar), neînceput (gri)
+  const stateOf = (key: string): 'done' | 'partial' | 'todo' => {
+    if (doneList.includes(key)) return 'done'
+    const sc = sectionScore(key, lesson, lp)
+    const started = key === 'exercises' ? Object.keys(lp?.exercises ?? {}).length > 0 : key === 'shadowing' ? Object.keys(lp?.shadow ?? {}).length > 0 : false
+    if (sc?.passed) return 'done'
+    return started ? 'partial' : 'todo'
+  }
 
   // „→”: secțiunea curentă devine efectuată (exercițiile și shadowing-ul doar de la 80%), apoi mergem mai departe.
   const goNext = () => {
@@ -67,17 +75,21 @@ export function LessonPage({ id, section }: { id: string; section?: string }) {
           <span className="muted">{t.lesson.doneCount(sections.filter((s) => doneList.includes(s.key)).length)}</span>
         </div>
         <div className="step-bars" style={{ gridTemplateColumns: `repeat(${sections.length}, minmax(0, 1fr))` }}>
-          {sections.map((s, i) => (
-            <a
-              key={s.key}
-              href={`#/lesson/${id}/${s.key}`}
-              aria-label={`${i + 1}. ${s.label}${doneList.includes(s.key) ? ' ✓' : ''}`}
-              aria-current={s.key === current ? 'step' : undefined}
-              className={`step ${doneList.includes(s.key) ? 'done' : ''} ${s.key === current ? 'current' : ''}`}
-            >
-              <span />
-            </a>
-          ))}
+          {sections.map((s, i) => {
+            const st = stateOf(s.key)
+            return (
+              <a
+                key={s.key}
+                href={`#/lesson/${id}/${s.key}`}
+                aria-label={`${i + 1}. ${s.label} · ${t.lesson.stepState[st]}`}
+                title={`${s.label} · ${t.lesson.stepState[st]}`}
+                aria-current={s.key === current ? 'step' : undefined}
+                className={`step ${st} ${s.key === current ? 'current' : ''}`}
+              >
+                <span />
+              </a>
+            )
+          })}
         </div>
       </div>
       <main className={`lesson-main ${current === 'dialog' ? 'has-player' : ''}`}>

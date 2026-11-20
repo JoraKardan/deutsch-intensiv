@@ -594,14 +594,15 @@ label.toggle {
   background: var(--border);
 }
 .step.done span {
-  background: var(--accent);
+  background: var(--good);
 }
+.step.partial span {
+  background: var(--warn-bg);
+}
+/* pasul curent: mai gros, cu contur în culoarea textului */
 .step.current span {
-  background: var(--accent-mid);
-  height: 8px;
-}
-.step.done.current span {
-  background: var(--accent);
+  height: 10px;
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--text);
 }
 .lesson-title {
   margin-bottom: 0.8rem;
