@@ -14,6 +14,8 @@ export interface LessonProgress {
   exercises: Record<string, boolean>
   /** shadowing: pe replică, cel mai bun scor „Verifică” (0–100) și dacă s-a înregistrat */
   shadow?: Record<string, { best?: number; rec?: boolean }>
+  /** ultimul pas deschis: lecția redeschisă fără pas continuă de aici */
+  last?: string
 }
 
 export interface DayLog {
@@ -118,6 +120,14 @@ export function markSection(lessonId: string, section: string) {
 function markAuto(d: DayLog, key: string) {
   d.auto ??= []
   if (!d.auto.includes(key)) d.auto.push(key)
+}
+
+/** Ține minte ultimul pas deschis al lecției. */
+export function setLastSection(lessonId: string, section: string) {
+  if (state.lessons[lessonId]?.last === section) return
+  update((p) => {
+    lessonP(p, lessonId).last = section
+  })
 }
 
 /** Shadowing: păstrează cel mai bun scor al replicii / faptul că s-a înregistrat. */

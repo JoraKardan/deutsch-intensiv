@@ -3,7 +3,7 @@ import type { Lesson } from '../lib/types'
 import { flatLessons, hasContent, lessons, untranslated } from '../lib/content'
 import { t } from '../lib/i18n'
 import { locale } from '../lib/lang'
-import { addCustom, completeLesson, markSection, useProgress } from '../lib/store'
+import { addCustom, completeLesson, markSection, setLastSection, useProgress } from '../lib/store'
 import { parseAnalysis, type CustomItem } from '../lib/analysis'
 import { playSequence, stopAll } from '../lib/audio'
 import { buildSpeakingPrompt } from '../lib/prompt'
@@ -39,7 +39,9 @@ export function LessonPage({ id, section }: { id: string; section?: string }) {
     )
   }
   const sections = SECTIONS.filter((s) => s.key !== 'pron' || lesson.pronunciation)
-  const current = (sections.find((s) => s.key === section)?.key ?? 'intro') as SectionKey
+  // fără pas în adresă (din pagina principală / Plan): continuăm de la ultimul pas deschis
+  const wanted = section ?? progress.lessons[id]?.last
+  const current = (sections.find((s) => s.key === wanted)?.key ?? 'intro') as SectionKey
   const idx = sections.findIndex((s) => s.key === current)
   const lp = progress.lessons[id]
   const doneList = lp?.sections ?? []
@@ -128,6 +130,7 @@ export function LessonPage({ id, section }: { id: string; section?: string }) {
 function LessonShell({ lesson, current, children }: { lesson: Lesson; current: SectionKey; children: React.ReactNode }) {
   useEffect(() => {
     window.scrollTo({ top: 0 })
+    setLastSection(lesson.id, current)
     return () => stopAll()
   }, [lesson.id, current])
   return (
