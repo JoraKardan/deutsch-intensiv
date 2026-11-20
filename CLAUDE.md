@@ -50,6 +50,7 @@ Când utilizatorul cere „generează săptămâna N”:
 
 - `npm run dev`: aplicația
 - `npm run check`: validarea lecțiilor
+- Pronunția greșită a unui cuvânt la vocile Azure (ex. „Moin”, regional) se corectează în `LEXICON` din `tools/gen-audio.mjs` (IPA); la o modificare a lexiconului crește `LEX_VERSION`, ca să se regenereze doar fragmentele afectate, și crește cache-ul `audio-vN`.
 - `npm run audio [-- id …] [--force]`: generarea audio (și `essentials` pentru pagina Esențiale, din `content/essentials.json`; la frazele noi de acolo, rulează `npm run audio -- essentials`) (Azure Speech, cheia în `.env` exclus din git; vocile macOS rămân ca alternativă). Varianta rară 🐢 se face în browser (playbackRate).
 - `npm run claude-project`: generează `claude-project/` (română) și `claude-project/ru/` (rusă): instrucțiunile și fișierele pentru proiectul asistentului AI. Sursa instrucțiunilor: `tools/claude-project-instructions.md` și `tools/claude-project-instructions.ru.md`. Șabloanele „despre mine” (descărcabile din Setări): `tools/despre-mine-template{,.ru}.md`.
 - `npm run build`: verificare TypeScript + build

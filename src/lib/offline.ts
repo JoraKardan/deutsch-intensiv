@@ -6,7 +6,7 @@ import type { Lesson } from './types'
 import { lessonTableClips } from './tableAudio'
 import { essentials, ESSENTIALS_ID } from './essentials'
 
-const AUDIO_CACHE = 'audio-v3' // același nume ca în public/sw.js
+const AUDIO_CACHE = 'audio-v4' // același nume ca în public/sw.js
 
 export function registerServiceWorker() {
   if (!import.meta.env.PROD || !('serviceWorker' in navigator)) return

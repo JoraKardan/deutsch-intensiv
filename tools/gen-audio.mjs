@@ -75,8 +75,19 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const xml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 let lastAzure = 0
 
+// Pronunția cuvintelor pe care vocile Azure le citesc greșit (regionale, străine): IPA prin <phoneme>.
+// Fragmentele care conțin aceste cuvinte primesc alt hash (LEX_VERSION), deci se regenerează doar ele.
+const LEXICON = [[/\bMoin\b/g, 'mɔʏ̯n']]
+const LEX_VERSION = 'lex1'
+const hasLexicon = (text) => LEXICON.some(([re]) => new RegExp(re.source).test(text))
+function ssmlText(text) {
+  let out = xml(text)
+  for (const [re, ipa] of LEXICON) out = out.replace(re, (w) => `<phoneme alphabet="ipa" ph="${ipa}">${w}</phoneme>`)
+  return out
+}
+
 async function azureWav(text, voice, file) {
-  const ssml = `<speak version="1.0" xml:lang="de-DE"><voice name="${voice}"><lang xml:lang="de-DE">${xml(text)}</lang></voice></speak>`
+  const ssml = `<speak version="1.0" xml:lang="de-DE"><voice name="${voice}"><lang xml:lang="de-DE">${ssmlText(text)}</lang></voice></speak>`
   for (let attempt = 0; ; attempt++) {
     const wait = lastAzure + 3200 - Date.now() // F0: ~20 cereri/min
     if (wait > 0) await sleep(wait)
@@ -135,7 +146,8 @@ for (const unit of units) {
     const variants = [{ suffix: '', rate: RATE_NORMAL }]
     for (const v of variants) {
       const name = `${it.id}${v.suffix}`
-      const hash = createHash('sha1').update(`${it.text}|${voice}|${isAzure(voice) ? 'az' : v.rate}`).digest('hex').slice(0, 12)
+      const lex = isAzure(voice) && hasLexicon(it.text) ? `|${LEX_VERSION}` : ''
+      const hash = createHash('sha1').update(`${it.text}|${voice}|${isAzure(voice) ? 'az' : v.rate}${lex}`).digest('hex').slice(0, 12)
       const file = join(dir, `${name}.m4a`)
       if (manifest[name] === hash && existsSync(file)) {
         skipped++
