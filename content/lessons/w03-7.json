@@ -1,0 +1,152 @@
+{
+  "id": "w03-7",
+  "week": 3,
+  "day": 7,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Wetter und Kleidung",
+  "titleRo": "Vremea și haine",
+  "goals": [
+    "să spui cum e vremea (Es regnet, es ist kalt, zwei Grad)",
+    "să numești hainele de iarnă și pe cele de lucru",
+    "să conjugi verbul modal „wollen” (a vrea) și să-l deosebești de „möchten”",
+    "să faci un plan cu un prieten, ținând cont de vreme"
+  ],
+  "intro": "Sâmbătă după-amiază. Radu a venit de la tura suplimentară ud leoarcă: în Flensburg e **Schietwetter**, cum zic localnicii, adică vreme mizerabilă. Diseară e concertul cu Ole la Volksbad. Azi înveți vremea, hainele (și pe cele de lucru) și verbul modal **wollen** (a vrea). Atenție: **ich will** înseamnă „vreau”, nu „voi”.",
+  "pronunciation": {
+    "title": "Vremea",
+    "intro": "Vremea se spune aproape mereu cu **es**, ca un subiect „gol”: **Es** regnet (plouă), **es** ist kalt (e frig). Ascultă și repetă.",
+    "items": [
+      { "id": "x1", "sound": "plouă", "de": "Es regnet.", "tip": "„es reegnet”; der Regen = ploaia" },
+      { "id": "x2", "sound": "bate vântul", "de": "Es ist windig.", "tip": "**-ig** la final sună ca „ih” moale: „vin-dih”" },
+      { "id": "x3", "sound": "e frig", "de": "Es ist kalt.", "tip": "„kalt”, cu **a** scurt" },
+      { "id": "x4", "sound": "e cald", "de": "Es ist warm.", "tip": "**w** = v: „varm”" },
+      { "id": "x5", "sound": "ninge", "de": "Es schneit.", "tip": "„șnait”; der Schnee = zăpada" },
+      { "id": "x6", "sound": "e soare", "de": "Die Sonne scheint.", "tip": "„zo-ne șaint”" },
+      { "id": "x7", "sound": "e înnorat", "de": "Es ist bewölkt.", "tip": "„be-völkt”, cu **ö**" },
+      { "id": "x8", "sound": "două grade", "de": "zwei Grad", "tip": "Grad nu primește plural: zwei Grad, minus fünf Grad" },
+      { "id": "x9", "sound": "vreme mizerabilă", "de": "das Schietwetter", "tip": "cuvânt din nord (Plattdeutsch), familiar: „șiit-veta”" }
+    ]
+  },
+  "dialog": {
+    "title": "Schietwetter",
+    "situation": "Sâmbătă, ora 15. Radu a venit acasă de la tura suplimentară, ud de ploaie. Îl sună Ole în legătură cu concertul de diseară de la Volksbad.",
+    "speakers": {
+      "O": { "name": "Ole", "voice": "de-DE-KasperNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "O", "de": "Moin, Radu! Na, bist du schon zu Hause?", "ro": "Salut, Radu! Ei, ești deja acasă?", "lit": "bună |  | ei | ești | tu | deja | la | casă" },
+      { "id": "d2", "speaker": "A", "de": "Ja, seit einer Stunde. Ich bin total nass! Draußen ist echt Schietwetter.", "ro": "Da, de o oră. Sunt ud leoarcă! Afară e o vreme cu adevărat mizerabilă.", "lit": "da | de la | o | oră | eu | sunt | total | ud | afară | e | chiar | vreme-nasoală" },
+      { "id": "d3", "speaker": "O", "de": "Typisch Flensburg! Regen und Wind. Wollt ihr heute Abend noch kommen?", "ro": "Tipic Flensburg! Ploaie și vânt. Mai vreți să veniți diseară?", "lit": "tipic |  | ploaie | și | vânt | vreți | voi | azi | seară | încă | veni" },
+      { "id": "d4", "speaker": "A", "de": "Na klar! Wir wollen die Band sehen. Wann fängt das Konzert an?", "ro": "Păi sigur! Vrem să vedem trupa. Când începe concertul?", "lit": "păi | clar | noi | vrem | (art.) | trupa | vedea | când | începe… | (art.) | concertul | …(an-fangen)" },
+      { "id": "d5", "speaker": "O", "de": "Um acht. Ich will um halb acht da sein. Kommt ihr mit dem Fahrrad?", "ro": "La opt. Eu vreau să fiu acolo la șapte și jumătate. Veniți cu bicicleta?", "lit": "la | opt | eu | vreau | la | jumătate | opt | acolo | fi | veniți | voi | cu | (art.) | bicicleta" },
+      { "id": "d6", "speaker": "A", "de": "Bei dem Wetter? Nein, danke! Wir nehmen den Bus.", "ro": "Pe vremea asta? Nu, mersi! Luăm autobuzul.", "lit": "la | (art.) | vremea | nu | mulțumesc | noi | luăm | (art.) | autobuzul" },
+      { "id": "d7", "speaker": "O", "de": "Okay. Heute Abend sind es nur zwei Grad. Ihr braucht warme Jacken!", "ro": "Bine. Diseară sunt doar două grade. Vă trebuie geci groase!", "lit": "ok | azi | seară | sunt | (asta) | doar | două | grade | voi | aveți nevoie de | calde | geci" },
+      { "id": "d8", "speaker": "V", "de": "Radu, was ziehen wir an? Ich will nicht frieren.", "ro": "Radu, ce ne punem pe noi? Nu vreau să-mi fie frig.", "lit": " | ce | îmbrăcăm… | noi | …(an-ziehen) | eu | vreau | nu | a îngheța" },
+      { "id": "d9", "speaker": "A", "de": "Ole, Valy will wissen: Was ziehen wir an?", "ro": "Ole, Valy vrea să știe: ce ne punem pe noi?", "lit": " |  | vrea | a ști | ce | îmbrăcăm… | noi | …(an-ziehen)" },
+      { "id": "d10", "speaker": "O", "de": "Drinnen ist es warm. Aber draußen braucht ihr Mütze, Schal und Regenjacke.", "ro": "Înăuntru e cald. Dar afară vă trebuie căciulă, fular și geacă de ploaie.", "lit": "înăuntru | e | (asta) | cald | dar | afară | aveți nevoie de | voi | căciulă | fular | și | ploaie-geacă" },
+      { "id": "d11", "speaker": "A", "de": "Und einen Regenschirm?", "ro": "Și o umbrelă?", "lit": "și | o | umbrelă" },
+      { "id": "d12", "speaker": "O", "de": "Vergiss es! Bei dem Wind fliegt der Schirm weg.", "ro": "Las-o baltă! Pe vântul ăsta, umbrela zboară.", "lit": "uită | asta | la | (art.) | vânt | zboară… | (art.) | umbrela | …(weg-fliegen)" },
+      { "id": "d13", "speaker": "A", "de": "Ha! Okay. Wir wollen um sieben losfahren. Bis später!", "ro": "Ha! Bine. Vrem să plecăm la șapte. Pe mai târziu!", "lit": "ha | ok | noi | vrem | la | șapte | a pleca (los-fahren) | până | mai târziu" },
+      { "id": "d14", "speaker": "O", "de": "Bis später! Ich freue mich!", "ro": "Pe mai târziu! Abia aștept!", "lit": "până | mai târziu | eu | bucur | mă" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Draußen ist Schietwetter.", "ro": "Afară e o vreme mizerabilă.", "lit": "afară | e | vreme-nasoală", "note": "Schietwetter: cuvânt din nord (Plattdeutsch), familiar. Îl vei auzi des în Flensburg." },
+    { "id": "p2", "de": "Ich bin total nass!", "ro": "Sunt ud leoarcă!", "lit": "eu | sunt | total | ud" },
+    { "id": "p3", "de": "Wie ist das Wetter?", "ro": "Cum e vremea?", "lit": "cum | e | (art.) | vremea" },
+    { "id": "p4", "de": "Regen und Wind", "ro": "ploaie și vânt", "lit": "ploaie | și | vânt" },
+    { "id": "p5", "de": "Heute sind es nur zwei Grad.", "ro": "Azi sunt doar două grade.", "lit": "azi | sunt | (asta) | doar | două | grade" },
+    { "id": "p6", "de": "Wollt ihr kommen?", "ro": "Vreți să veniți?", "lit": "vreți | voi | veni" },
+    { "id": "p7", "de": "Wir wollen die Band sehen.", "ro": "Vrem să vedem trupa.", "lit": "noi | vrem | (art.) | trupa | vedea" },
+    { "id": "p8", "de": "Ich will um halb acht da sein.", "ro": "Vreau să fiu acolo la șapte și jumătate.", "lit": "eu | vreau | la | jumătate | opt | acolo | fi" },
+    { "id": "p9", "de": "Bei dem Wetter? Nein, danke!", "ro": "Pe vremea asta? Nu, mersi!", "lit": "la | (art.) | vremea | nu | mulțumesc" },
+    { "id": "p10", "de": "Was ziehen wir an?", "ro": "Ce ne punem pe noi?", "lit": "ce | îmbrăcăm… | noi | …(an-ziehen)" },
+    { "id": "p11", "de": "Ich will nicht frieren.", "ro": "Nu vreau să-mi fie frig.", "lit": "eu | vreau | nu | a îngheța" },
+    { "id": "p12", "de": "Drinnen ist es warm.", "ro": "Înăuntru e cald.", "lit": "înăuntru | e | (asta) | cald" },
+    { "id": "p13", "de": "Mütze, Schal und Regenjacke", "ro": "căciulă, fular și geacă de ploaie", "lit": "căciulă | fular | și | ploaie-geacă" },
+    { "id": "p14", "de": "Vergiss es!", "ro": "Las-o baltă! / Nici vorbă!", "lit": "uită | asta" },
+    { "id": "p15", "de": "Ich freue mich!", "ro": "Abia aștept! / Mă bucur!", "lit": "eu | bucur | mă" }
+  ],
+  "grammar": {
+    "title": "Verbul modal wollen. Vremea cu „es”. Hainele",
+    "explanation": [
+      "**wollen** = a vrea (o intenție hotărâtă). E verb modal, cu infinitivul la final: Wir **wollen** die Band **sehen**. Ich **will** um halb acht da **sein**.",
+      "La singular e neregulat și, ca toate modalele, n-are terminație la ich și er: ich **will**, du **willst**, er **will**. La plural: wir wollen, ihr wollt, sie wollen.",
+      "⚠️ Capcană: **ich will** NU înseamnă „voi” (viitor), ci „vreau”. **will** e mai direct decât **möchte** (aș vrea): la magazin, la cantină sau la autorități spune **ich möchte**; despre planuri, între prieteni, **ich will** e normal.",
+      "Vremea se spune cu **es**, un subiect „gol”, pe care româna nu-l are: **Es** regnet (plouă). **Es** ist kalt (e frig). Temperatura: **Es sind** zwei Grad (sunt două grade).",
+      "Hainele: **anziehen** = a (se) îmbrăca, separabil: Was ziehst du **an**? Ich ziehe eine Jacke **an**. La fabrică, hainele de lucru (**die Arbeitskleidung**) le primești de la firmă și le lași acolo."
+    ],
+    "tables": [
+      {
+        "caption": "wollen sau möchten?",
+        "audio": "conjugation",
+        "headers": ["", "wollen (a vrea)", "möchten (aș vrea)"],
+        "rows": [
+          ["ich", "**will**", "möchte"],
+          ["du", "**willst**", "möchtest"],
+          ["er / sie / es", "**will**", "möchte"],
+          ["wir", "wollen", "möchten"],
+          ["ihr", "wollt", "möchtet"],
+          ["sie / Sie", "wollen", "möchten"]
+        ]
+      },
+      {
+        "caption": "Haine pentru iarnă și pentru muncă",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["die Jacke, die Regenjacke", "geaca, geaca de ploaie"],
+          ["die Mütze", "căciula"],
+          ["der Schal", "fularul"],
+          ["die Handschuhe", "mănușile"],
+          ["die Stiefel", "cizmele"],
+          ["der Pullover", "puloverul"],
+          ["die Arbeitskleidung", "hainele de lucru"],
+          ["der Kittel", "halatul de lucru"],
+          ["das Haarnetz", "boneta (plasa de păr)"],
+          ["die Sicherheitsschuhe", "încălțămintea de protecție"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Wir **wollen** die Band **sehen**.", "ro": "Vrem să vedem trupa." },
+      { "de": "**Willst** du **mitkommen**?", "ro": "Vrei să vii și tu?" },
+      { "de": "Valy **will** nicht **frieren**.", "ro": "Valy nu vrea să-i fie frig." },
+      { "de": "**Es regnet** und es ist **windig**.", "ro": "Plouă și bate vântul." },
+      { "de": "Heute **sind es** nur zwei Grad.", "ro": "Azi sunt doar două grade." },
+      { "de": "Ich ziehe eine Mütze **an**.", "ro": "Îmi pun o căciulă." }
+    ],
+    "tip": "În nordul Germaniei se zice: „Es gibt kein schlechtes Wetter, nur falsche Kleidung.” (Nu există vreme rea, doar haine nepotrivite.) Ia-ți o geacă de ploaie bună, cu glugă: o umbrelă nu rezistă la vântul de la mare."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Cum e vremea în Flensburg?", "audio": "d3", "options": ["Însorită", "Ploaie și vânt", "Ninge"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "La ce oră începe concertul?", "audio": "d5", "options": ["La 19:00", "La 19:30", "La 20:00"], "answer": 2 },
+    { "type": "mcq", "id": "e3", "question": "Cum merg Radu și Valy la concert?", "audio": "d6", "options": ["Cu bicicleta", "Cu autobuzul", "Pe jos"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Câte grade sunt diseară?", "audio": "d7", "options": ["Două", "Zece", "Minus două"], "answer": 0 },
+    { "type": "gap", "id": "e5", "text": "Wir ___ die Band sehen. (wollen)", "answers": [["wollen"]], "ro": "Vrem să vedem trupa." },
+    { "type": "gap", "id": "e6", "text": "___ du mitkommen? (wollen)", "answers": [["Willst"]], "ro": "Vrei să vii și tu?" },
+    { "type": "gap", "id": "e7", "text": "Valy ___ nicht frieren. (wollen)", "answers": [["will"]], "ro": "Valy nu vrea să-i fie frig." },
+    { "type": "gap", "id": "e8", "text": "Es ___. (plouă)", "answers": [["regnet"]], "ro": "Plouă." },
+    { "type": "gap", "id": "e9", "text": "Was ziehst du ___?", "answers": [["an"]], "ro": "Ce-ți pui pe tine?" },
+    { "type": "mcq", "id": "e10", "question": "Ce înseamnă „Ich will kommen”?", "options": ["Voi veni (viitor)", "Vreau să vin", "Trebuie să vin"], "answer": 1, "explain": "wollen = a vrea. Nu e viitorul!" },
+    { "type": "order", "id": "e11", "ro": "Ce ne punem pe noi?", "answer": "Was ziehen wir an?" },
+    { "type": "order", "id": "e12", "ro": "Pe vremea asta? Nu, mersi!", "answer": "Bei dem Wetter? Nein, danke!" },
+    { "type": "dictation", "id": "e13", "audio": "d10", "text": "Drinnen ist es warm. Aber draußen braucht ihr Mütze, Schal und Regenjacke.", "ro": "Înăuntru e cald. Dar afară vă trebuie căciulă, fular și geacă de ploaie." },
+    { "type": "dictation", "id": "e14", "audio": "p5", "text": "Heute sind es nur zwei Grad.", "ro": "Azi sunt doar două grade." }
+  ],
+  "speaking": {
+    "scenario": "Un prieten te sună să stabiliți o ieșire diseară, dar afară e vreme rea.",
+    "claudeRole": "Ești Ole, 23 de ani, coleg și fan de metal, la telefon (du). Vorbești despre vremea proastă din nord (Regen, Wind, Schietwetter, Grad), despre planul de diseară (concert, bar) și ce haine să ia. Folosește des wollen (Willst du …? Ich will …) și întreabă ce vrea elevul să facă în weekend.",
+    "tasks": [
+      "Descrie vremea de azi (Es regnet, es ist kalt, … Grad)",
+      "Spune ce vrei să faci diseară sau în weekend (Ich will …)",
+      "Întreabă-l pe Ole ce vrea el (Willst du …?)",
+      "Spune ce haine îți pui (Ich ziehe … an)",
+      "Stabiliți ora și cu ce mergeți"
+    ],
+    "starter": "Moin! Na, bist du schon zu Hause? Was für ein Schietwetter heute!"
+  }
+}

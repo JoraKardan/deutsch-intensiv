@@ -1,0 +1,134 @@
+{
+  "id": "w03-4",
+  "week": 3,
+  "day": 4,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Die Nachbarn",
+  "titleRo": "Vecinii",
+  "goals": [
+    "să înțelegi regulile casei: orele de liniște și sortarea gunoiului",
+    "să ceri și să dai indicații politicoase cu imperativul (Sie)",
+    "să-ți ceri scuze și să mulțumești pentru ajutor",
+    "să cunoști tomberoanele colorate din Germania"
+  ],
+  "intro": "Joi dimineața sună la ușă **doamna Jensen**, vecina în vârstă de la etajul de sus. Aseară Radu și Valy au venit de la tură la zece și jumătate și au făcut cam mult zgomot pe scară. În Germania regulile casei (**die Hausordnung**) se iau în serios: ore de liniște, sortarea gunoiului. Azi înveți să le înțelegi și **imperativul politicos**: verbul + Sie, ca în **Warten Sie!** Vestea bună: Frau Jensen e de fapt foarte drăguță.",
+  "dialog": {
+    "title": "Die Nachbarin von oben",
+    "situation": "Joi, ora zece dimineața. Sună la ușă doamna Jensen, vecina de la etajul de sus.",
+    "speakers": {
+      "J": { "name": "Frau Jensen", "voice": "de-DE-GiselaNeural" },
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "J", "de": "Guten Morgen! Ich bin Frau Jensen, Ihre Nachbarin von oben.", "ro": "Bună dimineața! Sunt doamna Jensen, vecina dumneavoastră de sus.", "lit": "bună | dimineața | eu | sunt | doamna |  | a dvs. | vecină | de | sus" },
+      { "id": "d2", "speaker": "V", "de": "Guten Morgen, Frau Jensen! Kommen Sie doch herein.", "ro": "Bună dimineața, doamnă Jensen! Poftiți înăuntru.", "lit": "bună | dimineața | doamnă |  | veniți | dvs. | (doar) | înăuntru" },
+      { "id": "d3", "speaker": "J", "de": "Nur kurz. Sie kommen abends spät nach Hause, oder?", "ro": "Doar puțin. Veniți acasă seara târziu, nu?", "lit": "doar | scurt | dvs. | veniți | seara | târziu | spre | casă | sau" },
+      { "id": "d4", "speaker": "A", "de": "Ja, diese Woche haben wir Spätschicht. Wir kommen um halb elf.", "ro": "Da, săptămâna asta suntem în tura de după-amiază. Venim la zece și jumătate.", "lit": "da | această | săptămână | avem | noi | târziu-tură | noi | venim | la | jumătate | unsprezece" },
+      { "id": "d5", "speaker": "J", "de": "Das verstehe ich. Aber ab zweiundzwanzig Uhr ist im Haus Ruhezeit.", "ro": "Înțeleg. Dar de la ora zece seara e liniște în bloc.", "lit": "asta | înțeleg | eu | dar | de la | două-și-douăzeci | ora | e | în (+art.) | casă | liniște-timp" },
+      { "id": "d6", "speaker": "J", "de": "Bitte machen Sie die Tür leise zu und sprechen Sie leise im Treppenhaus.", "ro": "Vă rog, închideți ușa încet și vorbiți încet pe scară.", "lit": "vă rog | faceți… | dvs. | (art.) | ușa | încet | …(zu-machen) | și | vorbiți | dvs. | încet | în (+art.) | scară-casă" },
+      { "id": "d7", "speaker": "V", "de": "Oh, das tut uns leid! Natürlich, wir sind ab jetzt leise.", "ro": "O, ne pare rău! Bineînțeles, de acum suntem liniștiți.", "lit": "o | asta | face | nouă | rău | firește | noi | suntem | de la | acum | liniștiți" },
+      { "id": "d8", "speaker": "J", "de": "Danke. Und noch etwas: Trennen Sie bitte den Müll.", "ro": "Mulțumesc. Și încă ceva: vă rog să sortați gunoiul.", "lit": "mulțumesc | și | încă | ceva | separați | dvs. | vă rog | (art.) | gunoiul" },
+      { "id": "d9", "speaker": "A", "de": "Wie genau? Welche Tonne ist für was?", "ro": "Cum exact? Care tomberon e pentru ce?", "lit": "cum | exact | care | tomberon | e | pentru | ce" },
+      { "id": "d10", "speaker": "J", "de": "Papier in die blaue Tonne, Plastik in die gelbe, Essensreste in die braune.", "ro": "Hârtia în tomberonul albastru, plasticul în cel galben, resturile de mâncare în cel maro.", "lit": "hârtie | în | (art.) | albastru | tomberon | plastic | în | (art.) | galben | mâncare-resturi | în | (art.) | maro" },
+      { "id": "d11", "speaker": "J", "de": "Und der Rest kommt in die schwarze Tonne. Glas bringen Sie bitte zum Container.", "ro": "Iar restul merge în tomberonul negru. Sticla, vă rog, duceți-o la container.", "lit": "și | (art.) | restul | vine | în | (art.) | negru | tomberon | sticlă | duceți | dvs. | vă rog | la (+art.) | container" },
+      { "id": "d12", "speaker": "V", "de": "Vielen Dank, das ist sehr hilfreich.", "ro": "Mulțumim mult, ne ajută foarte mult.", "lit": "multe | mulțumiri | asta | e | foarte | de ajutor" },
+      { "id": "d13", "speaker": "J", "de": "Gern. Sagen Sie mal, haben Sie schon einen Tisch? Ich habe einen alten Tisch im Keller.", "ro": "Cu plăcere. Ia spuneți, aveți deja masă? Am o masă veche în pivniță.", "lit": "cu plăcere | spuneți | dvs. | (puțin) | aveți | dvs. | deja | o | masă | eu | am | o | veche | masă | în (+art.) | pivniță" },
+      { "id": "d14", "speaker": "A", "de": "Wirklich? Wir haben noch keinen Tisch!", "ro": "Serios? Încă n-avem masă!", "lit": "serios | noi | avem | încă | nicio | masă" },
+      { "id": "d15", "speaker": "J", "de": "Dann nehmen Sie ihn! Kommen Sie am Samstag vorbei.", "ro": "Atunci luați-o! Treceți pe la mine sâmbătă.", "lit": "atunci | luați | dvs. | pe ea | veniți… | dvs. | la (+art.) | sâmbătă | …(vorbei-kommen)" },
+      { "id": "d16", "speaker": "V", "de": "Das ist so nett von Ihnen! Danke, Frau Jensen!", "ro": "Ce drăguț din partea dumneavoastră! Mulțumim, doamnă Jensen!", "lit": "asta | e | așa | drăguț | de la | dvs. | mulțumesc | doamnă | " }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Ich bin Ihre Nachbarin.", "ro": "Sunt vecina dumneavoastră.", "lit": "eu | sunt | a dvs. | vecină", "note": "Un bărbat: Ich bin Ihr Nachbar." },
+    { "id": "p2", "de": "Kommen Sie doch herein!", "ro": "Poftiți înăuntru!", "lit": "veniți | dvs. | (doar) | înăuntru" },
+    { "id": "p3", "de": "Ab zweiundzwanzig Uhr ist Ruhezeit.", "ro": "De la ora 22 e ora de liniște.", "lit": "de la | două-și-douăzeci | ora | e | liniște-timp", "note": "Ruhezeit: de obicei 22–6 și duminica toată ziua. Atunci fără zgomot: mașina de spălat, bormașina, muzica tare." },
+    { "id": "p4", "de": "Bitte machen Sie die Tür leise zu.", "ro": "Vă rog, închideți ușa încet.", "lit": "vă rog | faceți… | dvs. | (art.) | ușa | încet | …(zu-machen)" },
+    { "id": "p5", "de": "Das tut mir leid.", "ro": "Îmi pare rău.", "lit": "asta | face | mie | rău", "note": "Pentru noi: Das tut uns leid." },
+    { "id": "p6", "de": "Trennen Sie bitte den Müll.", "ro": "Vă rog să sortați gunoiul.", "lit": "separați | dvs. | vă rog | (art.) | gunoiul" },
+    { "id": "p7", "de": "Welche Tonne ist für was?", "ro": "Care tomberon e pentru ce?", "lit": "care | tomberon | e | pentru | ce" },
+    { "id": "p8", "de": "Papier kommt in die blaue Tonne.", "ro": "Hârtia merge în tomberonul albastru.", "lit": "hârtie | vine | în | (art.) | albastru | tomberon" },
+    { "id": "p9", "de": "Das ist sehr hilfreich.", "ro": "Ne ajută foarte mult.", "lit": "asta | e | foarte | de ajutor" },
+    { "id": "p10", "de": "Sagen Sie mal, …", "ro": "Ia spuneți, …", "lit": "spuneți | dvs. | (puțin) | …" },
+    { "id": "p11", "de": "Kommen Sie am Samstag vorbei!", "ro": "Treceți pe la mine sâmbătă!", "lit": "veniți… | dvs. | la (+art.) | sâmbătă | …(vorbei-kommen)" },
+    { "id": "p12", "de": "Das ist so nett von Ihnen!", "ro": "Ce drăguț din partea dumneavoastră!", "lit": "asta | e | așa | drăguț | de la | dvs." },
+    { "id": "p13", "de": "Seien Sie bitte leise.", "ro": "Fiți liniștiți, vă rog.", "lit": "fiți | dvs. | vă rog | liniștiți" },
+    { "id": "p14", "de": "das Treppenhaus", "ro": "casa scării, scara blocului", "lit": "(art.) | scară-casa" },
+    { "id": "p15", "de": "Natürlich!", "ro": "Bineînțeles!" }
+  ],
+  "grammar": {
+    "title": "Imperativul politicos (Sie). Regulile casei",
+    "explanation": [
+      "Imperativul politicos e foarte simplu: **verbul la infinitiv + Sie**, cu verbul pe primul loc: **Kommen Sie!** **Warten Sie!** **Trennen Sie** den Müll!",
+      "Pentru politețe se adaugă **bitte**: **Bitte** warten Sie. / Warten Sie **bitte**. Fără bitte poate suna ca un ordin.",
+      "La verbele separabile, prefixul merge la final: Machen Sie die Tür **zu**! Kommen Sie am Samstag **vorbei**! Rufen Sie mich **an**!",
+      "O singură excepție: **sein** → **Seien Sie** bitte leise! (Fiți, vă rog, liniștiți!)",
+      "Particulele **doch** și **mal** fac invitația mai caldă și mai firească: Kommen Sie **doch** herein! Sagen Sie **mal**, … Nu au o traducere exactă, dar le vei auzi peste tot.",
+      "Regulile casei, pe scurt: **Ruhezeit** (liniște) de obicei între 22 și 6 și duminica toată ziua; gunoiul se sortează în tomberoane colorate; sticla se duce la containere separate, pe culori."
+    ],
+    "tables": [
+      {
+        "caption": "Imperativul cu Sie",
+        "audio": [0, 1],
+        "headers": ["infinitiv", "imperativ", "română"],
+        "rows": [
+          ["kommen", "Kommen Sie herein!", "Poftiți înăuntru!"],
+          ["warten", "Warten Sie bitte!", "Așteptați, vă rog!"],
+          ["trennen", "Trennen Sie den Müll!", "Sortați gunoiul!"],
+          ["zumachen", "Machen Sie die Tür **zu**!", "Închideți ușa!"],
+          ["sprechen", "Sprechen Sie bitte leise!", "Vorbiți încet, vă rog!"],
+          ["sein", "**Seien** Sie bitte leise!", "Fiți liniștiți, vă rog!"]
+        ]
+      },
+      {
+        "caption": "Gunoiul în Germania",
+        "audio": [0, 1],
+        "headers": ["tomberonul", "ce intră", "română"],
+        "rows": [
+          ["die blaue Tonne", "Papier, Karton", "hârtie, carton"],
+          ["die gelbe Tonne", "Plastik, Dosen", "plastic, conserve"],
+          ["die braune Tonne", "Essensreste, Biomüll", "resturi de mâncare"],
+          ["die schwarze Tonne", "Restmüll", "restul"],
+          ["der Container", "Glas", "sticlă (pe culori)"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "**Kommen Sie** doch herein!", "ro": "Poftiți înăuntru!" },
+      { "de": "**Warten Sie** bitte einen Moment.", "ro": "Așteptați un moment, vă rog." },
+      { "de": "**Machen Sie** bitte das Fenster **zu**.", "ro": "Închideți fereastra, vă rog." },
+      { "de": "**Trennen Sie** bitte den Müll.", "ro": "Sortați gunoiul, vă rog." },
+      { "de": "**Seien Sie** bitte leise.", "ro": "Fiți liniștiți, vă rog." },
+      { "de": "**Rufen Sie** mich morgen **an**.", "ro": "Sunați-mă mâine." }
+    ],
+    "tip": "Imperativul cu Sie îl auzi zilnic în anunțuri: „Bitte steigen Sie ein!” (urcați, vă rog), „Bitte halten Sie Abstand!” (păstrați distanța). Când auzi un verb la început și apoi „Sie”, e o rugăminte sau o instrucțiune pentru tine."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Cine e doamna Jensen?", "audio": "d1", "options": ["Proprietara", "Vecina de sus", "Administratoarea"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "De la ce oră e liniște în bloc?", "audio": "d5", "options": ["De la 20:00", "De la 22:00", "De la 23:00"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Unde se pune hârtia?", "audio": "d10", "options": ["În tomberonul galben", "În cel albastru", "În cel maro"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Ce le oferă doamna Jensen?", "audio": "d13", "options": ["Două scaune", "O masă veche", "O lampă"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "___ Sie bitte! (warten)", "answers": [["Warten"]], "ro": "Așteptați, vă rog!" },
+    { "type": "gap", "id": "e6", "text": "Machen Sie bitte die Tür ___!", "answers": [["zu"]], "ro": "Închideți ușa, vă rog!" },
+    { "type": "gap", "id": "e7", "text": "___ Sie bitte leise! (sein)", "answers": [["Seien"]], "ro": "Fiți liniștiți, vă rog!" },
+    { "type": "gap", "id": "e8", "text": "Kommen Sie am Samstag ___!", "answers": [["vorbei"]], "ro": "Treceți pe la mine sâmbătă!" },
+    { "type": "mcq", "id": "e9", "question": "Cum îi spui politicos unui vecin „Sunați-mă!”?", "options": ["Rufen Sie mich an!", "Sie rufen mich an!", "Rufen mich Sie an!"], "answer": 0, "explain": "Imperativul cu Sie: verbul pe primul loc, apoi Sie; prefixul (an) la final." },
+    { "type": "order", "id": "e10", "ro": "Vă rog să sortați gunoiul.", "answer": "Trennen Sie bitte den Müll." },
+    { "type": "order", "id": "e11", "ro": "Îmi pare rău.", "answer": "Das tut mir leid." },
+    { "type": "dictation", "id": "e12", "audio": "d6", "text": "Bitte machen Sie die Tür leise zu und sprechen Sie leise im Treppenhaus.", "ro": "Vă rog, închideți ușa încet și vorbiți încet pe scară." },
+    { "type": "dictation", "id": "e13", "audio": "p3", "text": "Ab zweiundzwanzig Uhr ist Ruhezeit.", "ro": "De la ora 22 e ora de liniște." }
+  ],
+  "speaking": {
+    "scenario": "Te-ai mutat într-un bloc nou. Vecina în vârstă îți explică regulile casei.",
+    "claudeRole": "Ești Frau Jensen, vecina în vârstă de la etajul de sus, în Flensburg. Formal (Sie), amabilă, dar fermă cu regulile. Explici: orele de liniște (22–6, duminica), sortarea gunoiului (culorile tomberoanelor), curățenia pe scară (o dată pe lună, pe rând), unde se pune bicicleta. Folosește mult imperativul cu Sie (Bitte trennen Sie …, Machen Sie …). Întreabă-l și pe elev de unde e și unde lucrează.",
+    "tasks": [
+      "Salută și prezintă-te ca vecin nou",
+      "Spune ceva despre programul tău (ture, ore târzii)",
+      "Pune cel puțin 3 întrebări despre reguli (Wann …? Welche Tonne …? Wo …?)",
+      "Cere-ți scuze o dată (Das tut mir leid)",
+      "Folosește cel puțin 2 imperative cu Sie (Kommen Sie …, Warten Sie …)"
+    ],
+    "starter": "Guten Tag! Sie sind die Neuen von unten, oder? Ich bin Frau Jensen."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "w03-6",
+  "week": 3,
+  "day": 6,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Bus und Bahn",
+  "titleRo": "Autobuz și tren",
+  "goals": [
+    "să înțelegi anunțurile și problemele din transport (Verspätung, fällt aus)",
+    "să cumperi un bilet și să întrebi unde cobori",
+    "să spui cu ce mergi: mit dem Bus, mit der Bahn (mit + dativ)",
+    "să folosești einsteigen, aussteigen, umsteigen"
+  ],
+  "intro": "Sâmbătă, ora 5:05. Jens are nevoie de oameni pentru o **tură suplimentară**, iar Radu a acceptat: tura de dimineață începe la șase. Afară e întuneric, plouă, iar autobuzul întârzie. La stație e și Kasia. Azi înveți vocabularul transportului în comun și prepoziția **mit** (cu), care cere dativul: **mit dem Bus**, **mit der Bahn**.",
+  "dialog": {
+    "title": "An der Haltestelle",
+    "situation": "Sâmbătă, ora 5:15, la stația de autobuz. Radu și Kasia merg la o tură suplimentară. Autobuzul întârzie.",
+    "speakers": {
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "K": { "name": "Kasia", "voice": "de-DE-MajaNeural" },
+      "F": { "name": "Busfahrer", "voice": "de-DE-KlausNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "A", "de": "Moin, Kasia! Hast du heute auch Frühschicht?", "ro": "Salut, Kasia! Ai și tu tura de dimineață azi?", "lit": "bună |  | ai | tu | azi | și | dimineață-tură" },
+      { "id": "d2", "speaker": "K", "de": "Ja, Jens braucht Leute. Aber wo ist der Bus? Es ist schon Viertel nach fünf!", "ro": "Da, Jens are nevoie de oameni. Dar unde e autobuzul? E deja cinci și un sfert!", "lit": "da |  | are nevoie de | oameni | dar | unde | e | (art.) | autobuzul | (asta) | e | deja | sfert | după | cinci" },
+      { "id": "d3", "speaker": "A", "de": "Der Bus kommt um zehn nach fünf. Er hat Verspätung.", "ro": "Autobuzul trebuia să vină la cinci și zece. Are întârziere.", "lit": "(art.) | autobuzul | vine | la | zece | după | cinci | el | are | întârziere" },
+      { "id": "d4", "speaker": "K", "de": "Im Winter oft. Ich fahre lieber mit dem Fahrrad, aber heute regnet es.", "ro": "Iarna, des. Eu prefer să merg cu bicicleta, dar azi plouă.", "lit": "în (+art.) | iarnă | des | eu | merg | mai bine | cu | (art.) | bicicleta | dar | azi | plouă | (asta)" },
+      { "id": "d5", "speaker": "A", "de": "Da kommt er! Endlich.", "ro": "Uite-l că vine! În sfârșit.", "lit": "acolo | vine | el | în sfârșit" },
+      { "id": "d6", "speaker": "F", "de": "Moin. Fahrkarten bitte!", "ro": "Bună dimineața. Biletele, vă rog!", "lit": "bună | bilete | vă rog" },
+      { "id": "d7", "speaker": "A", "de": "Moin. Ich habe noch keine Fahrkarte. Kann ich bei Ihnen eine kaufen?", "ro": "Bună dimineața. Încă n-am bilet. Pot să cumpăr unul de la dumneavoastră?", "lit": "bună | eu | am | încă | niciun | bilet | pot | eu | la | dvs. | unul | cumpăra" },
+      { "id": "d8", "speaker": "F", "de": "Ja. Eine Einzelfahrt kostet zwei Euro achtzig. Wohin fahren Sie?", "ro": "Da. O călătorie simplă costă doi euro optzeci. Unde mergeți?", "lit": "da | o | singură-călătorie | costă | doi | euro | optzeci | încotro | mergeți | dvs." },
+      { "id": "d9", "speaker": "A", "de": "Zur Firma Fördewurst, im Industriegebiet.", "ro": "La firma Fördewurst, în zona industrială.", "lit": "la (+art.) | firma |  | în (+art.) | industrie-zonă" },
+      { "id": "d10", "speaker": "F", "de": "Dann steigen Sie an der Haltestelle „Industriestraße“ aus. Das sind zwölf Minuten.", "ro": "Atunci coborâți la stația „Industriestraße”. Sunt douăsprezece minute.", "lit": "atunci | coborâți… | dvs. | la | (art.) | stație |  | …(aus-steigen) | asta | sunt | douăsprezece | minute" },
+      { "id": "d11", "speaker": "K", "de": "Radu, du brauchst eine Monatskarte! Das ist viel billiger.", "ro": "Radu, îți trebuie un abonament lunar! E mult mai ieftin.", "lit": " | tu | ai nevoie de | un | lună-abonament | asta | e | mult | mai ieftin" },
+      { "id": "d12", "speaker": "A", "de": "Oder das Deutschlandticket. Mit dem Ticket fahre ich auch mit dem Zug, oder?", "ro": "Sau Deutschlandticket. Cu biletul ăsta merg și cu trenul, nu?", "lit": "sau | (art.) | Germania-bilet | cu | (art.) | bilet | merg | eu | și | cu | (art.) | trenul | sau" },
+      { "id": "d13", "speaker": "F", "de": "Genau. Mit dem Deutschlandticket fahren Sie mit Bus und Bahn in ganz Deutschland.", "ro": "Exact. Cu Deutschlandticket mergeți cu autobuzul și cu trenul în toată Germania.", "lit": "exact | cu | (art.) | Germania-bilet | mergeți | dvs. | cu | autobuz | și | tren | în | toată | Germania" },
+      { "id": "d14", "speaker": "A", "de": "Super. Heute zahle ich bar, und am Montag kaufe ich eins.", "ro": "Super. Azi plătesc cash, iar luni îmi cumpăr unul.", "lit": "super | azi | plătesc | eu | cash | și | la (+art.) | luni | cumpăr | eu | unul" },
+      { "id": "d15", "speaker": "K", "de": "Und jetzt schnell, sonst kommen wir zu spät!", "ro": "Și acum repede, altfel întârziem!", "lit": "și | acum | repede | altfel | venim | noi | prea | târziu" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Der Bus hat Verspätung.", "ro": "Autobuzul are întârziere.", "lit": "(art.) | autobuzul | are | întârziere" },
+    { "id": "p2", "de": "Wo ist die Haltestelle?", "ro": "Unde e stația?", "lit": "unde | e | (art.) | stația" },
+    { "id": "p3", "de": "Da kommt er!", "ro": "Uite-l că vine!", "lit": "acolo | vine | el" },
+    { "id": "p4", "de": "Endlich!", "ro": "În sfârșit!" },
+    { "id": "p5", "de": "Fahrkarten bitte!", "ro": "Biletele, vă rog!", "lit": "bilete | vă rog" },
+    { "id": "p6", "de": "Kann ich bei Ihnen eine Fahrkarte kaufen?", "ro": "Pot cumpăra un bilet de la dumneavoastră?", "lit": "pot | eu | la | dvs. | un | bilet | cumpăra" },
+    { "id": "p7", "de": "Eine Einzelfahrt, bitte.", "ro": "O călătorie simplă, vă rog.", "lit": "o | singură-călătorie | vă rog" },
+    { "id": "p8", "de": "Wo muss ich aussteigen?", "ro": "Unde trebuie să cobor?", "lit": "unde | trebuie | eu | coborî" },
+    { "id": "p9", "de": "Steigen Sie am Hafen aus.", "ro": "Coborâți la port.", "lit": "coborâți… | dvs. | la (+art.) | port | …(aus-steigen)" },
+    { "id": "p10", "de": "Ich fahre mit dem Bus.", "ro": "Merg cu autobuzul.", "lit": "eu | merg | cu | (art.) | autobuzul" },
+    { "id": "p11", "de": "Ich fahre lieber mit dem Fahrrad.", "ro": "Prefer să merg cu bicicleta.", "lit": "eu | merg | mai bine | cu | (art.) | bicicleta", "note": "lieber = mai degrabă: așa spui ce preferi." },
+    { "id": "p12", "de": "Heute regnet es.", "ro": "Azi plouă.", "lit": "azi | plouă | (asta)" },
+    { "id": "p13", "de": "die Monatskarte", "ro": "abonamentul lunar", "lit": "(art.) | lună-abonamentul" },
+    { "id": "p14", "de": "das Deutschlandticket", "ro": "Deutschlandticket (abonament lunar pentru toată Germania)", "lit": "(art.) | Germania-biletul", "note": "E valabil în transportul local și regional (autobuz, tramvai, trenuri regionale), nu și în trenurile rapide ICE și IC. Se cumpără ca abonament lunar." },
+    { "id": "p15", "de": "Sonst kommen wir zu spät!", "ro": "Altfel întârziem!", "lit": "altfel | venim | noi | prea | târziu" }
+  ],
+  "grammar": {
+    "title": "mit + dativ. Transportul în comun",
+    "explanation": [
+      "**mit** = cu. Cere mereu **dativul**: mit **dem** Bus (der), mit **der** Bahn (die), mit **dem** Fahrrad (das), mit **den** Kollegen (plural, cu -n).",
+      "Pentru mijloacele de transport: Ich fahre **mit dem** Bus / **mit der** Straßenbahn / **mit dem** Zug / **mit dem** Auto. „Ich fahre mit Bus” e greșit: articolul trebuie. Excepția: **zu Fuß** (pe jos).",
+      "În expresii generale articolul poate lipsi: **mit Bus und Bahn** (cu transportul în comun).",
+      "Verbele separabile din transport: **einsteigen** (a urca), **aussteigen** (a coborî), **umsteigen** (a schimba mijlocul de transport): Ich steige am Hafen **aus**. Wo muss ich **umsteigen**?",
+      "Anunțuri pe care le vei auzi: Der Bus hat **zehn Minuten Verspätung** (întârziere). Der Zug **fällt aus** (e anulat). **Nächster Halt:** … (următoarea stație)."
+    ],
+    "tables": [
+      {
+        "caption": "mit + dativ",
+        "audio": [0, 1],
+        "headers": ["substantivul", "cu mit", "română"],
+        "rows": [
+          ["der Bus", "mit **dem** Bus", "cu autobuzul"],
+          ["der Zug", "mit **dem** Zug", "cu trenul"],
+          ["die Bahn", "mit **der** Bahn", "cu trenul"],
+          ["die Straßenbahn", "mit **der** Straßenbahn", "cu tramvaiul"],
+          ["das Fahrrad", "mit **dem** Fahrrad", "cu bicicleta"],
+          ["das Auto", "mit **dem** Auto", "cu mașina"],
+          ["die Kollegen", "mit **den** Kollegen", "cu colegii"]
+        ]
+      },
+      {
+        "caption": "În autobuz și la gară",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["die Haltestelle", "stația"],
+          ["die Fahrkarte, das Ticket", "biletul"],
+          ["die Einzelfahrt", "călătoria simplă"],
+          ["die Monatskarte", "abonamentul lunar"],
+          ["einsteigen, aussteigen, umsteigen", "a urca, a coborî, a schimba"],
+          ["Der Bus hat Verspätung.", "Autobuzul întârzie."],
+          ["Der Zug fällt aus.", "Trenul e anulat."],
+          ["Nächster Halt: Hafen.", "Următoarea stație: Hafen."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Ich fahre **mit dem** Bus zur Arbeit.", "ro": "Merg cu autobuzul la muncă." },
+      { "de": "Kasia fährt gern **mit dem** Fahrrad.", "ro": "Kasiei îi place să meargă cu bicicleta." },
+      { "de": "Fährst du **mit der** Bahn nach Hamburg?", "ro": "Mergi cu trenul la Hamburg?" },
+      { "de": "Ich steige am Hafen **aus**.", "ro": "Cobor la port." },
+      { "de": "Der Bus hat **zehn Minuten** Verspätung.", "ro": "Autobuzul are zece minute întârziere." },
+      { "de": "Valy geht **zu Fuß**.", "ro": "Valy merge pe jos." }
+    ],
+    "tip": "Instalează aplicația de transport a orașului sau aplicația DB Navigator: îți arată întârzierile și unde să cobori. Iar în autobuz ascultă anunțul „Nächster Halt: …”: e un exercițiu excelent de ascultare, de fiecare dată când mergi."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "La ce oră trebuia să vină autobuzul?", "audio": "d3", "options": ["La 5:00", "La 5:10", "La 5:15"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Cum preferă Kasia să meargă?", "audio": "d4", "options": ["Cu autobuzul", "Cu bicicleta", "Pe jos"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Cât costă o călătorie simplă?", "audio": "d8", "options": ["2,08 €", "2,80 €", "8,20 €"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Cât durează drumul până la fabrică?", "audio": "d10", "options": ["10 minute", "12 minute", "20 de minute"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Ich fahre mit ___ Bus. (der Bus)", "answers": [["dem"]], "ro": "Merg cu autobuzul." },
+    { "type": "gap", "id": "e6", "text": "Fährst du mit ___ Bahn? (die Bahn)", "answers": [["der"]], "ro": "Mergi cu trenul?" },
+    { "type": "gap", "id": "e7", "text": "Kasia fährt mit ___ Fahrrad. (das Fahrrad)", "answers": [["dem"]], "ro": "Kasia merge cu bicicleta." },
+    { "type": "gap", "id": "e8", "text": "Steigen Sie am Hafen ___! (coborâți)", "answers": [["aus"]], "ro": "Coborâți la port!" },
+    { "type": "gap", "id": "e9", "text": "Der Bus hat zehn Minuten ___. (întârziere)", "answers": [["Verspätung"]], "ro": "Autobuzul are zece minute întârziere." },
+    { "type": "mcq", "id": "e10", "question": "Cum spui „Merg pe jos”?", "options": ["Ich gehe mit dem Fuß.", "Ich gehe zu Fuß.", "Ich fahre mit Fuß."], "answer": 1, "explain": "Expresie fixă: zu Fuß." },
+    { "type": "order", "id": "e11", "ro": "Unde trebuie să cobor?", "answer": "Wo muss ich aussteigen?" },
+    { "type": "order", "id": "e12", "ro": "Merg cu autobuzul.", "answer": "Ich fahre mit dem Bus." },
+    { "type": "dictation", "id": "e13", "audio": "d3", "text": "Der Bus kommt um zehn nach fünf. Er hat Verspätung.", "ro": "Autobuzul trebuia să vină la cinci și zece. Are întârziere." },
+    { "type": "dictation", "id": "e14", "audio": "d15", "text": "Und jetzt schnell, sonst kommen wir zu spät!", "ro": "Și acum repede, altfel întârziem!" }
+  ],
+  "speaking": {
+    "scenario": "Ești la stație dimineața devreme, autobuzul întârzie. Apoi cumperi bilet de la șofer și întrebi unde să cobori.",
+    "claudeRole": "Joci pe rând două personaje: (1) un pasager vorbăreț la stație (du), care se plânge de întârziere și te întreabă unde mergi și cu ce mergi de obicei la muncă; (2) șoferul de autobuz (Sie), scurt și practic: prețul (în litere), unde să cobori, un sfat despre Monatskarte sau Deutschlandticket. Anunță schimbarea personajului între paranteze. Folosește des mit + dativ.",
+    "tasks": [
+      "Spune că autobuzul întârzie (… hat Verspätung)",
+      "Spune cu ce mergi de obicei la muncă (mit dem / der …)",
+      "Cumpără un bilet și întreabă prețul",
+      "Întreabă unde trebuie să cobori (Wo muss ich aussteigen?)",
+      "Întreabă despre un abonament (Monatskarte, Deutschlandticket)"
+    ],
+    "starter": "(Fahrgast, an der Haltestelle) Moin! Wartest du auch auf den Bus? Der ist schon wieder zu spät."
+  }
+}

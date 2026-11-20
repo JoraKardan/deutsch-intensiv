@@ -1,0 +1,145 @@
+{
+  "id": "w03-1",
+  "week": 3,
+  "day": 1,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Meine Wohnung",
+  "titleRo": "Locuința mea",
+  "goals": [
+    "să descrii locuința: camerele și mobila",
+    "să spui ce există și ce nu există, cu „es gibt”",
+    "să folosești negația „kein / keine / keinen”",
+    "să deosebești „nicht” de „kein”"
+  ],
+  "intro": "Radu și Valy locuiesc deocamdată într-o **locuință provizorie**, mobilată, pentru trei luni. E mică și încă le lipsesc multe. Azi înveți camerele și mobila, construcția foarte des folosită **es gibt** (există, este) și negația **kein**, care se pune în fața substantivelor: Wir haben **keinen** Tisch. Săptămâna asta, Radu și Valy sunt amândoi în tura de după-amiază, deci au diminețile libere.",
+  "pronunciation": {
+    "title": "Camerele și mobila",
+    "intro": "Multe cuvinte pentru camere sunt compuse cu **Zimmer** (cameră): Wohn**zimmer**, Schlaf**zimmer**. Genul îl dă ultimul cuvânt: **das** Zimmer → **das** Wohnzimmer.",
+    "items": [
+      { "id": "x1", "sound": "camera", "de": "das Zimmer", "tip": "„țima”: **z** = ț, iar **-er** la final sună ca **a**" },
+      { "id": "x2", "sound": "sufrageria", "de": "das Wohnzimmer", "tip": "wohnen (a locui) + Zimmer" },
+      { "id": "x3", "sound": "dormitorul", "de": "das Schlafzimmer", "tip": "schlafen (a dormi) + Zimmer" },
+      { "id": "x4", "sound": "bucătăria", "de": "die Küche", "tip": "**ch** după ü e moale, ca în „ich”" },
+      { "id": "x5", "sound": "baia", "de": "das Bad", "tip": "„baat”: **a** lung, iar **d** la final se aude **t**" },
+      { "id": "x6", "sound": "holul", "de": "der Flur", "tip": "„fluua”, cu **u** lung" },
+      { "id": "x7", "sound": "balconul", "de": "der Balkon", "tip": "accentul pe final: „bal-KON”" },
+      { "id": "x8", "sound": "pivnița", "de": "der Keller", "tip": "„kela”; fiecare locatar are de obicei o boxă în pivniță" },
+      { "id": "x9", "sound": "patul", "de": "das Bett", "tip": "**e** scurt, **tt** dur" },
+      { "id": "x10", "sound": "dulapul", "de": "der Schrank", "tip": "„șrank”" },
+      { "id": "x11", "sound": "canapeaua", "de": "das Sofa", "tip": "„zo-fa”: **s** la început e **z**" },
+      { "id": "x12", "sound": "scaunul / scaunele", "de": "der Stuhl, die Stühle", "tip": "„ștuul”, plural cu **ü**: „ștüüle”" }
+    ]
+  },
+  "dialog": {
+    "title": "Die erste Wohnung",
+    "situation": "Luni dimineața. Kasia vine la o cafea înainte de tura de după-amiază și vede pentru prima oară locuința lui Radu și Valy.",
+    "speakers": {
+      "K": { "name": "Kasia", "voice": "de-DE-MajaNeural" },
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "K", "de": "Hallo! Oh, die Wohnung ist schön hell!", "ro": "Salut! O, locuința e frumos luminoasă!", "lit": "salut | o | (art.) | locuința | e | frumos | luminoasă" },
+      { "id": "d2", "speaker": "V", "de": "Danke! Komm rein. Sie ist klein, aber gemütlich.", "ro": "Mersi! Intră. E mică, dar primitoare.", "lit": "mulțumesc | vino | înăuntru | ea | e | mică | dar | primitoare" },
+      { "id": "d3", "speaker": "K", "de": "Wie viele Zimmer gibt es?", "ro": "Câte camere sunt?", "lit": "cât de | multe | camere | dă | (asta)" },
+      { "id": "d4", "speaker": "A", "de": "Es gibt zwei Zimmer: ein Wohnzimmer und ein Schlafzimmer.", "ro": "Sunt două camere: o sufragerie și un dormitor.", "lit": "(asta) | dă | două | camere | o | locuit-cameră | și | o | dormit-cameră" },
+      { "id": "d5", "speaker": "V", "de": "Und hier sind die Küche und das Bad.", "ro": "Și aici sunt bucătăria și baia.", "lit": "și | aici | sunt | (art.) | bucătăria | și | (art.) | baia" },
+      { "id": "d6", "speaker": "K", "de": "Gibt es auch einen Balkon?", "ro": "Există și un balcon?", "lit": "dă | (asta) | și | un | balcon" },
+      { "id": "d7", "speaker": "A", "de": "Nein, leider gibt es keinen Balkon. Und wir haben noch keinen Tisch.", "ro": "Nu, din păcate nu e balcon. Și încă nu avem masă.", "lit": "nu | din păcate | dă | (asta) | niciun | balcon | și | noi | avem | încă | nicio | masă" },
+      { "id": "d8", "speaker": "K", "de": "Keinen Tisch? Wo esst ihr denn?", "ro": "Fără masă? Și unde mâncați?", "lit": "nicio | masă | unde | mâncați | voi | (oare)" },
+      { "id": "d9", "speaker": "V", "de": "Auf dem Sofa! Es gibt nur ein Sofa, ein Bett und einen Schrank.", "ro": "Pe canapea! Avem doar o canapea, un pat și un dulap.", "lit": "pe | (art.) | canapea | (asta) | dă | doar | o | canapea | un | pat | și | un | dulap" },
+      { "id": "d10", "speaker": "K", "de": "Ich habe zwei Stühle im Keller. Ihr könnt sie haben!", "ro": "Am două scaune în pivniță. Le puteți lua!", "lit": "eu | am | două | scaune | în (+art.) | pivniță | voi | puteți | pe ele | avea" },
+      { "id": "d11", "speaker": "A", "de": "Wirklich? Das ist super, danke!", "ro": "Serios? Super, mersi!", "lit": "într-adevăr | asta | e | super | mulțumesc" },
+      { "id": "d12", "speaker": "K", "de": "Kein Problem. Ist die Wohnung teuer?", "ro": "Nicio problemă. E scumpă locuința?", "lit": "nicio | problemă | e | (art.) | locuința | scumpă" },
+      { "id": "d13", "speaker": "V", "de": "Nein, aber sie ist nur für drei Monate. Dann suchen wir eine neue Wohnung.", "ro": "Nu, dar e doar pentru trei luni. Apoi căutăm o locuință nouă.", "lit": "nu | dar | ea | e | doar | pentru | trei | luni | apoi | căutăm | noi | o | nouă | locuință" },
+      { "id": "d14", "speaker": "K", "de": "Viel Glück! In Flensburg gibt es nicht viele Wohnungen.", "ro": "Mult noroc! În Flensburg nu sunt multe locuințe libere.", "lit": "mult | noroc | în |  | dă | (asta) | nu | multe | locuințe" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Die Wohnung ist klein, aber gemütlich.", "ro": "Locuința e mică, dar primitoare.", "lit": "(art.) | locuința | e | mică | dar | primitoare", "note": "gemütlich = confortabil, primitor, „ca acasă”: un cuvânt foarte iubit de nemți." },
+    { "id": "p2", "de": "Komm rein!", "ro": "Intră!", "lit": "vino | înăuntru", "note": "Formal: Kommen Sie herein!" },
+    { "id": "p3", "de": "Wie viele Zimmer gibt es?", "ro": "Câte camere sunt?", "lit": "cât de | multe | camere | dă | (asta)" },
+    { "id": "p4", "de": "Es gibt zwei Zimmer.", "ro": "Sunt două camere.", "lit": "(asta) | dă | două | camere" },
+    { "id": "p5", "de": "Gibt es einen Balkon?", "ro": "Există un balcon?", "lit": "dă | (asta) | un | balcon" },
+    { "id": "p6", "de": "Es gibt keinen Balkon.", "ro": "Nu e balcon.", "lit": "(asta) | dă | niciun | balcon" },
+    { "id": "p7", "de": "Wir haben keinen Tisch.", "ro": "N-avem masă.", "lit": "noi | avem | nicio | masă" },
+    { "id": "p8", "de": "Wir haben keine Stühle.", "ro": "N-avem scaune.", "lit": "noi | avem | niciun | scaune" },
+    { "id": "p9", "de": "Wo esst ihr denn?", "ro": "Și unde mâncați?", "lit": "unde | mâncați | voi | (oare)", "note": "denn în întrebări face întrebarea mai firească: „și atunci…?”" },
+    { "id": "p10", "de": "Das ist alles.", "ro": "Asta e tot.", "lit": "asta | e | tot" },
+    { "id": "p11", "de": "Ihr könnt sie haben.", "ro": "Le puteți lua.", "lit": "voi | puteți | pe ele | avea" },
+    { "id": "p12", "de": "Wirklich?", "ro": "Serios? / Chiar?" },
+    { "id": "p13", "de": "Die Wohnung ist nur für drei Monate.", "ro": "Locuința e doar pentru trei luni.", "lit": "(art.) | locuința | e | doar | pentru | trei | luni" },
+    { "id": "p14", "de": "Wir suchen eine neue Wohnung.", "ro": "Căutăm o locuință nouă.", "lit": "noi | căutăm | o | nouă | locuință" },
+    { "id": "p15", "de": "Viel Glück!", "ro": "Mult noroc!", "lit": "mult | noroc" }
+  ],
+  "grammar": {
+    "title": "Es gibt + acuzativ. Negația kein",
+    "explanation": [
+      "**Es gibt** = există, este (literal „(asta) dă”). Spui așa ce se află undeva: Es gibt zwei Zimmer. Es gibt einen Balkon. După es gibt vine **acuzativul**, deci masculinul primește -en: es gibt **einen** Tisch.",
+      "**Es gibt** rămâne mereu la singular, și cu plural: Es **gibt** zwei Zimmer (nu „es geben”). În întrebare: **Gibt es** …? Was **gibt es** heute?",
+      "**kein** = niciun, nicio. E negația substantivelor care au **ein / eine** sau nu au articol: Ich habe **ein** Auto → Ich habe **kein** Auto. Wir haben Zeit → Wir haben **keine** Zeit.",
+      "**kein** are aceleași terminații ca **ein**: kein (der, das), keine (die și plural), iar la acuzativ masculin **keinen**: Es gibt **keinen** Balkon.",
+      "**nicht** sau **kein**? **kein** neagă un substantiv cu ein/eine sau fără articol. **nicht** neagă verbul, adjectivul, locul sau un substantiv cu der/die/das: Das ist **nicht** teuer. Das ist **nicht** mein Tisch."
+    ],
+    "tables": [
+      {
+        "caption": "kein: nominativ și acuzativ",
+        "audio": [1, 2, 3, 4],
+        "headers": ["", "masculin", "feminin", "neutru", "plural"],
+        "rows": [
+          ["nominativ", "kein Tisch", "keine Küche", "kein Bad", "keine Stühle"],
+          ["acuzativ", "**keinen** Tisch", "keine Küche", "kein Bad", "keine Stühle"]
+        ]
+      },
+      {
+        "caption": "nicht sau kein?",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["Ich habe **kein** Auto.", "N-am mașină."],
+          ["Es gibt **keinen** Balkon.", "Nu e balcon."],
+          ["Das ist **nicht** teuer.", "Nu e scump."],
+          ["Ich wohne **nicht** in Köln.", "Nu locuiesc în Köln."],
+          ["Das ist **nicht** mein Tisch.", "Nu e masa mea."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "**Es gibt** einen Balkon.", "ro": "Există un balcon." },
+      { "de": "**Gibt es** hier ein Bad?", "ro": "Există o baie aici?" },
+      { "de": "**Es gibt keine** Stühle.", "ro": "Nu sunt scaune." },
+      { "de": "Ich habe **keinen** Schrank.", "ro": "N-am dulap." },
+      { "de": "Wir haben **keine** Zeit.", "ro": "N-avem timp." },
+      { "de": "Das ist **kein** Problem.", "ro": "Nu e nicio problemă." }
+    ],
+    "tip": "„Es gibt” e una dintre cele mai folosite construcții în germană: Gibt es hier einen Supermarkt? Was gibt es heute in der Kantine? Învaț-o ca bloc: **Gibt es …?**"
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Câte camere are locuința?", "audio": "d4", "options": ["Una", "Două", "Trei"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Ce nu au Radu și Valy?", "audio": "d7", "options": ["Balcon și masă", "Pat și dulap", "Bucătărie și baie"], "answer": 0 },
+    { "type": "mcq", "id": "e3", "question": "Ce le dă Kasia?", "audio": "d10", "options": ["O masă", "Două scaune", "O canapea"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Cât timp stau în locuința asta?", "audio": "d13", "options": ["O lună", "Trei luni", "Un an"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Es ___ zwei Zimmer.", "answers": [["gibt"]], "ro": "Sunt două camere." },
+    { "type": "gap", "id": "e6", "text": "Wir haben ___ Tisch. (nicio masă)", "answers": [["keinen"]], "ro": "N-avem masă." },
+    { "type": "gap", "id": "e7", "text": "Es gibt ___ Stühle. (niciun scaun)", "answers": [["keine"]], "ro": "Nu sunt scaune." },
+    { "type": "gap", "id": "e8", "text": "Gibt es ___ Balkon? (un balcon)", "answers": [["einen"]], "ro": "Există un balcon?" },
+    { "type": "mcq", "id": "e9", "question": "Care propoziție e corectă?", "options": ["Ich habe nicht einen Tisch.", "Ich habe keinen Tisch.", "Ich habe kein Tisch."], "answer": 1, "explain": "kein neagă substantivul; der Tisch e masculin, la acuzativ → keinen." },
+    { "type": "order", "id": "e10", "ro": "Sunt două camere.", "answer": "Es gibt zwei Zimmer." },
+    { "type": "order", "id": "e11", "ro": "Locuința e mică, dar primitoare.", "answer": "Die Wohnung ist klein, aber gemütlich." },
+    { "type": "dictation", "id": "e12", "audio": "d3", "text": "Wie viele Zimmer gibt es?", "ro": "Câte camere sunt?" },
+    { "type": "dictation", "id": "e13", "audio": "d10", "text": "Ich habe zwei Stühle im Keller. Ihr könnt sie haben!", "ro": "Am două scaune în pivniță. Le puteți lua!" }
+  ],
+  "speaking": {
+    "scenario": "O colegă vine la tine la o cafea și te întreabă despre locuința ta: câte camere are, ce mobilă aveți, ce vă lipsește.",
+    "claudeRole": "Ești Kasia, colega din Polonia de la Fördewurst, în vizită la o cafea. Germană simplă, du. Întrebi despre camere, mobilă, balcon, chirie și povestești cum e locuința ta. Folosește des „es gibt” și „kein / keine / keinen”. Oferă-te să-i dai ceva (scaune, o lampă).",
+    "tasks": [
+      "Spune câte camere ai și care sunt",
+      "Spune ce mobilă ai și ce îți lipsește (kein / keine / keinen)",
+      "Întreab-o pe Kasia despre locuința ei, cu „Gibt es …?”",
+      "Acceptă politicos oferta ei",
+      "Spune ce planuri ai (de exemplu, o locuință nouă)"
+    ],
+    "starter": "Hallo! Oh, eure Wohnung ist schön hell! Wie viele Zimmer gibt es?"
+  }
+}

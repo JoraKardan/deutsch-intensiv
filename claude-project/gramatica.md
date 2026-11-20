@@ -1,4 +1,4 @@
-# Gramatica (situația la w02-8)
+# Gramatica (situația la w03-8)
 
 ## Învățat deja
 
@@ -186,18 +186,108 @@ Pluralul: articolul e mereu die, terminația se învață cu fiecare cuvânt: To
 
 Verbele cu vocala schimbată la du și er/sie/es: fahren → fährt, lesen → liest, sehen → sieht, nehmen → nimmt, anfangen → fängt an.
 
+### w03-1 · Es gibt + acuzativ. Negația kein
+
+Es gibt = există, este (literal „(asta) dă”). Spui așa ce se află undeva: Es gibt zwei Zimmer. Es gibt einen Balkon. După es gibt vine acuzativul, deci masculinul primește -en: es gibt einen Tisch.
+
+Es gibt rămâne mereu la singular, și cu plural: Es gibt zwei Zimmer (nu „es geben”). În întrebare: Gibt es …? Was gibt es heute?
+
+kein = niciun, nicio. E negația substantivelor care au ein / eine sau nu au articol: Ich habe ein Auto → Ich habe kein Auto. Wir haben Zeit → Wir haben keine Zeit.
+
+kein are aceleași terminații ca ein: kein (der, das), keine (die și plural), iar la acuzativ masculin keinen: Es gibt keinen Balkon.
+
+nicht sau kein? kein neagă un substantiv cu ein/eine sau fără articol. nicht neagă verbul, adjectivul, locul sau un substantiv cu der/die/das: Das ist nicht teuer. Das ist nicht mein Tisch.
+
+### w03-2 · Prepozițiile de loc + dativ (Wo?)
+
+La întrebarea Wo? (unde?) răspunzi cu o prepoziție de loc: in (în), auf (pe), unter (sub), neben (lângă), vor (în fața), hinter (în spatele), zwischen (între), an (la, lipit de: perete, fereastră, ușă).
+
+După aceste prepoziții, la Wo?, articolul trece la dativ: der → dem, die → der, das → dem, iar pluralul die → den (și substantivul primește -n). Der Tisch → auf dem Tisch. Die Tür → neben der Tür. Das Sofa → unter dem Sofa.
+
+Contracții foarte frecvente: in + dem = im (im Flur, im Keller), an + dem = am (am Fenster, am Hafen). De aceea ai auzit deja „im Büro” și „am Hafen”.
+
+Verbele de poziție: liegen (a sta culcat: chei, telefon, acte), stehen (a sta în picioare: lampă, dulap, sticlă). sein merge oricând: dacă nu ești sigur, spune ist.
+
+Cu Wohin? (încotro?), aceleași prepoziții cer acuzativ. Asta vine mai târziu (săptămâna 6). Deocamdată: Wo? + dativ.
+
+### w03-3 · Verbul modal müssen
+
+müssen = a trebui. E un verb modal, ca können și möchten: se conjugă pe locul 2, iar verbul principal stă la infinitiv, la final: Ich muss heute arbeiten.
+
+Ca la toate modalele, ich și er/sie/es au aceeași formă, fără terminație: ich muss, er muss. La singular vocala e u (muss), la plural ü (müssen).
+
+Cu un loc sau o direcție, al doilea verb lipsește adesea: Ich muss zur Arbeit. Ich muss nach Hause. „gehen” sau „fahren” se subînțelege.
+
+⚠️ Capcana: nicht müssen = nu e nevoie, nu „n-ai voie”. Du musst nicht kommen = Nu e nevoie să vii. Sie müssen nichts bezahlen = Nu trebuie să plătiți nimic (e gratuit). Pentru interdicție germana folosește alt verb (nicht dürfen), care vine în săptămâna 7.
+
+Probleme în locuință, pe scurt: … ist kaputt (s-a stricat), … funktioniert nicht (nu funcționează), … geht nicht (nu merge, colocvial).
+
+### w03-4 · Imperativul politicos (Sie). Regulile casei
+
+Imperativul politicos e foarte simplu: verbul la infinitiv + Sie, cu verbul pe primul loc: Kommen Sie! Warten Sie! Trennen Sie den Müll!
+
+Pentru politețe se adaugă bitte: Bitte warten Sie. / Warten Sie bitte. Fără bitte poate suna ca un ordin.
+
+La verbele separabile, prefixul merge la final: Machen Sie die Tür zu! Kommen Sie am Samstag vorbei! Rufen Sie mich an!
+
+O singură excepție: sein → Seien Sie bitte leise! (Fiți, vă rog, liniștiți!)
+
+Particulele doch și mal fac invitația mai caldă și mai firească: Kommen Sie doch herein! Sagen Sie mal, … Nu au o traducere exactă, dar le vei auzi peste tot.
+
+Regulile casei, pe scurt: Ruhezeit (liniște) de obicei între 22 și 6 și duminica toată ziua; gunoiul se sortează în tomberoane colorate; sticla se duce la containere separate, pe culori.
+
+### w03-5 · zum / zur. Wo? sau Wohin?
+
+Wie komme ich zum …? e întrebarea pentru drum. zu = la, spre (un loc, o clădire, o persoană) și cere dativul: zu + dem = zum (der / das: zum Hafen, zum Rathaus), zu + der = zur (die: zur Post, zur Apotheke).
+
+Wo? = unde (locul, fără mișcare): Wo ist der Hafen? Wohin? = încotro (direcția, cu mișcare): Wohin gehen Sie? – Zum Hafen. Woher? = de unde (ai învățat deja: Woher kommst du?).
+
+Două expresii fixe: nach Hause = spre casă (wohin?): Ich gehe nach Hause. zu Hause = acasă (wo?): Ich bin zu Hause. Cu orașe și țări folosești nach: nach Hamburg, nach Polen.
+
+Indicațiile de drum: geradeaus (drept înainte), links (stânga), rechts (dreapta), die erste / zweite Straße (prima / a doua stradă), an der Ampel (la semafor), an der Kreuzung (la intersecție), gegenüber (vizavi), da drüben (acolo, peste drum).
+
+Imperativul cu Sie din lecția trecută apare peste tot în indicații: Gehen Sie geradeaus! Nehmen Sie den Bus!
+
+### w03-6 · mit + dativ. Transportul în comun
+
+mit = cu. Cere mereu dativul: mit dem Bus (der), mit der Bahn (die), mit dem Fahrrad (das), mit den Kollegen (plural, cu -n).
+
+Pentru mijloacele de transport: Ich fahre mit dem Bus / mit der Straßenbahn / mit dem Zug / mit dem Auto. „Ich fahre mit Bus” e greșit: articolul trebuie. Excepția: zu Fuß (pe jos).
+
+În expresii generale articolul poate lipsi: mit Bus und Bahn (cu transportul în comun).
+
+Verbele separabile din transport: einsteigen (a urca), aussteigen (a coborî), umsteigen (a schimba mijlocul de transport): Ich steige am Hafen aus. Wo muss ich umsteigen?
+
+Anunțuri pe care le vei auzi: Der Bus hat zehn Minuten Verspätung (întârziere). Der Zug fällt aus (e anulat). Nächster Halt: … (următoarea stație).
+
+### w03-7 · Verbul modal wollen. Vremea cu „es”. Hainele
+
+wollen = a vrea (o intenție hotărâtă). E verb modal, cu infinitivul la final: Wir wollen die Band sehen. Ich will um halb acht da sein.
+
+La singular e neregulat și, ca toate modalele, n-are terminație la ich și er: ich will, du willst, er will. La plural: wir wollen, ihr wollt, sie wollen.
+
+⚠️ Capcană: ich will NU înseamnă „voi” (viitor), ci „vreau”. will e mai direct decât möchte (aș vrea): la magazin, la cantină sau la autorități spune ich möchte; despre planuri, între prieteni, ich will e normal.
+
+Vremea se spune cu es, un subiect „gol”, pe care româna nu-l are: Es regnet (plouă). Es ist kalt (e frig). Temperatura: Es sind zwei Grad (sunt două grade).
+
+Hainele: anziehen = a (se) îmbrăca, separabil: Was ziehst du an? Ich ziehe eine Jacke an. La fabrică, hainele de lucru (die Arbeitskleidung) le primești de la firmă și le lași acolo.
+
+### w03-8 · Recapitulare: locuința, locul și verbele modale
+
+Es gibt + acuzativ și negația kein: Es gibt keinen Balkon. Wir haben keine Milch und kein Brot.
+
+Wo? + dativ după prepozițiile de loc: im Keller, neben dem Fahrrad, an der Ecke. Wohin? cu zu: zum Hafen, zur Post; și nach Hause.
+
+mit + dativ pentru transport: mit dem Bus, mit der Bahn. Excepția: zu Fuß.
+
+Verbele modale: können, möchten (știute), plus müssen (a trebui) și wollen (a vrea). Toate: modalul pe locul 2, infinitivul la final. La ich și er, fără terminație: ich muss, er will. Și nu uita: nicht müssen = nu e nevoie.
+
+Imperativul cu Sie: verbul + Sie: Kommen Sie um elf! Vergessen Sie nicht …! Vremea se spune cu es: Es regnet. Es ist kalt.
+
 ## NU a fost învățat încă
 
 Temele de mai jos vin în lecțiile următoare. Până la lecția respectivă, **nu le folosi** în replicile tale (sau doar ca expresie fixă, explicată). Dacă elevul are nevoie de ele, dă-i varianta simplă pe care o știe deja.
 
-- w03-1 (A1): Locuința provizorie; camerele; es gibt + acuzativ; kein
-- w03-2 (A1): Prepoziții de loc (in, auf, neben) + dativ, varianta simplă
-- w03-3 (A1): Probleme în locuință; verbul modal müssen
-- w03-4 (A1): Vecina, regulile casei; imperativul politicos (Sie)
-- w03-5 (A1): Direcții prin Flensburg; zum / zur; wo? / wohin?
-- w03-6 (A1): Autobuzul spre fabrică la tura de dimineață; bilete, întârzieri; mit + dativ
-- w03-7 (A1): Vremea din nord (vânt, ploaie, „Schietwetter”), haine de lucru și de iarnă; verbul modal wollen
-- w03-8 (A1): Recapitularea săptămânii 3
 - w04-1 (A1): Bürgeramt Flensburg: Anmeldung pentru Radu și Valy; spelling (buchstabieren); întrebări formale
 - w04-2 (A1): Date personale; data calendaristică; numerale ordinale
 - w04-3 (A1): La telefon: programare pentru Aufenthaltskarte (membru de familie al unei cetățene UE); können + infinitiv

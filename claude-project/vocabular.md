@@ -1,4 +1,4 @@
-# Vocabularul cunoscut (până la w02-8)
+# Vocabularul cunoscut (până la w03-8)
 
 Tot ce a învățat elevul, în ordinea lecțiilor. Fiecare lecție are: tema de gramatică, expresiile de bază (cu traducere) și cuvintele care apar **pentru prima dată** în lecția respectivă. Un cuvânt dintr-o lecție este cunoscut doar dacă lecția are id-ul mai mic sau egal cu lecția curentă a elevului (ex.: w01-5 ≤ w02-1).
 
@@ -391,3 +391,197 @@ Expresii:
 Cuvinte noi: müde, Norddeutscher, Ha, fängst, je, Kollege, hört, Konzert, seht, euch, oft, beide, Stühle, frische, Telefon, besuchen
 
 Scenariu de vorbire: Recapitulare mare: un fost coleg din Köln te sună să afle cum a fost prima săptămână în Flensburg. Apoi te sună o colegă cu o invitație.
+
+## w03-1 · Meine Wohnung (Locuința mea)
+
+Gramatică: Es gibt + acuzativ. Negația kein
+
+Expresii:
+- Die Wohnung ist klein, aber gemütlich. = Locuința e mică, dar primitoare.
+- Komm rein! = Intră!
+- Wie viele Zimmer gibt es? = Câte camere sunt?
+- Es gibt zwei Zimmer. = Sunt două camere.
+- Gibt es einen Balkon? = Există un balcon?
+- Es gibt keinen Balkon. = Nu e balcon.
+- Wir haben keinen Tisch. = N-avem masă.
+- Wir haben keine Stühle. = N-avem scaune.
+- Wo esst ihr denn? = Și unde mâncați?
+- Das ist alles. = Asta e tot.
+- Ihr könnt sie haben. = Le puteți lua.
+- Wirklich? = Serios? / Chiar?
+- Die Wohnung ist nur für drei Monate. = Locuința e doar pentru trei luni.
+- Wir suchen eine neue Wohnung. = Căutăm o locuință nouă.
+- Viel Glück! = Mult noroc!
+
+Cuvinte noi: hell, rein, gemütlich, Zimmer, Wohnzimmer, Schlafzimmer, Bad, Balkon, esst, denn, Sofa, Bett, Schrank, Keller, könnt, Wirklich, Monate, suchen, Glück, Wohnungen, Flur
+
+Scenariu de vorbire: O colegă vine la tine la o cafea și te întreabă despre locuința ta: câte camere are, ce mobilă aveți, ce vă lipsește.
+
+## w03-2 · Wo ist …? (Unde este …?)
+
+Gramatică: Prepozițiile de loc + dativ (Wo?)
+
+Expresii:
+- Wo ist mein Schlüssel? = Unde e cheia mea?
+- Ich finde ihn nicht. = N-o găsesc.
+- Er liegt auf dem Sofa. = E pe canapea.
+- Schau mal im Flur! = Uită-te în hol!
+- neben der Tür = lângă ușă
+- unter dem Sofa = sub canapea
+- in der Jacke = în geacă
+- Mein Ausweis ist weg! = Mi-a dispărut legitimația!
+- Ruhig! = Liniștește-te! / Calm!
+- Wir haben noch Zeit. = Mai avem timp.
+- Hier ist er! = Aici e!
+- Ach ja, stimmt. = A, da, așa e.
+- Die sind im Spind. = Sunt în dulăpior.
+- Gehen wir! = Hai să mergem!
+- Warte mal! = Stai puțin!
+
+Cuvinte noi: Schlüssel, finde, ihn, Jacke, neben, Tür, Nichts, Ausweis, weg, Ruhig, Liegt, vielleicht, unter, Warte, Arbeitsschuhe, doch, Spind, deiner, Hand, Schuhe, wartet, Haus, steht
+
+Scenariu de vorbire: Ești acasă și nu-ți găsești lucrurile înainte de muncă. Cineva din casă te ajută să le cauți.
+
+## w03-3 · Das ist kaputt! (S-a stricat!)
+
+Gramatică: Verbul modal müssen
+
+Expresii:
+- Die Heizung ist kaputt. = Caloriferul nu merge. / Încălzirea e stricată.
+- Es ist sehr kalt in der Wohnung. = E foarte frig în locuință.
+- Das warme Wasser funktioniert nicht. = Apa caldă nu merge.
+- Das Licht geht nicht. = Lumina nu merge.
+- Der Wasserhahn tropft. = Robinetul picură.
+- Das Fenster geht nicht zu. = Fereastra nu se închide.
+- Seit wann? = De când?
+- Seit gestern Abend. = De aseară.
+- Was kann ich für Sie tun? = Cu ce vă pot ajuta?
+- Ein Techniker muss kommen. = Trebuie să vină un tehnician.
+- Ich muss zur Arbeit. = Trebuie să plec la muncă.
+- Muss ich etwas bezahlen? = Trebuie să plătesc ceva?
+- Sie müssen nichts bezahlen. = Nu trebuie să plătiți nimic.
+- Auf Wiederhören! = La revedere! (la telefon)
+- der Vermieter = proprietarul (care închiriază)
+
+Cuvinte noi: Clausen, Hausverwaltung, Friedrichstraße, tun, Heizung, kaputt, gestern, warme, funktioniert, muss, Techniker, müssen, aufmachen, etwas, zahlt, Vermieter, Fenster, klemmt, reparieren, Wiederhören, Licht, Wasserhahn, tropft, Musst, aufstehen, Miete
+
+Scenariu de vorbire: Ceva s-a stricat în locuința ta (calorifer, apă caldă, fereastră, lumină). Suni la administrația clădirii.
+
+## w03-4 · Die Nachbarn (Vecinii)
+
+Gramatică: Imperativul politicos (Sie). Regulile casei
+
+Expresii:
+- Ich bin Ihre Nachbarin. = Sunt vecina dumneavoastră.
+- Kommen Sie doch herein! = Poftiți înăuntru!
+- Ab zweiundzwanzig Uhr ist Ruhezeit. = De la ora 22 e ora de liniște.
+- Bitte machen Sie die Tür leise zu. = Vă rog, închideți ușa încet.
+- Das tut mir leid. = Îmi pare rău.
+- Trennen Sie bitte den Müll. = Vă rog să sortați gunoiul.
+- Welche Tonne ist für was? = Care tomberon e pentru ce?
+- Papier kommt in die blaue Tonne. = Hârtia merge în tomberonul albastru.
+- Das ist sehr hilfreich. = Ne ajută foarte mult.
+- Sagen Sie mal, … = Ia spuneți, …
+- Kommen Sie am Samstag vorbei! = Treceți pe la mine sâmbătă!
+- Das ist so nett von Ihnen! = Ce drăguț din partea dumneavoastră!
+- Seien Sie bitte leise. = Fiți liniștiți, vă rog.
+- das Treppenhaus = casa scării, scara blocului
+- Natürlich! = Bineînțeles!
+
+Cuvinte noi: Jensen, Nachbarin, oben, herein, kurz, ab, zweiundzwanzig, Ruhezeit, leise, Treppenhaus, tut, leid, Trennen, Müll, Tonne, Papier, blaue, Plastik, gelbe, Essensreste, braune, Rest, schwarze, Glas, bringen, Container, hilfreich, alten, vorbei, Seien, Warten, Rufen
+
+Scenariu de vorbire: Te-ai mutat într-un bloc nou. Vecina în vârstă îți explică regulile casei.
+
+## w03-5 · Wie komme ich zum Hafen? (Cum ajung la port?)
+
+Gramatică: zum / zur. Wo? sau Wohin?
+
+Expresii:
+- Wie komme ich zum Hafen? = Cum ajung la port?
+- Ist das weit? = E departe?
+- Gehen Sie geradeaus. = Mergeți drept înainte.
+- An der Ampel links. = La semafor la stânga.
+- die zweite Straße rechts = a doua stradă la dreapta
+- Wie lange brauchen wir zu Fuß? = Cât facem pe jos?
+- zehn Minuten zu Fuß = zece minute pe jos
+- Wohin gehen Sie? = Unde mergeți?
+- Kennen Sie den? = Îl știți?
+- direkt am Wasser = chiar lângă apă
+- Wo ist hier eine Apotheke? = Unde e o farmacie pe aici?
+- gleich da drüben = imediat acolo, peste drum
+- gegenüber vom Bäcker = vizavi de brutărie
+- Keine Ahnung. = Habar n-am.
+- Gern geschehen! = Cu plăcere! (ca răspuns la „mulțumesc”)
+
+Cuvinte noi: Ahnung, geradeaus, Ampel, links, zweite, rechts, Schiffe, Fuß, Minuten, Wohin, Hafenblick, Kennen, direkt, Brücke, Apotheke, Gleich, drüben, gegenüber, vom, geschehen, Appetit, Bahnhof, gehe, Post
+
+Scenariu de vorbire: Ești în centrul unui oraș german și cauți câteva locuri: gara, o farmacie, poșta, portul.
+
+## w03-6 · Bus und Bahn (Autobuz și tren)
+
+Gramatică: mit + dativ. Transportul în comun
+
+Expresii:
+- Der Bus hat Verspätung. = Autobuzul are întârziere.
+- Wo ist die Haltestelle? = Unde e stația?
+- Da kommt er! = Uite-l că vine!
+- Endlich! = În sfârșit!
+- Fahrkarten bitte! = Biletele, vă rog!
+- Kann ich bei Ihnen eine Fahrkarte kaufen? = Pot cumpăra un bilet de la dumneavoastră?
+- Eine Einzelfahrt, bitte. = O călătorie simplă, vă rog.
+- Wo muss ich aussteigen? = Unde trebuie să cobor?
+- Steigen Sie am Hafen aus. = Coborâți la port.
+- Ich fahre mit dem Bus. = Merg cu autobuzul.
+- Ich fahre lieber mit dem Fahrrad. = Prefer să merg cu bicicleta.
+- Heute regnet es. = Azi plouă.
+- die Monatskarte = abonamentul lunar
+- das Deutschlandticket = Deutschlandticket (abonament lunar pentru toată Germania)
+- Sonst kommen wir zu spät! = Altfel întârziem!
+
+Cuvinte noi: braucht, Verspätung, regnet, Endlich, Fahrkarten, Fahrkarte, kaufen, Einzelfahrt, Firma, Industriegebiet, steigen, Haltestelle, Industriestraße, brauchst, Monatskarte, Deutschlandticket, Ticket, Bahn, ganz, zahle, schnell, aussteigen, steige
+
+Scenariu de vorbire: Ești la stație dimineața devreme, autobuzul întârzie. Apoi cumperi bilet de la șofer și întrebi unde să cobori.
+
+## w03-7 · Wetter und Kleidung (Vremea și haine)
+
+Gramatică: Verbul modal wollen. Vremea cu „es”. Hainele
+
+Expresii:
+- Draußen ist Schietwetter. = Afară e o vreme mizerabilă.
+- Ich bin total nass! = Sunt ud leoarcă!
+- Wie ist das Wetter? = Cum e vremea?
+- Regen und Wind = ploaie și vânt
+- Heute sind es nur zwei Grad. = Azi sunt doar două grade.
+- Wollt ihr kommen? = Vreți să veniți?
+- Wir wollen die Band sehen. = Vrem să vedem trupa.
+- Ich will um halb acht da sein. = Vreau să fiu acolo la șapte și jumătate.
+- Bei dem Wetter? Nein, danke! = Pe vremea asta? Nu, mersi!
+- Was ziehen wir an? = Ce ne punem pe noi?
+- Ich will nicht frieren. = Nu vreau să-mi fie frig.
+- Drinnen ist es warm. = Înăuntru e cald.
+- Mütze, Schal und Regenjacke = căciulă, fular și geacă de ploaie
+- Vergiss es! = Las-o baltă! / Nici vorbă!
+- Ich freue mich! = Abia aștept! / Mă bucur!
+
+Cuvinte noi: einer, total, nass, Draußen, Schietwetter, Regen, Wind, Wollt, wollen, will, Wetter, Grad, Jacken, ziehen, frieren, wissen, Drinnen, warm, Mütze, Schal, Regenjacke, Regenschirm, Vergiss, fliegt, Schirm, losfahren, freue, Willst, windig, ziehe, schneit, scheint, bewölkt
+
+Scenariu de vorbire: Un prieten te sună să stabiliți o ieșire diseară, dar afară e vreme rea.
+
+## w03-8 · Wiederholung: Ein Tag in Flensburg (Recapitulare: O zi în Flensburg)
+
+Gramatică: Recapitulare: locuința, locul și verbele modale
+
+Expresii:
+- Heute scheint die Sonne. = Azi e soare.
+- Funktioniert die Heizung wieder? = Merge iar caloriferul?
+- Ist das nicht zu laut? = Nu e prea zgomotos?
+- Sie lernen schnell! = Învățați repede!
+- Am Sonntag ist alles zu. = Duminica totul e închis.
+- Wie kommen wir dahin? = Cum ajungem acolo?
+- beim Bäcker an der Ecke = la brutăria din colț
+- Vergessen Sie nicht … = Nu uitați …
+- Ach was! = Ei, aș! / Lasă!
+
+Cuvinte noi: beiden, wieder, Wunderbar, holen, laut, lernen, tragen, meinem, raus, dahin, Kirche, einkaufen, Supermarkt, offen, Ecke, beste, vergessen
+
+Scenariu de vorbire: Recapitulare mare: o duminică în orașul tău. Întâlnești o vecină, apoi te sună o colegă cu un plan.

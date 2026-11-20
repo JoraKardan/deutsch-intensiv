@@ -12,6 +12,6 @@
 - **Frau Hansen**: отдел кадров на фабрике.
 - **Frau Jensen**: пожилая соседка.
 
-Персонажи, которые уже появлялись в диалогах (и первый урок): Radu (w01-1), Lena (w01-1), Tom (w01-2), Frau Becker (w01-3), Ospătărița (w01-4), Herr Krause (w01-5), Herr Weber (w01-7), Sophie (w01-8), Jens (w02-1), Kasia (w02-1), Ole (w02-3), Frau Hansen (w02-3), Valy (w02-5), Herr Lorenzen (w02-6), Frau Thomsen (w02-7).
+Персонажи, которые уже появлялись в диалогах (и первый урок): Radu (w01-1), Lena (w01-1), Tom (w01-2), Frau Becker (w01-3), Ospătărița (w01-4), Herr Krause (w01-5), Herr Weber (w01-7), Sophie (w01-8), Jens (w02-1), Kasia (w02-1), Ole (w02-3), Frau Hansen (w02-3), Valy (w02-5), Herr Lorenzen (w02-6), Frau Thomsen (w02-7), Herr Clausen (w03-3), Frau Jensen (w03-4), Passantin (w03-5), Busfahrer (w03-6).
 
 Персонажи могут появляться в разговорах (напр.: «Том спрашивает тебя за обедом…»), для связности.

@@ -1,4 +1,4 @@
-# Известная лексика (до w02-8)
+# Известная лексика (до w03-8)
 
 Всё, что выучил ученик, в порядке уроков. У каждого урока есть: тема грамматики, основные выражения (с переводом) и слова, которые появляются в этом уроке **впервые**. Слово из урока считается известным, только если id урока меньше или равен текущему уроку ученика (напр.: w01-5 ≤ w02-1).
 
@@ -391,3 +391,197 @@
 Новые слова: müde, Norddeutscher, Ha, fängst, je, Kollege, hört, Konzert, seht, euch, oft, beide, Stühle, frische, Telefon, besuchen
 
 Сценарий разговора: Большое повторение: бывший коллега из Кёльна звонит узнать, как прошла первая неделя во Фленсбурге. Потом звонит коллега с приглашением.
+
+## w03-1 · Meine Wohnung (Моя квартира)
+
+Грамматика: Es gibt + винительный падеж. Отрицание kein
+
+Выражения:
+- Die Wohnung ist klein, aber gemütlich. = Квартира маленькая, но уютная.
+- Komm rein! = Заходи!
+- Wie viele Zimmer gibt es? = Сколько тут комнат?
+- Es gibt zwei Zimmer. = Две комнаты.
+- Gibt es einen Balkon? = Балкон есть?
+- Es gibt keinen Balkon. = Балкона нет.
+- Wir haben keinen Tisch. = У нас нет стола.
+- Wir haben keine Stühle. = У нас нет стульев.
+- Wo esst ihr denn? = А где же вы едите?
+- Das ist alles. = Это всё.
+- Ihr könnt sie haben. = Можете их забрать.
+- Wirklich? = Правда? / Серьёзно?
+- Die Wohnung ist nur für drei Monate. = Квартира только на три месяца.
+- Wir suchen eine neue Wohnung. = Мы ищем новую квартиру.
+- Viel Glück! = Удачи!
+
+Новые слова: hell, rein, gemütlich, Zimmer, Wohnzimmer, Schlafzimmer, Bad, Balkon, esst, denn, Sofa, Bett, Schrank, Keller, könnt, Wirklich, Monate, suchen, Glück, Wohnungen, Flur
+
+Сценарий разговора: Коллега приходит к тебе на кофе и расспрашивает о квартире: сколько комнат, какая мебель, чего не хватает.
+
+## w03-2 · Wo ist …? (Где …?)
+
+Грамматика: Предлоги места + дательный падеж (Wo?)
+
+Выражения:
+- Wo ist mein Schlüssel? = Где мой ключ?
+- Ich finde ihn nicht. = Не могу его найти.
+- Er liegt auf dem Sofa. = Он лежит на диване.
+- Schau mal im Flur! = Посмотри в прихожей!
+- neben der Tür = у двери
+- unter dem Sofa = под диваном
+- in der Jacke = в куртке
+- Mein Ausweis ist weg! = Мой пропуск пропал!
+- Ruhig! = Спокойно!
+- Wir haben noch Zeit. = У нас ещё есть время.
+- Hier ist er! = Вот он!
+- Ach ja, stimmt. = А, точно.
+- Die sind im Spind. = Они в шкафчике.
+- Gehen wir! = Пошли!
+- Warte mal! = Подожди-ка!
+
+Новые слова: Schlüssel, finde, ihn, Jacke, neben, Tür, Nichts, Ausweis, weg, Ruhig, Liegt, vielleicht, unter, Warte, Arbeitsschuhe, doch, Spind, deiner, Hand, Schuhe, wartet, Haus, steht
+
+Сценарий разговора: Ты дома и не можешь найти свои вещи перед работой. Кто-то из домашних помогает тебе искать.
+
+## w03-3 · Das ist kaputt! (Сломалось!)
+
+Грамматика: Модальный глагол müssen
+
+Выражения:
+- Die Heizung ist kaputt. = Отопление не работает.
+- Es ist sehr kalt in der Wohnung. = В квартире очень холодно.
+- Das warme Wasser funktioniert nicht. = Горячая вода не идёт.
+- Das Licht geht nicht. = Свет не работает.
+- Der Wasserhahn tropft. = Кран капает.
+- Das Fenster geht nicht zu. = Окно не закрывается.
+- Seit wann? = С каких пор?
+- Seit gestern Abend. = Со вчерашнего вечера.
+- Was kann ich für Sie tun? = Чем могу помочь?
+- Ein Techniker muss kommen. = Должен прийти техник.
+- Ich muss zur Arbeit. = Мне надо на работу.
+- Muss ich etwas bezahlen? = Мне нужно что-то платить?
+- Sie müssen nichts bezahlen. = Вам ничего не нужно платить.
+- Auf Wiederhören! = До свидания! (по телефону)
+- der Vermieter = хозяин квартиры (арендодатель)
+
+Новые слова: Clausen, Hausverwaltung, Friedrichstraße, tun, Heizung, kaputt, gestern, warme, funktioniert, muss, Techniker, müssen, aufmachen, etwas, zahlt, Vermieter, Fenster, klemmt, reparieren, Wiederhören, Licht, Wasserhahn, tropft, Musst, aufstehen, Miete
+
+Сценарий разговора: В твоей квартире что-то сломалось (батарея, горячая вода, окно, свет). Ты звонишь в управляющую компанию.
+
+## w03-4 · Die Nachbarn (Соседи)
+
+Грамматика: Вежливый императив (Sie). Правила дома
+
+Выражения:
+- Ich bin Ihre Nachbarin. = Я ваша соседка.
+- Kommen Sie doch herein! = Проходите, пожалуйста!
+- Ab zweiundzwanzig Uhr ist Ruhezeit. = С 22 часов — время тишины.
+- Bitte machen Sie die Tür leise zu. = Пожалуйста, закрывайте дверь тихо.
+- Das tut mir leid. = Мне жаль. / Извините.
+- Trennen Sie bitte den Müll. = Пожалуйста, сортируйте мусор.
+- Welche Tonne ist für was? = Какой бак для чего?
+- Papier kommt in die blaue Tonne. = Бумага идёт в синий бак.
+- Das ist sehr hilfreich. = Это очень помогает.
+- Sagen Sie mal, … = Скажите-ка, …
+- Kommen Sie am Samstag vorbei! = Заходите в субботу!
+- Das ist so nett von Ihnen! = Как мило с вашей стороны!
+- Seien Sie bitte leise. = Пожалуйста, потише.
+- das Treppenhaus = подъезд, лестничная клетка
+- Natürlich! = Конечно!
+
+Новые слова: Jensen, Nachbarin, oben, herein, kurz, ab, zweiundzwanzig, Ruhezeit, leise, Treppenhaus, tut, leid, Trennen, Müll, Tonne, Papier, blaue, Plastik, gelbe, Essensreste, braune, Rest, schwarze, Glas, bringen, Container, hilfreich, alten, vorbei, Seien, Warten, Rufen
+
+Сценарий разговора: Ты переехал в новый дом. Пожилая соседка объясняет тебе правила дома.
+
+## w03-5 · Wie komme ich zum Hafen? (Как пройти к порту?)
+
+Грамматика: zum / zur. Wo? или Wohin?
+
+Выражения:
+- Wie komme ich zum Hafen? = Как пройти к порту?
+- Ist das weit? = Это далеко?
+- Gehen Sie geradeaus. = Идите прямо.
+- An der Ampel links. = На светофоре налево.
+- die zweite Straße rechts = вторая улица направо
+- Wie lange brauchen wir zu Fuß? = Сколько нам идти пешком?
+- zehn Minuten zu Fuß = десять минут пешком
+- Wohin gehen Sie? = Куда вы идёте?
+- Kennen Sie den? = Вы его знаете?
+- direkt am Wasser = прямо у воды
+- Wo ist hier eine Apotheke? = Где здесь аптека?
+- gleich da drüben = вон там, через дорогу
+- gegenüber vom Bäcker = напротив пекарни
+- Keine Ahnung. = Понятия не имею.
+- Gern geschehen! = Не за что! (в ответ на «спасибо»)
+
+Новые слова: Ahnung, geradeaus, Ampel, links, zweite, rechts, Schiffe, Fuß, Minuten, Wohin, Hafenblick, Kennen, direkt, Brücke, Apotheke, Gleich, drüben, gegenüber, vom, geschehen, Appetit, Bahnhof, gehe, Post
+
+Сценарий разговора: Ты в центре немецкого города и ищешь несколько мест: вокзал, аптеку, почту, порт.
+
+## w03-6 · Bus und Bahn (Автобус и поезд)
+
+Грамматика: mit + дательный падеж. Общественный транспорт
+
+Выражения:
+- Der Bus hat Verspätung. = Автобус опаздывает.
+- Wo ist die Haltestelle? = Где остановка?
+- Da kommt er! = Вон он едет!
+- Endlich! = Наконец-то!
+- Fahrkarten bitte! = Ваши билеты, пожалуйста!
+- Kann ich bei Ihnen eine Fahrkarte kaufen? = Можно купить у вас билет?
+- Eine Einzelfahrt, bitte. = Одну разовую поездку, пожалуйста.
+- Wo muss ich aussteigen? = Где мне выходить?
+- Steigen Sie am Hafen aus. = Выходите у порта.
+- Ich fahre mit dem Bus. = Я еду на автобусе.
+- Ich fahre lieber mit dem Fahrrad. = Я предпочитаю ездить на велосипеде.
+- Heute regnet es. = Сегодня идёт дождь.
+- die Monatskarte = месячный проездной
+- das Deutschlandticket = Deutschlandticket (месячный проездной по всей Германии)
+- Sonst kommen wir zu spät! = А то опоздаем!
+
+Новые слова: braucht, Verspätung, regnet, Endlich, Fahrkarten, Fahrkarte, kaufen, Einzelfahrt, Firma, Industriegebiet, steigen, Haltestelle, Industriestraße, brauchst, Monatskarte, Deutschlandticket, Ticket, Bahn, ganz, zahle, schnell, aussteigen, steige
+
+Сценарий разговора: Ты рано утром на остановке, автобус опаздывает. Потом покупаешь билет у водителя и спрашиваешь, где выходить.
+
+## w03-7 · Wetter und Kleidung (Погода и одежда)
+
+Грамматика: Модальный глагол wollen. Погода с «es». Одежда
+
+Выражения:
+- Draußen ist Schietwetter. = На улице мерзкая погода.
+- Ich bin total nass! = Я весь промок!
+- Wie ist das Wetter? = Какая погода?
+- Regen und Wind = дождь и ветер
+- Heute sind es nur zwei Grad. = Сегодня всего два градуса.
+- Wollt ihr kommen? = Вы хотите прийти?
+- Wir wollen die Band sehen. = Мы хотим увидеть группу.
+- Ich will um halb acht da sein. = Я хочу быть там в половине восьмого.
+- Bei dem Wetter? Nein, danke! = В такую погоду? Нет уж, спасибо!
+- Was ziehen wir an? = Что нам надеть?
+- Ich will nicht frieren. = Я не хочу мёрзнуть.
+- Drinnen ist es warm. = Внутри тепло.
+- Mütze, Schal und Regenjacke = шапка, шарф и дождевик
+- Vergiss es! = Забудь! / Даже не думай!
+- Ich freue mich! = Жду с нетерпением! / Рад!
+
+Новые слова: einer, total, nass, Draußen, Schietwetter, Regen, Wind, Wollt, wollen, will, Wetter, Grad, Jacken, ziehen, frieren, wissen, Drinnen, warm, Mütze, Schal, Regenjacke, Regenschirm, Vergiss, fliegt, Schirm, losfahren, freue, Willst, windig, ziehe, schneit, scheint, bewölkt
+
+Сценарий разговора: Друг звонит договориться о вечерней встрече, но на улице плохая погода.
+
+## w03-8 · Wiederholung: Ein Tag in Flensburg (Повторение: Один день во Фленсбурге)
+
+Грамматика: Повторение: квартира, место и модальные глаголы
+
+Выражения:
+- Heute scheint die Sonne. = Сегодня светит солнце.
+- Funktioniert die Heizung wieder? = Отопление снова работает?
+- Ist das nicht zu laut? = Это не слишком шумно?
+- Sie lernen schnell! = Вы быстро учитесь!
+- Am Sonntag ist alles zu. = В воскресенье всё закрыто.
+- Wie kommen wir dahin? = Как нам туда добраться?
+- beim Bäcker an der Ecke = в пекарне на углу
+- Vergessen Sie nicht … = Не забудьте …
+- Ach was! = Да ну что вы! / Да ладно!
+
+Новые слова: beiden, wieder, Wunderbar, holen, laut, lernen, tragen, meinem, raus, dahin, Kirche, einkaufen, Supermarkt, offen, Ecke, beste, vergessen
+
+Сценарий разговора: Большое повторение: воскресенье в твоём городе. Ты встречаешь соседку, потом тебе звонит коллега с планом.

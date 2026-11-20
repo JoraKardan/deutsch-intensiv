@@ -1,0 +1,135 @@
+{
+  "id": "w03-8",
+  "week": 3,
+  "day": 8,
+  "phase": "A1",
+  "kind": "review",
+  "title": "Wiederholung: Ein Tag in Flensburg",
+  "titleRo": "Recapitulare: O zi în Flensburg",
+  "goals": [
+    "să înțelegi o conversație mai lungă despre locuință, oraș și planuri",
+    "să descrii locuința și unde sunt lucrurile (es gibt, kein, dativul de loc)",
+    "să spui ce trebuie și ce vrei să faci (müssen, wollen)",
+    "să întrebi și să explici un drum, să vorbești despre vreme"
+  ],
+  "intro": "Gata și săptămâna 3! 🎉 Radu și Valy au acum o locuință aproape completă, o cunosc pe vecină, știu autobuzul și drumul spre port. Duminică dimineața ies la plimbare și o întâlnesc pe doamna Jensen în fața blocului. În dialog apare aproape toată săptămâna: locuința, reparațiile, regulile casei, drumul, vremea. **Ascultă întâi fără text.** Apoi verifică-te cu exercițiile.",
+  "dialog": {
+    "title": "Sonntag vor dem Haus",
+    "situation": "Duminică, ora 9:30. Radu și Valy ies la plimbare și o întâlnesc pe doamna Jensen în fața blocului.",
+    "speakers": {
+      "J": { "name": "Frau Jensen", "voice": "de-DE-GiselaNeural" },
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "J", "de": "Moin, Sie beiden! Heute scheint ja endlich die Sonne.", "ro": "Bună dimineața, amândurora! Azi, în sfârșit, e soare.", "lit": "bună | dvs. | amândoi | azi | strălucește | (doar) | în sfârșit | (art.) | soarele" },
+      { "id": "d2", "speaker": "V", "de": "Moin, Frau Jensen! Ja, endlich kein Schietwetter!", "ro": "Bună dimineața, doamnă Jensen! Da, în sfârșit, fără vreme urâtă!", "lit": "bună | doamnă |  | da | în sfârșit | nicio | vreme-nasoală" },
+      { "id": "d3", "speaker": "J", "de": "Und? Funktioniert die Heizung wieder?", "ro": "Ei? Merge iar caloriferul?", "lit": "și | funcționează | (art.) | încălzirea | din nou" },
+      { "id": "d4", "speaker": "A", "de": "Ja, alles funktioniert wieder. Jetzt ist es warm in der Wohnung.", "ro": "Da, totul merge din nou. Acum e cald în locuință.", "lit": "da | totul | funcționează | din nou | acum | e | (asta) | cald | în | (art.) | locuință" },
+      { "id": "d5", "speaker": "J", "de": "Wunderbar. Und Sie wollen heute den Tisch holen, oder?", "ro": "Minunat. Și azi vreți să luați masa, nu?", "lit": "minunat | și | dvs. | vreți | azi | (art.) | masa | a lua | sau" },
+      { "id": "d6", "speaker": "V", "de": "Gern! Aber heute ist Sonntag. Ist das nicht zu laut?", "ro": "Cu plăcere! Dar azi e duminică. Nu e prea zgomotos?", "lit": "cu plăcere | dar | azi | e | duminică | e | asta | nu | prea | zgomotos" },
+      { "id": "d7", "speaker": "J", "de": "Ha, Sie lernen schnell! Einen Tisch tragen ist nicht laut. Kommen Sie um elf.", "ro": "Ha, învățați repede! Să cari o masă nu e zgomotos. Veniți la unsprezece.", "lit": "ha | dvs. | învățați | repede | o | masă | a căra | e | nu | zgomotos | veniți | dvs. | la | unsprezece" },
+      { "id": "d8", "speaker": "A", "de": "Um elf, gut. Wo steht der Tisch? Im Keller?", "ro": "La unsprezece, bine. Unde e masa? În pivniță?", "lit": "la | unsprezece | bine | unde | stă | (art.) | masa | în (+art.) | pivniță" },
+      { "id": "d9", "speaker": "J", "de": "Ja, im Keller, neben meinem Fahrrad.", "ro": "Da, în pivniță, lângă bicicleta mea.", "lit": "da | în (+art.) | pivniță | lângă | a mea | bicicletă" },
+      { "id": "d10", "speaker": "J", "de": "Und was machen Sie heute noch? Bei dem Wetter muss man raus!", "ro": "Și ce mai faceți azi? Pe vremea asta trebuie să ieși afară!", "lit": "și | ce | faceți | dvs. | azi | încă | la | (art.) | vremea | trebuie | cineva | afară" },
+      { "id": "d11", "speaker": "V", "de": "Wir wollen zum Hafen. Wie kommen wir dahin?", "ro": "Vrem să mergem la port. Cum ajungem acolo?", "lit": "noi | vrem | la (+art.) | port | cum | ajungem | noi | acolo" },
+      { "id": "d12", "speaker": "J", "de": "Zu Fuß! Gehen Sie hier geradeaus und an der Kirche links. Das sind nur fünfzehn Minuten.", "ro": "Pe jos! Mergeți drept înainte pe aici și la biserică o luați la stânga. Sunt doar cincisprezece minute.", "lit": "pe | jos | mergeți | dvs. | aici | drept înainte | și | la | (art.) | biserică | stânga | asta | sunt | doar | cincisprezece | minute" },
+      { "id": "d13", "speaker": "A", "de": "Super. Und am Nachmittag müssen wir einkaufen. Ist der Supermarkt heute offen?", "ro": "Super. Și după-amiază trebuie să facem cumpărături. E deschis supermarketul azi?", "lit": "super | și | la (+art.) | după-amiază | trebuie | noi | a face cumpărături | e | (art.) | supermarketul | azi | deschis" },
+      { "id": "d14", "speaker": "J", "de": "Nein! Am Sonntag ist in Deutschland alles zu. Nur die Bäcker sind morgens offen.", "ro": "Nu! Duminica, în Germania, totul e închis. Doar brutăriile sunt deschise dimineața.", "lit": "nu | la (+art.) | duminică | e | în | Germania | totul | închis | doar | (art.) | brutarii | sunt | dimineața | deschiși" },
+      { "id": "d15", "speaker": "V", "de": "Oh nein! Wir haben keine Milch und kein Brot.", "ro": "O, nu! N-avem nici lapte, nici pâine.", "lit": "o | nu | noi | avem | niciun | lapte | și | nicio | pâine" },
+      { "id": "d16", "speaker": "J", "de": "Keine Sorge. Ich habe Milch für Sie. Und Brötchen gibt es beim Bäcker an der Ecke.", "ro": "Nicio grijă. Am lapte pentru dumneavoastră. Iar chifle găsiți la brutăria din colț.", "lit": "nicio | grijă | eu | am | lapte | pentru | dvs. | și | chifle | dă | (asta) | la (+art.) | brutar | la | (art.) | colț" },
+      { "id": "d17", "speaker": "A", "de": "Frau Jensen, Sie sind die beste Nachbarin!", "ro": "Doamnă Jensen, sunteți cea mai bună vecină!", "lit": "doamnă |  | dvs. | sunteți | (art.) | cea mai bună | vecină" },
+      { "id": "d18", "speaker": "J", "de": "Ach was! Bis um elf. Und vergessen Sie nicht: leise im Treppenhaus!", "ro": "Ei, aș! Pe la unsprezece. Și nu uitați: încet pe scară!", "lit": "a | ce | până | la | unsprezece | și | uitați | dvs. | nu | încet | în (+art.) | scară-casă" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Heute scheint die Sonne.", "ro": "Azi e soare.", "lit": "azi | strălucește | (art.) | soarele" },
+    { "id": "p2", "de": "Funktioniert die Heizung wieder?", "ro": "Merge iar caloriferul?", "lit": "funcționează | (art.) | încălzirea | din nou" },
+    { "id": "p3", "de": "Ist das nicht zu laut?", "ro": "Nu e prea zgomotos?", "lit": "e | asta | nu | prea | zgomotos" },
+    { "id": "p4", "de": "Sie lernen schnell!", "ro": "Învățați repede!", "lit": "dvs. | învățați | repede" },
+    { "id": "p5", "de": "Am Sonntag ist alles zu.", "ro": "Duminica totul e închis.", "lit": "la (+art.) | duminică | e | totul | închis", "note": "Duminica magazinele sunt închise în toată Germania. Deschise rămân brutăriile (dimineața), benzinăriile și magazinele din gări." },
+    { "id": "p6", "de": "Wie kommen wir dahin?", "ro": "Cum ajungem acolo?", "lit": "cum | ajungem | noi | acolo" },
+    { "id": "p7", "de": "beim Bäcker an der Ecke", "ro": "la brutăria din colț", "lit": "la (+art.) | brutar | la | (art.) | colț" },
+    { "id": "p8", "de": "Vergessen Sie nicht …", "ro": "Nu uitați …", "lit": "uitați | dvs. | nu | …" },
+    { "id": "p9", "de": "Ach was!", "ro": "Ei, aș! / Lasă!", "lit": "a | ce", "note": "Răspuns modest la un compliment." }
+  ],
+  "grammar": {
+    "title": "Recapitulare: locuința, locul și verbele modale",
+    "explanation": [
+      "**Es gibt** + acuzativ și negația **kein**: Es gibt **keinen** Balkon. Wir haben **keine** Milch und **kein** Brot.",
+      "**Wo?** + dativ după prepozițiile de loc: **im** Keller, **neben dem** Fahrrad, **an der** Ecke. **Wohin?** cu **zu**: **zum** Hafen, **zur** Post; și **nach Hause**.",
+      "**mit** + dativ pentru transport: mit **dem** Bus, mit **der** Bahn. Excepția: **zu Fuß**.",
+      "Verbele modale: **können**, **möchten** (știute), plus **müssen** (a trebui) și **wollen** (a vrea). Toate: modalul pe locul 2, infinitivul la final. La ich și er, fără terminație: ich **muss**, er **will**. Și nu uita: **nicht müssen** = nu e nevoie.",
+      "**Imperativul cu Sie**: verbul + Sie: **Kommen Sie** um elf! **Vergessen Sie** nicht …! Vremea se spune cu **es**: **Es** regnet. **Es** ist kalt."
+    ],
+    "tables": [
+      {
+        "caption": "Verbele modale",
+        "audio": "conjugation",
+        "headers": ["", "können", "müssen", "wollen", "möchten"],
+        "rows": [
+          ["ich", "kann", "muss", "will", "möchte"],
+          ["du", "kannst", "musst", "willst", "möchtest"],
+          ["er / sie / es", "kann", "muss", "will", "möchte"],
+          ["wir", "können", "müssen", "wollen", "möchten"],
+          ["ihr", "könnt", "müsst", "wollt", "möchtet"],
+          ["sie / Sie", "können", "müssen", "wollen", "möchten"]
+        ]
+      },
+      {
+        "caption": "Dativul, pe scurt",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["im Keller (in + dem)", "în pivniță"],
+          ["neben dem Fahrrad", "lângă bicicletă"],
+          ["an der Ecke", "la colț"],
+          ["zum Hafen (zu + dem)", "la port"],
+          ["zur Post (zu + der)", "la poștă"],
+          ["mit dem Bus", "cu autobuzul"],
+          ["mit der Bahn", "cu trenul"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Es gibt **keinen** Balkon.", "ro": "Nu e balcon." },
+      { "de": "Der Tisch steht **im** Keller.", "ro": "Masa e în pivniță." },
+      { "de": "Wir wollen **zum** Hafen.", "ro": "Vrem să mergem la port." },
+      { "de": "Am Nachmittag **müssen** wir **einkaufen**.", "ro": "După-amiază trebuie să facem cumpărături." },
+      { "de": "**Kommen Sie** um elf!", "ro": "Veniți la unsprezece!" },
+      { "de": "Heute **scheint** die Sonne.", "ro": "Azi e soare." }
+    ],
+    "tip": "Testul săptămânii: descrie-ți locuința în 6–8 propoziții (camere, mobilă, ce lipsește, unde e fiecare lucru) și spune cum ajungi de acasă la muncă. Înregistrează-te și ascultă. Compară cu înregistrările din săptămânile trecute."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Cum e vremea azi?", "audio": "d1", "options": ["Plouă", "E soare", "Ninge"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Ce e nou cu caloriferul?", "audio": "d4", "options": ["Tot nu merge", "Merge din nou", "Tehnicianul vine mâine"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "La ce oră vin după masă?", "audio": "d7", "options": ["La 10", "La 11", "La 12"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Unde e masa?", "audio": "d9", "options": ["În pivniță, lângă bicicletă", "În hol", "În bucătăria doamnei Jensen"], "answer": 0 },
+    { "type": "mcq", "id": "e5", "question": "Cât durează pe jos până la port?", "audio": "d12", "options": ["5 minute", "15 minute", "50 de minute"], "answer": 1 },
+    { "type": "mcq", "id": "e6", "question": "Ce e deschis duminica dimineața?", "audio": "d14", "options": ["Supermarketul", "Brutăriile", "Totul"], "answer": 1 },
+    { "type": "gap", "id": "e7", "text": "Es gibt ___ Balkon. (niciun)", "answers": [["keinen"]], "ro": "Nu e balcon." },
+    { "type": "gap", "id": "e8", "text": "Der Tisch steht ___ Keller. (in + dem)", "answers": [["im"]], "ro": "Masa e în pivniță." },
+    { "type": "gap", "id": "e9", "text": "Wir wollen ___ Hafen. (zu + dem)", "answers": [["zum"]], "ro": "Vrem să mergem la port." },
+    { "type": "gap", "id": "e10", "text": "Ich fahre mit ___ Bus.", "answers": [["dem"]], "ro": "Merg cu autobuzul." },
+    { "type": "gap", "id": "e11", "text": "Am Nachmittag ___ wir einkaufen. (müssen)", "answers": [["müssen"]], "ro": "După-amiază trebuie să facem cumpărături." },
+    { "type": "gap", "id": "e12", "text": "___ Sie um elf! (kommen)", "answers": [["Kommen"]], "ro": "Veniți la unsprezece!" },
+    { "type": "gap", "id": "e13", "text": "Heute ___ die Sonne.", "answers": [["scheint"]], "ro": "Azi e soare." },
+    { "type": "order", "id": "e14", "ro": "Duminica totul e închis.", "answer": "Am Sonntag ist alles zu." },
+    { "type": "order", "id": "e15", "ro": "Cum ajungem acolo?", "answer": "Wie kommen wir dahin?" },
+    { "type": "dictation", "id": "e16", "audio": "d4", "text": "Ja, alles funktioniert wieder. Jetzt ist es warm in der Wohnung.", "ro": "Da, totul merge din nou. Acum e cald în locuință." },
+    { "type": "dictation", "id": "e17", "audio": "d15", "text": "Oh nein! Wir haben keine Milch und kein Brot.", "ro": "O, nu! N-avem nici lapte, nici pâine." }
+  ],
+  "speaking": {
+    "scenario": "Recapitulare mare: o duminică în orașul tău. Întâlnești o vecină, apoi te sună o colegă cu un plan.",
+    "claudeRole": "Joci pe rând două personaje: (1) Frau Jensen, vecina în vârstă (Sie): întreabă cum e locuința, dacă s-a stricat ceva, ce planuri are elevul azi; explică ce e închis duminica; (2) apoi Kasia la telefon (du): vrea să mergeți la port sau la plimbare; vorbiți despre vreme, haine și cum ajungeți (mit dem Bus, zu Fuß). Anunță schimbarea personajului între paranteze. Folosește materialul săptămânii 3.",
+    "tasks": [
+      "Descrie-ți locuința (es gibt, kein, camere, mobilă)",
+      "Spune unde sunt câteva lucruri (im, auf dem, neben der …)",
+      "Spune ce trebuie și ce vrei să faci azi (müssen, wollen)",
+      "Întreabă sau explică un drum (zum / zur, geradeaus, links)",
+      "Vorbește despre vreme și despre ce îți pui pe tine"
+    ],
+    "starter": "(Frau Jensen, vor dem Haus) Moin! Heute scheint ja endlich die Sonne. Und, wie gefällt Ihnen die Wohnung?"
+  }
+}

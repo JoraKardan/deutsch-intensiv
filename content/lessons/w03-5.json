@@ -1,0 +1,133 @@
+{
+  "id": "w03-5",
+  "week": 3,
+  "day": 5,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Wie komme ich zum Hafen?",
+  "titleRo": "Cum ajung la port?",
+  "goals": [
+    "să întrebi drumul și să înțelegi indicațiile (geradeaus, links, rechts)",
+    "să folosești zum și zur (zu + dativ)",
+    "să deosebești wo? (unde) de wohin? (încotro)",
+    "să spui nach Hause și zu Hause"
+  ],
+  "intro": "Vineri, înainte de tură, Radu și Valy merg în port: acolo îi așteaptă Kasia și Ole la un chioșc cu Fischbrötchen. Dar nu știu drumul. Azi înveți să întrebi drumul și să înțelegi indicațiile. **Wie komme ich zum Hafen?** Prepoziția **zu** cere dativul: zu + dem = **zum**, zu + der = **zur**. Mai înveți diferența dintre **wo?** (unde) și **wohin?** (încotro).",
+  "dialog": {
+    "title": "Der Weg zum Hafen",
+    "situation": "Vineri, ora 11:30. Radu și Valy merg spre port, unde se întâlnesc cu Kasia și Ole la un chioșc. Nu știu drumul și întreabă o trecătoare.",
+    "speakers": {
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "P": { "name": "Passantin", "voice": "de-DE-ElkeNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "V", "de": "Radu, wo sind wir? Ich sehe den Hafen nicht.", "ro": "Radu, unde suntem? Nu văd portul.", "lit": " | unde | suntem | noi | eu | văd | (art.) | portul | nu" },
+      { "id": "d2", "speaker": "A", "de": "Keine Ahnung. Ich frage mal. – Entschuldigung, wie komme ich zum Hafen?", "ro": "Habar n-am. Întreb pe cineva. – Scuzați, cum ajung la port?", "lit": "nicio | idee | eu | întreb | (puțin) | – | scuzați | cum | ajung | eu | la (+art.) | port" },
+      { "id": "d3", "speaker": "P", "de": "Zum Hafen? Das ist nicht weit. Gehen Sie hier geradeaus.", "ro": "La port? Nu e departe. Mergeți drept înainte pe aici.", "lit": "la (+art.) | port | asta | e | nu | departe | mergeți | dvs. | aici | drept înainte" },
+      { "id": "d4", "speaker": "A", "de": "Geradeaus, okay. Und dann?", "ro": "Drept înainte, bine. Și apoi?", "lit": "drept înainte | ok | și | apoi" },
+      { "id": "d5", "speaker": "P", "de": "An der Ampel gehen Sie links. Dann die zweite Straße rechts.", "ro": "La semafor o luați la stânga. Apoi a doua stradă la dreapta.", "lit": "la | (art.) | semafor | mergeți | dvs. | stânga | apoi | (art.) | a doua | stradă | dreapta" },
+      { "id": "d6", "speaker": "V", "de": "Moment, langsam bitte. An der Ampel links, dann die zweite rechts?", "ro": "Stați, mai încet, vă rog. La semafor la stânga, apoi a doua la dreapta?", "lit": "moment | încet | vă rog | la | (art.) | semafor | stânga | apoi | (art.) | a doua | dreapta" },
+      { "id": "d7", "speaker": "P", "de": "Genau. Dann sehen Sie schon das Wasser und die Schiffe.", "ro": "Exact. Apoi vedeți deja apa și vapoarele.", "lit": "exact | apoi | vedeți | dvs. | deja | (art.) | apa | și | (art.) | vapoarele" },
+      { "id": "d8", "speaker": "A", "de": "Und wie lange brauchen wir zu Fuß?", "ro": "Și cât facem pe jos?", "lit": "și | cât | lung | avem nevoie | noi | pe | jos" },
+      { "id": "d9", "speaker": "P", "de": "Zehn Minuten, vielleicht. Wohin gehen Sie denn?", "ro": "Vreo zece minute. Și unde mergeți, mai exact?", "lit": "zece | minute | poate | încotro | mergeți | dvs. | (oare)" },
+      { "id": "d10", "speaker": "V", "de": "Zum Imbiss „Hafenblick“. Kennen Sie den?", "ro": "La chioșcul „Hafenblick”. Îl știți?", "lit": "la (+art.) | chioșc |  | cunoașteți | dvs. | pe acela" },
+      { "id": "d11", "speaker": "P", "de": "Ja, natürlich! Der Imbiss ist direkt am Wasser, neben der Brücke. Die Fischbrötchen sind super!", "ro": "Da, sigur! Chioșcul e chiar lângă apă, lângă pod. Chiflele cu pește sunt super!", "lit": "da | firește | (art.) | chioșcul | e | chiar | la (+art.) | apă | lângă | (art.) | pod | (art.) | pește-chiflele | sunt | super" },
+      { "id": "d12", "speaker": "A", "de": "Super, vielen Dank! Und wo ist hier eine Apotheke?", "ro": "Super, mulțumesc mult! Și unde e o farmacie pe aici?", "lit": "super | multe | mulțumiri | și | unde | e | aici | o | farmacie" },
+      { "id": "d13", "speaker": "P", "de": "Die Apotheke? Gleich da drüben, gegenüber vom Bäcker.", "ro": "Farmacia? Imediat acolo, peste drum, vizavi de brutărie.", "lit": "(art.) | farmacia | imediat | acolo | peste drum | vizavi | de la (+art.) | brutar" },
+      { "id": "d14", "speaker": "V", "de": "Danke schön! Schönen Tag noch!", "ro": "Mulțumim frumos! O zi bună în continuare!", "lit": "mulțumesc | frumos | frumoasă | zi | încă" },
+      { "id": "d15", "speaker": "P", "de": "Gern geschehen! Und guten Appetit!", "ro": "Cu plăcere! Și poftă bună!", "lit": "cu plăcere | întâmplat | și | bună | poftă" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Wie komme ich zum Hafen?", "ro": "Cum ajung la port?", "lit": "cum | ajung | eu | la (+art.) | port", "note": "kommen = aici „a ajunge”." },
+    { "id": "p2", "de": "Ist das weit?", "ro": "E departe?", "lit": "e | asta | departe" },
+    { "id": "p3", "de": "Gehen Sie geradeaus.", "ro": "Mergeți drept înainte.", "lit": "mergeți | dvs. | drept înainte" },
+    { "id": "p4", "de": "An der Ampel links.", "ro": "La semafor la stânga.", "lit": "la | (art.) | semafor | stânga" },
+    { "id": "p5", "de": "die zweite Straße rechts", "ro": "a doua stradă la dreapta", "lit": "(art.) | a doua | stradă | dreapta" },
+    { "id": "p6", "de": "Wie lange brauchen wir zu Fuß?", "ro": "Cât facem pe jos?", "lit": "cât | lung | avem nevoie | noi | pe | jos" },
+    { "id": "p7", "de": "zehn Minuten zu Fuß", "ro": "zece minute pe jos", "lit": "zece | minute | pe | jos" },
+    { "id": "p8", "de": "Wohin gehen Sie?", "ro": "Unde mergeți?", "lit": "încotro | mergeți | dvs." },
+    { "id": "p9", "de": "Kennen Sie den?", "ro": "Îl știți?", "lit": "cunoașteți | dvs. | pe acela" },
+    { "id": "p10", "de": "direkt am Wasser", "ro": "chiar lângă apă", "lit": "chiar | la (+art.) | apă" },
+    { "id": "p11", "de": "Wo ist hier eine Apotheke?", "ro": "Unde e o farmacie pe aici?", "lit": "unde | e | aici | o | farmacie" },
+    { "id": "p12", "de": "gleich da drüben", "ro": "imediat acolo, peste drum", "lit": "imediat | acolo | peste drum" },
+    { "id": "p13", "de": "gegenüber vom Bäcker", "ro": "vizavi de brutărie", "lit": "vizavi | de la (+art.) | brutar" },
+    { "id": "p14", "de": "Keine Ahnung.", "ro": "Habar n-am.", "lit": "nicio | idee" },
+    { "id": "p15", "de": "Gern geschehen!", "ro": "Cu plăcere! (ca răspuns la „mulțumesc”)", "lit": "cu plăcere | întâmplat" }
+  ],
+  "grammar": {
+    "title": "zum / zur. Wo? sau Wohin?",
+    "explanation": [
+      "**Wie komme ich zum …?** e întrebarea pentru drum. **zu** = la, spre (un loc, o clădire, o persoană) și cere **dativul**: zu + dem = **zum** (der / das: zum Hafen, zum Rathaus), zu + der = **zur** (die: zur Post, zur Apotheke).",
+      "**Wo?** = unde (locul, fără mișcare): **Wo** ist der Hafen? **Wohin?** = încotro (direcția, cu mișcare): **Wohin** gehen Sie? – **Zum** Hafen. **Woher?** = de unde (ai învățat deja: Woher kommst du?).",
+      "Două expresii fixe: **nach Hause** = spre casă (wohin?): Ich gehe nach Hause. **zu Hause** = acasă (wo?): Ich bin zu Hause. Cu orașe și țări folosești **nach**: nach Hamburg, nach Polen.",
+      "Indicațiile de drum: **geradeaus** (drept înainte), **links** (stânga), **rechts** (dreapta), **die erste / zweite Straße** (prima / a doua stradă), **an der Ampel** (la semafor), **an der Kreuzung** (la intersecție), **gegenüber** (vizavi), **da drüben** (acolo, peste drum).",
+      "Imperativul cu Sie din lecția trecută apare peste tot în indicații: **Gehen Sie** geradeaus! **Nehmen Sie** den Bus!"
+    ],
+    "tables": [
+      {
+        "caption": "zum sau zur?",
+        "audio": [0, 1],
+        "headers": ["substantivul", "cu zu", "română"],
+        "rows": [
+          ["der Hafen", "**zum** Hafen", "la port"],
+          ["der Bahnhof", "**zum** Bahnhof", "la gară"],
+          ["das Rathaus", "**zum** Rathaus", "la primărie"],
+          ["die Post", "**zur** Post", "la poștă"],
+          ["die Apotheke", "**zur** Apotheke", "la farmacie"],
+          ["die Arbeit", "**zur** Arbeit", "la muncă"]
+        ]
+      },
+      {
+        "caption": "Wo? Wohin? Woher?",
+        "audio": [1],
+        "headers": ["întrebarea", "exemplu", "română"],
+        "rows": [
+          ["Wo? (unde)", "Wo ist der Hafen?", "Unde e portul?"],
+          ["Wohin? (încotro)", "Wohin gehst du? – Zum Bäcker.", "Unde mergi? – La brutărie."],
+          ["Woher? (de unde)", "Woher kommst du? – Aus Moldau.", "De unde ești? – Din Moldova."],
+          ["Wohin?", "Ich gehe nach Hause.", "Merg acasă."],
+          ["Wo?", "Ich bin zu Hause.", "Sunt acasă."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Wie komme ich **zum** Bahnhof?", "ro": "Cum ajung la gară?" },
+      { "de": "Ich gehe **zur** Apotheke.", "ro": "Merg la farmacie." },
+      { "de": "**Wo** ist die Post?", "ro": "Unde e poșta?" },
+      { "de": "**Wohin** fährt der Bus?", "ro": "Încotro merge autobuzul?" },
+      { "de": "Gehen Sie **geradeaus** und dann **links**.", "ro": "Mergeți drept înainte și apoi la stânga." },
+      { "de": "Valy fährt **nach Hause**.", "ro": "Valy merge acasă." }
+    ],
+    "tip": "Când primești indicații, **repetă-le cu voce tare** sub formă de întrebare, cum face Valy: „An der Ampel links, dann die zweite rechts?” Așa verifici că ai înțeles, iar omul te corectează dacă e cazul. Nemții apreciază asta."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Cum e drumul până la port?", "audio": "d3", "options": ["Departe, cu autobuzul", "Nu e departe, drept înainte", "Doar cu taxiul"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Ce fac la semafor?", "audio": "d5", "options": ["O iau la dreapta", "O iau la stânga", "Merg drept"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Cât durează pe jos?", "audio": "d9", "options": ["5 minute", "10 minute", "20 de minute"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Unde e farmacia?", "audio": "d13", "options": ["Lângă port", "Vizavi de brutărie", "Lângă gară"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Wie komme ich ___ Bahnhof? (der Bahnhof)", "answers": [["zum"]], "ro": "Cum ajung la gară?" },
+    { "type": "gap", "id": "e6", "text": "Ich gehe ___ Post. (die Post)", "answers": [["zur"]], "ro": "Merg la poștă." },
+    { "type": "gap", "id": "e7", "text": "___ ist der Hafen? (unde)", "answers": [["Wo"]], "ro": "Unde e portul?" },
+    { "type": "gap", "id": "e8", "text": "___ gehst du? – Zum Bäcker. (încotro)", "answers": [["Wohin"]], "ro": "Unde mergi? – La brutărie." },
+    { "type": "gap", "id": "e9", "text": "Gehen Sie ___. (drept înainte)", "answers": [["geradeaus"]], "ro": "Mergeți drept înainte." },
+    { "type": "mcq", "id": "e10", "question": "Care e corect?", "options": ["Ich gehe zur Hause.", "Ich gehe nach Hause.", "Ich gehe zum Hause."], "answer": 1, "explain": "Spre casă: nach Hause. Acasă (fără mișcare): zu Hause." },
+    { "type": "order", "id": "e11", "ro": "Cum ajung la port?", "answer": "Wie komme ich zum Hafen?" },
+    { "type": "order", "id": "e12", "ro": "Unde e o farmacie pe aici?", "answer": "Wo ist hier eine Apotheke?" },
+    { "type": "dictation", "id": "e13", "audio": "d5", "text": "An der Ampel gehen Sie links. Dann die zweite Straße rechts.", "ro": "La semafor o luați la stânga. Apoi a doua stradă la dreapta." },
+    { "type": "dictation", "id": "e14", "audio": "p6", "text": "Wie lange brauchen wir zu Fuß?", "ro": "Cât facem pe jos?" }
+  ],
+  "speaking": {
+    "scenario": "Ești în centrul unui oraș german și cauți câteva locuri: gara, o farmacie, poșta, portul.",
+    "claudeRole": "Ești un trecător amabil din Flensburg. Vorbești formal (Sie). Dai indicații clare, dar destul de repede, cu geradeaus, links, rechts, an der Ampel, die erste / zweite Straße, gegenüber, da drüben, zu Fuß … Minuten. Elevul trebuie să ceară repetare și să verifice. O dată îl trimiți spre „zum Bahnhof” când a întrebat de „zur Post”, ca să te corecteze.",
+    "tasks": [
+      "Întreabă drumul spre cel puțin 2 locuri (Wie komme ich zum / zur …?)",
+      "Repetă indicațiile ca să verifici că ai înțeles",
+      "Întreabă cât durează pe jos",
+      "Folosește corect zum și zur",
+      "Mulțumește și încheie politicos"
+    ],
+    "starter": "Kann ich Ihnen helfen? Suchen Sie etwas?"
+  }
+}

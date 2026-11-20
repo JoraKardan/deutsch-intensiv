@@ -1,0 +1,131 @@
+{
+  "id": "w03-2",
+  "week": 3,
+  "day": 2,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Wo ist …?",
+  "titleRo": "Unde este …?",
+  "goals": [
+    "să întrebi unde e un obiect și să înțelegi răspunsul",
+    "să folosești prepozițiile de loc: in, auf, unter, neben, vor, hinter, zwischen, an",
+    "să pui articolul la dativ după ele: dem, der, dem, den",
+    "să recunoști contracțiile im și am"
+  ],
+  "intro": "Marți, înainte de tura de după-amiază, Radu nu-și găsește lucrurile. Ți se întâmplă și ție? Azi înveți să spui **unde** e ceva: pe canapea, sub pat, lângă ușă. După prepozițiile de loc, la întrebarea **Wo?** (unde?), articolul trece la **dativ**: der → **dem**, die → **der**, das → **dem**. Vestea bună: în vorbire auzi foarte des formele scurte **im** și **am**, iar contextul te ajută.",
+  "dialog": {
+    "title": "Wo ist mein Schlüssel?",
+    "situation": "Marți, ora 13:30. Radu și Valy pleacă spre tura de după-amiază, dar Radu nu-și găsește lucrurile.",
+    "speakers": {
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "A", "de": "Valy, wo ist mein Schlüssel? Ich finde ihn nicht!", "ro": "Valy, unde e cheia mea? N-o găsesc!", "lit": " | unde | e | al meu | cheie | eu | găsesc | pe el | nu" },
+      { "id": "d2", "speaker": "V", "de": "Ist er nicht in der Jacke?", "ro": "Nu e în geacă?", "lit": "e | el | nu | în | (art.) | geacă" },
+      { "id": "d3", "speaker": "A", "de": "Nein, in der Jacke ist nur mein Handy.", "ro": "Nu, în geacă e doar telefonul meu.", "lit": "nu | în | (art.) | geacă | e | doar | al meu | telefon" },
+      { "id": "d4", "speaker": "V", "de": "Dann schau mal im Flur, neben der Tür.", "ro": "Atunci uită-te în hol, lângă ușă.", "lit": "atunci | uită-te | (puțin) | în (+art.) | hol | lângă | (art.) | ușă" },
+      { "id": "d5", "speaker": "A", "de": "Nichts. Und mein Ausweis für die Arbeit ist auch weg!", "ro": "Nimic. Și legitimația de la muncă a dispărut și ea!", "lit": "nimic | și | al meu | legitimație | pentru | (art.) | muncă | e | și | dus" },
+      { "id": "d6", "speaker": "V", "de": "Ruhig, Radu. Wir haben noch Zeit. Der Bus kommt erst um Viertel vor zwei.", "ro": "Liniștește-te, Radu. Mai avem timp. Autobuzul vine abia la două fără un sfert.", "lit": "liniștit |  | noi | avem | încă | timp | (art.) | autobuzul | vine | abia | la | sfert | înainte de | două" },
+      { "id": "d7", "speaker": "A", "de": "Okay. Liegt der Ausweis vielleicht unter dem Sofa?", "ro": "Bine. Poate e legitimația sub canapea?", "lit": "ok | stă (culcat) | (art.) | legitimația | poate | sub | (art.) | canapea" },
+      { "id": "d8", "speaker": "V", "de": "Warte … Ja! Hier ist er, unter dem Sofa. Und der Schlüssel ist auch da!", "ro": "Stai… Da! Aici e, sub canapea. Și cheia e tot aici!", "lit": "așteaptă | … | da | aici | e | el | sub | (art.) | canapea | și | (art.) | cheia | e | și | aici" },
+      { "id": "d9", "speaker": "A", "de": "Super! Und wo sind meine Arbeitsschuhe?", "ro": "Super! Și unde sunt încălțările mele de lucru?", "lit": "super | și | unde | sunt | ale mele | muncă-pantofi" },
+      { "id": "d10", "speaker": "V", "de": "Die sind doch in der Fabrik, im Spind!", "ro": "Păi sunt la fabrică, în dulăpior!", "lit": "acelea | sunt | (doar) | în | (art.) | fabrică | în (+art.) | dulăpior" },
+      { "id": "d11", "speaker": "A", "de": "Ach ja, stimmt. Und mein Handy?", "ro": "A, da, așa e. Și telefonul meu?", "lit": "a | da | corect | și | al meu | telefon" },
+      { "id": "d12", "speaker": "V", "de": "Radu! Das Handy ist in deiner Hand!", "ro": "Radu! Telefonul e în mâna ta!", "lit": " | (art.) | telefonul | e | în | a ta | mână" },
+      { "id": "d13", "speaker": "A", "de": "Oh … Okay. Gehen wir!", "ro": "O… Bine. Hai să mergem!", "lit": "o | … | ok | mergem | noi" },
+      { "id": "d14", "speaker": "V", "de": "Moment! Wo ist jetzt mein Schlüssel?", "ro": "Stai! Unde e acum cheia mea?", "lit": "moment | unde | e | acum | al meu | cheie" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Wo ist mein Schlüssel?", "ro": "Unde e cheia mea?", "lit": "unde | e | al meu | cheie", "note": "der Schlüssel e masculin în germană (în română: cheia)." },
+    { "id": "p2", "de": "Ich finde ihn nicht.", "ro": "N-o găsesc.", "lit": "eu | găsesc | pe el | nu", "note": "ihn = pe el (pentru un substantiv masculin)." },
+    { "id": "p3", "de": "Er liegt auf dem Sofa.", "ro": "E pe canapea.", "lit": "el | stă (culcat) | pe | (art.) | canapea" },
+    { "id": "p4", "de": "Schau mal im Flur!", "ro": "Uită-te în hol!", "lit": "uită-te | (puțin) | în (+art.) | hol" },
+    { "id": "p5", "de": "neben der Tür", "ro": "lângă ușă", "lit": "lângă | (art.) | ușă" },
+    { "id": "p6", "de": "unter dem Sofa", "ro": "sub canapea", "lit": "sub | (art.) | canapea" },
+    { "id": "p7", "de": "in der Jacke", "ro": "în geacă", "lit": "în | (art.) | geacă" },
+    { "id": "p8", "de": "Mein Ausweis ist weg!", "ro": "Mi-a dispărut legitimația!", "lit": "al meu | legitimație | e | dus", "note": "weg = dispărut, plecat. Ich bin weg! = Am plecat!" },
+    { "id": "p9", "de": "Ruhig!", "ro": "Liniștește-te! / Calm!" },
+    { "id": "p10", "de": "Wir haben noch Zeit.", "ro": "Mai avem timp.", "lit": "noi | avem | încă | timp" },
+    { "id": "p11", "de": "Hier ist er!", "ro": "Aici e!", "lit": "aici | e | el" },
+    { "id": "p12", "de": "Ach ja, stimmt.", "ro": "A, da, așa e.", "lit": "a | da | corect" },
+    { "id": "p13", "de": "Die sind im Spind.", "ro": "Sunt în dulăpior.", "lit": "acelea | sunt | în (+art.) | dulăpior", "note": "der Spind = dulăpiorul personal din vestiar." },
+    { "id": "p14", "de": "Gehen wir!", "ro": "Hai să mergem!", "lit": "mergem | noi" },
+    { "id": "p15", "de": "Warte mal!", "ro": "Stai puțin!", "lit": "așteaptă | (puțin)" }
+  ],
+  "grammar": {
+    "title": "Prepozițiile de loc + dativ (Wo?)",
+    "explanation": [
+      "La întrebarea **Wo?** (unde?) răspunzi cu o prepoziție de loc: **in** (în), **auf** (pe), **unter** (sub), **neben** (lângă), **vor** (în fața), **hinter** (în spatele), **zwischen** (între), **an** (la, lipit de: perete, fereastră, ușă).",
+      "După aceste prepoziții, la **Wo?**, articolul trece la **dativ**: **der → dem**, **die → der**, **das → dem**, iar pluralul **die → den** (și substantivul primește **-n**). Der Tisch → auf **dem** Tisch. Die Tür → neben **der** Tür. Das Sofa → unter **dem** Sofa.",
+      "Contracții foarte frecvente: **in + dem = im** (im Flur, im Keller), **an + dem = am** (am Fenster, am Hafen). De aceea ai auzit deja „im Büro” și „am Hafen”.",
+      "Verbele de poziție: **liegen** (a sta culcat: chei, telefon, acte), **stehen** (a sta în picioare: lampă, dulap, sticlă). **sein** merge oricând: dacă nu ești sigur, spune **ist**.",
+      "Cu **Wohin?** (încotro?), aceleași prepoziții cer acuzativ. Asta vine mai târziu (săptămâna 6). Deocamdată: **Wo? + dativ**."
+    ],
+    "tables": [
+      {
+        "caption": "Articolul la dativ (răspuns la Wo?)",
+        "audio": [1, 2, 3, 4],
+        "headers": ["", "masculin", "feminin", "neutru", "plural"],
+        "rows": [
+          ["nominativ", "der Tisch", "die Tür", "das Sofa", "die Schuhe"],
+          ["dativ", "auf **dem** Tisch", "neben **der** Tür", "unter **dem** Sofa", "in **den** Schuhen"]
+        ]
+      },
+      {
+        "caption": "Prepozițiile de loc",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["**in** der Küche", "în bucătărie"],
+          ["**auf** dem Tisch", "pe masă"],
+          ["**unter** dem Sofa", "sub canapea"],
+          ["**neben** der Tür", "lângă ușă"],
+          ["**vor** dem Haus", "în fața casei"],
+          ["**hinter** dem Schrank", "în spatele dulapului"],
+          ["**zwischen** dem Bett und dem Schrank", "între pat și dulap"],
+          ["**im** Flur (in + dem)", "în hol"],
+          ["**am** Fenster (an + dem)", "la fereastră"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Der Schlüssel liegt **auf dem** Sofa.", "ro": "Cheia e pe canapea." },
+      { "de": "Das Handy ist **in der** Jacke.", "ro": "Telefonul e în geacă." },
+      { "de": "Die Schuhe sind **im** Spind.", "ro": "Încălțările sunt în dulăpior." },
+      { "de": "Der Bus wartet **vor dem** Haus.", "ro": "Autobuzul așteaptă în fața casei." },
+      { "de": "Die Lampe steht **neben dem** Bett.", "ro": "Lampa e lângă pat." },
+      { "de": "Wir arbeiten **in der** Fabrik.", "ro": "Lucrăm la fabrică." }
+    ],
+    "tip": "Joc pentru acasă: ia 5 obiecte (cheia, telefonul, o carte, o cană, o pungă) și pune-le în locuri diferite. Spune cu voce tare unde e fiecare: „Das Handy liegt auf dem Bett.” Apoi mută-le și repetă."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Ce e în geaca lui Radu?", "audio": "d3", "options": ["Cheia", "Telefonul", "Legitimația"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Când vine autobuzul?", "audio": "d6", "options": ["La 13:45", "La 14:15", "La 13:30"], "answer": 0, "explain": "Viertel vor zwei = două fără un sfert = 13:45." },
+    { "type": "mcq", "id": "e3", "question": "Unde e legitimația?", "audio": "d8", "options": ["În hol", "Sub canapea", "În geacă"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Unde sunt încălțările de lucru?", "audio": "d10", "options": ["Acasă, lângă ușă", "La fabrică, în dulăpior", "În autobuz"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Der Schlüssel liegt auf ___ Sofa.", "answers": [["dem"]], "ro": "Cheia e pe canapea." },
+    { "type": "gap", "id": "e6", "text": "Das Handy ist in ___ Jacke.", "answers": [["der"]], "ro": "Telefonul e în geacă." },
+    { "type": "gap", "id": "e7", "text": "Schau mal ___ Flur! (in + dem)", "answers": [["im"]], "ro": "Uită-te în hol!" },
+    { "type": "gap", "id": "e8", "text": "Der Ausweis liegt ___ dem Sofa. (sub)", "answers": [["unter"]], "ro": "Legitimația e sub canapea." },
+    { "type": "gap", "id": "e9", "text": "Die Lampe steht neben ___ Bett.", "answers": [["dem"]], "ro": "Lampa e lângă pat.", "hint": "das Bett → dativ" },
+    { "type": "mcq", "id": "e10", "question": "Care e corect?", "options": ["Der Schlüssel ist auf der Tisch.", "Der Schlüssel ist auf dem Tisch.", "Der Schlüssel ist auf den Tisch."], "answer": 1, "explain": "der Tisch → la întrebarea Wo? dativ: auf dem Tisch." },
+    { "type": "order", "id": "e11", "ro": "Uită-te în hol, lângă ușă.", "answer": "Schau mal im Flur, neben der Tür." },
+    { "type": "order", "id": "e12", "ro": "Mai avem timp.", "answer": "Wir haben noch Zeit." },
+    { "type": "dictation", "id": "e13", "audio": "d2", "text": "Ist er nicht in der Jacke?", "ro": "Nu e în geacă?" },
+    { "type": "dictation", "id": "e14", "audio": "p8", "text": "Mein Ausweis ist weg!", "ro": "Mi-a dispărut legitimația!" }
+  ],
+  "speaking": {
+    "scenario": "Ești acasă și nu-ți găsești lucrurile înainte de muncă. Cineva din casă te ajută să le cauți.",
+    "claudeRole": "Ești Valy, soția lui Radu, acasă, cu 15 minute înainte de plecarea la tură. Vorbești germană (e exercițiu), informal și simplu. Elevul caută 4–5 obiecte (cheie, telefon, portofel, legitimație, ochelari); tu pui întrebări și dai indicii cu prepoziții de loc și dativ (auf dem Tisch, unter dem Bett, neben der Tür, im Flur, am Fenster). O dată dă o indicație greșită, ca elevul să verifice.",
+    "tasks": [
+      "Întreabă unde sunt cel puțin 4 lucruri (Wo ist …? Wo sind …?)",
+      "Spune unde ai căutat deja (Nicht im Flur, nicht unter dem Bett …)",
+      "Folosește cel puțin 5 prepoziții diferite cu dativ",
+      "Folosește formele scurte im și am",
+      "Încheie: Gehen wir!"
+    ],
+    "starter": "Was suchst du denn? Wir müssen gleich los!"
+  }
+}

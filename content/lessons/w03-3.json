@@ -1,0 +1,134 @@
+{
+  "id": "w03-3",
+  "week": 3,
+  "day": 3,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Das ist kaputt!",
+  "titleRo": "S-a stricat!",
+  "goals": [
+    "să descrii o problemă în locuință (kaputt, funktioniert nicht, geht nicht)",
+    "să suni la administrator și să stabilești o oră",
+    "să conjugi verbul modal „müssen” (a trebui), cu infinitivul la final",
+    "să înțelegi capcana: „nicht müssen” = nu e nevoie"
+  ],
+  "intro": "E miercuri, în noiembrie, iar în locuință e frig: **caloriferul nu merge**. Radu sună la administrația clădirii. Azi înveți să descrii o problemă și verbul modal **müssen** (a trebui). Funcționează ca **können**: verbul principal merge la final. Ai grijă la o capcană: **nicht müssen** înseamnă „nu e nevoie”, nu „n-ai voie”.",
+  "dialog": {
+    "title": "Die Heizung ist kaputt",
+    "situation": "Miercuri dimineața. În locuință e frig. Radu sună la Herr Clausen, de la administrația clădirii (Hausverwaltung).",
+    "speakers": {
+      "C": { "name": "Herr Clausen", "voice": "de-DE-RalfNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "C", "de": "Clausen, Hausverwaltung. Guten Morgen.", "ro": "Clausen, administrația clădirii. Bună dimineața.", "lit": " | casă-administrare | bună | dimineața" },
+      { "id": "d2", "speaker": "A", "de": "Guten Morgen, Herr Clausen. Hier ist Radu Popescu aus der Friedrichstraße zwölf.", "ro": "Bună dimineața, domnule Clausen. Sunt Radu Popescu, de pe Friedrichstraße 12.", "lit": "bună | dimineața | domnule |  | aici | e |  |  | din | (art.) |  | doisprezece" },
+      { "id": "d3", "speaker": "C", "de": "Ja, Herr Popescu. Was kann ich für Sie tun?", "ro": "Da, domnule Popescu. Cu ce vă pot ajuta?", "lit": "da | domnule |  | ce | pot | eu | pentru | dvs. | face" },
+      { "id": "d4", "speaker": "A", "de": "Die Heizung ist kaputt. Es ist sehr kalt in der Wohnung.", "ro": "Caloriferul nu merge. E foarte frig în locuință.", "lit": "(art.) | încălzirea | e | stricată | (asta) | e | foarte | frig | în | (art.) | locuință" },
+      { "id": "d5", "speaker": "C", "de": "Oh. Seit wann ist die Heizung kaputt?", "ro": "O. De când nu merge caloriferul?", "lit": "o | de la | când | e | (art.) | încălzirea | stricată" },
+      { "id": "d6", "speaker": "A", "de": "Seit gestern Abend. Und das warme Wasser funktioniert auch nicht.", "ro": "De aseară. Și nici apa caldă nu merge.", "lit": "de la | ieri | seară | și | (art.) | caldă | apă | funcționează | nici | nu" },
+      { "id": "d7", "speaker": "C", "de": "Dann muss ein Techniker kommen. Sind Sie heute zu Hause?", "ro": "Atunci trebuie să vină un tehnician. Sunteți acasă azi?", "lit": "atunci | trebuie | un | tehnician | veni | sunteți | dvs. | azi | la | casă" },
+      { "id": "d8", "speaker": "A", "de": "Bis halb zwei, ja. Dann muss ich zur Arbeit.", "ro": "Până la unu și jumătate, da. Apoi trebuie să plec la muncă.", "lit": "până la | jumătate | două | da | apoi | trebuie | eu | la (+art.) | muncă" },
+      { "id": "d9", "speaker": "C", "de": "Gut. Der Techniker kommt um elf. Sie müssen nur die Tür aufmachen.", "ro": "Bine. Tehnicianul vine la unsprezece. Trebuie doar să-i deschideți ușa.", "lit": "bine | (art.) | tehnicianul | vine | la | unsprezece | dvs. | trebuie | doar | (art.) | ușa | deschide (auf-machen)" },
+      { "id": "d10", "speaker": "A", "de": "Um elf, okay. Muss ich etwas bezahlen?", "ro": "La unsprezece, bine. Trebuie să plătesc ceva?", "lit": "la | unsprezece | ok | trebuie | eu | ceva | plăti" },
+      { "id": "d11", "speaker": "C", "de": "Nein, das zahlt der Vermieter. Sie müssen nichts bezahlen.", "ro": "Nu, plătește proprietarul. Nu trebuie să plătiți nimic.", "lit": "nu | asta | plătește | (art.) | proprietarul | dvs. | trebuie | nimic | plăti" },
+      { "id": "d12", "speaker": "A", "de": "Gut. Und noch etwas: Das Fenster im Bad geht nicht zu.", "ro": "Bine. Și încă ceva: fereastra din baie nu se închide.", "lit": "bine | și | încă | ceva | (art.) | fereastra | în (+art.) | baie | merge… | nu | …(zu-gehen)" },
+      { "id": "d13", "speaker": "C", "de": "Ach, das Fenster klemmt oft. Der Techniker kann es auch reparieren.", "ro": "A, fereastra aia se blochează des. Tehnicianul o poate repara și pe ea.", "lit": "a | (art.) | fereastra | se blochează | des | (art.) | tehnicianul | poate | o | și | repara" },
+      { "id": "d14", "speaker": "A", "de": "Vielen Dank, Herr Clausen! Auf Wiederhören!", "ro": "Mulțumesc mult, domnule Clausen! La revedere!", "lit": "multe | mulțumiri | domnule |  | la | re-auzire" },
+      { "id": "d15", "speaker": "C", "de": "Gern. Auf Wiederhören!", "ro": "Cu plăcere. La revedere!", "lit": "cu plăcere | la | re-auzire" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Die Heizung ist kaputt.", "ro": "Caloriferul nu merge. / Încălzirea e stricată.", "lit": "(art.) | încălzirea | e | stricată" },
+    { "id": "p2", "de": "Es ist sehr kalt in der Wohnung.", "ro": "E foarte frig în locuință.", "lit": "(asta) | e | foarte | frig | în | (art.) | locuință" },
+    { "id": "p3", "de": "Das warme Wasser funktioniert nicht.", "ro": "Apa caldă nu merge.", "lit": "(art.) | caldă | apă | funcționează | nu" },
+    { "id": "p4", "de": "Das Licht geht nicht.", "ro": "Lumina nu merge.", "lit": "(art.) | lumina | merge | nu" },
+    { "id": "p5", "de": "Der Wasserhahn tropft.", "ro": "Robinetul picură.", "lit": "(art.) | apă-robinetul | picură" },
+    { "id": "p6", "de": "Das Fenster geht nicht zu.", "ro": "Fereastra nu se închide.", "lit": "(art.) | fereastra | merge… | nu | …(zu-gehen)" },
+    { "id": "p7", "de": "Seit wann?", "ro": "De când?", "lit": "de la | când" },
+    { "id": "p8", "de": "Seit gestern Abend.", "ro": "De aseară.", "lit": "de la | ieri | seară" },
+    { "id": "p9", "de": "Was kann ich für Sie tun?", "ro": "Cu ce vă pot ajuta?", "lit": "ce | pot | eu | pentru | dvs. | face" },
+    { "id": "p10", "de": "Ein Techniker muss kommen.", "ro": "Trebuie să vină un tehnician.", "lit": "un | tehnician | trebuie | veni" },
+    { "id": "p11", "de": "Ich muss zur Arbeit.", "ro": "Trebuie să plec la muncă.", "lit": "eu | trebuie | la (+art.) | muncă", "note": "Cu un loc, verbul „a merge” se poate omite: Ich muss nach Hause." },
+    { "id": "p12", "de": "Muss ich etwas bezahlen?", "ro": "Trebuie să plătesc ceva?", "lit": "trebuie | eu | ceva | plăti" },
+    { "id": "p13", "de": "Sie müssen nichts bezahlen.", "ro": "Nu trebuie să plătiți nimic.", "lit": "dvs. | trebuie | nimic | plăti" },
+    { "id": "p14", "de": "Auf Wiederhören!", "ro": "La revedere! (la telefon)", "lit": "la | re-auzire", "note": "La telefon nu vă vedeți, deci nu „Auf Wiedersehen”, ci „Auf Wiederhören” (la re-auzire)." },
+    { "id": "p15", "de": "der Vermieter", "ro": "proprietarul (care închiriază)", "lit": "(art.) | închiriator", "note": "die Hausverwaltung = firma care administrează clădirea; der Hausmeister = omul care se ocupă de clădire și repară." }
+  ],
+  "grammar": {
+    "title": "Verbul modal müssen",
+    "explanation": [
+      "**müssen** = a trebui. E un verb modal, ca **können** și **möchten**: se conjugă pe locul 2, iar verbul principal stă **la infinitiv, la final**: Ich **muss** heute **arbeiten**.",
+      "Ca la toate modalele, **ich** și **er/sie/es** au aceeași formă, fără terminație: ich **muss**, er **muss**. La singular vocala e **u** (muss), la plural **ü** (müssen).",
+      "Cu un loc sau o direcție, al doilea verb lipsește adesea: Ich **muss zur Arbeit**. Ich **muss nach Hause**. „gehen” sau „fahren” se subînțelege.",
+      "⚠️ Capcana: **nicht müssen** = **nu e nevoie**, nu „n-ai voie”. Du **musst nicht** kommen = Nu e nevoie să vii. Sie **müssen nichts** bezahlen = Nu trebuie să plătiți nimic (e gratuit). Pentru interdicție germana folosește alt verb (nicht dürfen), care vine în săptămâna 7.",
+      "Probleme în locuință, pe scurt: **… ist kaputt** (s-a stricat), **… funktioniert nicht** (nu funcționează), **… geht nicht** (nu merge, colocvial)."
+    ],
+    "tables": [
+      {
+        "caption": "müssen – prezent",
+        "audio": "conjugation",
+        "headers": ["", "müssen (a trebui)"],
+        "rows": [
+          ["ich", "**muss**"],
+          ["du", "**musst**"],
+          ["er / sie / es", "**muss**"],
+          ["wir", "müssen"],
+          ["ihr", "müsst"],
+          ["sie / Sie", "müssen"]
+        ]
+      },
+      {
+        "caption": "Probleme în locuință",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["Die Heizung ist kaputt.", "Caloriferul nu merge."],
+          ["Es gibt kein warmes Wasser.", "Nu e apă caldă."],
+          ["Das Licht geht nicht.", "Lumina nu merge."],
+          ["Der Wasserhahn tropft.", "Robinetul picură."],
+          ["Das Fenster klemmt.", "Fereastra se blochează."],
+          ["Die Toilette ist verstopft.", "Toaleta e înfundată."],
+          ["Die Waschmaschine funktioniert nicht.", "Mașina de spălat nu funcționează."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Ich **muss** heute **arbeiten**.", "ro": "Trebuie să lucrez azi." },
+      { "de": "**Musst** du morgen früh **aufstehen**?", "ro": "Trebuie să te scoli devreme mâine?" },
+      { "de": "Ein Techniker **muss kommen**.", "ro": "Trebuie să vină un tehnician." },
+      { "de": "Wir **müssen** die Miete **bezahlen**.", "ro": "Trebuie să plătim chiria." },
+      { "de": "Valy **muss** um zwei in der Fabrik **sein**.", "ro": "Valy trebuie să fie la fabrică la două." },
+      { "de": "Du **musst nicht** kommen.", "ro": "Nu e nevoie să vii." }
+    ],
+    "tip": "Când suni pentru o problemă, ai nevoie de trei informații, în ordinea asta: **cine ești și unde locuiești** (Hier ist … aus der …straße …), **ce s-a stricat** (… ist kaputt) și **de când** (seit …). Pregătește-le pe o hârtie înainte să suni: la telefon e mai greu decât față în față."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Ce problemă are Radu?", "audio": "d4", "options": ["Nu merge caloriferul", "Nu merge lumina", "Ușa nu se închide"], "answer": 0 },
+    { "type": "mcq", "id": "e2", "question": "De când nu merge?", "audio": "d6", "options": ["De azi-dimineață", "De aseară", "De o săptămână"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "La ce oră vine tehnicianul?", "audio": "d9", "options": ["La 10", "La 11", "La 13:30"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Cine plătește reparația?", "audio": "d11", "options": ["Radu", "Proprietarul", "Tehnicianul"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Ich ___ zur Arbeit. (müssen)", "answers": [["muss"]], "ro": "Trebuie să plec la muncă." },
+    { "type": "gap", "id": "e6", "text": "Ein Techniker ___ kommen.", "answers": [["muss"]], "ro": "Trebuie să vină un tehnician." },
+    { "type": "gap", "id": "e7", "text": "___ du heute arbeiten?", "answers": [["Musst"]], "ro": "Trebuie să lucrezi azi?" },
+    { "type": "gap", "id": "e8", "text": "Wir ___ die Miete bezahlen.", "answers": [["müssen"]], "ro": "Trebuie să plătim chiria." },
+    { "type": "gap", "id": "e9", "text": "Sie müssen nichts ___. (a plăti)", "answers": [["bezahlen", "zahlen"]], "ro": "Nu trebuie să plătiți nimic." },
+    { "type": "mcq", "id": "e10", "question": "Ce înseamnă „Du musst nicht kommen”?", "options": ["N-ai voie să vii", "Nu e nevoie să vii", "Trebuie să vii"], "answer": 1, "explain": "nicht müssen = nu e nevoie. Interdicția se spune altfel (nicht dürfen), în săptămâna 7." },
+    { "type": "order", "id": "e11", "ro": "Caloriferul nu merge.", "answer": "Die Heizung ist kaputt." },
+    { "type": "order", "id": "e12", "ro": "Trebuie să plătesc ceva?", "answer": "Muss ich etwas bezahlen?" },
+    { "type": "dictation", "id": "e13", "audio": "d4", "text": "Die Heizung ist kaputt. Es ist sehr kalt in der Wohnung.", "ro": "Caloriferul nu merge. E foarte frig în locuință." },
+    { "type": "dictation", "id": "e14", "audio": "d10", "text": "Um elf, okay. Muss ich etwas bezahlen?", "ro": "La unsprezece, bine. Trebuie să plătesc ceva?" }
+  ],
+  "speaking": {
+    "scenario": "Ceva s-a stricat în locuința ta (calorifer, apă caldă, fereastră, lumină). Suni la administrația clădirii.",
+    "claudeRole": "Ești Herr Clausen, de la administrația unei clădiri (Hausverwaltung) din Flensburg. Formal (Sie), politicos, puțin grăbit. Întrebi ce s-a stricat, de când, când e elevul acasă; stabilești ora tehnicianului și spui ce trebuie să facă elevul. Folosește des müssen (Sie müssen …, Der Techniker muss …) și o dată „Sie müssen nicht …”.",
+    "tasks": [
+      "Prezintă-te la telefon (Hier ist … aus der …straße …)",
+      "Descrie 2 probleme (kaputt, funktioniert nicht, geht nicht)",
+      "Spune de când există problemele (Seit …)",
+      "Stabilește o oră când ești acasă",
+      "Întreabă dacă trebuie să plătești ceva (Muss ich …?) și încheie cu „Auf Wiederhören!”"
+    ],
+    "starter": "Clausen, Hausverwaltung, guten Tag. Was kann ich für Sie tun?"
+  }
+}

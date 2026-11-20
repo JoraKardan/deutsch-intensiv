@@ -1,4 +1,4 @@
-# Грамматика (состояние на w02-8)
+# Грамматика (состояние на w03-8)
 
 ## Уже изучено
 
@@ -188,18 +188,108 @@ Es gibt = есть, имеется (буквально «(это) даёт»), �
 
 Глаголы, меняющие гласную у du и er/sie/es: fahren → fährt, lesen → liest, sehen → sieht, nehmen → nimmt, anfangen → fängt an.
 
+### w03-1 · Es gibt + винительный падеж. Отрицание kein
+
+Es gibt = есть, имеется (буквально «(это) даёт»). Так говорят, что где-то находится: Es gibt zwei Zimmer. Es gibt einen Balkon. После es gibt идёт винительный падеж, поэтому мужской род получает -en: es gibt einen Tisch.
+
+Es gibt всегда в единственном числе, даже с множественным: Es gibt zwei Zimmer (не «es geben»). В вопросе: Gibt es …? Was gibt es heute?
+
+kein = никакой, нет. Это отрицание существительного с ein / eine или без артикля: Ich habe ein Auto → Ich habe kein Auto. Wir haben Zeit → Wir haben keine Zeit. По-русски «у меня нет машины», а по-немецки «я имею никакую машину».
+
+У kein те же окончания, что у ein: kein (der, das), keine (die и мн. ч.), а в винительном мужского рода keinen: Es gibt keinen Balkon.
+
+nicht или kein? kein отрицает существительное с ein/eine или без артикля. nicht отрицает глагол, прилагательное, место или существительное с der/die/das: Das ist nicht teuer. Das ist nicht mein Tisch.
+
+### w03-2 · Предлоги места + дательный падеж (Wo?)
+
+На вопрос Wo? (где?) отвечают предлогом места: in (в), auf (на), unter (под), neben (рядом с), vor (перед), hinter (за), zwischen (между), an (у, на вертикальной поверхности: стена, окно, дверь).
+
+После этих предлогов, на вопрос Wo?, артикль переходит в дательный падеж: der → dem, die → der, das → dem, а во множественном числе die → den (и существительное получает -n). Der Tisch → auf dem Tisch. Die Tür → neben der Tür. Das Sofa → unter dem Sofa. Как в русском «на столе», только меняется артикль.
+
+Очень частые сокращения: in + dem = im (im Flur, im Keller), an + dem = am (am Fenster, am Hafen). Поэтому ты уже слышал «im Büro» и «am Hafen».
+
+Глаголы положения, как в русском: liegen (лежать: ключи, телефон, документы), stehen (стоять: лампа, шкаф, бутылка). sein подходит всегда: если не уверен, говори ist.
+
+С Wohin? (куда?) те же предлоги требуют винительного падежа, как в русском «на стол». Это будет позже (неделя 6). Пока: Wo? + дательный.
+
+### w03-3 · Модальный глагол müssen
+
+müssen = быть должным, надо. Это модальный глагол, как können и möchten: он спрягается на 2-м месте, а основной глагол стоит в инфинитиве, в конце: Ich muss heute arbeiten. По-русски «я должен работать» или «мне надо работать», а в немецком всегда с подлежащим «я»: ich muss.
+
+Как у всех модальных, у ich и er/sie/es одинаковая форма без окончания: ich muss, er muss. В единственном числе гласная u (muss), во множественном ü (müssen).
+
+С местом или направлением второй глагол часто опускают: Ich muss zur Arbeit. Ich muss nach Hause. Как в русском «мне надо домой».
+
+⚠️ Ловушка: nicht müssen = не нужно, а не «нельзя». Du musst nicht kommen = Тебе не нужно приходить. Sie müssen nichts bezahlen = Вам ничего не нужно платить (бесплатно). Для запрета в немецком другой глагол (nicht dürfen), он будет на неделе 7.
+
+Проблемы в квартире, коротко: … ist kaputt (сломалось), … funktioniert nicht (не работает), … geht nicht (не работает, разговорно).
+
+### w03-4 · Вежливый императив (Sie). Правила дома
+
+Вежливый императив очень простой: глагол в инфинитиве + Sie, глагол на первом месте: Kommen Sie! Warten Sie! Trennen Sie den Müll! В отличие от русского («Подождите!»), местоимение Sie обязательно.
+
+Для вежливости добавляют bitte: Bitte warten Sie. / Warten Sie bitte. Без bitte может прозвучать как приказ.
+
+У отделяемых глаголов приставка уходит в конец: Machen Sie die Tür zu! Kommen Sie am Samstag vorbei! Rufen Sie mich an!
+
+Единственное исключение: sein → Seien Sie bitte leise! (Будьте, пожалуйста, потише!)
+
+Частицы doch и mal делают приглашение теплее и естественнее: Kommen Sie doch herein! Sagen Sie mal, … Точного перевода нет (примерно «же», «-ка»), но слышать их будешь везде.
+
+Правила дома коротко: Ruhezeit (тишина) обычно с 22 до 6 и в воскресенье весь день; мусор сортируют по цветным бакам; стекло относят в отдельные контейнеры, по цветам.
+
+### w03-5 · zum / zur. Wo? или Wohin?
+
+Wie komme ich zum …? — вопрос о дороге. zu = к, в (место, здание, человек) и требует дательного падежа: zu + dem = zum (der / das: zum Hafen, zum Rathaus), zu + der = zur (die: zur Post, zur Apotheke).
+
+Wo? = где (место, без движения): Wo ist der Hafen? Wohin? = куда (направление, с движением): Wohin gehen Sie? – Zum Hafen. Как в русском «где» и «куда». Woher? = откуда (ты уже знаешь: Woher kommst du?).
+
+Два устойчивых выражения: nach Hause = домой (куда?): Ich gehe nach Hause. zu Hause = дома (где?): Ich bin zu Hause. С городами и странами — nach: nach Hamburg, nach Polen.
+
+Указания: geradeaus (прямо), links (налево), rechts (направо), die erste / zweite Straße (первая / вторая улица), an der Ampel (на светофоре), an der Kreuzung (на перекрёстке), gegenüber (напротив), da drüben (вон там, через дорогу).
+
+Императив с Sie из прошлого урока звучит в указаниях повсюду: Gehen Sie geradeaus! Nehmen Sie den Bus!
+
+### w03-6 · mit + дательный падеж. Общественный транспорт
+
+mit = с. Всегда требует дательного падежа: mit dem Bus (der), mit der Bahn (die), mit dem Fahrrad (das), mit den Kollegen (мн. ч., с -n).
+
+О транспорте: Ich fahre mit dem Bus / mit der Straßenbahn / mit dem Zug / mit dem Auto. В русском «на автобусе», а в немецком «с автобусом». «Ich fahre mit Bus» — ошибка: артикль нужен. Исключение: zu Fuß (пешком).
+
+В общих выражениях артикль может отсутствовать: mit Bus und Bahn (на общественном транспорте).
+
+Отделяемые глаголы транспорта: einsteigen (садиться), aussteigen (выходить), umsteigen (пересаживаться): Ich steige am Hafen aus. Wo muss ich umsteigen?
+
+Объявления, которые ты услышишь: Der Bus hat zehn Minuten Verspätung (опоздание). Der Zug fällt aus (отменён). Nächster Halt: … (следующая остановка).
+
+### w03-7 · Модальный глагол wollen. Погода с «es». Одежда
+
+wollen = хотеть (твёрдое намерение). Модальный глагол, инфинитив в конце: Wir wollen die Band sehen. Ich will um halb acht da sein.
+
+В единственном числе неправильный и, как все модальные, без окончания у ich и er: ich will, du willst, er will. Во множественном: wir wollen, ihr wollt, sie wollen.
+
+⚠️ Ловушка: ich will — это не будущее время, как английское «will», а «я хочу». will звучит прямее, чем möchte (хотел бы): в магазине, столовой или учреждении говори ich möchte; о планах, между друзьями, ich will — нормально.
+
+Погоду описывают с es, «пустым» подлежащим, которого нет в русском: Es regnet (идёт дождь). Es ist kalt (холодно). Температура: Es sind zwei Grad (два градуса).
+
+Одежда: anziehen = надевать, отделяемый глагол: Was ziehst du an? Ich ziehe eine Jacke an. На фабрике рабочую одежду (die Arbeitskleidung) выдаёт фирма, и она остаётся там.
+
+### w03-8 · Повторение: квартира, место и модальные глаголы
+
+Es gibt + винительный падеж и отрицание kein: Es gibt keinen Balkon. Wir haben keine Milch und kein Brot.
+
+Wo? + дательный после предлогов места: im Keller, neben dem Fahrrad, an der Ecke. Wohin? с zu: zum Hafen, zur Post; и nach Hause.
+
+mit + дательный для транспорта: mit dem Bus, mit der Bahn. Исключение: zu Fuß.
+
+Модальные глаголы: können, möchten (уже знакомые), плюс müssen (должен) и wollen (хотеть). Все они: модальный на 2-м месте, инфинитив в конце. У ich и er без окончания: ich muss, er will. И помни: nicht müssen = не нужно.
+
+Императив с Sie: глагол + Sie: Kommen Sie um elf! Vergessen Sie nicht …! Погода с es: Es regnet. Es ist kalt.
+
 ## Ещё НЕ изучено
 
 Темы ниже будут в следующих уроках. До соответствующего урока **не используй их** в своих репликах (или только как готовое выражение, с объяснением). Если ученику они нужны, дай ему простой вариант, который он уже знает.
 
-- w03-1 (A1): Временное жильё; комнаты; es gibt + винительный падеж; kein
-- w03-2 (A1): Предлоги места (in, auf, neben) + дательный падеж, упрощённо
-- w03-3 (A1): Проблемы в квартире; модальный глагол müssen
-- w03-4 (A1): Соседка, правила дома; вежливый императив (Sie)
-- w03-5 (A1): Дорога по Фленсбургу; zum / zur; wo? / wohin?
-- w03-6 (A1): Автобус на фабрику в утреннюю смену; билеты, опоздания; mit + дательный падеж
-- w03-7 (A1): Погода на севере (ветер, дождь, «Schietwetter»), рабочая и зимняя одежда; модальный глагол wollen
-- w03-8 (A1): Повторение недели 3
 - w04-1 (A1): Bürgeramt Flensburg: Anmeldung для Раду и Вали; спеллинг (buchstabieren); официальные вопросы
 - w04-2 (A1): Личные данные; даты; порядковые числительные
 - w04-3 (A1): По телефону: запись на Aufenthaltskarte (член семьи гражданки ЕС); können + инфинитив
