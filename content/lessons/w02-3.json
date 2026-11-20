@@ -1,0 +1,134 @@
+{
+  "id": "w02-3",
+  "week": 2,
+  "day": 3,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Meine Familie",
+  "titleRo": "Familia mea",
+  "goals": [
+    "să vorbești despre familia ta: soție, părinți, frați",
+    "să folosești posesivele mein, dein, Ihr (și sein, ihr)",
+    "să deosebești ihr (al ei) de Ihr (al dumneavoastră)",
+    "să pui întrebări despre familia altcuiva"
+  ],
+  "intro": "În pauză, colegii vor să afle cine ești, iar după muncă cea mai bună temă de discuție e **familia**. Azi Radu vorbește cu Ole, colegul tânăr și fan de metal, despre Valy și despre familia din Moldova. Înveți cuvintele pentru familie și **posesivele** (mein, dein, Ihr…). Ele seamănă cu ein / eine: **mein** Vater, **meine** Mutter.",
+  "dialog": {
+    "title": "In der Pause",
+    "situation": "Pauza de dimineață la Fördewurst. Radu se uită la poze pe telefon. Vine Ole, un coleg tânăr. Mai târziu trece și Frau Hansen de la HR.",
+    "speakers": {
+      "O": { "name": "Ole", "voice": "de-DE-KasperNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "H": { "name": "Frau Hansen", "voice": "de-DE-TanjaNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "O", "de": "Moin, Radu! Was guckst du da?", "ro": "Salut, Radu! La ce te uiți acolo?", "lit": "bună |  | ce | te uiți | tu | acolo" },
+      { "id": "d2", "speaker": "A", "de": "Ein Foto. Das ist meine Frau.", "ro": "O poză. Ea e soția mea.", "lit": "o | fotografie | asta | e | a mea | soție" },
+      { "id": "d3", "speaker": "O", "de": "Deine Frau? Arbeitet sie auch hier?", "ro": "Soția ta? Lucrează și ea aici?", "lit": "a ta | soție | lucrează | ea | și | aici" },
+      { "id": "d4", "speaker": "A", "de": "Ja, in der Verpackung. Sie heißt Valentina, aber alle sagen Valy.", "ro": "Da, la ambalare. O cheamă Valentina, dar toți îi spun Valy.", "lit": "da | în | (art.) | ambalare | ea | se numește |  | dar | toți | spun | " },
+      { "id": "d5", "speaker": "O", "de": "Und wer ist das? Dein Vater?", "ro": "Și cine e ăsta? Tatăl tău?", "lit": "și | cine | e | asta | al tău | tată" },
+      { "id": "d6", "speaker": "A", "de": "Ja, und das ist meine Mutter. Meine Eltern wohnen in Moldau.", "ro": "Da, iar ea e mama mea. Părinții mei locuiesc în Moldova.", "lit": "da | și | asta | e | a mea | mamă | ai mei | părinți | locuiesc | în | Moldova" },
+      { "id": "d7", "speaker": "O", "de": "Hast du Geschwister?", "ro": "Ai frați sau surori?", "lit": "ai | tu | frați-surori" },
+      { "id": "d8", "speaker": "A", "de": "Ja, eine Schwester. Sie lebt in Italien. Und deine Familie?", "ro": "Da, o soră. Trăiește în Italia. Și familia ta?", "lit": "da | o | soră | ea | trăiește | în | Italia | și | a ta | familie" },
+      { "id": "d9", "speaker": "O", "de": "Meine Familie wohnt hier in Flensburg. Mein Vater arbeitet auch bei Fördewurst!", "ro": "Familia mea locuiește aici, în Flensburg. Tatăl meu lucrează și el la Fördewurst!", "lit": "a mea | familie | locuiește | aici | în |  | al meu | tată | lucrează | și | la | " },
+      { "id": "d10", "speaker": "A", "de": "Echt? Und deine Mutter?", "ro": "Serios? Și mama ta?", "lit": "serios | și | a ta | mamă" },
+      { "id": "d11", "speaker": "O", "de": "Meine Mutter ist Lehrerin. Und meine Oma ist Dänin. Hier im Norden ist das normal.", "ro": "Mama mea e profesoară. Iar bunica mea e daneză. Aici, în nord, e ceva normal.", "lit": "a mea | mamă | e | profesoară | și | a mea | bunică | e | daneză | aici | în (+art.) | nord | e | asta | normal" },
+      { "id": "d12", "speaker": "H", "de": "Herr Popescu? Entschuldigung, eine Info für Ihre Frau.", "ro": "Domnule Popescu? Scuzați, o informație pentru soția dumneavoastră.", "lit": "domnul |  | scuzați | o | informație | pentru | a dvs. | soție" },
+      { "id": "d13", "speaker": "A", "de": "Ja, Frau Hansen?", "ro": "Da, doamna Hansen?", "lit": "da | doamna | " },
+      { "id": "d14", "speaker": "H", "de": "Ihre Frau hat nächste Woche Spätschicht, wie Sie. Das passt, oder?", "ro": "Soția dumneavoastră e săptămâna viitoare în tura de după-amiază, ca și dumneavoastră. E bine așa, nu?", "lit": "a dvs. | soție | are | următoarea | săptămână | târziu-tură | ca | dvs. | asta | se potrivește | sau" },
+      { "id": "d15", "speaker": "A", "de": "Super! Vielen Dank, Frau Hansen!", "ro": "Super! Mulțumesc mult, doamna Hansen!", "lit": "super | multe | mulțumiri | doamna | " },
+      { "id": "d16", "speaker": "O", "de": "Na also! Dann seid ihr zusammen. Grüß deine Frau!", "ro": "Ei, vezi! Atunci sunteți împreună. Salut-o pe soția ta din partea mea!", "lit": "ei | vezi | atunci | sunteți | voi | împreună | salută | a ta | soție" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Das ist meine Frau.", "ro": "Ea e soția mea.", "lit": "asta | e | a mea | soție" },
+    { "id": "p2", "de": "Das ist mein Mann.", "ro": "El e soțul meu.", "lit": "asta | e | al meu | soț", "note": "der Mann = bărbatul, dar și soțul; die Frau = femeia, dar și soția." },
+    { "id": "p3", "de": "Wer ist das?", "ro": "Cine e acesta / aceasta?", "lit": "cine | e | asta" },
+    { "id": "p4", "de": "Ist das Ihre Frau?", "ro": "Ea e soția dumneavoastră?", "lit": "e | asta | a dvs. | soție" },
+    { "id": "p5", "de": "Hast du Geschwister?", "ro": "Ai frați sau surori?", "lit": "ai | tu | frați-surori", "note": "die Geschwister = frații și surorile, la un loc (doar plural)." },
+    { "id": "p6", "de": "Ich habe eine Schwester und einen Bruder.", "ro": "Am o soră și un frate.", "lit": "eu | am | o | soră | și | un | frate", "note": "„einen” e acuzativul de la „ein”, îl înveți în lecția 6." },
+    { "id": "p7", "de": "Meine Eltern wohnen in Moldau.", "ro": "Părinții mei locuiesc în Moldova.", "lit": "ai mei | părinți | locuiesc | în | Moldova" },
+    { "id": "p8", "de": "Sie lebt in Italien.", "ro": "Ea trăiește în Italia.", "lit": "ea | trăiește | în | Italia" },
+    { "id": "p9", "de": "Und deine Familie?", "ro": "Și familia ta?", "lit": "și | a ta | familie" },
+    { "id": "p10", "de": "Mein Vater ist Rentner.", "ro": "Tatăl meu e pensionar.", "lit": "al meu | tată | e | pensionar" },
+    { "id": "p11", "de": "Wir sind verheiratet.", "ro": "Suntem căsătoriți.", "lit": "noi | suntem | căsătoriți" },
+    { "id": "p12", "de": "Alle sagen Valy.", "ro": "Toți îi spun Valy.", "lit": "toți | spun | " },
+    { "id": "p13", "de": "Echt?", "ro": "Serios?", "note": "Foarte frecvent în vorbire, între colegi și prieteni." },
+    { "id": "p14", "de": "Grüß deine Frau!", "ro": "Salut-o pe soția ta (din partea mea)!", "lit": "salută | a ta | soție", "note": "Formal: Grüßen Sie Ihre Frau!" },
+    { "id": "p15", "de": "Na also!", "ro": "Ei, vezi! / Na, poftim!", "lit": "ei | vezi" }
+  ],
+  "grammar": {
+    "title": "Posesivele: mein, dein, Ihr (și sein, ihr)",
+    "explanation": [
+      "Posesivul (al meu, al tău…) se acordă cu **substantivul care urmează**: **mein** Vater (der), **meine** Mutter (die), **mein** Kind (das), **meine** Eltern (plural). Regula e simplă: la feminin și la plural se adaugă **-e**, exact ca la ein / eine.",
+      "**mein** = al meu, **dein** = al tău (pentru du), **Ihr** = al dumneavoastră (pentru Sie, **cu majusculă**!). Cu Ole: Ist das **deine** Frau? Cu Frau Hansen: Ist das **Ihre** Frau?",
+      "Pentru persoana a treia: **sein** = al lui (Radu → **seine** Frau), **ihr** = al ei (Valy → **ihr** Mann). Atenție: **ihr** cu literă mică = al ei; **Ihr** cu majusculă = al dumneavoastră. În vorbire sună la fel: decide contextul.",
+      "Pentru plural: **unser** = al nostru, **euer** = al vostru (eure Familie). La început le vei auzi mai rar.",
+      "Cuvinte de familie fără singular des folosit: **die Eltern** (părinții), **die Geschwister** (frații și surorile). Pluralul lui das Kind e **die Kinder**."
+    ],
+    "tables": [
+      {
+        "caption": "Posesivele (nominativ)",
+        "audio": [1, 2, 3],
+        "headers": ["al cui?", "der Vater", "die Mutter", "die Eltern (plural)"],
+        "rows": [
+          ["ich", "**mein** Vater", "**meine** Mutter", "**meine** Eltern"],
+          ["du", "**dein** Vater", "**deine** Mutter", "**deine** Eltern"],
+          ["er (Radu)", "**sein** Vater", "**seine** Mutter", "**seine** Eltern"],
+          ["sie (Valy)", "**ihr** Vater", "**ihre** Mutter", "**ihre** Eltern"],
+          ["wir", "**unser** Vater", "**unsere** Mutter", "**unsere** Eltern"],
+          ["Sie", "**Ihr** Vater", "**Ihre** Mutter", "**Ihre** Eltern"]
+        ]
+      },
+      {
+        "caption": "Familia",
+        "audio": [0, 1],
+        "headers": ["masculin", "feminin", "română"],
+        "rows": [
+          ["der Vater", "die Mutter", "tată / mamă"],
+          ["der Bruder", "die Schwester", "frate / soră"],
+          ["der Sohn", "die Tochter", "fiu / fiică"],
+          ["der Mann", "die Frau", "soț / soție (și: bărbat / femeie)"],
+          ["der Opa", "die Oma", "bunic / bunică"],
+          ["der Onkel", "die Tante", "unchi / mătușă"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Das ist **meine** Frau, Valy.", "ro": "Ea e soția mea, Valy." },
+      { "de": "Ist das **dein** Bruder?", "ro": "El e fratele tău?" },
+      { "de": "**Ihre** Frau hat Spätschicht.", "ro": "Soția dumneavoastră e în tura de după-amiază." },
+      { "de": "Radu und **seine** Frau wohnen in Flensburg.", "ro": "Radu și soția lui locuiesc în Flensburg." },
+      { "de": "Valy und **ihr** Mann arbeiten bei Fördewurst.", "ro": "Valy și soțul ei lucrează la Fördewurst." },
+      { "de": "**Unsere** Wohnung ist klein.", "ro": "Locuința noastră e mică." }
+    ],
+    "tip": "Fă-ți „arborele familiei” în germană: 5–6 propoziții despre familia ta reală (Mein Vater heißt … Er wohnt in … Meine Schwester ist …). E una dintre primele teme de conversație cu colegii."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Cum îi spun toți Valentinei?", "audio": "d4", "options": ["Tina", "Valy", "Lena"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Unde locuiește sora lui Radu?", "audio": "d8", "options": ["În Moldova", "În Italia", "În Germania"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Unde lucrează tatăl lui Ole?", "audio": "d9", "options": ["La Fördewurst", "La o școală", "În Danemarca"], "answer": 0 },
+    { "type": "mcq", "id": "e4", "question": "Ce vești are Frau Hansen?", "audio": "d14", "options": ["Valy are liber săptămâna viitoare", "Valy va fi în tura de după-amiază, ca Radu", "Valy lucrează noaptea"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Das ist ___ Mutter. (a mea)", "answers": [["meine"]], "ro": "Ea e mama mea." },
+    { "type": "gap", "id": "e6", "text": "Ist das ___ Bruder? (al tău)", "answers": [["dein"]], "ro": "El e fratele tău?" },
+    { "type": "gap", "id": "e7", "text": "Frau Hansen, ist das ___ Auto? (al dumneavoastră)", "answers": [["Ihr"]], "ro": "Doamna Hansen, e mașina dumneavoastră?" },
+    { "type": "gap", "id": "e8", "text": "Radu und ___ Frau arbeiten bei Fördewurst. (a lui)", "answers": [["seine"]], "ro": "Radu și soția lui lucrează la Fördewurst." },
+    { "type": "gap", "id": "e9", "text": "Valy und ___ Mann wohnen in Flensburg. (al ei)", "answers": [["ihr"]], "ro": "Valy și soțul ei locuiesc în Flensburg." },
+    { "type": "order", "id": "e10", "ro": "Părinții mei locuiesc în Moldova.", "answer": "Meine Eltern wohnen in Moldau." },
+    { "type": "order", "id": "e11", "ro": "Ai frați sau surori?", "answer": "Hast du Geschwister?" },
+    { "type": "dictation", "id": "e12", "audio": "d6", "text": "Ja, und das ist meine Mutter. Meine Eltern wohnen in Moldau.", "ro": "Da, iar ea e mama mea. Părinții mei locuiesc în Moldova." },
+    { "type": "dictation", "id": "e13", "audio": "p14", "text": "Grüß deine Frau!", "ro": "Salut-o pe soția ta din partea mea!" }
+  ],
+  "speaking": {
+    "scenario": "Pauză la fabrică. Un coleg vede o poză pe telefonul tău și te întreabă despre familie.",
+    "claudeRole": "Ești Ole, coleg tânăr la Fördewurst, din Flensburg, fan de metal. Informal (du), relaxat, curios. Întrebi despre soție, părinți, frați, unde locuiesc și ce fac. Povestește și despre familia ta (tatăl lucrează tot la Fördewurst, mama e profesoară, bunica e daneză). Folosește multe posesive (mein, dein, sein, ihr).",
+    "tasks": [
+      "Arată-i „poza” și prezintă-ți soția",
+      "Spune unde locuiesc părinții tăi și ce fac",
+      "Vorbește despre frații sau surorile tale (sau spune că nu ai)",
+      "Întreabă-l pe Ole cel puțin 3 lucruri despre familia lui",
+      "Folosește corect mein / meine și dein / deine"
+    ],
+    "starter": "Moin, Radu! Was guckst du da? Ist das ein Foto?"
+  }
+}

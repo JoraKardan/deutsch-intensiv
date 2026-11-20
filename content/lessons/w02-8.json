@@ -1,0 +1,133 @@
+{
+  "id": "w02-8",
+  "week": 2,
+  "day": 8,
+  "phase": "A1",
+  "kind": "review",
+  "title": "Wiederholung: Die erste Woche in Flensburg",
+  "titleRo": "Recapitulare: Prima săptămână în Flensburg",
+  "goals": [
+    "să înțelegi o conversație telefonică mai lungă despre muncă și viața de zi cu zi",
+    "să povestești săptămâna ta: ture, colegi, familie, timp liber",
+    "să consolidezi ordinea cuvintelor: verbul pe locul 2, prefixul și infinitivul la final",
+    "să folosești acuzativul, pluralul și posesivele fără să te gândești prea mult"
+  ],
+  "intro": "Gata și săptămâna 2! 🎉 Un nou început: oraș nou, muncă nouă, colegi noi. Azi Lena sună din Köln să afle cum a fost prima săptămână a lui Radu în Flensburg. În dialog apare aproape tot ce ai învățat: ture, program, familie, muzică, cumpărături. **Ascultă întâi fără text.** Apoi verifică-te cu exercițiile, care acoperă toată săptămâna.",
+  "dialog": {
+    "title": "Ein Anruf aus Köln",
+    "situation": "Duminică dimineața. Lena, fosta colegă din Köln, îl sună pe Radu. Mai târziu Valy se întoarce de la brutărie.",
+    "speakers": {
+      "L": { "name": "Lena", "voice": "de-DE-KatjaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "L", "de": "Hallo Radu! Hier ist Lena aus Köln. Wie geht's dir im Norden?", "ro": "Salut, Radu! Sunt Lena, din Köln. Cum îți merge în nord?", "lit": "salut |  | aici | e |  | din |  | cum | merge-(asta) | ție | în (+art.) | nord" },
+      { "id": "d2", "speaker": "A", "de": "Lena! Moin! Mir geht's gut, aber ich bin sehr müde.", "ro": "Lena! Moin! Îmi merge bine, dar sunt foarte obosit.", "lit": " | bună | mie | merge-(asta) | bine | dar | eu | sunt | foarte | obosit" },
+      { "id": "d3", "speaker": "L", "de": "„Moin“? Du sprichst ja schon wie ein Norddeutscher!", "ro": "„Moin”? Vorbești deja ca un neamț din nord!", "lit": "bună | tu | vorbești | (chiar) | deja | ca | un | nord-german" },
+      { "id": "d4", "speaker": "A", "de": "Ha, ja! Hier sagen alle Moin, auch am Abend.", "ro": "Ha, da! Aici toți zic Moin, și seara.", "lit": "ha | da | aici | spun | toți | bună | și | la (+art.) | seară" },
+      { "id": "d5", "speaker": "L", "de": "Und die Arbeit? Wann fängst du morgens an?", "ro": "Și munca? Când începi dimineața?", "lit": "și | (art.) | munca | când | începi… | tu | dimineața | …(an-fangen)" },
+      { "id": "d6", "speaker": "A", "de": "Diese Woche habe ich Frühschicht. Ich stehe um vier Uhr auf!", "ro": "Săptămâna asta sunt în tura de dimineață. Mă scol la patru!", "lit": "această | săptămână | am | eu | dimineață-tură | eu | scol… | la | patru | ora | …(auf-stehen)" },
+      { "id": "d7", "speaker": "L", "de": "Um vier? Oh je! Und wie sind die Kollegen?", "ro": "La patru? Vai de mine! Și cum sunt colegii?", "lit": "la | patru | o | vai | și | cum | sunt | (art.) | colegii" },
+      { "id": "d8", "speaker": "A", "de": "Sehr nett. Mein Schichtleiter heißt Jens. Er spricht nicht viel, aber er ist okay.", "ro": "Foarte drăguți. Șeful meu de tură se numește Jens. Nu vorbește mult, dar e în regulă.", "lit": "foarte | drăguți | al meu | tură-șef | se numește |  | el | vorbește | nu | mult | dar | el | e | ok" },
+      { "id": "d9", "speaker": "A", "de": "Und Ole, ein Kollege, hört auch gern Metal. Nächsten Samstag gehen wir zusammen auf ein Konzert.", "ro": "Și Ole, un coleg, ascultă și el cu plăcere metal. Sâmbăta viitoare mergem împreună la un concert.", "lit": "și |  | un | coleg | ascultă | și | cu plăcere | metal | următoarea | sâmbătă | mergem | noi | împreună | la | un | concert" },
+      { "id": "d10", "speaker": "L", "de": "Typisch Radu! Und Valy? Arbeitet sie auch?", "ro": "Tipic Radu! Și Valy? Lucrează și ea?", "lit": "tipic |  | și |  | lucrează | ea | și" },
+      { "id": "d11", "speaker": "A", "de": "Ja, auch bei Fördewurst, in der Verpackung. Aber sie hat Spätschicht.", "ro": "Da, tot la Fördewurst, la ambalare. Dar ea e în tura de după-amiază.", "lit": "da | și | la |  | în | (art.) | ambalare | dar | ea | are | târziu-tură" },
+      { "id": "d12", "speaker": "L", "de": "Oh, dann seht ihr euch nicht oft.", "ro": "O, atunci nu vă vedeți des.", "lit": "o | atunci | vedeți | voi | vă | nu | des" },
+      { "id": "d13", "speaker": "A", "de": "Nein, nur am Wochenende. Aber nächste Woche haben wir beide Spätschicht.", "ro": "Nu, doar în weekend. Dar săptămâna viitoare suntem amândoi în tura de după-amiază.", "lit": "nu | doar | la (+art.) | sfârșit-săptămână | dar | următoarea | săptămână | avem | noi | amândoi | târziu-tură" },
+      { "id": "d14", "speaker": "L", "de": "Und die Wohnung? Ist sie schön?", "ro": "Și locuința? E frumoasă?", "lit": "și | (art.) | locuința | e | ea | frumoasă" },
+      { "id": "d15", "speaker": "A", "de": "Sie ist klein, aber okay. Wir brauchen noch einen Tisch und zwei Stühle.", "ro": "E mică, dar e în regulă. Ne mai trebuie o masă și două scaune.", "lit": "ea | e | mică | dar | ok | noi | avem nevoie | încă | o | masă | și | două | scaune" },
+      { "id": "d16", "speaker": "V", "de": "Moin! Ich habe frische Brötchen! Wer ist am Telefon?", "ro": "Moin! Am chifle proaspete! Cine e la telefon?", "lit": "bună | eu | am | proaspete | chifle | cine | e | la (+art.) | telefon" },
+      { "id": "d17", "speaker": "A", "de": "Lena aus Köln. Lena, Valy ist da!", "ro": "Lena, din Köln. Lena, a venit Valy!", "lit": " | din |  |  |  | e | aici" },
+      { "id": "d18", "speaker": "V", "de": "Hallo Lena! Kannst du uns mal in Flensburg besuchen?", "ro": "Salut, Lena! Poți să ne vizitezi cândva în Flensburg?", "lit": "salut |  | poți | tu | pe noi | (cândva) | în |  | vizita" },
+      { "id": "d19", "speaker": "L", "de": "Sehr gern! Im Sommer. Dann fahren wir alle zusammen nach Wacken!", "ro": "Foarte bucuroasă! Vara. Atunci mergem toți împreună la Wacken!", "lit": "foarte | cu plăcere | în (+art.) | vară | atunci | mergem | noi | toți | împreună | la | " },
+      { "id": "d20", "speaker": "A", "de": "Lena und Metal? Das möchte ich sehen!", "ro": "Lena și metal? Asta aș vrea s-o văd!", "lit": " | și | metal | asta | aș vrea | eu | a vedea" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Hier ist Lena.", "ro": "Sunt Lena. (la telefon)", "lit": "aici | e | ", "note": "La telefon nu se spune „Ich bin Lena”, ci „Hier ist …” sau doar numele." },
+    { "id": "p2", "de": "Ich bin sehr müde.", "ro": "Sunt foarte obosit.", "lit": "eu | sunt | foarte | obosit" },
+    { "id": "p3", "de": "Oh je!", "ro": "Vai de mine!", "lit": "o | vai" },
+    { "id": "p4", "de": "Er spricht nicht viel.", "ro": "Nu vorbește mult.", "lit": "el | vorbește | nu | mult" },
+    { "id": "p5", "de": "Wir sehen uns nicht oft.", "ro": "Nu ne vedem des.", "lit": "noi | vedem | ne | nu | des" },
+    { "id": "p6", "de": "Wir haben beide Spätschicht.", "ro": "Suntem amândoi în tura de după-amiază.", "lit": "noi | avem | amândoi | târziu-tură" },
+    { "id": "p7", "de": "Ich bin zu Hause!", "ro": "Sunt acasă! / Am ajuns acasă!", "lit": "eu | sunt | la | casă" },
+    { "id": "p8", "de": "Kannst du uns besuchen?", "ro": "Poți să ne vizitezi?", "lit": "poți | tu | pe noi | vizita" },
+    { "id": "p9", "de": "Das möchte ich sehen!", "ro": "Asta aș vrea s-o văd!", "lit": "asta | aș vrea | eu | a vedea" }
+  ],
+  "grammar": {
+    "title": "Recapitulare: ordinea cuvintelor și formele săptămânii",
+    "explanation": [
+      "Săptămâna asta, aproape toată gramatica s-a învârtit în jurul **poziției verbului**. Verbul conjugat stă **pe locul 2**. Ce mai ține de verb (prefixul separabil, infinitivul după un modal) merge **la final**. Între ele se formează o „paranteză”: Ich **stehe** um vier Uhr **auf**. Ich **kann** mit Karte **bezahlen**.",
+      "Dacă pe locul 1 e altceva decât subiectul (timp, loc), **subiectul vine imediat după verb**: Diese Woche **habe ich** Frühschicht.",
+      "Posesivele urmează terminațiile lui ein: **mein / dein / sein** (der, das) și **meine / deine / seine** (die, plural). La acuzativ, masculinul primește **-en**: **den, einen, meinen, keinen**.",
+      "Pluralul: articolul e mereu **die**, terminația se învață cu fiecare cuvânt: Tomate**n**, Ei**er**, **Ä**pfel, Brötchen.",
+      "Verbele cu vocala schimbată la du și er/sie/es: fahren → f**ä**hrt, lesen → l**ie**st, sehen → s**ie**ht, nehmen → n**imm**t, anfangen → f**ä**ngt an."
+    ],
+    "tables": [
+      {
+        "caption": "Paranteza verbală",
+        "audio": "row",
+        "headers": ["locul 1", "verbul (locul 2)", "mijlocul", "finalul"],
+        "rows": [
+          ["Ich", "**stehe**", "um vier Uhr", "**auf**."],
+          ["Diese Woche", "**habe**", "ich", "Frühschicht."],
+          ["Ich", "**kann**", "mit Karte", "**bezahlen**."],
+          ["Nächsten Samstag", "**gehen**", "wir zusammen", "auf ein Konzert."],
+          ["Valy", "**fängt**", "um vierzehn Uhr", "**an**."],
+          ["Wir", "**möchten**", "am Hafen Fischbrötchen", "**essen**."]
+        ]
+      },
+      {
+        "caption": "Verbele cu vocala schimbată",
+        "audio": "conjugation",
+        "headers": ["", "fahren", "lesen", "sehen", "nehmen", "anfangen"],
+        "rows": [
+          ["ich", "fahre", "lese", "sehe", "nehme", "fange an"],
+          ["du", "f**ä**hrst", "l**ie**st", "s**ie**hst", "n**imm**st", "f**ä**ngst an"],
+          ["er / sie / es", "f**ä**hrt", "l**ie**st", "s**ie**ht", "n**imm**t", "f**ä**ngt an"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Wann **fängst** du morgens **an**?", "ro": "Când începi dimineața?" },
+      { "de": "Diese Woche **habe ich** Frühschicht.", "ro": "Săptămâna asta sunt în tura de dimineață." },
+      { "de": "**Mein** Schichtleiter **spricht** nicht viel.", "ro": "Șeful meu de tură nu vorbește mult." },
+      { "de": "Wir brauchen noch **einen** Tisch und zwei **Stühle**.", "ro": "Ne mai trebuie o masă și două scaune." },
+      { "de": "**Kannst** du uns mal **besuchen**?", "ro": "Poți să ne vizitezi cândva?" },
+      { "de": "Ole **fährt** jedes Jahr nach Wacken.", "ro": "Ole merge în fiecare an la Wacken." }
+    ],
+    "tip": "Testul săptămânii: povestește 2 minute despre săptămâna ta (reală sau a lui Radu): turele, colegii, cumpărăturile, ce-ți place. Înregistrează-te și compară cu înregistrarea din săptămâna 1, dacă ai făcut-o."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Cum se simte Radu?", "audio": "d2", "options": ["Bine, dar foarte obosit", "Rău, e bolnav", "Foarte bine și odihnit"], "answer": 0 },
+    { "type": "mcq", "id": "e2", "question": "La ce oră se scoală Radu săptămâna asta?", "audio": "d6", "options": ["La 4:00", "La 6:00", "La 14:00"], "answer": 0 },
+    { "type": "mcq", "id": "e3", "question": "Cum e Jens, după Radu?", "audio": "d8", "options": ["Vorbește mult", "Vorbește puțin, dar e în regulă", "E nepoliticos"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Când se văd Radu și Valy săptămâna asta?", "audio": "d13", "options": ["În fiecare seară", "Doar în weekend", "Deloc"], "answer": 1 },
+    { "type": "mcq", "id": "e5", "question": "Ce le mai trebuie pentru locuință?", "audio": "d15", "options": ["O lampă și un raft", "O masă și două scaune", "Un pat"], "answer": 1 },
+    { "type": "mcq", "id": "e6", "question": "Ce propune Lena?", "audio": "d19", "options": ["Să meargă toți la Wacken vara", "Ca Radu și Valy să vină la Köln", "Un concert chiar azi"], "answer": 0 },
+    { "type": "gap", "id": "e7", "text": "Wann ___ du morgens ___?", "answers": [["fängst"], ["an"]], "ro": "Când începi dimineața?" },
+    { "type": "gap", "id": "e8", "text": "Diese Woche ___ ich Frühschicht.", "answers": [["habe"]], "ro": "Săptămâna asta sunt în tura de dimineață." },
+    { "type": "gap", "id": "e9", "text": "Ole hört ___ Metal.", "answers": [["gern", "gerne"]], "ro": "Lui Ole îi place să asculte metal." },
+    { "type": "gap", "id": "e10", "text": "Wir brauchen ___ Tisch. (o masă)", "answers": [["einen"]], "ro": "Ne trebuie o masă." },
+    { "type": "gap", "id": "e11", "text": "Ist das ___ Frau? (a dumneavoastră)", "answers": [["Ihre"]], "ro": "Ea e soția dumneavoastră?" },
+    { "type": "gap", "id": "e12", "text": "Ich kaufe zwei ___. (der Apfel)", "answers": [["Äpfel"]], "ro": "Cumpăr două mere." },
+    { "type": "gap", "id": "e13", "text": "___ ich mit Karte bezahlen?", "answers": [["Kann"]], "ro": "Pot plăti cu cardul?" },
+    { "type": "order", "id": "e14", "ro": "Săptămâna viitoare suntem amândoi în tura de după-amiază.", "answer": "Nächste Woche haben wir beide Spätschicht." },
+    { "type": "order", "id": "e15", "ro": "Poți să ne vizitezi?", "answer": "Kannst du uns besuchen?" },
+    { "type": "dictation", "id": "e16", "audio": "d6", "text": "Diese Woche habe ich Frühschicht. Ich stehe um vier Uhr auf!", "ro": "Săptămâna asta sunt în tura de dimineață. Mă scol la patru!" },
+    { "type": "dictation", "id": "e17", "audio": "d15", "text": "Sie ist klein, aber okay. Wir brauchen noch einen Tisch und zwei Stühle.", "ro": "E mică, dar e în regulă. Ne mai trebuie o masă și două scaune." }
+  ],
+  "speaking": {
+    "scenario": "Recapitulare mare: un fost coleg din Köln te sună să afle cum a fost prima săptămână în Flensburg. Apoi te sună o colegă cu o invitație.",
+    "claudeRole": "Joci pe rând două personaje: (1) Tom, fostul coleg din Köln, la telefon, informal și curios: muncă, ture, program, colegi, locuință, Valy, muzică; (2) apoi Kasia, colega de la Fördewurst, care sună să-l invite vineri la Imbiss în port și întreabă ce vrea să mănânce. Anunță scurt, între paranteze, când schimbi personajul. Folosește tot materialul săptămânii 2.",
+    "tasks": [
+      "Descrie-ți ziua de lucru cu verbe separabile (aufstehen, anfangen, aufhören)",
+      "Spune programul tău și al soției (Diese Woche …, Nächste Woche …)",
+      "Vorbește despre colegi și familie cu posesive (mein Schichtleiter, meine Frau)",
+      "Spune ce-ți place să faci în timpul liber (gern / mögen)",
+      "Acceptă invitația lui Kasia și spune ce ai vrea să mănânci (möchte, kann)"
+    ],
+    "starter": "(Tom, am Telefon) Hey Radu! Tom hier, aus Köln! Na, wie ist es im Norden?"
+  }
+}

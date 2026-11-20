@@ -1,0 +1,139 @@
+{
+  "id": "w02-5",
+  "week": 2,
+  "day": 5,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Im Supermarkt",
+  "titleRo": "La supermarket",
+  "goals": [
+    "să numești alimentele de bază",
+    "să spui cantități: ein Kilo, eine Flasche, eine Packung, hundert Gramm",
+    "să formezi și să recunoști pluralul (die Tomaten, die Eier, die Äpfel)",
+    "să întrebi „Wie viele …?” și „Wo sind …?” în magazin"
+  ],
+  "intro": "Sâmbătă dimineața, Radu și Valy fac cumpărăturile pentru săptămână. Azi înveți alimentele de bază, cantitățile (ein Kilo, eine Flasche) și **pluralul**. Vestea bună: la plural articolul e mereu **die**. Vestea mai puțin bună: terminațiile variază (Tomate**n**, Ei**er**, **Ä**pfel), așa că pluralul se învață împreună cu fiecare cuvânt.",
+  "dialog": {
+    "title": "Der Wocheneinkauf",
+    "situation": "Sâmbătă dimineața, la supermarket. Radu are lista, Valy împinge căruciorul.",
+    "speakers": {
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "V", "de": "So, was brauchen wir? Hast du die Liste?", "ro": "Deci, de ce avem nevoie? Ai lista?", "lit": "deci | ce | avem nevoie | noi | ai | tu | (art.) | lista" },
+      { "id": "d2", "speaker": "A", "de": "Ja. Brot, Milch, Eier, Tomaten und Kartoffeln.", "ro": "Da. Pâine, lapte, ouă, roșii și cartofi.", "lit": "da | pâine | lapte | ouă | roșii | și | cartofi" },
+      { "id": "d3", "speaker": "V", "de": "Wie viele Eier?", "ro": "Câte ouă?", "lit": "cât de | multe | ouă" },
+      { "id": "d4", "speaker": "A", "de": "Zehn. Und zwei Kilo Kartoffeln.", "ro": "Zece. Și două kilograme de cartofi.", "lit": "zece | și | două | kilograme | cartofi" },
+      { "id": "d5", "speaker": "V", "de": "Und Wurst? Brauchen wir Wurst?", "ro": "Și mezel? Ne trebuie mezel?", "lit": "și | mezel | avem nevoie | noi | mezel" },
+      { "id": "d6", "speaker": "A", "de": "Nein, bitte keine Wurst! Ich sehe jeden Tag zehntausend Würstchen.", "ro": "Nu, te rog, fără mezeluri! Văd în fiecare zi zece mii de crenvurști.", "lit": "nu | te rog | niciun | mezel | eu | văd | fiecare | zi | zece-mii | cârnăciori" },
+      { "id": "d7", "speaker": "V", "de": "Ich auch! Okay, dann Käse. Und Äpfel und Bananen.", "ro": "Și eu! Bine, atunci brânză. Și mere și banane.", "lit": "eu | și | ok | atunci | brânză | și | mere | și | banane" },
+      { "id": "d8", "speaker": "A", "de": "Wie viele Äpfel? Ein Kilo?", "ro": "Câte mere? Un kilogram?", "lit": "cât de | multe | mere | un | kilogram" },
+      { "id": "d9", "speaker": "V", "de": "Ja, ein Kilo. Und eine Packung Kaffee, bitte.", "ro": "Da, un kilogram. Și un pachet de cafea, te rog.", "lit": "da | un | kilogram | și | un | pachet | cafea | te rog" },
+      { "id": "d10", "speaker": "A", "de": "Und Getränke? Eine Flasche Wein für Sonntag?", "ro": "Și băuturi? O sticlă de vin pentru duminică?", "lit": "și | băuturi | o | sticlă | vin | pentru | duminică" },
+      { "id": "d11", "speaker": "V", "de": "Nein, lieber Bier. Sechs Flaschen.", "ro": "Nu, mai bine bere. Șase sticle.", "lit": "nu | mai bine | bere | șase | sticle" },
+      { "id": "d12", "speaker": "A", "de": "Gute Idee. Wo sind die Tomaten?", "ro": "Bună idee. Unde sunt roșiile?", "lit": "bună | idee | unde | sunt | (art.) | roșiile" },
+      { "id": "d13", "speaker": "V", "de": "Da hinten, beim Obst und Gemüse.", "ro": "Acolo în spate, la fructe și legume.", "lit": "acolo | în spate | la (+art.) | fructe | și | legume" },
+      { "id": "d14", "speaker": "A", "de": "Und Brötchen? Für morgen früh?", "ro": "Și chifle? Pentru mâine dimineață?", "lit": "și | chifle | pentru | mâine | devreme" },
+      { "id": "d15", "speaker": "V", "de": "Nein, die Brötchen kaufe ich morgen beim Bäcker. Frisch!", "ro": "Nu, chiflele le cumpăr mâine de la brutărie. Proaspete!", "lit": "nu | (art.) | chiflele | cumpăr | eu | mâine | la (+art.) | brutar | proaspete" },
+      { "id": "d16", "speaker": "A", "de": "Okay. Dann haben wir alles. Zur Kasse!", "ro": "Bine. Atunci avem tot. La casă!", "lit": "ok | atunci | avem | noi | tot | la (+art.) | casă" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Was brauchen wir?", "ro": "De ce avem nevoie?", "lit": "ce | avem nevoie | noi" },
+    { "id": "p2", "de": "Hast du die Liste?", "ro": "Ai lista?", "lit": "ai | tu | (art.) | lista" },
+    { "id": "p3", "de": "Wie viele Eier?", "ro": "Câte ouă?", "lit": "cât de | multe | ouă" },
+    { "id": "p4", "de": "Brauchen wir Milch?", "ro": "Ne trebuie lapte?", "lit": "avem nevoie | noi | lapte" },
+    { "id": "p5", "de": "zwei Kilo Kartoffeln", "ro": "două kilograme de cartofi", "lit": "două | kilograme | cartofi", "note": "Kilo nu primește plural: zwei Kilo, nu „zwei Kilos”." },
+    { "id": "p6", "de": "eine Packung Kaffee", "ro": "un pachet de cafea", "lit": "un | pachet | cafea" },
+    { "id": "p7", "de": "sechs Flaschen Bier", "ro": "șase sticle de bere", "lit": "șase | sticle | bere" },
+    { "id": "p8", "de": "Wo sind die Tomaten?", "ro": "Unde sunt roșiile?", "lit": "unde | sunt | (art.) | roșiile" },
+    { "id": "p9", "de": "beim Obst und Gemüse", "ro": "la raionul de fructe și legume", "lit": "la (+art.) | fructe | și | legume" },
+    { "id": "p10", "de": "Bitte keine Wurst!", "ro": "Fără mezeluri, te rog!", "lit": "te rog | niciun | mezel" },
+    { "id": "p11", "de": "Lieber Bier.", "ro": "Mai bine bere.", "lit": "mai bine | bere" },
+    { "id": "p12", "de": "Gute Idee!", "ro": "Bună idee!", "lit": "bună | idee" },
+    { "id": "p13", "de": "beim Bäcker", "ro": "la brutărie", "lit": "la (+art.) | brutar" },
+    { "id": "p14", "de": "Dann haben wir alles.", "ro": "Atunci avem tot.", "lit": "atunci | avem | noi | tot" },
+    { "id": "p15", "de": "Zur Kasse!", "ro": "La casă!", "lit": "la (+art.) | casă" }
+  ],
+  "grammar": {
+    "title": "Pluralul substantivelor. Cantități",
+    "explanation": [
+      "La plural articolul e mereu **die**, pentru toate genurile: der Apfel → **die** Äpfel, das Ei → **die** Eier, die Tomate → **die** Tomaten.",
+      "Terminația de plural nu se poate deduce sigur, așa că **învață fiecare substantiv cu articolul și pluralul**: der Apfel, die Äpfel. Există totuși tipare frecvente (vezi tabelul): femininele în **-e** primesc **-n** (Tomate → Tomate**n**), multe feminine primesc **-en** (Packung → Packung**en**), masculinele primesc adesea **-e**, uneori cu umlaut (Saft → S**ä**ft**e**), neutrele scurte primesc **-er** (Ei → Ei**er**), cuvintele în **-er, -el, -chen** rămân la fel sau primesc doar umlaut (Brötchen → Brötchen, Apfel → **Ä**pfel), iar cuvintele străine primesc **-s** (Joghurt → Joghurt**s**).",
+      "Cantitățile se pun **direct în fața substantivului, fără „de”**: **ein Kilo** Äpfel = un kilogram de mere, **eine Flasche** Wein, **eine Packung** Kaffee, **hundert Gramm** Käse, **ein Liter** Milch. Kilo, Gramm și Liter nu primesc plural: **zwei Kilo**.",
+      "Întrebarea: **Wie viele** + plural (lucruri care se pot număra): Wie viele Eier? **Wie viel** + singular (cantități care nu se numără): Wie viel Milch?"
+    ],
+    "tables": [
+      {
+        "caption": "Tipuri de plural",
+        "audio": [1, 2],
+        "headers": ["tipul", "singular", "plural", "română"],
+        "rows": [
+          ["-n", "die Tomate", "die Tomate**n**", "roșie"],
+          ["-en", "die Packung", "die Packung**en**", "pachet"],
+          ["-e", "der Tag", "die Tag**e**", "zi"],
+          ["¨-e", "der Saft", "die S**ä**ft**e**", "suc"],
+          ["-er", "das Ei", "die Ei**er**", "ou"],
+          ["¨-er", "das Glas", "die Gl**ä**s**er**", "pahar / borcan"],
+          ["¨ (doar umlaut)", "der Apfel", "die **Ä**pfel", "măr"],
+          ["la fel", "das Brötchen", "die Brötchen", "chiflă"],
+          ["-s", "der Joghurt", "die Joghurt**s**", "iaurt"]
+        ]
+      },
+      {
+        "caption": "Cantități",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["ein Kilo Kartoffeln", "un kilogram de cartofi"],
+          ["zwei Kilo Äpfel", "două kilograme de mere"],
+          ["hundert Gramm Käse", "o sută de grame de brânză"],
+          ["ein Liter Milch", "un litru de lapte"],
+          ["eine Flasche Wein", "o sticlă de vin"],
+          ["sechs Flaschen Bier", "șase sticle de bere"],
+          ["eine Packung Kaffee", "un pachet de cafea"],
+          ["ein Stück Butter", "un pachet de unt"],
+          ["eine Dose Tomaten", "o conservă de roșii"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Wir brauchen zehn **Eier**.", "ro": "Ne trebuie zece ouă." },
+      { "de": "Zwei Kilo **Kartoffeln**, bitte.", "ro": "Două kilograme de cartofi, vă rog." },
+      { "de": "Wo sind die **Tomaten**?", "ro": "Unde sunt roșiile?" },
+      { "de": "Ich kaufe sechs **Flaschen** Bier.", "ro": "Cumpăr șase sticle de bere." },
+      { "de": "**Wie viele** Äpfel brauchen wir?", "ro": "De câte mere avem nevoie?" },
+      { "de": "**Wie viel** Milch haben wir noch?", "ro": "Cât lapte mai avem?" }
+    ],
+    "tip": "Când înveți un substantiv nou, spune-l mereu în trei forme: **der Apfel – die Äpfel – măr**. Fișele din aplicație au articolul; adaugă tu pluralul în gând."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Câte kilograme de cartofi le trebuie?", "audio": "d4", "options": ["Unul", "Două", "Zece"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "De ce nu vrea Radu mezeluri?", "audio": "d6", "options": ["Sunt prea scumpe", "Vede mezeluri toată ziua la muncă", "Nu-i plac deloc"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Ce băutură iau până la urmă?", "audio": "d11", "options": ["O sticlă de vin", "Șase sticle de bere", "Două sticle de vin"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "De unde ia Valy chiflele?", "audio": "d15", "options": ["De la supermarket, acum", "De la brutărie, mâine", "De la cantină"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Wir brauchen zehn ___. (das Ei)", "answers": [["Eier"]], "ro": "Ne trebuie zece ouă." },
+    { "type": "gap", "id": "e6", "text": "Wo sind die ___? (die Tomate)", "answers": [["Tomaten"]], "ro": "Unde sunt roșiile?" },
+    { "type": "gap", "id": "e7", "text": "Ich kaufe zwei ___ Wein. (die Flasche)", "answers": [["Flaschen"]], "ro": "Cumpăr două sticle de vin." },
+    { "type": "gap", "id": "e8", "text": "Ein Kilo ___, bitte. (der Apfel)", "answers": [["Äpfel"]], "ro": "Un kilogram de mere, vă rog." },
+    { "type": "gap", "id": "e9", "text": "Wie ___ Eier brauchen wir?", "answers": [["viele"]], "ro": "De câte ouă avem nevoie?" },
+    { "type": "mcq", "id": "e10", "question": "Care e pluralul lui „das Brötchen”?", "options": ["die Brötchens", "die Brötchen", "die Brötchenen"], "answer": 1, "explain": "Substantivele în -chen nu se schimbă la plural." },
+    { "type": "order", "id": "e11", "ro": "Atunci avem tot.", "answer": "Dann haben wir alles." },
+    { "type": "order", "id": "e12", "ro": "Chiflele le cumpăr mâine.", "answer": "Die Brötchen kaufe ich morgen." },
+    { "type": "dictation", "id": "e13", "audio": "d2", "text": "Ja. Brot, Milch, Eier, Tomaten und Kartoffeln.", "ro": "Da. Pâine, lapte, ouă, roșii și cartofi." },
+    { "type": "dictation", "id": "e14", "audio": "d9", "text": "Ja, ein Kilo. Und eine Packung Kaffee, bitte.", "ro": "Da, un kilogram. Și un pachet de cafea, te rog." }
+  ],
+  "speaking": {
+    "scenario": "Sâmbătă dimineața, la supermarket, cu soția ta. Faceți lista pentru săptămâna următoare și cumpărați.",
+    "claudeRole": "Ești Valy, soția lui Radu, la supermarket în Flensburg. Vorbești germană (în realitate ați vorbi română, dar acum e exercițiu!), informal și simplu. Îi spui „Schatz” (dragule). Întrebi ce trebuie, câte bucăți sau kilograme, unde e un produs. Din când în când spui o cantitate greșită sau propui ceva ce nu e pe listă, ca elevul să reacționeze.",
+    "tasks": [
+      "Faceți lista: spune cel puțin 6 alimente, la plural unde e cazul",
+      "Folosește cantități: ein Kilo, eine Flasche, eine Packung, hundert Gramm",
+      "Întreabă „Wie viele …?” și „Wo sind …?”",
+      "Refuză ceva politicos (Nein, lieber …)",
+      "Încheie: Dann haben wir alles!"
+    ],
+    "starter": "So, Schatz, was brauchen wir? Hast du die Liste?"
+  }
+}

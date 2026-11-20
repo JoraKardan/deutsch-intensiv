@@ -1,0 +1,138 @@
+{
+  "id": "w02-2",
+  "week": 2,
+  "day": 2,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Der Schichtplan",
+  "titleRo": "Planificarea turelor",
+  "goals": [
+    "să înțelegi un plan de ture: cine, când, ce tură",
+    "să folosești expresiile de timp: am Montag, diese Woche, nächste Woche",
+    "să pui verbul pe locul 2 când începi cu timpul (Diese Woche habe ich …)",
+    "să reacționezi scurt: Schade!, Weiß ich nicht."
+  ],
+  "intro": "La fabrică totul se învârte în jurul **planului de ture** (der Schichtplan). Azi Radu află când lucrează el și când lucrează Valy. Și înveți regula cea mai importantă a ordinii cuvintelor în germană: **verbul stă mereu pe locul 2**, chiar dacă propoziția începe cu „azi”, „luni” sau „săptămâna viitoare”. Atenție și la cultura de fabrică: între colegi, și chiar cu șeful de tură, se vorbește de obicei cu **du**.",
+  "dialog": {
+    "title": "Am Schichtplan",
+    "situation": "După tură, Radu îl întreabă pe Jens, șeful de tură, despre planul turelor. Jens răspunde, ca de obicei, scurt.",
+    "speakers": {
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "J": { "name": "Jens", "voice": "de-DE-BerndNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "A", "de": "Herr Petersen, wo ist der Schichtplan?", "ro": "Domnule Petersen, unde e planul turelor?", "lit": "domnul |  | unde | e | (art.) | ture-planul" },
+      { "id": "d2", "speaker": "J", "de": "Jens reicht. Hier, an der Wand.", "ro": "Ajunge Jens. Aici, pe perete.", "lit": " | ajunge | aici | pe | (art.) | perete" },
+      { "id": "d3", "speaker": "A", "de": "Danke, Jens. Diese Woche habe ich Frühschicht, oder?", "ro": "Mersi, Jens. Săptămâna asta sunt în tura de dimineață, nu?", "lit": "mulțumesc |  | această | săptămână | am | eu | dimineață-tură | sau" },
+      { "id": "d4", "speaker": "J", "de": "Genau. Montag bis Freitag, sechs bis vierzehn Uhr.", "ro": "Exact. De luni până vineri, de la șase la paisprezece.", "lit": "exact | luni | până | vineri | șase | până | paisprezece | ora" },
+      { "id": "d5", "speaker": "A", "de": "Und nächste Woche?", "ro": "Și săptămâna viitoare?", "lit": "și | următoarea | săptămână" },
+      { "id": "d6", "speaker": "J", "de": "Nächste Woche hast du Spätschicht.", "ro": "Săptămâna viitoare ești în tura de după-amiază.", "lit": "următoarea | săptămână | ai | tu | târziu-tură" },
+      { "id": "d7", "speaker": "A", "de": "Und am Samstag? Arbeite ich da auch?", "ro": "Și sâmbăta? Lucrez și atunci?", "lit": "și | la (+art.) | sâmbătă | lucrez | eu | atunci | și" },
+      { "id": "d8", "speaker": "J", "de": "Diese Woche nicht. Aber am Samstag in zwei Wochen, ja.", "ro": "Săptămâna asta nu. Dar sâmbăta peste două săptămâni, da.", "lit": "această | săptămână | nu | dar | la (+art.) | sâmbătă | în | două | săptămâni | da" },
+      { "id": "d9", "speaker": "A", "de": "Okay. Und meine Frau? Sie heißt Valentina Popescu, sie ist in der Verpackung.", "ro": "Bine. Și soția mea? O cheamă Valentina Popescu, e la ambalare.", "lit": "ok | și | a mea | soție | ea | se numește |  |  | ea | e | în | (art.) | ambalare" },
+      { "id": "d10", "speaker": "J", "de": "Moment … Popescu, Valentina. Sie hat diese Woche Spätschicht.", "ro": "Un moment… Popescu, Valentina. Săptămâna asta e în tura de după-amiază.", "lit": "moment | … |  |  | ea | are | această | săptămână | târziu-tură" },
+      { "id": "d11", "speaker": "A", "de": "Schade. Dann sehen wir uns diese Woche fast nie.", "ro": "Păcat. Atunci săptămâna asta aproape că nu ne vedem.", "lit": "păcat | atunci | vedem | noi | ne | această | săptămână | aproape | niciodată" },
+      { "id": "d12", "speaker": "J", "de": "Tja. Das ist Schichtarbeit.", "ro": "Ei, asta e munca în ture.", "lit": "ei | asta | e | ture-muncă" },
+      { "id": "d13", "speaker": "A", "de": "Nächste Woche habe ich Spätschicht. Hat Valy dann auch Spätschicht?", "ro": "Săptămâna viitoare eu sunt în tura de după-amiază. E și Valy atunci în tura de după-amiază?", "lit": "următoarea | săptămână | am | eu | târziu-tură | are |  | atunci | și | târziu-tură" },
+      { "id": "d14", "speaker": "J", "de": "Weiß ich nicht. Ich frage Frau Hansen. Am Mittwoch weiß ich mehr.", "ro": "Nu știu. O întreb pe doamna Hansen. Miercuri știu mai multe.", "lit": "știu | eu | nu | eu | întreb | doamna |  | la (+art.) | miercuri | știu | eu | mai mult" },
+      { "id": "d15", "speaker": "A", "de": "Super, danke! Bis morgen!", "ro": "Super, mersi! Pe mâine!", "lit": "super | mulțumesc | până | mâine" },
+      { "id": "d16", "speaker": "J", "de": "Jo. Bis morgen. Um sechs!", "ro": "Da. Pe mâine. La șase!", "lit": "da | până | mâine | la | șase" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Wo ist der Schichtplan?", "ro": "Unde e planul turelor?", "lit": "unde | e | (art.) | ture-planul" },
+    { "id": "p2", "de": "Diese Woche habe ich Frühschicht.", "ro": "Săptămâna asta sunt în tura de dimineață.", "lit": "această | săptămână | am | eu | dimineață-tură" },
+    { "id": "p3", "de": "Nächste Woche habe ich Spätschicht.", "ro": "Săptămâna viitoare sunt în tura de după-amiază.", "lit": "următoarea | săptămână | am | eu | târziu-tură" },
+    { "id": "p4", "de": "von Montag bis Freitag", "ro": "de luni până vineri", "lit": "de la | luni | până | vineri" },
+    { "id": "p5", "de": "Am Samstag arbeite ich nicht.", "ro": "Sâmbătă nu lucrez.", "lit": "la (+art.) | sâmbătă | lucrez | eu | nu" },
+    { "id": "p6", "de": "Wann habe ich frei?", "ro": "Când am liber?", "lit": "când | am | eu | liber" },
+    { "id": "p7", "de": "Am Sonntag habe ich frei.", "ro": "Duminică am liber.", "lit": "la (+art.) | duminică | am | eu | liber" },
+    { "id": "p8", "de": "jeden Tag", "ro": "în fiecare zi", "lit": "fiecare | zi" },
+    { "id": "p9", "de": "in zwei Wochen", "ro": "peste două săptămâni", "lit": "în | două | săptămâni", "note": "in + o perioadă = peste (în viitor): in fünf Minuten = peste cinci minute." },
+    { "id": "p10", "de": "übermorgen", "ro": "poimâine" },
+    { "id": "p11", "de": "Schade!", "ro": "Păcat!" },
+    { "id": "p12", "de": "Das ist Schichtarbeit.", "ro": "Asta e munca în ture.", "lit": "asta | e | ture-muncă" },
+    { "id": "p13", "de": "Weiß ich nicht.", "ro": "Nu știu.", "lit": "știu | eu | nu", "note": "Colocvial, fără „Das” la început (complet: Das weiß ich nicht)." },
+    { "id": "p14", "de": "Am Mittwoch weiß ich mehr.", "ro": "Miercuri știu mai multe.", "lit": "la (+art.) | miercuri | știu | eu | mai mult" },
+    { "id": "p15", "de": "Jo.", "ro": "Da. (colocvial, în nord)", "note": "„Jo” sau „joa” = ja, în nordul Germaniei. Îl auzi des la Jens." }
+  ],
+  "grammar": {
+    "title": "Verbul pe locul 2 (inversiunea). Expresii de timp",
+    "explanation": [
+      "Regula de aur a propoziției germane: **verbul conjugat stă pe locul 2**. Pe locul 1 poate sta subiectul, dar și altceva: o expresie de timp, un loc, un complement.",
+      "Când propoziția începe cu altceva decât subiectul, **subiectul trece imediat după verb**: Ich habe diese Woche Frühschicht. → **Diese Woche habe ich** Frühschicht. Asta e inversiunea. În română ordinea e liberă („Săptămâna asta eu am…”), în germană nu: „Diese Woche ich habe” e greșit.",
+      "Locul 1 poate avea mai multe cuvinte, dacă formează un singur bloc: **Am Samstag in zwei Wochen** arbeite ich.",
+      "Expresiile de timp: **am** + zi (am Montag), **am** + parte a zilei (am Morgen, am Abend; dar: **in der Nacht**), **diese / nächste Woche** (fără prepoziție!), **jeden Tag**, **montags** = în fiecare luni.",
+      "Verbele separabile păstrează regula: **Morgen fange ich** um sechs **an**."
+    ],
+    "tables": [
+      {
+        "caption": "Inversiunea: verbul rămâne pe locul 2",
+        "audio": "row",
+        "headers": ["locul 1", "verbul (locul 2)", "restul"],
+        "rows": [
+          ["**Ich**", "habe", "diese Woche Frühschicht."],
+          ["**Diese Woche**", "habe", "ich Frühschicht."],
+          ["**Am Mittwoch**", "weiß", "ich mehr."],
+          ["**Nächste Woche**", "hast", "du Spätschicht."],
+          ["**Morgen**", "fange", "ich um sechs an."],
+          ["**Montags**", "arbeitet", "Valy nicht."]
+        ]
+      },
+      {
+        "caption": "Expresii de timp",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["am Montag", "luni (în ziua de luni)"],
+          ["montags", "lunea (în fiecare luni)"],
+          ["am Wochenende", "în weekend"],
+          ["am Morgen / am Abend", "dimineața / seara"],
+          ["in der Nacht", "noaptea"],
+          ["diese Woche", "săptămâna asta"],
+          ["nächste Woche", "săptămâna viitoare"],
+          ["jeden Tag", "în fiecare zi"],
+          ["heute / morgen / übermorgen", "azi / mâine / poimâine"],
+          ["in zwei Wochen", "peste două săptămâni"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "**Diese Woche habe ich** Frühschicht.", "ro": "Săptămâna asta sunt în tura de dimineață." },
+      { "de": "**Am Samstag arbeite ich** nicht.", "ro": "Sâmbătă nu lucrez." },
+      { "de": "**Morgen fängt** die Schicht um sechs **an**.", "ro": "Mâine tura începe la șase." },
+      { "de": "**Nächste Woche hat** Valy Spätschicht.", "ro": "Săptămâna viitoare Valy e în tura de după-amiază." },
+      { "de": "**Jeden Tag stehe ich** um vier **auf**.", "ro": "În fiecare zi mă scol la patru." },
+      { "de": "**Am Wochenende schlafen wir** lange.", "ro": "În weekend dormim mult." }
+    ],
+    "tip": "Exercițiu de 2 minute: spune cu voce tare programul tău pe săptămâna viitoare, dar începe fiecare propoziție cu ziua: „Am Montag … Am Dienstag …”. Verbul vine imediat după."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Care e programul lui Radu săptămâna asta?", "audio": "d4", "options": ["6–14, de luni până vineri", "14–22, de luni până vineri", "6–14, de luni până sâmbătă"], "answer": 0 },
+    { "type": "mcq", "id": "e2", "question": "Ce tură are Radu săptămâna viitoare?", "audio": "d6", "options": ["Dimineața", "După-amiaza", "Noaptea"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Când lucrează Radu sâmbăta?", "audio": "d8", "options": ["Sâmbăta asta", "Peste două săptămâni", "Niciodată"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Ce face Jens în privința turei lui Valy?", "audio": "d14", "options": ["O întreabă pe Frau Hansen", "O sună pe Valy", "Schimbă planul imediat"], "answer": 0 },
+    { "type": "gap", "id": "e5", "text": "Diese Woche ___ ich Frühschicht.", "answers": [["habe"]], "ro": "Săptămâna asta sunt în tura de dimineață." },
+    { "type": "gap", "id": "e6", "text": "Am Mittwoch ___ ich mehr.", "answers": [["weiß"]], "ro": "Miercuri știu mai multe." },
+    { "type": "gap", "id": "e7", "text": "Nächste Woche ___ Valy Spätschicht.", "answers": [["hat"]], "ro": "Săptămâna viitoare Valy e în tura de după-amiază." },
+    { "type": "gap", "id": "e8", "text": "___ Samstag arbeite ich nicht.", "answers": [["Am"]], "ro": "Sâmbătă nu lucrez." },
+    { "type": "gap", "id": "e9", "text": "Morgen ___ die Schicht um sechs ___.", "answers": [["fängt"], ["an"]], "ro": "Mâine tura începe la șase." },
+    { "type": "mcq", "id": "e10", "question": "Care propoziție e corectă?", "options": ["Am Montag ich arbeite.", "Am Montag arbeite ich.", "Am Montag arbeite."], "answer": 1, "explain": "Verbul stă pe locul 2, iar subiectul vine imediat după el." },
+    { "type": "order", "id": "e11", "ro": "Săptămâna viitoare sunt în tura de după-amiază.", "answer": "Nächste Woche habe ich Spätschicht." },
+    { "type": "order", "id": "e12", "ro": "Duminică am liber.", "answer": "Am Sonntag habe ich frei." },
+    { "type": "dictation", "id": "e13", "audio": "d6", "text": "Nächste Woche hast du Spätschicht.", "ro": "Săptămâna viitoare ești în tura de după-amiază." },
+    { "type": "dictation", "id": "e14", "audio": "d14", "text": "Weiß ich nicht. Ich frage Frau Hansen. Am Mittwoch weiß ich mehr.", "ro": "Nu știu. O întreb pe doamna Hansen. Miercuri știu mai multe." }
+  ],
+  "speaking": {
+    "scenario": "Ești la fabrică, la panoul cu planul turelor. Vrei să afli programul tău și al soției pentru următoarele două săptămâni.",
+    "claudeRole": "Ești Jens Petersen, șeful de tură la Fördewurst în Flensburg. Localnic, laconic, prietenos în felul lui; zici „Moin”, „Jo” și „Tja”. Vorbești cu du. Răspunzi scurt, cu propoziții care încep cu timpul (Diese Woche …, Am Montag …, Nächste Woche …). Inventează un plan concret și corectează-l o dată („Ah, nee – am Donnerstag hast du Spätschicht”), ca elevul să verifice.",
+    "tasks": [
+      "Întreabă ce tură ai săptămâna asta și săptămâna viitoare",
+      "Întreabă când ai liber",
+      "Repetă și verifică programul („Also am Donnerstag habe ich …?”)",
+      "Întreabă despre tura soției tale",
+      "Folosește cel puțin 4 propoziții care încep cu o expresie de timp"
+    ],
+    "starter": "Moin. Na, Fragen zum Schichtplan?"
+  }
+}

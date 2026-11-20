@@ -1,4 +1,4 @@
-# Gramatica (situația la w01-8)
+# Gramatica (situația la w02-8)
 
 ## Învățat deja
 
@@ -94,18 +94,102 @@ Câteva verbe schimbă vocala la du și er/sie: sprechen → du sprichst. Vei ma
 
 Ordinea cuvintelor, pe scurt: în propoziția afirmativă verbul e pe locul 2. În întrebarea da/nu, verbul e pe locul 1. Cu un verb modal (können), infinitivul merge la final.
 
+### w02-1 · Verbele separabile
+
+Multe verbe germane au un prefix separabil: aufstehen (a se scula), anfangen (a începe), aufhören (a termina), einkaufen (a face cumpărături), anrufen (a suna). La prezent, verbul se conjugă pe locul 2, iar prefixul pleacă la sfârșitul propoziției: Ich stehe um vier Uhr auf.
+
+Între verb și prefix poate sta multă informație: Ich stehe jeden Tag um vier Uhr auf. De aceea, ascultă până la ultimul cuvânt! Prefixul poate schimba complet sensul: Ich höre Musik (ascult muzică), dar Ich höre um zwei auf (termin la două).
+
+La infinitiv și în dicționar prefixul e lipit: aufstehen. Accentul cade mereu pe prefix: AUFstehen, ANfangen, EINkaufen.
+
+anfangen își schimbă și vocala la du și er/sie/es: du fängst an, er fängt an (la fel ca fahren → er fährt).
+
+Prefixe separabile frecvente: an-, auf-, aus-, ein-, mit-, zurück-. Sensul lor ajută: auf = sus, ein = înăuntru, mit = cu, zurück = înapoi. Ex.: mitkommen = a veni cu cineva: Kommst du mit?
+
+### w02-2 · Verbul pe locul 2 (inversiunea). Expresii de timp
+
+Regula de aur a propoziției germane: verbul conjugat stă pe locul 2. Pe locul 1 poate sta subiectul, dar și altceva: o expresie de timp, un loc, un complement.
+
+Când propoziția începe cu altceva decât subiectul, subiectul trece imediat după verb: Ich habe diese Woche Frühschicht. → Diese Woche habe ich Frühschicht. Asta e inversiunea. În română ordinea e liberă („Săptămâna asta eu am…”), în germană nu: „Diese Woche ich habe” e greșit.
+
+Locul 1 poate avea mai multe cuvinte, dacă formează un singur bloc: Am Samstag in zwei Wochen arbeite ich.
+
+Expresiile de timp: am + zi (am Montag), am + parte a zilei (am Morgen, am Abend; dar: in der Nacht), diese / nächste Woche (fără prepoziție!), jeden Tag, montags = în fiecare luni.
+
+Verbele separabile păstrează regula: Morgen fange ich um sechs an.
+
+### w02-3 · Posesivele: mein, dein, Ihr (și sein, ihr)
+
+Posesivul (al meu, al tău…) se acordă cu substantivul care urmează: mein Vater (der), meine Mutter (die), mein Kind (das), meine Eltern (plural). Regula e simplă: la feminin și la plural se adaugă -e, exact ca la ein / eine.
+
+mein = al meu, dein = al tău (pentru du), Ihr = al dumneavoastră (pentru Sie, cu majusculă!). Cu Ole: Ist das deine Frau? Cu Frau Hansen: Ist das Ihre Frau?
+
+Pentru persoana a treia: sein = al lui (Radu → seine Frau), ihr = al ei (Valy → ihr Mann). Atenție: ihr cu literă mică = al ei; Ihr cu majusculă = al dumneavoastră. În vorbire sună la fel: decide contextul.
+
+Pentru plural: unser = al nostru, euer = al vostru (eure Familie). La început le vei auzi mai rar.
+
+Cuvinte de familie fără singular des folosit: die Eltern (părinții), die Geschwister (frații și surorile). Pluralul lui das Kind e die Kinder.
+
+### w02-4 · gern / nicht gern. Verbe cu vocala schimbată
+
+Ca să spui ce-ți place să faci, pui gern după verb: Ich lese gern. = Îmi place să citesc. Negativ: Ich spiele nicht gern Fußball. Mai mult: sehr gern. (În vorbire auzi și gerne.)
+
+Ca să spui că-ți place un lucru sau o persoană, folosești mögen: Ich mag Metal. Ich mag Iron Maiden. Formele: ich mag, du magst, er mag, wir mögen.
+
+Unele verbe își schimbă vocala doar la du și er/sie/es: a → ä (fahren → du fährst, er fährt; la fel schlafen, anfangen), e → ie (lesen → du liest, sehen → du siehst), e → i (sprechen → du sprichst, essen → du isst). La ich, wir, ihr, sie rămân normale.
+
+fahren = a merge cu un vehicul (mașină, tren, bicicletă): Ich fahre nach Wacken. Pe jos se spune gehen. Fahrrad fahren = a merge cu bicicleta (fără articol).
+
+### w02-5 · Pluralul substantivelor. Cantități
+
+La plural articolul e mereu die, pentru toate genurile: der Apfel → die Äpfel, das Ei → die Eier, die Tomate → die Tomaten.
+
+Terminația de plural nu se poate deduce sigur, așa că învață fiecare substantiv cu articolul și pluralul: der Apfel, die Äpfel. Există totuși tipare frecvente (vezi tabelul): femininele în -e primesc -n (Tomate → Tomaten), multe feminine primesc -en (Packung → Packungen), masculinele primesc adesea -e, uneori cu umlaut (Saft → Säfte), neutrele scurte primesc -er (Ei → Eier), cuvintele în -er, -el, -chen rămân la fel sau primesc doar umlaut (Brötchen → Brötchen, Apfel → Äpfel), iar cuvintele străine primesc -s (Joghurt → Joghurts).
+
+Cantitățile se pun direct în fața substantivului, fără „de”: ein Kilo Äpfel = un kilogram de mere, eine Flasche Wein, eine Packung Kaffee, hundert Gramm Käse, ein Liter Milch. Kilo, Gramm și Liter nu primesc plural: zwei Kilo.
+
+Întrebarea: Wie viele + plural (lucruri care se pot număra): Wie viele Eier? Wie viel + singular (cantități care nu se numără): Wie viel Milch?
+
+### w02-6 · Acuzativul: einen, eine, ein; den, die, das
+
+Complementul direct (pe cine? ce?) stă în acuzativ. Vestea bună: se schimbă doar masculinul. Femininul, neutrul și pluralul rămân ca la nominativ.
+
+Masculin: der → den, ein → einen, kein → keinen: Der Tisch ist schön. → Wir brauchen einen Tisch. Ich nehme den Tisch. Posesivele la fel: meinen, deinen.
+
+Verbe cu acuzativ pe care le folosești zilnic: haben, brauchen, nehmen, kaufen, suchen, möchten, sehen, essen, trinken.
+
+Atenție la ureche: einen și ein diferă doar prin -en final, care în vorbirea rapidă devine aproape „ein'n”. Ascultă bine finalul!
+
+nehmen își schimbă vocala: ich nehme, du nimmst, er nimmt.
+
+### w02-7 · Verbele modale möchten și können
+
+möchten = aș vrea (politicos). können = a putea / a ști să. Sunt verbe modale: se conjugă pe locul 2, iar verbul principal stă la infinitiv, la final: Ich kann mit Karte bezahlen.
+
+La modale, ich și er/sie/es au aceeași formă, fără -t: ich kann, er kann (nu „er kannt”!); ich möchte, sie möchte.
+
+möchten poate sta și fără alt verb, cu un substantiv în acuzativ: Ich möchte die Suppe. Ich möchte einen Kaffee.
+
+Cu un verb separabil, la infinitiv prefixul se lipește la loc: Kannst du am Freitag mitkommen? (dar: Ich komme gern mit.)
+
+Es gibt = există / se găsește (literal „(asta) dă”), urmat de acuzativ: Es gibt einen Salat. Îl vei folosi mult în săptămâna 3.
+
+### w02-8 · Recapitulare: ordinea cuvintelor și formele săptămânii
+
+Săptămâna asta, aproape toată gramatica s-a învârtit în jurul poziției verbului. Verbul conjugat stă pe locul 2. Ce mai ține de verb (prefixul separabil, infinitivul după un modal) merge la final. Între ele se formează o „paranteză”: Ich stehe um vier Uhr auf. Ich kann mit Karte bezahlen.
+
+Dacă pe locul 1 e altceva decât subiectul (timp, loc), subiectul vine imediat după verb: Diese Woche habe ich Frühschicht.
+
+Posesivele urmează terminațiile lui ein: mein / dein / sein (der, das) și meine / deine / seine (die, plural). La acuzativ, masculinul primește -en: den, einen, meinen, keinen.
+
+Pluralul: articolul e mereu die, terminația se învață cu fiecare cuvânt: Tomaten, Eier, Äpfel, Brötchen.
+
+Verbele cu vocala schimbată la du și er/sie/es: fahren → fährt, lesen → liest, sehen → sieht, nehmen → nimmt, anfangen → fängt an.
+
 ## NU a fost învățat încă
 
 Temele de mai jos vin în lecțiile următoare. Până la lecția respectivă, **nu le folosi** în replicile tale (sau doar ca expresie fixă, explicată). Dacă elevul are nevoie de ele, dă-i varianta simplă pe care o știe deja.
 
-- w02-1 (A1): Mutarea la Flensburg; rutina zilnică în ture (Frühschicht); verbele separabile (aufstehen, anfangen)
-- w02-2 (A1): am Montag, diese Woche; planul de ture; verbul pe poziția 2 (inversiunea)
-- w02-3 (A1): Membrii familiei (Valy, familia din Moldova); posesivele mein, dein, Ihr
-- w02-4 (A1): Rock, metal, concerte, sport; gern / nicht gern; verbe neregulate (lesen, fahren, sehen)
-- w02-5 (A1): Alimente, cantități; pluralul substantivelor
-- w02-6 (A1): Prețuri; acuzativul (einen, eine, ein; den)
-- w02-7 (A1): Cantina fabricii și chioșcul (Imbiss); comandă, plată; verbele modale möchten și können
-- w02-8 (A1): Recapitularea săptămânii 2
 - w03-1 (A1): Locuința provizorie; camerele; es gibt + acuzativ; kein
 - w03-2 (A1): Prepoziții de loc (in, auf, neben) + dativ, varianta simplă
 - w03-3 (A1): Probleme în locuință; verbul modal müssen

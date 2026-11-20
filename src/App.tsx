@@ -10,7 +10,7 @@ import { SettingsPage } from './pages/SettingsPage'
 export function App() {
   const route = useRoute()
   const progress = useProgress()
-  const due = dueCards(progress.cards).length
+  const due = dueCards(progress).length
   const [page, a, b] = route
 
   const nav = [

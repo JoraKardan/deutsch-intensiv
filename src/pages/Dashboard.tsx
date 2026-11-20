@@ -47,7 +47,7 @@ export function Dashboard() {
   const p = useProgress()
   const done = flatLessons.filter((l) => p.lessons[l.id]?.completedAt)
   const nextLessons = flatLessons.filter((l) => !p.lessons[l.id]?.completedAt).slice(0, 2)
-  const due = dueCards(p.cards).length
+  const due = dueCards(p).length
   const s = streak(p)
   const today = p.days[todayKey()]
   const routineDone = today?.routine ?? []

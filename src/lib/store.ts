@@ -1,6 +1,6 @@
 import { useSyncExternalStore } from 'react'
 import type { Lesson } from './types'
-import { newCard, rate, type StoredCard } from './srs'
+import { isNew, newCard, rate, type StoredCard } from './srs'
 import type { Grade } from 'ts-fsrs'
 import type { CustomItem } from './analysis'
 
@@ -14,6 +14,8 @@ export interface LessonProgress {
 
 export interface DayLog {
   reviews: number
+  /** câte fișe noi din lecții s-au văzut prima oară în ziua asta (pentru limita zilnică) */
+  newCards?: number
   lessons: string[]
   routine: string[]
 }
@@ -160,8 +162,10 @@ export function reviewCard(id: string, grade: Grade) {
   update((p) => {
     const c = p.cards[id]
     if (!c) return
+    const d = day(p)
+    if (isNew(c) && c.lessonId !== MINE) d.newCards = (d.newCards ?? 0) + 1
     p.cards[id] = rate(c, grade)
-    day(p).reviews++
+    d.reviews++
   })
 }
 

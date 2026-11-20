@@ -1,0 +1,135 @@
+{
+  "id": "w02-7",
+  "week": 2,
+  "day": 7,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "In der Kantine",
+  "titleRo": "La cantină",
+  "goals": [
+    "să comanzi la cantină și la Imbiss",
+    "să întrebi cum poți plăti (mit Karte, bar)",
+    "să folosești möchten și können, cu infinitivul la final",
+    "să înțelegi întrebările vânzătorului: Zum Mitnehmen? Mit Ketchup oder Mayo?"
+  ],
+  "intro": "La prânz toată fabrica se întâlnește la **cantină** (die Kantine). Iar vinerea după tură, colegii merg la un **Imbiss**, un chioșc cu mâncare. În Flensburg, specialitatea e **Fischbrötchen**: chiflă cu pește. Azi înveți să comanzi și să plătești, cu două verbe modale foarte utile: **möchten** (aș vrea) și **können** (a putea). Regula lor: verbul principal stă **la final**: Kann ich mit Karte **bezahlen**?",
+  "dialog": {
+    "title": "Mittag in der Kantine",
+    "situation": "Pauza de prânz la cantina Fördewurst. Radu și Kasia stau la coadă. La tejghea e Frau Thomsen.",
+    "speakers": {
+      "T": { "name": "Frau Thomsen", "voice": "de-DE-ElkeNeural" },
+      "K": { "name": "Kasia", "voice": "de-DE-MajaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "T", "de": "Moin! Was möchtet ihr?", "ro": "Moin! Ce doriți?", "lit": "bună | ce | ați vrea | voi" },
+      { "id": "d2", "speaker": "K", "de": "Ich möchte das Hähnchen mit Reis, bitte.", "ro": "Aș vrea puiul cu orez, vă rog.", "lit": "eu | aș vrea | (art.) | puiul | cu | orez | vă rog" },
+      { "id": "d3", "speaker": "T", "de": "Gern. Und du?", "ro": "Cu plăcere. Și tu?", "lit": "cu plăcere | și | tu" },
+      { "id": "d4", "speaker": "A", "de": "Was ist das Tagesgericht heute?", "ro": "Care e meniul zilei azi?", "lit": "ce | e | (art.) | zi-felul | azi" },
+      { "id": "d5", "speaker": "T", "de": "Currywurst mit Pommes.", "ro": "Currywurst cu cartofi prăjiți.", "lit": "curry-cârnat | cu | cartofi prăjiți" },
+      { "id": "d6", "speaker": "A", "de": "Currywurst? Hier gibt es jeden Tag Wurst!", "ro": "Currywurst? Aici e cârnat în fiecare zi!", "lit": "curry-cârnat | aici | dă | (asta) | fiecare | zi | cârnat" },
+      { "id": "d7", "speaker": "T", "de": "Tja, wir sind eine Wurstfabrik! Es gibt auch Gemüsesuppe.", "ro": "Ei, suntem o fabrică de mezeluri! Avem și supă de legume.", "lit": "ei | noi | suntem | o | cârnați-fabrică | (asta) | dă | și | legume-supă" },
+      { "id": "d8", "speaker": "A", "de": "Dann möchte ich die Suppe. Kann ich mit Karte bezahlen?", "ro": "Atunci aș vrea supa. Pot plăti cu cardul?", "lit": "atunci | aș vrea | eu | (art.) | supa | pot | eu | cu | card | plăti" },
+      { "id": "d9", "speaker": "T", "de": "Nein, hier nur mit der Kantinenkarte. Hast du schon eine?", "ro": "Nu, aici doar cu cardul de cantină. Ai deja unul?", "lit": "nu | aici | doar | cu | (art.) | cantină-cardul | ai | tu | deja | unul" },
+      { "id": "d10", "speaker": "A", "de": "Nein, noch nicht. Wo bekomme ich die Karte?", "ro": "Nu, încă nu. Unde primesc cardul?", "lit": "nu | încă | nu | unde | primesc | eu | (art.) | cardul" },
+      { "id": "d11", "speaker": "T", "de": "Bei Frau Hansen im Büro. Heute kannst du bar bezahlen.", "ro": "La doamna Hansen, în birou. Azi poți plăti cash.", "lit": "la | doamna |  | în (+art.) | birou | azi | poți | tu | cash | plăti" },
+      { "id": "d12", "speaker": "A", "de": "Danke! Was kostet die Suppe?", "ro": "Mulțumesc! Cât costă supa?", "lit": "mulțumesc | ce | costă | (art.) | supa" },
+      { "id": "d13", "speaker": "T", "de": "Zwei Euro achtzig. Für Mitarbeiter ist es billig.", "ro": "Doi euro optzeci. Pentru angajați e ieftin.", "lit": "doi | euro | optzeci | pentru | angajați | e | (asta) | ieftin" },
+      { "id": "d14", "speaker": "K", "de": "Radu, kannst du am Freitag mitkommen? Wir essen Fischbrötchen am Hafen.", "ro": "Radu, poți să vii și tu vineri? Mâncăm Fischbrötchen în port.", "lit": " | poți | tu | la (+art.) | vineri | veni-cu | noi | mâncăm | pește-chifle | la (+art.) | port" },
+      { "id": "d15", "speaker": "A", "de": "Fischbrötchen? Was ist das?", "ro": "Fischbrötchen? Ce e asta?", "lit": "pește-chifle | ce | e | asta" },
+      { "id": "d16", "speaker": "K", "de": "Brötchen mit Fisch! Am Imbiss am Hafen. Sehr lecker!", "ro": "Chiflă cu pește! La chioșcul din port. Foarte gustos!", "lit": "chiflă | cu | pește | la (+art.) | chioșc | la (+art.) | port | foarte | gustos" },
+      { "id": "d17", "speaker": "A", "de": "Okay, ich komme gern mit!", "ro": "Bine, vin cu plăcere!", "lit": "ok | eu | vin… | cu plăcere | …(mit-kommen)" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Was möchtest du?", "ro": "Ce dorești?", "lit": "ce | ai vrea | tu" },
+    { "id": "p2", "de": "Ich möchte das Hähnchen, bitte.", "ro": "Aș vrea puiul, vă rog.", "lit": "eu | aș vrea | (art.) | puiul | vă rog" },
+    { "id": "p3", "de": "Was ist das Tagesgericht?", "ro": "Care e meniul zilei?", "lit": "ce | e | (art.) | zi-felul" },
+    { "id": "p4", "de": "Kann ich mit Karte bezahlen?", "ro": "Pot plăti cu cardul?", "lit": "pot | eu | cu | card | plăti" },
+    { "id": "p5", "de": "Kann ich bar bezahlen?", "ro": "Pot plăti cash?", "lit": "pot | eu | cash | plăti" },
+    { "id": "p6", "de": "Nur bar.", "ro": "Doar cash.", "lit": "doar | cash", "note": "Multe chioșcuri și brutării iau încă doar cash. Ține mereu câțiva euro la tine." },
+    { "id": "p7", "de": "Wo bekomme ich die Karte?", "ro": "Unde primesc cardul?", "lit": "unde | primesc | eu | (art.) | cardul", "note": "Prieten fals: bekommen = a primi, nu „a deveni”." },
+    { "id": "p8", "de": "Kannst du mitkommen?", "ro": "Poți să vii și tu?", "lit": "poți | tu | veni-cu" },
+    { "id": "p9", "de": "Ich komme gern mit.", "ro": "Vin cu plăcere.", "lit": "eu | vin… | cu plăcere | …(mit-kommen)" },
+    { "id": "p10", "de": "Sehr lecker!", "ro": "Foarte gustos!", "lit": "foarte | gustos" },
+    { "id": "p11", "de": "Einmal Pommes, bitte.", "ro": "O porție de cartofi prăjiți, vă rog.", "lit": "o dată | cartofi prăjiți | vă rog", "note": "La Imbiss: einmal, zweimal = o porție, două porții." },
+    { "id": "p12", "de": "Mit Ketchup oder Mayo?", "ro": "Cu ketchup sau maioneză?", "lit": "cu | ketchup | sau | maioneză" },
+    { "id": "p13", "de": "Zum Mitnehmen oder hier essen?", "ro": "La pachet sau mâncați aici?", "lit": "la (+art.) | luat-cu | sau | aici | a mânca" },
+    { "id": "p14", "de": "Hier essen, bitte.", "ro": "Mâncăm aici, vă rog.", "lit": "aici | a mânca | vă rog" },
+    { "id": "p15", "de": "Mahlzeit!", "ro": "Poftă bună! (la prânz, între colegi)", "note": "La muncă, în jurul prânzului, colegii se salută cu „Mahlzeit!”. Altfel: Guten Appetit!" }
+  ],
+  "grammar": {
+    "title": "Verbele modale möchten și können",
+    "explanation": [
+      "**möchten** = aș vrea (politicos). **können** = a putea / a ști să. Sunt **verbe modale**: se conjugă pe locul 2, iar verbul principal stă **la infinitiv, la final**: Ich **kann** mit Karte **bezahlen**.",
+      "La modale, **ich** și **er/sie/es** au aceeași formă, **fără -t**: ich kann, er **kann** (nu „er kannt”!); ich möchte, sie **möchte**.",
+      "**möchten** poate sta și fără alt verb, cu un substantiv în acuzativ: Ich möchte **die** Suppe. Ich möchte **einen** Kaffee.",
+      "Cu un verb separabil, la infinitiv prefixul se lipește la loc: Kannst du am Freitag **mitkommen**? (dar: Ich **komme** gern **mit**.)",
+      "**Es gibt** = există / se găsește (literal „(asta) dă”), urmat de acuzativ: Es gibt **einen** Salat. Îl vei folosi mult în săptămâna 3."
+    ],
+    "tables": [
+      {
+        "caption": "möchten și können – prezent",
+        "audio": "conjugation",
+        "headers": ["", "möchten", "können"],
+        "rows": [
+          ["ich", "möchte", "kann"],
+          ["du", "möchtest", "kannst"],
+          ["er / sie / es", "möchte", "kann"],
+          ["wir", "möchten", "können"],
+          ["ihr", "möchtet", "könnt"],
+          ["sie / Sie", "möchten", "können"]
+        ]
+      },
+      {
+        "caption": "Ordinea cu verb modal",
+        "audio": "row",
+        "headers": ["locul 1", "modalul (locul 2)", "mijlocul", "infinitivul (final)"],
+        "rows": [
+          ["Ich", "**möchte**", "die Suppe.", "—"],
+          ["Ich", "**kann**", "mit Karte", "**bezahlen**."],
+          ["Heute", "**kannst**", "du bar", "**bezahlen**."],
+          ["Wir", "**möchten**", "am Hafen Fischbrötchen", "**essen**."],
+          ["Am Freitag", "**kann**", "Radu", "**mitkommen**."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Ich **möchte** das Hähnchen, bitte.", "ro": "Aș vrea puiul, vă rog." },
+      { "de": "**Kann** ich mit Karte **bezahlen**?", "ro": "Pot plăti cu cardul?" },
+      { "de": "Heute **kannst** du bar **bezahlen**.", "ro": "Azi poți plăti cash." },
+      { "de": "**Möchtest** du einen Kaffee?", "ro": "Vrei o cafea?" },
+      { "de": "**Kannst** du am Freitag **mitkommen**?", "ro": "Poți să vii și tu vineri?" },
+      { "de": "Wir **möchten** am Hafen Fischbrötchen **essen**.", "ro": "Vrem să mâncăm Fischbrötchen în port." }
+    ],
+    "tip": "„Kann ich …?” e cea mai utilă întrebare pentru primele luni: Kann ich mit Karte bezahlen? Kann ich hier sitzen? Kann ich das Fenster aufmachen? Cu ea poți cere aproape orice, politicos."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Ce comandă Kasia?", "audio": "d2", "options": ["Currywurst", "Pui cu orez", "Supă de legume"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Care e meniul zilei?", "audio": "d5", "options": ["Pește cu cartofi", "Currywurst cu cartofi prăjiți", "Supă de legume"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "Cum se plătește de obicei la cantină?", "audio": "d9", "options": ["Doar cu cardul de cantină", "Cu orice card bancar", "Doar cash"], "answer": 0 },
+    { "type": "mcq", "id": "e4", "question": "Cât costă supa?", "audio": "d13", "options": ["2,18 €", "2,80 €", "8,20 €"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Ich ___ das Hähnchen, bitte. (möchten)", "answers": [["möchte"]], "ro": "Aș vrea puiul, vă rog." },
+    { "type": "gap", "id": "e6", "text": "___ ich mit Karte bezahlen?", "answers": [["Kann"]], "ro": "Pot plăti cu cardul?" },
+    { "type": "gap", "id": "e7", "text": "Heute ___ du bar bezahlen.", "answers": [["kannst"]], "ro": "Azi poți plăti cash." },
+    { "type": "gap", "id": "e8", "text": "Kasia ___ am Freitag Fischbrötchen essen. (möchten)", "answers": [["möchte"]], "ro": "Kasia vrea să mănânce vineri Fischbrötchen." },
+    { "type": "gap", "id": "e9", "text": "Kannst du am Freitag ___? (să vii și tu)", "answers": [["mitkommen"]], "ro": "Poți să vii și tu vineri?" },
+    { "type": "mcq", "id": "e10", "question": "Care propoziție e corectă?", "options": ["Ich kann bezahlen mit Karte.", "Ich kann mit Karte bezahlen.", "Ich kann mit Karte bezahle."], "answer": 1, "explain": "După un verb modal, infinitivul merge la final." },
+    { "type": "order", "id": "e11", "ro": "Pot plăti cash?", "answer": "Kann ich bar bezahlen?" },
+    { "type": "order", "id": "e12", "ro": "Vin cu plăcere.", "answer": "Ich komme gern mit." },
+    { "type": "dictation", "id": "e13", "audio": "d8", "text": "Dann möchte ich die Suppe. Kann ich mit Karte bezahlen?", "ro": "Atunci aș vrea supa. Pot plăti cu cardul?" },
+    { "type": "dictation", "id": "e14", "audio": "d16", "text": "Brötchen mit Fisch! Am Imbiss am Hafen. Sehr lecker!", "ro": "Chiflă cu pește! La chioșcul din port. Foarte gustos!" }
+  ],
+  "speaking": {
+    "scenario": "Vineri după tură, la un Imbiss în portul din Flensburg. Comanzi mâncare și băutură pentru tine și Valy și plătești.",
+    "claudeRole": "Ești vânzătorul de la Imbiss-ul „Hafenblick” din portul Flensburg, un localnic jovial. Folosești du sau Sie, după cum îți vorbește elevul. Ai: Fischbrötchen (Matjes, Bismarck, Lachs), Currywurst, Bratwurst, Pommes, cola, bere. Întrebi „Zum Mitnehmen oder hier essen?” și „Mit Ketchup oder Mayo?”. La plată: doar cash (dar e un bancomat aproape).",
+    "tasks": [
+      "Comandă pentru două persoane cu möchte / hätte gern",
+      "Pune cel puțin 2 întrebări cu kann (Kann ich mit Karte bezahlen? Kann ich … haben?)",
+      "Întreabă ce e un produs pe care nu-l cunoști",
+      "Întreabă prețul și plătește",
+      "Răspunde la „Zum Mitnehmen oder hier essen?”"
+    ],
+    "starter": "Moin! Was darf's sein?"
+  }
+}

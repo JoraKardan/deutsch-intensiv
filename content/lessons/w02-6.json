@@ -1,0 +1,147 @@
+{
+  "id": "w02-6",
+  "week": 2,
+  "day": 6,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Was kostet das?",
+  "titleRo": "Cât costă?",
+  "goals": [
+    "să întrebi prețul și să înțelegi răspunsul, inclusiv peste 100 €",
+    "să negociezi politicos la Flohmarkt",
+    "să folosești acuzativul: einen Tisch, eine Lampe, ein Regal; den Tisch",
+    "să spui ce iei și ce nu"
+  ],
+  "intro": "Sâmbătă după-amiaza e **Flohmarkt** (târg de vechituri) în Flensburg. Radu și Valy caută lucruri ieftine pentru locuința provizorie. Azi înveți să întrebi prețul, să negociezi puțin și să înțelegi prețurile, inclusiv numerele peste 100. Gramatica e importantă: **acuzativul**. Fără panică: se schimbă doar masculinul: **der → den, ein → einen**.",
+  "pronunciation": {
+    "title": "Prețuri și numere mari",
+    "intro": "Un preț se citește așa: euro, apoi cenții, **fără „și”** și de obicei fără cuvântul „Cent”: 2,50 € = **zwei Euro fünfzig**. Peste 100: **hundert** (sau einhundert), **zweihundert**, **tausend**. Numărul se scrie (și se gândește) într-un singur cuvânt: hundertzwanzig.",
+    "items": [
+      { "id": "x1", "sound": "1,00 €", "de": "ein Euro", "tip": "„ain oiro”: **eu** = oi" },
+      { "id": "x2", "sound": "2,50 €", "de": "zwei Euro fünfzig", "tip": "fără „und”, fără „Cent”" },
+      { "id": "x3", "sound": "0,99 €", "de": "neunundneunzig Cent", "tip": "sub un euro se spune Cent: „țent”" },
+      { "id": "x4", "sound": "15,90 €", "de": "fünfzehn Euro neunzig", "tip": "prețurile cu ,90 și ,99 sunt peste tot" },
+      { "id": "x5", "sound": "100", "de": "hundert", "tip": "sau „einhundert”, când vrei să fii foarte clar" },
+      { "id": "x6", "sound": "120", "de": "hundertzwanzig", "tip": "sutele + restul, într-un cuvânt" },
+      { "id": "x7", "sound": "250", "de": "zweihundertfünfzig", "tip": "zwei + hundert + fünfzig" },
+      { "id": "x8", "sound": "1000", "de": "tausend", "tip": "„tau-zent”" }
+    ]
+  },
+  "dialog": {
+    "title": "Auf dem Flohmarkt",
+    "situation": "Sâmbătă după-amiaza, la Flohmarkt. Radu și Valy se opresc la taraba lui Herr Lorenzen, un vânzător în vârstă.",
+    "speakers": {
+      "V": { "name": "Valy", "voice": "de-DE-AmalaNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "L": { "name": "Herr Lorenzen", "voice": "de-DE-KlausNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "V", "de": "Schau mal, Radu! Eine Lampe für unsere Wohnung.", "ro": "Ia uite, Radu! O lampă pentru locuința noastră.", "lit": "uită-te | (puțin) |  | o | lampă | pentru | a noastră | locuință" },
+      { "id": "d2", "speaker": "A", "de": "Schön! Entschuldigung, was kostet die Lampe?", "ro": "Frumoasă! Scuzați, cât costă lampa?", "lit": "frumos | scuzați | ce | costă | (art.) | lampa" },
+      { "id": "d3", "speaker": "L", "de": "Die Lampe? Fünfzehn Euro.", "ro": "Lampa? Cincisprezece euro.", "lit": "(art.) | lampa | cincisprezece | euro" },
+      { "id": "d4", "speaker": "V", "de": "Fünfzehn? Geht es auch billiger?", "ro": "Cincisprezece? Se poate și mai ieftin?", "lit": "cincisprezece | merge | (asta) | și | mai ieftin" },
+      { "id": "d5", "speaker": "L", "de": "Zwölf. Die Lampe ist fast neu!", "ro": "Doisprezece. Lampa e aproape nouă!", "lit": "doisprezece | (art.) | lampa | e | aproape | nouă" },
+      { "id": "d6", "speaker": "V", "de": "Zehn Euro?", "ro": "Zece euro?", "lit": "zece | euro" },
+      { "id": "d7", "speaker": "L", "de": "Na gut, zehn. Für Sie.", "ro": "Fie, zece. Pentru dumneavoastră.", "lit": "ei | bine | zece | pentru | dvs." },
+      { "id": "d8", "speaker": "V", "de": "Danke! Wir nehmen die Lampe.", "ro": "Mulțumesc! Luăm lampa.", "lit": "mulțumesc | noi | luăm | (art.) | lampa" },
+      { "id": "d9", "speaker": "A", "de": "Haben Sie auch einen Tisch? Wir brauchen einen Tisch für die Küche.", "ro": "Aveți și o masă? Ne trebuie o masă pentru bucătărie.", "lit": "aveți | dvs. | și | o | masă | noi | avem nevoie | o | masă | pentru | (art.) | bucătărie" },
+      { "id": "d10", "speaker": "L", "de": "Ja, den Tisch da. Hundertzwanzig Euro.", "ro": "Da, masa aceea. O sută douăzeci de euro.", "lit": "da | (art.) | masa | acolo | sută-douăzeci | euro" },
+      { "id": "d11", "speaker": "A", "de": "Hundertzwanzig? Das ist zu teuer für uns.", "ro": "O sută douăzeci? E prea scump pentru noi.", "lit": "sută-douăzeci | asta | e | prea | scump | pentru | noi" },
+      { "id": "d12", "speaker": "V", "de": "Radu, guck mal! Hier sind CDs. Metallica, Iron Maiden …", "ro": "Radu, uite! Aici sunt CD-uri. Metallica, Iron Maiden…", "lit": " | uită-te | (puțin) | aici | sunt | CD-uri |  |  |  | …" },
+      { "id": "d13", "speaker": "A", "de": "Wow! Was kostet die CD hier?", "ro": "Uau! Cât costă CD-ul ăsta?", "lit": "uau | ce | costă | (art.) | CD | aici" },
+      { "id": "d14", "speaker": "L", "de": "Eine CD zwei Euro, drei CDs fünf Euro.", "ro": "Un CD doi euro, trei CD-uri cinci euro.", "lit": "un | CD | doi | euro | trei | CD-uri | cinci | euro" },
+      { "id": "d15", "speaker": "A", "de": "Super! Ich nehme drei CDs.", "ro": "Super! Iau trei CD-uri.", "lit": "super | eu | iau | trei | CD-uri" },
+      { "id": "d16", "speaker": "V", "de": "Typisch! Keinen Tisch, aber drei CDs!", "ro": "Tipic! Masă nu, dar trei CD-uri da!", "lit": "tipic | nicio | masă | dar | trei | CD-uri" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Was kostet das?", "ro": "Cât costă asta?", "lit": "ce | costă | asta" },
+    { "id": "p2", "de": "Was kostet die Lampe?", "ro": "Cât costă lampa?", "lit": "ce | costă | (art.) | lampa" },
+    { "id": "p3", "de": "Wie viel kostet der Tisch?", "ro": "Cât costă masa?", "lit": "cât | mult | costă | (art.) | masa" },
+    { "id": "p4", "de": "Das ist zu teuer.", "ro": "E prea scump.", "lit": "asta | e | prea | scump" },
+    { "id": "p5", "de": "Das ist billig!", "ro": "E ieftin!", "lit": "asta | e | ieftin" },
+    { "id": "p6", "de": "Geht es auch billiger?", "ro": "Se poate și mai ieftin?", "lit": "merge | (asta) | și | mai ieftin", "note": "La Flohmarkt negocierea e normală. În magazin, nu." },
+    { "id": "p7", "de": "Wir nehmen die Lampe.", "ro": "Luăm lampa.", "lit": "noi | luăm | (art.) | lampa" },
+    { "id": "p8", "de": "Ich nehme drei.", "ro": "Iau trei.", "lit": "eu | iau | trei" },
+    { "id": "p9", "de": "Wir brauchen einen Tisch.", "ro": "Ne trebuie o masă.", "lit": "noi | avem nevoie | o | masă" },
+    { "id": "p10", "de": "Haben Sie auch einen Stuhl?", "ro": "Aveți și un scaun?", "lit": "aveți | dvs. | și | un | scaun" },
+    { "id": "p11", "de": "Schau mal!", "ro": "Ia uite!", "lit": "uită-te | (puțin)", "note": "Colocvial și: Guck mal!" },
+    { "id": "p12", "de": "Na gut.", "ro": "Fie. / Bine, hai.", "lit": "ei | bine" },
+    { "id": "p13", "de": "Das ist fast neu.", "ro": "E aproape nou.", "lit": "asta | e | aproape | nou" },
+    { "id": "p14", "de": "Zusammen zehn Euro.", "ro": "În total zece euro.", "lit": "împreună | zece | euro" },
+    { "id": "p15", "de": "Typisch!", "ro": "Tipic!" }
+  ],
+  "grammar": {
+    "title": "Acuzativul: einen, eine, ein; den, die, das",
+    "explanation": [
+      "Complementul direct (pe cine? ce?) stă în **acuzativ**. Vestea bună: se schimbă **doar masculinul**. Femininul, neutrul și pluralul rămân ca la nominativ.",
+      "Masculin: **der → den**, **ein → einen**, **kein → keinen**: Der Tisch ist schön. → Wir brauchen **einen** Tisch. Ich nehme **den** Tisch. Posesivele la fel: **meinen**, **deinen**.",
+      "Verbe cu acuzativ pe care le folosești zilnic: **haben, brauchen, nehmen, kaufen, suchen, möchten, sehen, essen, trinken**.",
+      "Atenție la ureche: **einen** și **ein** diferă doar prin **-en** final, care în vorbirea rapidă devine aproape „ein'n”. Ascultă bine finalul!",
+      "**nehmen** își schimbă vocala: ich nehme, du **nimmst**, er **nimmt**."
+    ],
+    "tables": [
+      {
+        "caption": "Nominativ → acuzativ",
+        "audio": [1, 2, 3, 4],
+        "headers": ["", "masculin", "feminin", "neutru", "plural"],
+        "rows": [
+          ["nominativ (cine? ce?)", "der Tisch", "die Lampe", "das Regal", "die CDs"],
+          ["acuzativ (pe cine? ce?)", "**den** Tisch", "die Lampe", "das Regal", "die CDs"],
+          ["nominativ (cine? ce?)", "ein Tisch", "eine Lampe", "ein Regal", "CDs"],
+          ["acuzativ (pe cine? ce?)", "**einen** Tisch", "eine Lampe", "ein Regal", "CDs"]
+        ]
+      },
+      {
+        "caption": "nehmen – prezent",
+        "audio": "conjugation",
+        "headers": ["", "nehmen (a lua)"],
+        "rows": [
+          ["ich", "nehme"],
+          ["du", "n**imm**st"],
+          ["er / sie / es", "n**imm**t"],
+          ["wir", "nehmen"],
+          ["ihr", "nehmt"],
+          ["sie / Sie", "nehmen"]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Wir brauchen **einen** Tisch.", "ro": "Ne trebuie o masă." },
+      { "de": "Wir nehmen **die** Lampe.", "ro": "Luăm lampa." },
+      { "de": "Ich suche **einen** Stuhl.", "ro": "Caut un scaun." },
+      { "de": "Hast du **einen** Stift?", "ro": "Ai un pix?" },
+      { "de": "Radu **nimmt** drei CDs.", "ro": "Radu ia trei CD-uri." },
+      { "de": "**Den** Tisch nehmen wir nicht.", "ro": "Masa n-o luăm." }
+    ],
+    "tip": "Învață substantivele masculine direct cu „einen” în propoziții utile: Ich brauche **einen** Termin. Ich suche **einen** Job. Ich habe **einen** Bruder. Așa acuzativul intră în ureche fără tabele."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "Cât cere vânzătorul pe lampă la început?", "audio": "d3", "options": ["5 €", "15 €", "50 €"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "Cu cât iau lampa până la urmă?", "audio": "d7", "options": ["10 €", "12 €", "15 €"], "answer": 0 },
+    { "type": "mcq", "id": "e3", "question": "Cât costă masa?", "audio": "d10", "options": ["12 €", "120 €", "20 €"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Cât costă trei CD-uri?", "audio": "d14", "options": ["2 €", "5 €", "6 €"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Wir brauchen ___ Tisch. (o masă)", "answers": [["einen"]], "ro": "Ne trebuie o masă." },
+    { "type": "gap", "id": "e6", "text": "Ich suche ___ Lampe. (o lampă)", "answers": [["eine"]], "ro": "Caut o lampă." },
+    { "type": "gap", "id": "e7", "text": "Wir nehmen ___ Tisch. (masa)", "answers": [["den"]], "ro": "Luăm masa." },
+    { "type": "gap", "id": "e8", "text": "Hast du ___ Regal? (un raft)", "answers": [["ein"]], "ro": "Ai un raft?" },
+    { "type": "gap", "id": "e9", "text": "Radu ___ drei CDs. (nehmen)", "answers": [["nimmt"]], "ro": "Radu ia trei CD-uri." },
+    { "type": "mcq", "id": "e10", "question": "Care e corect?", "options": ["Ich kaufe ein Stuhl.", "Ich kaufe einen Stuhl.", "Ich kaufe eine Stuhl."], "answer": 1, "explain": "der Stuhl e masculin → einen la acuzativ." },
+    { "type": "order", "id": "e11", "ro": "E prea scump pentru noi.", "answer": "Das ist zu teuer für uns." },
+    { "type": "order", "id": "e12", "ro": "Se poate și mai ieftin?", "answer": "Geht es auch billiger?" },
+    { "type": "dictation", "id": "e13", "audio": "d2", "text": "Schön! Entschuldigung, was kostet die Lampe?", "ro": "Frumoasă! Scuzați, cât costă lampa?" },
+    { "type": "dictation", "id": "e14", "audio": "d14", "text": "Eine CD zwei Euro, drei CDs fünf Euro.", "ro": "Un CD doi euro, trei CD-uri cinci euro." }
+  ],
+  "speaking": {
+    "scenario": "Sâmbătă, la Flohmarkt în Flensburg. Cauți lucruri pentru locuința nouă: o masă, scaune, o lampă, poate ceva muzică.",
+    "claudeRole": "Ești Herr Lorenzen, vânzător în vârstă la Flohmarkt, prietenos, dar cu simț pentru afaceri. Vorbești formal (Sie). Spui prețuri (în litere, și peste 100), accepți să negociezi puțin, dar nu prea mult. Ai: o masă, scaune, o lampă, un raft, vase, CD-uri și viniluri de rock.",
+    "tasks": [
+      "Întreabă prețul a cel puțin 3 lucruri",
+      "Spune ce cauți folosind acuzativul (Ich suche einen …, eine …, ein …)",
+      "Negociază o dată (Geht es auch billiger? / Zehn Euro?)",
+      "Spune ce iei și ce nu (Ich nehme den … / Das ist zu teuer.)",
+      "Verifică prețul total"
+    ],
+    "starter": "Moin! Suchen Sie etwas?"
+  }
+}

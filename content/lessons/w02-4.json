@@ -1,0 +1,135 @@
+{
+  "id": "w02-4",
+  "week": 2,
+  "day": 4,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Musik und Hobbys",
+  "titleRo": "Muzică și hobby-uri",
+  "goals": [
+    "să spui ce-ți place să faci și ce nu (gern / nicht gern)",
+    "să vorbești despre muzică, trupe și festivaluri",
+    "să conjugi verbele care își schimbă vocala: fahren, lesen, sehen, essen",
+    "să accepți o invitație"
+  ],
+  "intro": "Muzica e o punte excelentă spre colegi. Radu e rocker, iar Ole, colegul tânăr, merge în fiecare an la **Wacken**, unul dintre cele mai mari festivaluri de metal din lume, la o oră de Flensburg! Azi înveți să spui ce-ți place: **gern** (cu plăcere) și **mögen**. Și câteva verbe care își schimbă vocala la du și er: fahren → du **fährst**, lesen → du **liest**.",
+  "dialog": {
+    "title": "Nach der Schicht",
+    "situation": "După tură, la stația de autobuz. Ole vede tricoul lui Radu cu o trupă de metal.",
+    "speakers": {
+      "O": { "name": "Ole", "voice": "de-DE-KasperNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "O", "de": "Hey Radu, cooles T-Shirt! Hörst du gern Metal?", "ro": "Hei, Radu, mișto tricou! Îți place să asculți metal?", "lit": "hei |  | mișto | tricou | asculți | tu | cu plăcere | metal" },
+      { "id": "d2", "speaker": "A", "de": "Ja, sehr gern! Ich höre Rock und Metal, seit zwanzig Jahren.", "ro": "Da, foarte mult! Ascult rock și metal de douăzeci de ani.", "lit": "da | foarte | cu plăcere | eu | ascult | rock | și | metal | de la | douăzeci | ani" },
+      { "id": "d3", "speaker": "O", "de": "Geil! Was ist deine Lieblingsband?", "ro": "Tare! Care e trupa ta preferată?", "lit": "tare | ce | e | a ta | preferată-trupă" },
+      { "id": "d4", "speaker": "A", "de": "Metallica, natürlich. Und du?", "ro": "Metallica, bineînțeles. Și a ta?", "lit": " | natural | și | tu" },
+      { "id": "d5", "speaker": "O", "de": "Ich mag Heavy Metal, zum Beispiel Iron Maiden. Fährst du nach Wacken?", "ro": "Mie îmi place heavy metalul, de exemplu Iron Maiden. Mergi la Wacken?", "lit": "eu | plac | heavy | metal | la (+art.) | exemplu |  |  | mergi | tu | la | " },
+      { "id": "d6", "speaker": "A", "de": "Noch nicht. Aber nächsten Sommer fahren wir, Valy und ich!", "ro": "Încă nu. Dar vara viitoare mergem, Valy și cu mine!", "lit": "încă | nu | dar | următoarea | vară | mergem | noi |  | și | eu" },
+      { "id": "d7", "speaker": "O", "de": "Super! Ich fahre jedes Jahr. Mit dem Auto ist das nur eine Stunde.", "ro": "Super! Eu merg în fiecare an. Cu mașina e doar o oră.", "lit": "super | eu | merg | fiecare | an | cu | (art.) | mașina | e | asta | doar | o | oră" },
+      { "id": "d8", "speaker": "A", "de": "Hast du ein Auto?", "ro": "Ai mașină?", "lit": "ai | tu | o | mașină" },
+      { "id": "d9", "speaker": "O", "de": "Nee, mein Vater. Ich fahre nur Fahrrad, auch im Winter.", "ro": "Nu, tata are. Eu merg doar cu bicicleta, și iarna.", "lit": "nu | al meu | tată | eu | merg | doar | bicicletă | și | în (+art.) | iarnă" },
+      { "id": "d10", "speaker": "A", "de": "Im Winter? Hier im Norden? Respekt!", "ro": "Iarna? Aici, în nord? Respect!", "lit": "în (+art.) | iarnă | aici | în (+art.) | nord | respect" },
+      { "id": "d11", "speaker": "O", "de": "Und was machst du sonst gern? Spielst du Fußball?", "ro": "Și ce-ți mai place să faci? Joci fotbal?", "lit": "și | ce | faci | tu | altfel | cu plăcere | joci | tu | fotbal" },
+      { "id": "d12", "speaker": "A", "de": "Nein, Fußball spiele ich nicht gern. Ich lese gern, und abends sehe ich gern Horrorfilme.", "ro": "Nu, nu-mi place să joc fotbal. Îmi place să citesc, iar seara mă uit cu plăcere la filme de groază.", "lit": "nu | fotbal | joc | eu | nu | cu plăcere | eu | citesc | cu plăcere | și | seara | văd | eu | cu plăcere | groază-filme" },
+      { "id": "d13", "speaker": "O", "de": "Was liest du? Krimis?", "ro": "Ce citești? Romane polițiste?", "lit": "ce | citești | tu | polițiste" },
+      { "id": "d14", "speaker": "A", "de": "Nein, Fantasy. Und Valy liest Krimis. Sie liest sehr viel!", "ro": "Nu, fantasy. Valy citește romane polițiste. Ea citește foarte mult!", "lit": "nu | fantasy | și |  | citește | polițiste | ea | citește | foarte | mult" },
+      { "id": "d15", "speaker": "O", "de": "Cool. Am Samstag spielt eine Band im Volksbad. Kommt ihr mit?", "ro": "Mișto. Sâmbătă cântă o trupă la Volksbad. Veniți și voi?", "lit": "mișto | la (+art.) | sâmbătă | cântă | o | trupă | în (+art.) |  | veniți… | voi | …(mit-kommen)" },
+      { "id": "d16", "speaker": "A", "de": "Am Samstag? Ja, gern! Ich frage Valy.", "ro": "Sâmbătă? Da, cu plăcere! O întreb pe Valy.", "lit": "la (+art.) | sâmbătă | da | cu plăcere | eu | întreb | " }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Hörst du gern Metal?", "ro": "Îți place să asculți metal?", "lit": "asculți | tu | cu plăcere | metal" },
+    { "id": "p2", "de": "Ja, sehr gern!", "ro": "Da, foarte mult!", "lit": "da | foarte | cu plăcere" },
+    { "id": "p3", "de": "Was machst du gern?", "ro": "Ce-ți place să faci?", "lit": "ce | faci | tu | cu plăcere" },
+    { "id": "p4", "de": "Ich lese gern.", "ro": "Îmi place să citesc.", "lit": "eu | citesc | cu plăcere" },
+    { "id": "p5", "de": "Ich spiele nicht gern Fußball.", "ro": "Nu-mi place să joc fotbal.", "lit": "eu | joc | nu | cu plăcere | fotbal" },
+    { "id": "p6", "de": "Was ist deine Lieblingsband?", "ro": "Care e trupa ta preferată?", "lit": "ce | e | a ta | preferată-trupă", "note": "Lieblings- = preferat: Lieblingsfilm, Lieblingsessen, Lieblingslied." },
+    { "id": "p7", "de": "Ich mag Rammstein.", "ro": "Îmi place Rammstein.", "lit": "eu | plac | ", "note": "mögen + un lucru / o persoană; gern + o activitate." },
+    { "id": "p8", "de": "Fährst du nach Wacken?", "ro": "Mergi la Wacken?", "lit": "mergi | tu | la | " },
+    { "id": "p9", "de": "Ich fahre jedes Jahr.", "ro": "Merg în fiecare an.", "lit": "eu | merg | fiecare | an" },
+    { "id": "p10", "de": "Ich fahre Fahrrad.", "ro": "Merg cu bicicleta.", "lit": "eu | merg | bicicletă" },
+    { "id": "p11", "de": "Kommt ihr mit?", "ro": "Veniți și voi?", "lit": "veniți… | voi | …(mit-kommen)" },
+    { "id": "p12", "de": "Noch nicht.", "ro": "Încă nu.", "lit": "încă | nu" },
+    { "id": "p13", "de": "Geil!", "ro": "Tare! / Super!", "note": "Foarte colocvial, între tineri și prieteni. Nu-l folosi cu șeful sau la autorități." },
+    { "id": "p14", "de": "Nee.", "ro": "Nu. (colocvial)", "note": "nee / nö = nein, în vorbirea relaxată." },
+    { "id": "p15", "de": "Respekt!", "ro": "Respect! / Jos pălăria!" }
+  ],
+  "grammar": {
+    "title": "gern / nicht gern. Verbe cu vocala schimbată",
+    "explanation": [
+      "Ca să spui ce-ți place să **faci**, pui **gern** după verb: Ich lese **gern**. = Îmi place să citesc. Negativ: Ich spiele **nicht gern** Fußball. Mai mult: **sehr gern**. (În vorbire auzi și **gerne**.)",
+      "Ca să spui că-ți place un **lucru** sau o persoană, folosești **mögen**: Ich **mag** Metal. Ich **mag** Iron Maiden. Formele: ich **mag**, du **magst**, er **mag**, wir mögen.",
+      "Unele verbe își schimbă vocala **doar la du și er/sie/es**: **a → ä** (fahren → du f**ä**hrst, er f**ä**hrt; la fel schlafen, anfangen), **e → ie** (lesen → du l**ie**st, sehen → du s**ie**hst), **e → i** (sprechen → du spr**i**chst, essen → du **i**sst). La ich, wir, ihr, sie rămân normale.",
+      "**fahren** = a merge **cu un vehicul** (mașină, tren, bicicletă): Ich **fahre** nach Wacken. Pe jos se spune **gehen**. Fahrrad fahren = a merge cu bicicleta (fără articol)."
+    ],
+    "tables": [
+      {
+        "caption": "Verbe cu vocala schimbată",
+        "audio": "conjugation",
+        "headers": ["", "fahren", "lesen", "sehen", "essen"],
+        "rows": [
+          ["ich", "fahre", "lese", "sehe", "esse"],
+          ["du", "f**ä**hrst", "l**ie**st", "s**ie**hst", "**i**sst"],
+          ["er / sie / es", "f**ä**hrt", "l**ie**st", "s**ie**ht", "**i**sst"],
+          ["wir", "fahren", "lesen", "sehen", "essen"],
+          ["ihr", "fahrt", "lest", "seht", "esst"],
+          ["sie / Sie", "fahren", "lesen", "sehen", "essen"]
+        ]
+      },
+      {
+        "caption": "Hobby-uri",
+        "audio": [0],
+        "headers": ["germană", "română"],
+        "rows": [
+          ["Ich höre gern Musik.", "Îmi place să ascult muzică."],
+          ["Ich lese gern.", "Îmi place să citesc."],
+          ["Ich fahre gern Fahrrad.", "Îmi place să merg cu bicicleta."],
+          ["Ich spiele gern Gitarre.", "Îmi place să cânt la chitară."],
+          ["Ich gehe gern auf Konzerte.", "Îmi place să merg la concerte."],
+          ["Ich sehe gern Filme.", "Îmi place să mă uit la filme."],
+          ["Ich koche nicht gern.", "Nu-mi place să gătesc."],
+          ["Ich mag Metal.", "Îmi place metalul."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Ich höre **gern** Metal.", "ro": "Îmi place să ascult metal." },
+      { "de": "Ole **fährt** jedes Jahr nach Wacken.", "ro": "Ole merge în fiecare an la Wacken." },
+      { "de": "**Liest** du gern?", "ro": "Îți place să citești?" },
+      { "de": "Valy **liest** sehr viel.", "ro": "Valy citește foarte mult." },
+      { "de": "Ich spiele **nicht gern** Fußball.", "ro": "Nu-mi place să joc fotbal." },
+      { "de": "**Siehst** du gern Horrorfilme?", "ro": "Îți place să te uiți la filme de groază?" }
+    ],
+    "tip": "Gândește-te la 3 lucruri pe care îți place să le faci și la unul care nu-ți place. Spune-le cu voce tare, cu gern / nicht gern. Muzica e o temă excelentă de conversație: nemții, mai ales cei din nord, adoră festivalurile."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "De cât timp ascultă Radu rock și metal?", "audio": "d2", "options": ["De 2 ani", "De 12 ani", "De 20 de ani"], "answer": 2 },
+    { "type": "mcq", "id": "e2", "question": "Cât durează drumul la Wacken cu mașina?", "audio": "d7", "options": ["O oră", "Două ore", "O jumătate de oră"], "answer": 0 },
+    { "type": "mcq", "id": "e3", "question": "Ce-i place lui Radu să facă?", "audio": "d12", "options": ["Să joace fotbal", "Să citească și să se uite la filme de groază", "Să meargă cu bicicleta iarna"], "answer": 1 },
+    { "type": "mcq", "id": "e4", "question": "Ce propune Ole?", "audio": "d15", "options": ["Un meci de fotbal sâmbătă", "Un concert sâmbătă", "O excursie la Wacken mâine"], "answer": 1 },
+    { "type": "gap", "id": "e5", "text": "Ole ___ jedes Jahr nach Wacken. (fahren)", "answers": [["fährt"]], "ro": "Ole merge în fiecare an la Wacken." },
+    { "type": "gap", "id": "e6", "text": "___ du gern? (lesen)", "answers": [["Liest"]], "ro": "Îți place să citești?" },
+    { "type": "gap", "id": "e7", "text": "Valy ___ gern Filme. (sehen)", "answers": [["sieht"]], "ro": "Lui Valy îi place să se uite la filme." },
+    { "type": "gap", "id": "e8", "text": "Ich spiele nicht ___ Fußball.", "answers": [["gern", "gerne"]], "ro": "Nu-mi place să joc fotbal." },
+    { "type": "gap", "id": "e9", "text": "Ich ___ Iron Maiden. (mögen)", "answers": [["mag"]], "ro": "Îmi place Iron Maiden." },
+    { "type": "mcq", "id": "e10", "question": "Cum spui „Îmi place să merg cu bicicleta”?", "options": ["Ich mag Fahrrad.", "Ich fahre gern Fahrrad.", "Ich gehe gern Fahrrad."], "answer": 1, "explain": "Activitate → verb + gern. Cu un vehicul → fahren." },
+    { "type": "order", "id": "e11", "ro": "Nu-mi place să joc fotbal.", "answer": "Ich spiele nicht gern Fußball." },
+    { "type": "order", "id": "e12", "ro": "Ce-ți mai place să faci?", "answer": "Was machst du sonst gern?" },
+    { "type": "dictation", "id": "e13", "audio": "d9", "text": "Nee, mein Vater. Ich fahre nur Fahrrad, auch im Winter.", "ro": "Nu, tata are. Eu merg doar cu bicicleta, și iarna." },
+    { "type": "dictation", "id": "e14", "audio": "p6", "text": "Was ist deine Lieblingsband?", "ro": "Care e trupa ta preferată?" }
+  ],
+  "speaking": {
+    "scenario": "După tură, la stația de autobuz. Un coleg vede tricoul tău de la un concert și începeți să vorbiți despre muzică și hobby-uri.",
+    "claudeRole": "Ești Ole, 23 de ani, coleg la Fördewurst, mare fan de heavy metal; mergi în fiecare an la Wacken. Informal (du), entuziast, folosești „geil”, „cool”, „nee”. Întrebi ce trupe îi plac, dacă merge la concerte și festivaluri, ce mai face în timpul liber. Povestește și tu: mergi cu bicicleta pe orice vreme, ai trupele tale preferate. La final propune un concert în weekend.",
+    "tasks": [
+      "Spune ce muzică îți place și ce trupe preferi",
+      "Spune 2 lucruri care îți plac și unul care nu-ți place (gern / nicht gern)",
+      "Întreabă-l pe Ole ce face el în timpul liber",
+      "Folosește corect fährst / liest / siehst",
+      "Acceptă sau refuză politicos invitația la concert"
+    ],
+    "starter": "Hey, cooles T-Shirt! Hörst du gern Metal?"
+  }
+}

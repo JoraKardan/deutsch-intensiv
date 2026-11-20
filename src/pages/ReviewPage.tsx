@@ -14,13 +14,69 @@ function phraseOf(p: Progress, c: StoredCard): { id: string; de: string; ro: str
   return lessons[c.lessonId]?.phrases.find((ph) => ph.id === c.phraseId)
 }
 
-export function dueCards(cards: Record<string, StoredCard>, now = new Date()): StoredCard[] {
+/** Câte fișe noi din lecții intră în repetiție pe zi. Fișele din conversații (💬) nu au limită. */
+export const NEW_PER_DAY = 20
+
+const phraseNum = (id: string) => Number(id.replace(/\D/g, '')) || 0
+
+/** Coada de azi + câte fișe noi așteaptă pentru zilele următoare (din cauza limitei). */
+export function reviewQueue(p: Progress, now = new Date()): { queue: StoredCard[]; waitingNew: number } {
+  const due = Object.values(p.cards).filter((c) => (lessons[c.lessonId] || c.lessonId === MINE) && dueDate(c) <= now)
+  // fișele noi din lecții: în ordinea lecțiilor și a expresiilor, perechile (de-ro + ro-de) una lângă alta,
+  // ca limita să ia expresii întregi
+  const fresh = due
+    .filter((c) => isNew(c) && c.lessonId !== MINE)
+    .sort(
+      (a, b) =>
+        a.lessonId.localeCompare(b.lessonId) || phraseNum(a.phraseId) - phraseNum(b.phraseId) || a.dir.localeCompare(b.dir),
+    )
+  const room = Math.max(0, NEW_PER_DAY - (p.days[todayKey()]?.newCards ?? 0))
+  const allowed = new Set(fresh.slice(0, room).map((c) => c.id))
   // Ordinea: întâi fișele deja învățate (după scadență), apoi cele noi:
   // toate „germană → română”, apoi „română → germană”, ca să nu apară perechea una după alta.
   const rank = (c: StoredCard) => (isNew(c) ? (c.dir === 'de-ro' ? 1 : 2) : 0)
-  return Object.values(cards)
-    .filter((c) => (lessons[c.lessonId] || c.lessonId === MINE) && dueDate(c) <= now)
+  const queue = due
+    .filter((c) => !isNew(c) || c.lessonId === MINE || allowed.has(c.id))
     .sort((a, b) => rank(a) - rank(b) || dueDate(a).getTime() - dueDate(b).getTime())
+  return { queue, waitingNew: fresh.length - allowed.size }
+}
+
+export function dueCards(p: Progress, now = new Date()): StoredCard[] {
+  return reviewQueue(p, now).queue
+}
+
+function GradeHelp() {
+  return (
+    <details className="grade-help">
+      <summary>Ce fac butoanele?</summary>
+      <p>
+        Nicio fișă nu dispare definitiv: fiecare revine, la intervale tot mai mari. Timpul de pe buton arată când revine fișa dacă îl apeși. Algoritmul
+        (FSRS) alege intervalele astfel încât, când fișa revine, să ai ~90% șanse s-o știi încă.
+      </p>
+      <ul>
+        <li>
+          <strong>Din nou</strong>: n-ai știut. Fișa revine peste ~1–10 minute, în aceeași sesiune. Dacă o știai deja de mai demult, intervalul următor scade
+          mult: algoritmul o consideră „fragilă”.
+        </li>
+        <li>
+          <strong>Greu</strong>: ai știut, dar cu efort. Fișa nouă revine tot azi, peste câteva minute; una învățată revine puțin mai târziu decât data trecută.
+          Dacă n-ai știut deloc, apasă „Din nou”, nu „Greu”.
+        </li>
+        <li>
+          <strong>Bine</strong>: ai știut. <em>Butonul normal.</em> O fișă nouă mai revine o dată peste ~10 minute, apoi peste 1–3 zile. La fiecare „Bine”
+          intervalul crește de ~2–3 ori (ex.: 3 zile → 1 săptămână → 3 săptămâni → 2 luni…).
+        </li>
+        <li>
+          <strong>Ușor</strong>: ai știut instant, fără să te gândești. Fișa sare peste etape și revine abia peste multe zile. Folosește-l doar când ești sigur.
+        </li>
+      </ul>
+      <p>
+        Fișele grele le vezi des, cele ușoare tot mai rar. Pe zi intră cel mult <strong>{NEW_PER_DAY} fișe noi</strong> din lecții, ca repetiția să nu se
+        adune. Restul așteaptă în ordine pentru zilele următoare. Fișele din conversații (💬) intră toate imediat.
+      </p>
+      <p className="muted">Taste: Space = arată răspunsul · 1–4 = butoanele · R = ascultă din nou.</p>
+    </details>
+  )
 }
 
 export function ReviewPage() {
@@ -34,7 +90,7 @@ export function ReviewPage() {
     return () => clearInterval(t)
   }, [])
 
-  const queue = useMemo(() => dueCards(progress.cards, now), [progress.cards, now])
+  const { queue, waitingNew } = useMemo(() => reviewQueue(progress, now), [progress, now])
   const card = queue[0]
   const mine = card?.lessonId === MINE
   const phrase = card ? phraseOf(progress, card) : undefined
@@ -103,6 +159,11 @@ export function ReviewPage() {
       <div className="card center">
         <h2>🎉 Gata pe moment!</h2>
         <p>Ai terminat toate fișele scadente.</p>
+        {waitingNew > 0 && (
+          <p className="muted">
+            Ai atins limita de {NEW_PER_DAY} fișe noi pe azi. Încă {waitingNew} fișe noi așteaptă pentru zilele următoare.
+          </p>
+        )}
         {nextDue && <p className="muted">Următoarea fișă revine peste {formatInterval(nextDue.getTime() - now.getTime())}.</p>}
         <a className="btn" href="#/">
           ← Acasă
@@ -120,6 +181,7 @@ export function ReviewPage() {
       <div className="row between muted small">
         <span>
           Rămase: <strong>{queue.length}</strong> ({newCount} noi){todayReviews ? ` · azi: ${todayReviews}` : ''}
+          {waitingNew > 0 && <span title={`Limita: ${NEW_PER_DAY} fișe noi pe zi`}> · în așteptare: {waitingNew}</span>}
         </span>
         <span>
           {source} · {card.dir === 'de-ro' ? 'Germană → Română' : 'Română → Germană'}
@@ -165,6 +227,7 @@ export function ReviewPage() {
       <p className="muted small center">
         „Din nou” = n-am știut · „Greu” = cu efort · „Bine” = am știut · „Ușor” = instant. Fii sincer cu tine: algoritmul se adaptează.
       </p>
+      <GradeHelp />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-# Vocabularul cunoscut (până la w01-8)
+# Vocabularul cunoscut (până la w02-8)
 
 Tot ce a învățat elevul, în ordinea lecțiilor. Fiecare lecție are: tema de gramatică, expresiile de bază (cu traducere) și cuvintele care apar **pentru prima dată** în lecția respectivă. Un cuvânt dintr-o lecție este cunoscut doar dacă lecția are id-ul mai mic sau egal cu lecția curentă a elevului (ex.: w01-5 ≤ w02-1).
 
@@ -197,3 +197,197 @@ Expresii:
 Cuvinte noi: frei, Setz, Sophie, Marketing, Leipzig, fünfzehn, achtundzwanzig, erst, Woche, Wow, nur, Französisch, Also, Raum, möchtest, dem, leider, Dann, Habt
 
 Scenariu de vorbire: Recapitulare mare: prima ta zi la o firmă nouă. Mai multe situații una după alta: te prezinți, vorbești la prânz, stabilești o întâlnire.
+
+## w02-1 · Mein neuer Tag (Noua mea zi)
+
+Gramatică: Verbele separabile
+
+Expresii:
+- Moin! = Bună! (salutul din nord)
+- Heute ist mein erster Tag. = Azi e prima mea zi.
+- Ich bin der Neue. = Eu sunt cel nou.
+- Wann stehst du auf? = Când te scoli?
+- Ich stehe um vier Uhr auf. = Mă scol la ora patru.
+- Wann fängt die Schicht an? = Când începe tura?
+- Die Frühschicht fängt um sechs Uhr an. = Tura de dimineață începe la ora șase.
+- Wann hörst du auf? = Când termini (lucrul)?
+- Ich habe Frühschicht. = Sunt în tura de dimineață.
+- Sie hat Spätschicht. = Ea e în tura de după-amiază.
+- Ich kaufe ein. = Fac cumpărături.
+- Ich rufe dich an. = Te sun.
+- Das ist so früh! = E atât de devreme!
+- Wir fangen an! = Începem!
+- Pünktlich! = Punctual! / La fix!
+
+Cuvinte noi: Moin, fangen, an, Pünktlich, Kasia, Polen, Wochen, Flensburg, stehst, Bus, fährt, stehe, früh, Frühschicht, hart, hören, machst, kaufe, schlafe, Verpackung, fängt, Spätschicht, Leute, Neue, Schicht, hörst, rufe, kauft, Rufst, Nachtschicht, Pause, Feierabend, Umkleide, Schichtleiter, Fabrik
+
+Scenariu de vorbire: Prima zi la fabrică, în vestiar, înainte de tura de dimineață. O colegă nouă te întreabă despre programul tău.
+
+## w02-2 · Der Schichtplan (Planificarea turelor)
+
+Gramatică: Verbul pe locul 2 (inversiunea). Expresii de timp
+
+Expresii:
+- Wo ist der Schichtplan? = Unde e planul turelor?
+- Diese Woche habe ich Frühschicht. = Săptămâna asta sunt în tura de dimineață.
+- Nächste Woche habe ich Spätschicht. = Săptămâna viitoare sunt în tura de după-amiază.
+- von Montag bis Freitag = de luni până vineri
+- Am Samstag arbeite ich nicht. = Sâmbătă nu lucrez.
+- Wann habe ich frei? = Când am liber?
+- Am Sonntag habe ich frei. = Duminică am liber.
+- jeden Tag = în fiecare zi
+- in zwei Wochen = peste două săptămâni
+- übermorgen = poimâine
+- Schade! = Păcat!
+- Das ist Schichtarbeit. = Asta e munca în ture.
+- Weiß ich nicht. = Nu știu.
+- Am Mittwoch weiß ich mehr. = Miercuri știu mai multe.
+- Jo. = Da. (colocvial, în nord)
+
+Cuvinte noi: Petersen, Schichtplan, Jens, reicht, Wand, Diese, nächste, da, Valentina, Schade, sehen, fast, nie, Tja, Schichtarbeit, Valy, Weiß, Hansen, mehr, Jo, übermorgen, schlafen
+
+Scenariu de vorbire: Ești la fabrică, la panoul cu planul turelor. Vrei să afli programul tău și al soției pentru următoarele două săptămâni.
+
+## w02-3 · Meine Familie (Familia mea)
+
+Gramatică: Posesivele: mein, dein, Ihr (și sein, ihr)
+
+Expresii:
+- Das ist meine Frau. = Ea e soția mea.
+- Das ist mein Mann. = El e soțul meu.
+- Wer ist das? = Cine e acesta / aceasta?
+- Ist das Ihre Frau? = Ea e soția dumneavoastră?
+- Hast du Geschwister? = Ai frați sau surori?
+- Ich habe eine Schwester und einen Bruder. = Am o soră și un frate.
+- Meine Eltern wohnen in Moldau. = Părinții mei locuiesc în Moldova.
+- Sie lebt in Italien. = Ea trăiește în Italia.
+- Und deine Familie? = Și familia ta?
+- Mein Vater ist Rentner. = Tatăl meu e pensionar.
+- Wir sind verheiratet. = Suntem căsătoriți.
+- Alle sagen Valy. = Toți îi spun Valy.
+- Echt? = Serios?
+- Grüß deine Frau! = Salut-o pe soția ta (din partea mea)!
+- Na also! = Ei, vezi! / Na, poftim!
+
+Cuvinte noi: guckst, Foto, Deine, Dein, Mutter, Eltern, Geschwister, Schwester, lebt, Italien, Familie, wohnt, Fördewurst, Echt, Lehrerin, Oma, Dänin, Norden, normal, Info, passt, Na, seid, Grüß, Mann, Bruder, Rentner, verheiratet, seine, Unsere, Wohnung, klein
+
+Scenariu de vorbire: Pauză la fabrică. Un coleg vede o poză pe telefonul tău și te întreabă despre familie.
+
+## w02-4 · Musik und Hobbys (Muzică și hobby-uri)
+
+Gramatică: gern / nicht gern. Verbe cu vocala schimbată
+
+Expresii:
+- Hörst du gern Metal? = Îți place să asculți metal?
+- Ja, sehr gern! = Da, foarte mult!
+- Was machst du gern? = Ce-ți place să faci?
+- Ich lese gern. = Îmi place să citesc.
+- Ich spiele nicht gern Fußball. = Nu-mi place să joc fotbal.
+- Was ist deine Lieblingsband? = Care e trupa ta preferată?
+- Ich mag Rammstein. = Îmi place Rammstein.
+- Fährst du nach Wacken? = Mergi la Wacken?
+- Ich fahre jedes Jahr. = Merg în fiecare an.
+- Ich fahre Fahrrad. = Merg cu bicicleta.
+- Kommt ihr mit? = Veniți și voi?
+- Noch nicht. = Încă nu.
+- Geil! = Tare! / Super!
+- Nee. = Nu. (colocvial)
+- Respekt! = Respect! / Jos pălăria!
+
+Cuvinte noi: Hey, cooles, T-Shirt, Metal, höre, Rock, Jahren, Geil, Lieblingsband, Metallica, natürlich, mag, Heavy, Beispiel, Iron, Maiden, Fährst, Wacken, nächsten, Sommer, fahren, fahre, jedes, Jahr, Auto, Stunde, Nee, Fahrrad, Winter, Respekt, sonst, Spielst, Fußball, spiele, lese, sehe, Horrorfilme, liest, Krimis, Fantasy, Cool, spielt, Band, Volksbad, Rammstein, Ole, Siehst
+
+Scenariu de vorbire: După tură, la stația de autobuz. Un coleg vede tricoul tău de la un concert și începeți să vorbiți despre muzică și hobby-uri.
+
+## w02-5 · Im Supermarkt (La supermarket)
+
+Gramatică: Pluralul substantivelor. Cantități
+
+Expresii:
+- Was brauchen wir? = De ce avem nevoie?
+- Hast du die Liste? = Ai lista?
+- Wie viele Eier? = Câte ouă?
+- Brauchen wir Milch? = Ne trebuie lapte?
+- zwei Kilo Kartoffeln = două kilograme de cartofi
+- eine Packung Kaffee = un pachet de cafea
+- sechs Flaschen Bier = șase sticle de bere
+- Wo sind die Tomaten? = Unde sunt roșiile?
+- beim Obst und Gemüse = la raionul de fructe și legume
+- Bitte keine Wurst! = Fără mezeluri, te rog!
+- Lieber Bier. = Mai bine bere.
+- Gute Idee! = Bună idee!
+- beim Bäcker = la brutărie
+- Dann haben wir alles. = Atunci avem tot.
+- Zur Kasse! = La casă!
+
+Cuvinte noi: brauchen, Liste, Brot, Eier, Tomaten, Kartoffeln, Kilo, Wurst, zehntausend, Würstchen, Äpfel, Bananen, Packung, Getränke, Flasche, Wein, lieber, Bier, Flaschen, Gute, Idee, hinten, beim, Obst, Gemüse, Brötchen, Bäcker, Frisch, Zur, Kasse
+
+Scenariu de vorbire: Sâmbătă dimineața, la supermarket, cu soția ta. Faceți lista pentru săptămâna următoare și cumpărați.
+
+## w02-6 · Was kostet das? (Cât costă?)
+
+Gramatică: Acuzativul: einen, eine, ein; den, die, das
+
+Expresii:
+- Was kostet das? = Cât costă asta?
+- Was kostet die Lampe? = Cât costă lampa?
+- Wie viel kostet der Tisch? = Cât costă masa?
+- Das ist zu teuer. = E prea scump.
+- Das ist billig! = E ieftin!
+- Geht es auch billiger? = Se poate și mai ieftin?
+- Wir nehmen die Lampe. = Luăm lampa.
+- Ich nehme drei. = Iau trei.
+- Wir brauchen einen Tisch. = Ne trebuie o masă.
+- Haben Sie auch einen Stuhl? = Aveți și un scaun?
+- Schau mal! = Ia uite!
+- Na gut. = Fie. / Bine, hai.
+- Das ist fast neu. = E aproape nou.
+- Zusammen zehn Euro. = În total zece euro.
+- Typisch! = Tipic!
+
+Cuvinte noi: Schau, mal, Lampe, billiger, nehmen, Tisch, Küche, Hundertzwanzig, teuer, guck, CDs, CD, nehme, Typisch, Keinen, billig, Stuhl, Stift, nimmt, Cent, neunzig, zweihundertfünfzig, tausend
+
+Scenariu de vorbire: Sâmbătă, la Flohmarkt în Flensburg. Cauți lucruri pentru locuința nouă: o masă, scaune, o lampă, poate ceva muzică.
+
+## w02-7 · In der Kantine (La cantină)
+
+Gramatică: Verbele modale möchten și können
+
+Expresii:
+- Was möchtest du? = Ce dorești?
+- Ich möchte das Hähnchen, bitte. = Aș vrea puiul, vă rog.
+- Was ist das Tagesgericht? = Care e meniul zilei?
+- Kann ich mit Karte bezahlen? = Pot plăti cu cardul?
+- Kann ich bar bezahlen? = Pot plăti cash?
+- Nur bar. = Doar cash.
+- Wo bekomme ich die Karte? = Unde primesc cardul?
+- Kannst du mitkommen? = Poți să vii și tu?
+- Ich komme gern mit. = Vin cu plăcere.
+- Sehr lecker! = Foarte gustos!
+- Einmal Pommes, bitte. = O porție de cartofi prăjiți, vă rog.
+- Mit Ketchup oder Mayo? = Cu ketchup sau maioneză?
+- Zum Mitnehmen oder hier essen? = La pachet sau mâncați aici?
+- Hier essen, bitte. = Mâncăm aici, vă rog.
+- Mahlzeit! = Poftă bună! (la prânz, între colegi)
+
+Cuvinte noi: möchtet, Hähnchen, Reis, Tagesgericht, Currywurst, Pommes, gibt, Wurstfabrik, Gemüsesuppe, Suppe, Kantinenkarte, bekomme, Büro, bar, Mitarbeiter, mitkommen, Fischbrötchen, Hafen, Fisch, Imbiss, lecker, Ketchup, Mayo, Mahlzeit
+
+Scenariu de vorbire: Vineri după tură, la un Imbiss în portul din Flensburg. Comanzi mâncare și băutură pentru tine și Valy și plătești.
+
+## w02-8 · Wiederholung: Die erste Woche in Flensburg (Recapitulare: Prima săptămână în Flensburg)
+
+Gramatică: Recapitulare: ordinea cuvintelor și formele săptămânii
+
+Expresii:
+- Hier ist Lena. = Sunt Lena. (la telefon)
+- Ich bin sehr müde. = Sunt foarte obosit.
+- Oh je! = Vai de mine!
+- Er spricht nicht viel. = Nu vorbește mult.
+- Wir sehen uns nicht oft. = Nu ne vedem des.
+- Wir haben beide Spätschicht. = Suntem amândoi în tura de după-amiază.
+- Ich bin zu Hause! = Sunt acasă! / Am ajuns acasă!
+- Kannst du uns besuchen? = Poți să ne vizitezi?
+- Das möchte ich sehen! = Asta aș vrea s-o văd!
+
+Cuvinte noi: müde, Norddeutscher, Ha, fängst, je, Kollege, hört, Konzert, seht, euch, oft, beide, Stühle, frische, Telefon, besuchen
+
+Scenariu de vorbire: Recapitulare mare: un fost coleg din Köln te sună să afle cum a fost prima săptămână în Flensburg. Apoi te sună o colegă cu o invitație.

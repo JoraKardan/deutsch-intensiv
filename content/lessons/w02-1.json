@@ -1,0 +1,148 @@
+{
+  "id": "w02-1",
+  "week": 2,
+  "day": 1,
+  "phase": "A1",
+  "kind": "lesson",
+  "title": "Mein neuer Tag",
+  "titleRo": "Noua mea zi",
+  "goals": [
+    "să saluți ca în nord: „Moin!”",
+    "să povestești ziua ta: când te scoli, când începi și când termini",
+    "să folosești verbele separabile (aufstehen, anfangen, aufhören, einkaufen)",
+    "să vorbești despre ture: Frühschicht, Spätschicht, Nachtschicht"
+  ],
+  "intro": "Săptămâna 2 începe cu o schimbare mare: **Radu a lăsat IT-ul** și s-a mutat cu soția lui, Valy, la **Flensburg**, în nordul Germaniei, aproape de Danemarca. Acum lucrează în ture la fabrica de mezeluri **Fördewurst**. E prima lui zi, în tura de dimineață, și la 5:45 e deja în vestiar. Azi înveți să vorbești despre ziua ta și o particularitate a germanei: **verbele separabile**. Prefixul lor „fuge” la sfârșitul propoziției: Ich **stehe** um vier Uhr **auf**.",
+  "pronunciation": {
+    "title": "Cuvintele fabricii",
+    "intro": "Cuvinte pe care le vei auzi zilnic la muncă. **Sch** = ș, iar **ch** din „Schicht” e moale, ca în „ich”. Toate substantivele compuse iau genul ultimului cuvânt: die Schicht → die **Früh**schicht.",
+    "items": [
+      { "id": "x1", "sound": "tura de dimineață", "de": "die Frühschicht", "tip": "„früü-șiht”; früh = devreme" },
+      { "id": "x2", "sound": "tura de după-amiază", "de": "die Spätschicht", "tip": "„șpeet-șiht”; spät = târziu" },
+      { "id": "x3", "sound": "tura de noapte", "de": "die Nachtschicht", "tip": "primul **ch** e aspru (ca în „acht”), al doilea moale: „naht-șiht”" },
+      { "id": "x4", "sound": "pauza", "de": "die Pause", "tip": "„pau-ze”, ca în română, cu **e** final" },
+      { "id": "x5", "sound": "sfârșitul programului", "de": "der Feierabend", "tip": "„faia-aabent”; „Schönen Feierabend!” = O seară bună după muncă!" },
+      { "id": "x6", "sound": "vestiarul", "de": "die Umkleide", "tip": "„um-klai-de”; umkleiden = a se schimba de haine" },
+      { "id": "x7", "sound": "șeful de tură", "de": "der Schichtleiter", "tip": "„șiht-laita”; colocvial și: der Vorarbeiter" },
+      { "id": "x8", "sound": "fabrica", "de": "die Fabrik", "tip": "accentul pe final: „fa-BRIK”" },
+      { "id": "x9", "sound": "ambalarea", "de": "die Verpackung", "tip": "„fer-pa-kung”; aici lucrează Valy" }
+    ]
+  },
+  "dialog": {
+    "title": "In der Umkleide",
+    "situation": "Prima zi la Fördewurst, ora 5:45. În vestiar, Radu îl cunoaște pe Jens, șeful de tură, și pe Kasia, o colegă din Polonia, nouă și ea.",
+    "speakers": {
+      "J": { "name": "Jens", "voice": "de-DE-BerndNeural" },
+      "A": { "name": "Radu", "voice": "de-DE-ConradNeural" },
+      "K": { "name": "Kasia", "voice": "de-DE-MajaNeural" }
+    },
+    "lines": [
+      { "id": "d1", "speaker": "J", "de": "Moin. Du bist Radu, oder?", "ro": "Moin. Tu ești Radu, nu?", "lit": "bună | tu | ești |  | sau" },
+      { "id": "d2", "speaker": "A", "de": "Ja, Moin! Heute ist mein erster Tag.", "ro": "Da, moin! Azi e prima mea zi.", "lit": "da | bună | azi | e | al meu | prima | zi" },
+      { "id": "d3", "speaker": "J", "de": "Gut. Wir fangen um sechs an. Pünktlich.", "ro": "Bine. Începem la șase. Punctual.", "lit": "bine | noi | începem… | la | șase | …(an-fangen) | punctual" },
+      { "id": "d4", "speaker": "K", "de": "Hallo, ich bin Kasia. Ich bin auch neu hier.", "ro": "Salut, eu sunt Kasia. Și eu sunt nouă aici.", "lit": "salut | eu | sunt |  | eu | sunt | și | nou | aici" },
+      { "id": "d5", "speaker": "A", "de": "Freut mich! Woher kommst du?", "ro": "Încântat! De unde ești?", "lit": "bucură | pe mine | de unde | vii | tu" },
+      { "id": "d6", "speaker": "K", "de": "Aus Polen. Ich bin seit zwei Wochen in Flensburg.", "ro": "Din Polonia. Sunt de două săptămâni în Flensburg.", "lit": "din | Polonia | eu | sunt | de la | două | săptămâni | în | " },
+      { "id": "d7", "speaker": "A", "de": "Wann stehst du morgens auf?", "ro": "Când te scoli dimineața?", "lit": "când | scoli… | tu | dimineața | …(auf-stehen)" },
+      { "id": "d8", "speaker": "K", "de": "Um halb fünf. Mein Bus fährt um zehn nach fünf.", "ro": "La patru și jumătate. Autobuzul meu pleacă la cinci și zece.", "lit": "la | jumătate | cinci | al meu | autobuz | merge | la | zece | după | cinci" },
+      { "id": "d9", "speaker": "A", "de": "Ich stehe um vier auf. Das ist so früh!", "ro": "Eu mă scol la patru. E atât de devreme!", "lit": "eu | scol… | la | patru | …(auf-stehen) | asta | e | așa | devreme" },
+      { "id": "d10", "speaker": "K", "de": "Ja, Frühschicht ist hart. Aber um vierzehn Uhr hören wir auf.", "ro": "Da, tura de dimineață e grea. Dar la două terminăm.", "lit": "da | dimineață-tură | e | grea | dar | la | paisprezece | ora | terminăm… | noi | …(auf-hören)" },
+      { "id": "d11", "speaker": "A", "de": "Und dann? Was machst du am Nachmittag?", "ro": "Și apoi? Ce faci după-amiaza?", "lit": "și | apoi | ce | faci | tu | la (+art.) | după-amiază" },
+      { "id": "d12", "speaker": "K", "de": "Ich kaufe ein und dann schlafe ich. Und du?", "ro": "Fac cumpărături și apoi dorm. Și tu?", "lit": "eu | cumpăr… | …(ein-kaufen) | și | apoi | dorm | eu | și | tu" },
+      { "id": "d13", "speaker": "A", "de": "Meine Frau arbeitet auch hier, in der Verpackung. Sie fängt um vierzehn Uhr an.", "ro": "Și soția mea lucrează aici, la ambalare. Ea începe la două.", "lit": "a mea | soție | lucrează | și | aici | în | (art.) | ambalare | ea | începe… | la | paisprezece | ora | …(an-fangen)" },
+      { "id": "d14", "speaker": "K", "de": "Oh, sie hat Spätschicht? Das ist nicht leicht.", "ro": "O, ea e în tura de după-amiază? Nu e ușor.", "lit": "o | ea | are | târziu-tură | asta | e | nu | ușor" },
+      { "id": "d15", "speaker": "J", "de": "So, Leute. Es ist fünf vor sechs. Wir fangen an!", "ro": "Gata, oameni buni. E șase fără cinci. Începem!", "lit": "gata | oameni | (asta) | e | cinci | înainte de | șase | noi | începem… | …(an-fangen)" },
+      { "id": "d16", "speaker": "A", "de": "Okay, ich komme!", "ro": "Bine, vin!", "lit": "ok | eu | vin" }
+    ]
+  },
+  "phrases": [
+    { "id": "p1", "de": "Moin!", "ro": "Bună! (salutul din nord)", "note": "În nordul Germaniei se spune la orice oră: dimineața, la prânz, seara. „Moin moin!” e varianta mai vorbăreață." },
+    { "id": "p2", "de": "Heute ist mein erster Tag.", "ro": "Azi e prima mea zi.", "lit": "azi | e | al meu | prima | zi" },
+    { "id": "p3", "de": "Ich bin der Neue.", "ro": "Eu sunt cel nou.", "lit": "eu | sunt | (art.) | noul", "note": "O femeie spune: Ich bin die Neue." },
+    { "id": "p4", "de": "Wann stehst du auf?", "ro": "Când te scoli?", "lit": "când | scoli… | tu | …(auf-stehen)" },
+    { "id": "p5", "de": "Ich stehe um vier Uhr auf.", "ro": "Mă scol la ora patru.", "lit": "eu | scol… | la | patru | ora | …(auf-stehen)" },
+    { "id": "p6", "de": "Wann fängt die Schicht an?", "ro": "Când începe tura?", "lit": "când | începe… | (art.) | tura | …(an-fangen)" },
+    { "id": "p7", "de": "Die Frühschicht fängt um sechs Uhr an.", "ro": "Tura de dimineață începe la ora șase.", "lit": "(art.) | dimineață-tura | începe… | la | șase | ora | …(an-fangen)" },
+    { "id": "p8", "de": "Wann hörst du auf?", "ro": "Când termini (lucrul)?", "lit": "când | termini… | tu | …(auf-hören)" },
+    { "id": "p9", "de": "Ich habe Frühschicht.", "ro": "Sunt în tura de dimineață.", "lit": "eu | am | dimineață-tură", "note": "Frühschicht ≈ 6–14, Spätschicht ≈ 14–22, Nachtschicht ≈ 22–6. Fără articol: Ich habe Spätschicht." },
+    { "id": "p10", "de": "Sie hat Spätschicht.", "ro": "Ea e în tura de după-amiază.", "lit": "ea | are | târziu-tură" },
+    { "id": "p11", "de": "Ich kaufe ein.", "ro": "Fac cumpărături.", "lit": "eu | cumpăr… | …(ein-kaufen)" },
+    { "id": "p12", "de": "Ich rufe dich an.", "ro": "Te sun.", "lit": "eu | sun… | pe tine | …(an-rufen)" },
+    { "id": "p13", "de": "Das ist so früh!", "ro": "E atât de devreme!", "lit": "asta | e | așa | devreme" },
+    { "id": "p14", "de": "Wir fangen an!", "ro": "Începem!", "lit": "noi | începem… | …(an-fangen)" },
+    { "id": "p15", "de": "Pünktlich!", "ro": "Punctual! / La fix!", "note": "La ture, punctualitatea contează enorm: „um sechs” înseamnă la 6:00 gata îmbrăcat, nu la 6:00 în vestiar." }
+  ],
+  "grammar": {
+    "title": "Verbele separabile",
+    "explanation": [
+      "Multe verbe germane au un **prefix separabil**: **auf**stehen (a se scula), **an**fangen (a începe), **auf**hören (a termina), **ein**kaufen (a face cumpărături), **an**rufen (a suna). La prezent, verbul se conjugă pe locul 2, iar prefixul **pleacă la sfârșitul propoziției**: Ich **stehe** um vier Uhr **auf**.",
+      "Între verb și prefix poate sta multă informație: Ich **stehe** jeden Tag um vier Uhr **auf**. De aceea, **ascultă până la ultimul cuvânt**! Prefixul poate schimba complet sensul: Ich **höre** Musik (ascult muzică), dar Ich **höre** um zwei **auf** (termin la două).",
+      "La infinitiv și în dicționar prefixul e lipit: aufstehen. Accentul cade mereu **pe prefix**: **AUF**stehen, **AN**fangen, **EIN**kaufen.",
+      "**anfangen** își schimbă și vocala la du și er/sie/es: du f**ä**ngst an, er f**ä**ngt an (la fel ca fahren → er f**ä**hrt).",
+      "Prefixe separabile frecvente: **an-, auf-, aus-, ein-, mit-, zurück-**. Sensul lor ajută: **auf** = sus, **ein** = înăuntru, **mit** = cu, **zurück** = înapoi. Ex.: mitkommen = a veni cu cineva: Kommst du **mit**?"
+    ],
+    "tables": [
+      {
+        "caption": "anfangen și aufstehen – prezent",
+        "audio": "conjugation",
+        "headers": ["", "anfangen (a începe)", "aufstehen (a se scula)"],
+        "rows": [
+          ["ich", "fange **an**", "stehe **auf**"],
+          ["du", "f**ä**ngst **an**", "stehst **auf**"],
+          ["er / sie / es", "f**ä**ngt **an**", "steht **auf**"],
+          ["wir", "fangen **an**", "stehen **auf**"],
+          ["ihr", "fangt **an**", "steht **auf**"],
+          ["sie / Sie", "fangen **an**", "stehen **auf**"]
+        ]
+      },
+      {
+        "caption": "Prefixul merge la final",
+        "audio": "row",
+        "headers": ["locul 1", "verbul (locul 2)", "mijlocul", "prefixul (final)"],
+        "rows": [
+          ["Ich", "stehe", "um vier Uhr", "**auf**."],
+          ["Die Schicht", "fängt", "um sechs Uhr", "**an**."],
+          ["Wir", "hören", "um vierzehn Uhr", "**auf**."],
+          ["Kasia", "kauft", "am Nachmittag", "**ein**."],
+          ["Ich", "rufe", "dich morgen", "**an**."]
+        ]
+      }
+    ],
+    "examples": [
+      { "de": "Ich **stehe** um vier Uhr **auf**.", "ro": "Mă scol la patru." },
+      { "de": "Wann **fängt** die Schicht **an**?", "ro": "Când începe tura?" },
+      { "de": "Wir **hören** um vierzehn Uhr **auf**.", "ro": "Terminăm la două." },
+      { "de": "Kasia **kauft** am Nachmittag **ein**.", "ro": "Kasia face cumpărături după-amiaza." },
+      { "de": "**Rufst** du mich heute Abend **an**?", "ro": "Mă suni diseară?" },
+      { "de": "**Kommst** du **mit**?", "ro": "Vii și tu?" }
+    ],
+    "tip": "Când asculți o propoziție germană, **așteaptă ultimul cuvânt**. La verbele separabile sensul complet vine abia la final. E un obicei care te ajută la înțelegerea vorbirii în general."
+  },
+  "exercises": [
+    { "type": "mcq", "id": "e1", "question": "La ce oră începe tura?", "audio": "d3", "options": ["La 5:00", "La 6:00", "La 14:00"], "answer": 1 },
+    { "type": "mcq", "id": "e2", "question": "De când e Kasia în Flensburg?", "audio": "d6", "options": ["De două zile", "De două săptămâni", "De doi ani"], "answer": 1 },
+    { "type": "mcq", "id": "e3", "question": "La ce oră se scoală Radu?", "audio": "d9", "options": ["La 4:00", "La 4:30", "La 5:10"], "answer": 0 },
+    { "type": "mcq", "id": "e4", "question": "Când începe Valy lucrul?", "audio": "d13", "options": ["La 6:00", "La 14:00", "La 22:00"], "answer": 1, "explain": "vierzehn Uhr = 14:00: Valy e în tura de după-amiază (Spätschicht)." },
+    { "type": "gap", "id": "e5", "text": "Ich ___ um vier Uhr ___.", "answers": [["stehe"], ["auf"]], "ro": "Mă scol la patru." },
+    { "type": "gap", "id": "e6", "text": "Die Schicht ___ um sechs Uhr an.", "answers": [["fängt"]], "ro": "Tura începe la șase.", "hint": "anfangen: a → ä la er/sie/es" },
+    { "type": "gap", "id": "e7", "text": "Wann ___ du auf?", "answers": [["hörst"]], "ro": "Când termini?" },
+    { "type": "gap", "id": "e8", "text": "Am Nachmittag kaufe ich ___.", "answers": [["ein"]], "ro": "După-amiaza fac cumpărături." },
+    { "type": "mcq", "id": "e9", "question": "Care propoziție e corectă?", "options": ["Ich aufstehe um vier Uhr.", "Ich stehe um vier Uhr auf.", "Ich stehe auf vier Uhr um."], "answer": 1, "explain": "Verbul conjugat stă pe locul 2, prefixul la final." },
+    { "type": "order", "id": "e10", "ro": "Tura începe la șase.", "answer": "Die Schicht fängt um sechs an." },
+    { "type": "order", "id": "e11", "ro": "Când te scoli dimineața?", "answer": "Wann stehst du morgens auf?" },
+    { "type": "dictation", "id": "e12", "audio": "d9", "text": "Ich stehe um vier auf. Das ist so früh!", "ro": "Eu mă scol la patru. E atât de devreme!" },
+    { "type": "dictation", "id": "e13", "audio": "p7", "text": "Die Frühschicht fängt um sechs Uhr an.", "ro": "Tura de dimineață începe la ora șase." }
+  ],
+  "speaking": {
+    "scenario": "Prima zi la fabrică, în vestiar, înainte de tura de dimineață. O colegă nouă te întreabă despre programul tău.",
+    "claudeRole": "Ești Kasia, colega din Polonia, nouă și ea la Fördewurst în Flensburg. Vorbești o germană simplă, informal (du). Întrebi când se scoală, când începe și când termină tura, ce face după muncă, ce tură are soția lui. Povestește și despre ziua ta. Folosește multe verbe separabile (aufstehen, anfangen, aufhören, einkaufen, anrufen).",
+    "tasks": [
+      "Salută ca în nord și prezintă-te",
+      "Spune la ce oră te scoli și când începe tura ta",
+      "Spune când termini și ce faci după-amiaza",
+      "Întreab-o pe Kasia cel puțin 3 lucruri despre ziua ei",
+      "Folosește cel puțin 4 verbe separabile diferite"
+    ],
+    "starter": "Moin! Ich bin Kasia. Bist du auch neu hier?"
+  }
+}
