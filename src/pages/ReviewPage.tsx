@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { lessons } from '../lib/content'
-import { play, speak, stopAll } from '../lib/audio'
+import { play, stopAll } from '../lib/audio'
 import { MINE, reviewCard, todayKey, useProgress, type Progress } from '../lib/store'
 import { dueDate, formatInterval, GRADES, isNew, previewIntervals, type StoredCard } from '../lib/srs'
 import { t } from '../lib/i18n'
@@ -83,10 +83,8 @@ export function ReviewPage() {
   const intervals = useMemo(() => (card ? previewIntervals(card) : {}), [card])
 
   const say = useCallback(() => {
-    if (card && phrase) {
-      if (mine) speak(phrase.de)
-      else play(card.lessonId, phrase.id, phrase.de)
-    }
+    // fișele din conversații (💬) n-au fișier audio: fără sunet (nu folosim vocea browserului)
+    if (card && phrase && !mine) play(card.lessonId, phrase.id, phrase.de)
   }, [card, phrase, mine])
 
   // germană → română: redăm audio la afișare; română → germană: la întoarcere
@@ -172,7 +170,7 @@ export function ReviewPage() {
       <div className="card flash">
         <div className="hint muted small">{card.dir === 'de-ro' ? t.review.whatMeans : t.review.sayIt}</div>
         <div className={card.dir === 'de-ro' ? 'front de' : 'front'}>{front}</div>
-        {card.dir === 'de-ro' && (
+        {card.dir === 'de-ro' && !mine && (
           <button className="icon" onClick={say} title={t.review.listenR}>
             🔊
           </button>
@@ -181,7 +179,7 @@ export function ReviewPage() {
           <>
             <hr />
             <div className={card.dir === 'ro-de' ? 'back de' : 'back'}>{back}</div>
-            {card.dir === 'ro-de' && (
+            {card.dir === 'ro-de' && !mine && (
               <button className="icon" onClick={say} title={t.review.listenR}>
                 🔊
               </button>

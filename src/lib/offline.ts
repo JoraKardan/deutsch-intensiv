@@ -44,8 +44,17 @@ export async function countCachedAudio(urls = allAudioUrls()): Promise<number> {
   return urls.filter((u) => keys.has(u)).length
 }
 
-/** Descarcă audio-ul lipsă, câte 6 fișiere în paralel. */
-export async function downloadAllAudio(onProgress: (done: number, total: number) => void): Promise<{ failed: number }> {
+/** Descarcă audio-ul lipsă (implicit câte 6 fișiere în paralel). O singură descărcare odată. */
+let running: Promise<{ failed: number }> | null = null
+export function downloadAllAudio(onProgress: (done: number, total: number) => void, parallel = 6): Promise<{ failed: number }> {
+  if (running) return running.then(() => downloadAllAudio(onProgress, parallel))
+  running = doDownload(onProgress, parallel).finally(() => {
+    running = null
+  })
+  return running
+}
+
+async function doDownload(onProgress: (done: number, total: number) => void, parallel: number): Promise<{ failed: number }> {
   const urls = allAudioUrls()
   const cache = await caches.open(AUDIO_CACHE)
   const have = new Set((await cache.keys()).map((r) => new URL(r.url).pathname))
@@ -67,8 +76,39 @@ export async function downloadAllAudio(onProgress: (done: number, total: number)
       onProgress(++done, urls.length)
     }
   }
-  await Promise.all(Array.from({ length: 6 }, worker))
+  await Promise.all(Array.from({ length: parallel }, worker))
   return { failed }
+}
+
+// ---------- descărcarea automată a audio-ului nou, la pornire ----------
+
+const AUTO_KEY = 'deutsch-intensiv-auto-audio'
+export function getAutoAudio(): boolean {
+  try {
+    return localStorage.getItem(AUTO_KEY) !== '0'
+  } catch {
+    return true
+  }
+}
+export function setAutoAudio(on: boolean) {
+  try {
+    localStorage.setItem(AUTO_KEY, on ? '1' : '0')
+  } catch {
+    /* stocare indisponibilă */
+  }
+  if (on) startAutoDownload()
+}
+
+/** La pornire: descarcă în fundal fișierele audio lipsă (câte 3), dacă e permis și nu e „Economisire date”. */
+export function startAutoDownload() {
+  if (!offlineSupported() || !getAutoAudio() || !navigator.onLine) return
+  if ((navigator as unknown as { connection?: { saveData?: boolean } }).connection?.saveData) return
+  navigator.serviceWorker.ready
+    .then(() => new Promise((r) => setTimeout(r, 3000))) // lăsăm întâi aplicația să pornească
+    .then(() => downloadAllAudio(() => {}, 3))
+    .catch(() => {
+      /* încercăm din nou la următoarea pornire */
+    })
 }
 
 export function useAudioCacheStatus() {

@@ -1,5 +1,6 @@
-// Redare audio: fișierele generate de `npm run audio` (public/audio/<lecție>/<id>.m4a),
-// cu rezervă pe vocea germană a browserului doar dacă fișierul lipsește.
+// Redare audio: DOAR fișierele generate de `npm run audio` (public/audio/<lecție>/<id>.m4a).
+// Dacă un fișier nu se poate încărca, mai încercăm o dată, apoi anunțăm eroarea (onAudioError).
+// Vocea robotică a browserului (speechSynthesis) NU se folosește nicăieri.
 //
 // Folosim UN SINGUR element <audio> pentru tot: Safari permite redarea automată
 // (următoarea replică dintr-o secvență) doar pe un element deja „deblocat” de un click.
@@ -44,28 +45,11 @@ export function setSlowRate(v: number) {
   }
 }
 
-function pickVoice(): SpeechSynthesisVoice | undefined {
-  const voices = speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().startsWith('de'))
-  return (
-    voices.find((v) => /premium|enhanced/i.test(v.name)) ??
-    voices.find((v) => /anna|petra|markus/i.test(v.name)) ??
-    voices[0]
-  )
-}
-
-export function speak(text: string, slow = false): Promise<void> {
-  return new Promise((resolve) => {
-    if (!('speechSynthesis' in window)) return resolve()
-    speechSynthesis.cancel()
-    const u = new SpeechSynthesisUtterance(text)
-    u.lang = 'de-DE'
-    const v = pickVoice()
-    if (v) u.voice = v
-    u.rate = slow ? 0.7 : 0.95
-    u.onend = () => resolve()
-    u.onerror = () => resolve()
-    speechSynthesis.speak(u)
-  })
+// Ascultătorii pentru erorile de încărcare (mesajul din interfață).
+const errorListeners = new Set<() => void>()
+export function onAudioError(cb: () => void): () => void {
+  errorListeners.add(cb)
+  return () => errorListeners.delete(cb)
 }
 
 /** Oprește orice sunet și închide promisiunea redării curente. */
@@ -73,7 +57,6 @@ function haltCurrent() {
   req++
   const p = player
   if (p && !p.paused) p.pause()
-  if ('speechSynthesis' in window) speechSynthesis.cancel()
   const done = pending
   pending = null
   done?.()
@@ -97,13 +80,23 @@ function playRaw(lessonId: string, id: string, text: string, slow: boolean): Pro
     a.onended = () => {
       if (mine === req) finish()
     }
-    // Doar dacă fișierul nu se poate încărca (lipsă / format) folosim vocea browserului.
+    // Fișierul nu se încarcă (internet, lipsă): încă o încercare, apoi eroare și oprim secvența.
+    let retried = false
     a.onerror = () => {
       if (mine !== req) return
-      a.onended = null
-      a.onerror = null
-      speak(text, slow).then(finish)
+      if (!retried) {
+        retried = true
+        a.src = `${audioUrl(lessonId, id)}?retry=${Date.now()}`
+        a.play().catch(() => {
+          /* ajunge din nou în onerror */
+        })
+        return
+      }
+      seq++
+      errorListeners.forEach((cb) => cb())
+      finish()
     }
+    void text // textul nu mai e citit de browser; rămâne în semnătură pentru apelanți
     a.src = audioUrl(lessonId, id)
     // după schimbarea src, viteza revine la defaultPlaybackRate, așa că le setăm pe amândouă
     const rate = slow ? getSlowRate() : 1

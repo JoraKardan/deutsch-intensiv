@@ -68,7 +68,7 @@ const ro = {
     intro: 'Toate fișele de gramatică din lecțiile create până acum, pe scurt și cu exemple.',
   },
   grammar: { tapHint: '▶ Atinge un cuvânt din tabel ca să-l asculți.', examples: 'Exemple' },
-  audio: { listen: 'Ascultă', slow: 'Ascultă rar' },
+  audio: { listen: 'Ascultă', slow: 'Ascultă rar', error: '⚠️ Audio nu s-a putut încărca. Verifică internetul și încearcă din nou.' },
 
   lesson: {
     sections: {
@@ -287,6 +287,9 @@ const ro = {
     downloadAudio: '⬇ Descarcă audio pentru offline',
     failed: (n: number) => `${n} fișiere n-au putut fi descărcate. Verifică internetul și mai apasă o dată.`,
     allSaved: '✓ Tot audio-ul e salvat pentru offline.',
+    autoAudio: 'Descarcă automat audio nou',
+    autoAudioText:
+      'La pornirea aplicației, fișierele audio care lipsesc (de exemplu la o săptămână nouă) se descarcă în fundal. Tot audio-ul are ~40 MB; cu „Economisire date” activată pe telefon, descărcarea automată nu pornește.',
     devOnly: 'Modul offline funcționează pe site-ul publicat (nu în modul de dezvoltare local).',
     awake: '🔆 Ecranul rămâne aprins',
     awakeText:
@@ -380,7 +383,7 @@ const ru: Dict = {
     intro: 'Все грамматические темы из уже созданных уроков, кратко и с примерами.',
   },
   grammar: { tapHint: '▶ Нажми на слово в таблице, чтобы его послушать.', examples: 'Примеры' },
-  audio: { listen: 'Слушать', slow: 'Слушать медленно' },
+  audio: { listen: 'Слушать', slow: 'Слушать медленно', error: '⚠️ Не удалось загрузить аудио. Проверь интернет и попробуй ещё раз.' },
 
   lesson: {
     sections: {
@@ -598,6 +601,9 @@ const ru: Dict = {
     downloadAudio: '⬇ Скачать аудио для офлайна',
     failed: (n) => `Не удалось скачать ${n} ${ruPlural(n, 'файл', 'файла', 'файлов')}. Проверь интернет и нажми ещё раз.`,
     allSaved: '✓ Всё аудио сохранено для офлайна.',
+    autoAudio: 'Автоматически скачивать новое аудио',
+    autoAudioText:
+      'При запуске приложения недостающие аудиофайлы (например, новой недели) скачиваются в фоне. Всё аудио занимает ~40 МБ; если на телефоне включена «Экономия трафика», автоматическая загрузка не запускается.',
     devOnly: 'Офлайн-режим работает на опубликованном сайте (не в локальном режиме разработки).',
     awake: '🔆 Экран не гаснет',
     awakeText: 'Пока приложение открыто, экран не гаснет сам (удобно для аудирования и шэдоуинга). Батарея расходуется чуть быстрее.',

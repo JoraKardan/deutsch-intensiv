@@ -7,6 +7,7 @@ import { GrammarPage } from './pages/GrammarPage'
 import { SettingsPage } from './pages/SettingsPage'
 import { EssentialsPage } from './pages/EssentialsPage'
 import { t } from './lib/i18n'
+import { AudioToast } from './components/AudioToast'
 import { BookIcon, FlagDE, GearIcon, HomeIcon, ListIcon, StarIcon } from './components/Icons'
 
 export function App() {
@@ -22,7 +23,13 @@ export function App() {
   ]
 
   // În lecție, antetul și bara de jos sunt ale lecției (LessonPage).
-  if (inLesson) return <LessonPage key={a} id={a} section={b} />
+  if (inLesson)
+    return (
+      <>
+        <LessonPage key={a} id={a} section={b} />
+        <AudioToast />
+      </>
+    )
 
   return (
     <>
@@ -51,6 +58,7 @@ export function App() {
           </a>
         ))}
       </nav>
+      <AudioToast />
     </>
   )
 }

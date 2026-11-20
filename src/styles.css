@@ -1278,3 +1278,20 @@ button.slow-btn {
 button.retry {
   margin-top: 0.6rem;
 }
+
+/* mesaj de eroare audio */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 12px);
+  transform: translateX(-50%);
+  z-index: 50;
+  width: min(92vw, 520px);
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 0.92rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}

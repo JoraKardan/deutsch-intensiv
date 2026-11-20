@@ -4,7 +4,7 @@ import { t } from '../lib/i18n'
 import { lang, LANGS, setLang } from '../lib/lang'
 import { rich } from '../lib/text'
 import { getTheme, setTheme, type Theme } from '../lib/theme'
-import { downloadAllAudio, isInstalled, offlineSupported, useAudioCacheStatus, useInstallPrompt } from '../lib/offline'
+import { getAutoAudio, setAutoAudio, downloadAllAudio, isInstalled, offlineSupported, useAudioCacheStatus, useInstallPrompt } from '../lib/offline'
 
 // Fișierele pentru asistentul de conversație (generate de `npm run claude-project`), în limba aleasă.
 // Se încarcă doar la click. despre-mine.md (personal) NU e inclus: se oferă un șablon gol.
@@ -101,6 +101,7 @@ function AppOfflineCard() {
   const [note, setNote] = useState<string | null>(null)
   const installed = isInstalled()
   const complete = status && status.total > 0 && status.cached >= status.total
+  const [auto, setAuto] = useState(getAutoAudio)
 
   return (
     <div className="card">
@@ -145,6 +146,18 @@ function AppOfflineCard() {
             {busy ? t.settings.downloading : complete ? t.settings.audioComplete : t.settings.downloadAudio}
           </button>
           {note && <p className="small">{note}</p>}
+          <label className="row" style={{ marginTop: '0.8rem' }}>
+            <input
+              type="checkbox"
+              checked={auto}
+              onChange={(e) => {
+                setAutoAudio(e.target.checked)
+                setAuto(e.target.checked)
+              }}
+            />
+            <span>{t.settings.autoAudio}</span>
+          </label>
+          <p className="muted small">{t.settings.autoAudioText}</p>
         </>
       ) : (
         <p className="muted small">{t.settings.devOnly}</p>
