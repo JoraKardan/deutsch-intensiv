@@ -3,7 +3,7 @@ import type { Lesson } from '../lib/types'
 import { rich } from '../lib/text'
 import { play, playSequence } from '../lib/audio'
 import { tableAudio, type TableClip } from '../lib/tableAudio'
-import { AudioButtons } from './Audio'
+import { Say } from './Say'
 import { t } from '../lib/i18n'
 
 export function GrammarView({ lesson }: { lesson: Lesson }) {
@@ -70,9 +70,10 @@ export function GrammarView({ lesson }: { lesson: Lesson }) {
       <ul className="examples">
         {g.examples.map((e, i) => (
           <li key={i}>
-            <AudioButtons lessonId={lesson.id} id={`g${i + 1}`} text={e.de.replaceAll('**', '')} slowToo={false} />
-            <span className="de">{rich(e.de)}</span>
-            <span className="muted"> — {e.ro}</span>
+            <Say lessonId={lesson.id} id={`g${i + 1}`} text={e.de.replaceAll('**', '')} className="de">
+              {rich(e.de)}
+            </Say>
+            <div className="muted small">{e.ro}</div>
           </li>
         ))}
       </ul>

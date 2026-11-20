@@ -5,7 +5,7 @@
 // Rezultatul trece prin `afconvert` → .m4a (AAC 64 kbps).
 //
 //   npm run audio                 → toate lecțiile (sare peste fișierele deja generate)
-//   npm run audio -- w01-1 w01-2  → doar lecțiile date
+//   npm run audio -- w01-1 w01-2  → doar lecțiile date (sau `essentials` pentru pagina Esențiale)
 //   npm run audio -- --force      → regenerează tot
 //
 // Rezultat: public/audio/<lessonId>/<id>.m4a
@@ -109,18 +109,27 @@ async function synth(text, voice, rate, file) {
   rmSync(tmp, { force: true })
 }
 
-const files = readdirSync(LESSONS).filter((f) => f.endsWith('.json'))
+// Unitățile audio: fiecare lecție + pagina „Esențiale” (content/essentials.json → public/audio/essentials/).
+const units = readdirSync(LESSONS)
+  .filter((f) => f.endsWith('.json'))
+  .map((f) => JSON.parse(readFileSync(join(LESSONS, f), 'utf8')))
+  .map((lesson) => ({ id: lesson.id, list: items(lesson) }))
+const essentials = JSON.parse(readFileSync(join(ROOT, 'content', 'essentials.json'), 'utf8'))
+units.push({
+  id: 'essentials',
+  list: essentials.sections.flatMap((s) => s.items).map((x) => ({ id: x.id, text: clean(x.de), voice: DEFAULT_VOICE })),
+})
+
 let made = 0
 let skipped = 0
-for (const f of files) {
-  const lesson = JSON.parse(readFileSync(join(LESSONS, f), 'utf8'))
-  if (only.length && !only.includes(lesson.id)) continue
-  const dir = join(OUT, lesson.id)
+for (const unit of units) {
+  if (only.length && !only.includes(unit.id)) continue
+  const dir = join(OUT, unit.id)
   mkdirSync(dir, { recursive: true })
   const manifestPath = join(dir, 'manifest.json')
   const manifest = !force && existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) : {}
-  const list = items(lesson)
-  process.stdout.write(`${lesson.id}: `)
+  const list = unit.list
+  process.stdout.write(`${unit.id}: `)
   for (const it of list) {
     const voice = resolveVoice(it.voice)
     const variants = [{ suffix: '', rate: RATE_NORMAL }]

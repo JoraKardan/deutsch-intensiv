@@ -8,11 +8,13 @@ import { parseAnalysis, type CustomItem } from '../lib/analysis'
 import { playSequence, stopAll } from '../lib/audio'
 import { buildSpeakingPrompt } from '../lib/prompt'
 import { rich } from '../lib/text'
-import { AudioButtons } from '../components/Audio'
+import { sectionScore } from '../lib/rules'
 import { ExerciseList } from '../components/Exercises'
 import { GrammarView } from '../components/GrammarView'
 import { Shadowing } from '../components/Shadowing'
 import { Interlinear, useLitPref } from '../components/Interlinear'
+import { Say, SlowButton } from '../components/Say'
+import { ChevronDownIcon, CloseIcon, GearIcon, PauseIcon, PlayIcon } from '../components/Icons'
 import { go } from '../router'
 
 const SECTIONS = (['intro', 'pron', 'dialog', 'phrases', 'grammar', 'exercises', 'shadowing', 'speaking', 'finish'] as const).map((key) => ({
@@ -27,54 +29,97 @@ export function LessonPage({ id, section }: { id: string; section?: string }) {
   const progress = useProgress()
   if (!lesson) {
     return (
-      <div className="card">
-        <h2>{t.lesson.notFound}</h2>
-        <p>{t.lesson.notFoundText(id)}</p>
-        <a href="#/plan">{t.lesson.backToPlan}</a>
-      </div>
+      <main>
+        <div className="card">
+          <h2>{t.lesson.notFound}</h2>
+          <p>{t.lesson.notFoundText(id)}</p>
+          <a href="#/plan">{t.lesson.backToPlan}</a>
+        </div>
+      </main>
     )
   }
   const sections = SECTIONS.filter((s) => s.key !== 'pron' || lesson.pronunciation)
   const current = (sections.find((s) => s.key === section)?.key ?? 'intro') as SectionKey
   const idx = sections.findIndex((s) => s.key === current)
-  const visited = progress.lessons[id]?.sections ?? []
+  const lp = progress.lessons[id]
+  const doneList = lp?.sections ?? []
+  const prev = sections[idx - 1]
+  const next = sections[idx + 1]
+  const score = sectionScore(current, lesson, lp)
+
+  // „→”: secțiunea curentă devine efectuată (exercițiile și shadowing-ul doar de la 80%), apoi mergem mai departe.
+  const goNext = () => {
+    if (!score || score.passed) markSection(id, current)
+    go(`/lesson/${id}/${next.key}`)
+  }
+  const nextCls = !score ? '' : score.passed ? 'pass' : 'warn'
+  const nextPrefix = !score ? '' : `${score.passed ? '✓' : '!'} ${score.done}/${score.total} · `
 
   return (
     <LessonShell lesson={lesson} current={current}>
-      <nav className="tabs">
-        {sections.map((s, i) => (
-          <a
-            key={s.key}
-            href={`#/lesson/${id}/${s.key}`}
-            className={`tab ${s.key === current ? 'active' : ''} ${visited.includes(s.key) ? 'seen' : ''}`}
-          >
-            <span className="num">{i + 1}</span> {s.label}
-          </a>
-        ))}
-      </nav>
-      <section className="section">
-        {current === 'intro' && <Intro lesson={lesson} />}
-        {current === 'pron' && <Pron lesson={lesson} />}
-        {current === 'dialog' && <DialogView lesson={lesson} />}
-        {current === 'phrases' && <Phrases lesson={lesson} />}
-        {current === 'grammar' && <GrammarView lesson={lesson} />}
-        {current === 'exercises' && (
-          <>
-            <p className="muted small">{t.lesson.exercisesTip}</p>
-            <ExerciseList lesson={lesson} />
-          </>
+      <div className="steps">
+        <div className="row between small">
+          <span>
+            <strong>{t.lesson.stepOf(idx + 1, sections.length)}</strong> · {sections[idx].label}
+          </span>
+          <span className="muted">{t.lesson.doneCount(sections.filter((s) => doneList.includes(s.key)).length)}</span>
+        </div>
+        <div className="step-bars" style={{ gridTemplateColumns: `repeat(${sections.length}, minmax(0, 1fr))` }}>
+          {sections.map((s, i) => (
+            <a
+              key={s.key}
+              href={`#/lesson/${id}/${s.key}`}
+              aria-label={`${i + 1}. ${s.label}${doneList.includes(s.key) ? ' ✓' : ''}`}
+              aria-current={s.key === current ? 'step' : undefined}
+              className={`step ${doneList.includes(s.key) ? 'done' : ''} ${s.key === current ? 'current' : ''}`}
+            >
+              <span />
+            </a>
+          ))}
+        </div>
+      </div>
+      <main className={`lesson-main ${current === 'dialog' ? 'has-player' : ''}`}>
+        {idx === 0 && (
+          <div className="lesson-title">
+            <h1>{lesson.title}</h1>
+            <div className="subtitle">{lesson.titleRo}</div>
+          </div>
         )}
-        {current === 'shadowing' && <Shadowing lesson={lesson} />}
-        {current === 'speaking' && <Speaking lesson={lesson} />}
-        {current === 'finish' && <Finish lesson={lesson} />}
-      </section>
-      <div className="row between pager">
-        {idx > 0 ? <a href={`#/lesson/${id}/${sections[idx - 1].key}`}>← {sections[idx - 1].label}</a> : <span />}
-        {idx < sections.length - 1 && (
-          <a className="btn" href={`#/lesson/${id}/${sections[idx + 1].key}`}>
-            {sections[idx + 1].label} →
-          </a>
-        )}
+        {untranslated.includes(lesson.id) && <div className="card note small">{t.lesson.untranslated}</div>}
+        <section className="section">
+          {current === 'intro' && <Intro lesson={lesson} />}
+          {current === 'pron' && <Pron lesson={lesson} />}
+          {current === 'dialog' && <DialogView lesson={lesson} />}
+          {current === 'phrases' && <Phrases lesson={lesson} />}
+          {current === 'grammar' && <GrammarView lesson={lesson} />}
+          {current === 'exercises' && (
+            <>
+              <p className="muted small">{t.lesson.exercisesTip}</p>
+              <ExerciseList lesson={lesson} />
+            </>
+          )}
+          {current === 'shadowing' && <Shadowing lesson={lesson} />}
+          {current === 'speaking' && <Speaking lesson={lesson} />}
+          {current === 'finish' && <Finish lesson={lesson} />}
+        </section>
+      </main>
+      <div className="lesson-bottom">
+        {score && !score.passed && next && <p className="pass-hint small">{t.lesson.needPass(score.done, score.total)}</p>}
+        <div className="pager">
+          {prev ? (
+            <a className="btn ghost" href={`#/lesson/${id}/${prev.key}`}>
+              ← {prev.label}
+            </a>
+          ) : (
+            <span />
+          )}
+          {next && (
+            <button className={`next-btn ${nextCls}`} onClick={goNext}>
+              {nextPrefix}
+              {next.label} →
+            </button>
+          )}
+        </div>
       </div>
     </LessonShell>
   )
@@ -82,21 +127,26 @@ export function LessonPage({ id, section }: { id: string; section?: string }) {
 
 function LessonShell({ lesson, current, children }: { lesson: Lesson; current: SectionKey; children: React.ReactNode }) {
   useEffect(() => {
-    markSection(lesson.id, current)
     window.scrollTo({ top: 0 })
     return () => stopAll()
   }, [lesson.id, current])
   return (
-    <div>
-      <div className="lesson-head">
-        <div className="muted small">
-          {lesson.phase} · {t.lesson.head(lesson.week, lesson.day)}
-          {lesson.kind === 'review' && t.lesson.review}
+    <div className="lesson">
+      <header className="topbar lesson-top">
+        <a href="#/" className="square-btn" aria-label={t.lesson.close} title={t.lesson.close}>
+          <CloseIcon size={20} />
+        </a>
+        <div className="lesson-top-title">
+          <span className="muted small">
+            {lesson.phase} · {t.lesson.head(lesson.week, lesson.day)}
+            {lesson.kind === 'review' && t.lesson.review}
+          </span>
+          <strong>{lesson.title}</strong>
         </div>
-        <h1>{lesson.title}</h1>
-        <div className="subtitle">{lesson.titleRo}</div>
-      </div>
-      {untranslated.includes(lesson.id) && <div className="card note small">{t.lesson.untranslated}</div>}
+        <a href="#/settings" className="square-btn" aria-label={t.nav.settings} title={t.nav.settings}>
+          <GearIcon size={22} />
+        </a>
+      </header>
       {children}
     </div>
   )
@@ -128,9 +178,9 @@ function Pron({ lesson }: { lesson: Lesson }) {
           <div key={it.id} className="card pron">
             <div className="row between">
               <span className="sound">{it.sound}</span>
-              <AudioButtons lessonId={lesson.id} id={it.id} text={it.de} />
+              <SlowButton lessonId={lesson.id} id={it.id} text={it.de} />
             </div>
-            <div className="de big">{it.de}</div>
+            <Say lessonId={lesson.id} id={it.id} text={it.de} className="de big" />
             <div className="muted small">{rich(it.tip)}</div>
           </div>
         ))}
@@ -139,63 +189,132 @@ function Pron({ lesson }: { lesson: Lesson }) {
   )
 }
 
+// Ce arată comutatorul „Text” din dialog (se ține minte între lecții).
+const VIEW_KEY = 'deutsch-intensiv-dialog-view'
+type DialogPrefs = { de: boolean; tr: boolean; lit: boolean }
+function loadPrefs(): DialogPrefs {
+  try {
+    const x = JSON.parse(localStorage.getItem(VIEW_KEY) ?? 'null')
+    if (x && typeof x === 'object') return { de: x.de !== false, tr: x.tr !== false, lit: x.lit !== false }
+  } catch {
+    /* stocare indisponibilă */
+  }
+  return { de: true, tr: true, lit: true }
+}
+
 function DialogView({ lesson }: { lesson: Lesson }) {
   const d = lesson.dialog
-  const [showDe, setShowDe] = useState(false)
-  const [showRo, setShowRo] = useState(false)
+  const [textOn, setTextOn] = useState(false) // fiecare dialog pornește cu textul ascuns
+  const [prefs, setPrefsState] = useState(loadPrefs)
+  const [sheet, setSheet] = useState(false)
   const [active, setActive] = useState<string | null>(null)
-  const [lit, setLit] = useLitPref()
-  const hasLit = d.lines.some((l) => l.lit)
+  const [playing, setPlaying] = useState(false)
   const items = d.lines.map((l) => ({ id: l.id, text: l.de }))
+  const activeIdx = d.lines.findIndex((l) => l.id === active)
+  const showDe = textOn && prefs.de
+  const showTr = textOn && prefs.tr
+  const showLit = showDe && prefs.lit
+
+  const setPrefs = (p: DialogPrefs) => {
+    setPrefsState(p)
+    try {
+      localStorage.setItem(VIEW_KEY, JSON.stringify(p))
+    } catch {
+      /* stocare indisponibilă */
+    }
+  }
+  const run = (slow: boolean) => {
+    if (playing) {
+      stopAll()
+      setPlaying(false)
+      setActive(null)
+      return
+    }
+    setPlaying(true)
+    playSequence(lesson.id, items, slow, setActive).then(() => setPlaying(false))
+  }
+  useEffect(() => () => stopAll(), [])
+
   return (
     <div>
       <h3>{d.title}</h3>
       <p className="muted">{d.situation}</p>
       <div className="card note small">{rich(t.dialog.steps)}</div>
-      <div className="row wrap sticky-controls">
-        <button onClick={() => playSequence(lesson.id, items, false, setActive)}>{t.dialog.playAll}</button>
-        <button className="ghost" onClick={() => playSequence(lesson.id, items, true, setActive)}>
-          {t.dialog.allSlow}
-        </button>
-        <button
-          className="ghost"
-          onClick={() => {
-            stopAll()
-            setActive(null)
-          }}
-        >
-          {t.dialog.stop}
-        </button>
-        <label className="toggle">
-          <input type="checkbox" checked={showDe} onChange={(e) => setShowDe(e.target.checked)} /> {t.dialog.germanText}
-        </label>
-        <label className="toggle">
-          <input type="checkbox" checked={showRo} onChange={(e) => setShowRo(e.target.checked)} /> {t.dialog.translation}
-        </label>
-        {hasLit && (
-          <label className="toggle" title={t.dialog.litTitle}>
-            <input type="checkbox" checked={lit} disabled={!showDe} onChange={(e) => setLit(e.target.checked)} /> {t.dialog.lit}
-          </label>
-        )}
-      </div>
       <div className="dialog">
         {d.lines.map((l) => (
           <div key={l.id} className={`line ${active === l.id ? 'active' : ''}`}>
-            <div className="speaker">{d.speakers[l.speaker]?.name ?? l.speaker}</div>
-            <div className="body">
-              {showDe ? (
-                <Interlinear de={l.de} lit={lit ? l.lit : undefined} />
-              ) : (
-                <div className="de">
-                  <span className="hidden-text">{l.de.replace(/[^\s.,!?]/g, '•')}</span>
-                </div>
-              )}
-              {showRo && <div className="muted small">{l.ro}</div>}
+            <div className="grow">
+              <div className="speaker">{d.speakers[l.speaker]?.name ?? l.speaker}</div>
+              <Say lessonId={lesson.id} id={l.id} text={l.de} className="block" active={active === l.id}>
+                {showDe ? (
+                  <Interlinear de={l.de} lit={showLit ? l.lit : undefined} />
+                ) : (
+                  <span className="de hidden-text">{l.de.replace(/[^\s.,!?]/g, '•')}</span>
+                )}
+              </Say>
+              {showTr && <div className="muted small">{l.ro}</div>}
             </div>
-            <AudioButtons lessonId={lesson.id} id={l.id} text={l.de} />
+            <SlowButton lessonId={lesson.id} id={l.id} text={l.de} />
           </div>
         ))}
       </div>
+
+      <div className="dialog-player">
+        <button className="play-round" onClick={() => run(false)} aria-label={playing ? t.dialog.stop : t.dialog.playAll}>
+          {playing ? <PauseIcon size={22} /> : <PlayIcon size={22} />}
+        </button>
+        <div className="grow player-info">
+          <span className="small">
+            <strong>{t.dialog.lineOf(activeIdx >= 0 ? activeIdx + 1 : 0, d.lines.length)}</strong>
+          </span>
+          <div className="bar thin">
+            <div style={{ width: `${activeIdx >= 0 ? ((activeIdx + 1) / d.lines.length) * 100 : 0}%` }} />
+          </div>
+        </div>
+        <button className="ghost small-btn" onClick={() => run(true)}>
+          {t.dialog.slowShort}
+        </button>
+        <div className="split">
+          <label className={textOn ? 'on' : ''}>
+            <input type="checkbox" role="switch" checked={textOn} onChange={(e) => setTextOn(e.target.checked)} />
+            {t.dialog.text}
+          </label>
+          <button className="ghost" aria-label={t.dialog.textWhat} onClick={() => setSheet(true)}>
+            <ChevronDownIcon size={16} />
+          </button>
+        </div>
+      </div>
+
+      {sheet && (
+        <div className="sheet-backdrop" onClick={() => setSheet(false)}>
+          <div className="sheet" role="dialog" aria-modal="true" aria-label={t.dialog.textWhat} onClick={(e) => e.stopPropagation()}>
+            <div className="sheet-handle" />
+            <h3>{t.dialog.textWhat}</h3>
+            <label className="sheet-row">
+              <span>{t.dialog.germanText}</span>
+              <input type="checkbox" checked={prefs.de} onChange={(e) => setPrefs({ ...prefs, de: e.target.checked })} />
+            </label>
+            <label className="sheet-row">
+              <span>{t.dialog.translation}</span>
+              <input type="checkbox" checked={prefs.tr} onChange={(e) => setPrefs({ ...prefs, tr: e.target.checked })} />
+            </label>
+            <label className="sheet-row">
+              <span title={t.dialog.litTitle}>{t.dialog.lit}</span>
+              <input type="checkbox" checked={prefs.lit} disabled={!prefs.de} onChange={(e) => setPrefs({ ...prefs, lit: e.target.checked })} />
+            </label>
+            <p className="muted small">{t.dialog.textNote}</p>
+            <button
+              className="big-btn"
+              onClick={() => {
+                setTextOn(true)
+                setSheet(false)
+              }}
+            >
+              {t.dialog.done}
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
@@ -207,8 +326,8 @@ function Phrases({ lesson }: { lesson: Lesson }) {
   const hasLit = lesson.phrases.some((p) => p.lit)
   return (
     <div>
-      <div className="row between wrap">
-        <p className="muted">{t.phrases.intro}</p>
+      <p className="muted">{t.phrases.intro}</p>
+      <div className="row wrap toggles">
         <label className="toggle">
           <input
             type="checkbox"
@@ -229,9 +348,10 @@ function Phrases({ lesson }: { lesson: Lesson }) {
       <div className="phrases">
         {lesson.phrases.map((p) => (
           <div key={p.id} className="phrase">
-            <AudioButtons lessonId={lesson.id} id={p.id} text={p.de} />
-            <div className="body">
-              <Interlinear de={p.de} lit={lit && (!hideRo || revealed.includes(p.id)) ? p.lit : undefined} />
+            <div className="grow">
+              <Say lessonId={lesson.id} id={p.id} text={p.de} className="block">
+                <Interlinear de={p.de} lit={lit && (!hideRo || revealed.includes(p.id)) ? p.lit : undefined} />
+              </Say>
               {hideRo && !revealed.includes(p.id) ? (
                 <button className="link small" onClick={() => setRevealed([...revealed, p.id])}>
                   {t.phrases.show}
@@ -241,6 +361,7 @@ function Phrases({ lesson }: { lesson: Lesson }) {
               )}
               {p.note && <div className="note-inline small">{rich(p.note)}</div>}
             </div>
+            <SlowButton lessonId={lesson.id} id={p.id} text={p.de} />
           </div>
         ))}
       </div>

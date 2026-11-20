@@ -26,6 +26,7 @@ Când utilizatorul cere „generează săptămâna N”:
   - Flensburg: Valentina = `de-DE-AmalaNeural`; Kasia = `de-DE-MajaNeural`; Frau Hansen = `de-DE-TanjaNeural`; Frau Jensen = `de-DE-GiselaNeural`; Jens = `de-DE-BerndNeural`; Ole = `de-DE-KasperNeural`.
   - Personaje secundare: voci libere (`RalfNeural`, `KlausNeural`, `ElkeNeural`, `KlarissaNeural`), diferite de ale celorlalți din același dialog.
   - Expresiile și exemplele folosesc automat `de-DE-SeraphinaMultilingualNeural`. Vocile macOS (ex. `Anna (Premium)`) încă merg în script, dar nu le mai folosi.
+- **Designul** (mobile-first, paleta Teracotă, tema Automat/Luminos/Întunecat în `src/lib/theme.ts`): culorile sunt variabile CSS în `src/styles.css`; audio „click pe text” cu `Say` / `SlowButton` (`src/components/Say.tsx`); regulile de „secțiune efectuată” (80% la exerciții și shadowing) în `src/lib/rules.ts`.
 - **Explicațiile sunt în română**, cu diacritice. Traducerile sunt naturale, nu cuvânt cu cuvânt. Ghilimele germane în textul german: „…“; în română: „…”.
 - În textele de conținut, `**bold**` evidențiază părțile importante (inclusiv în exemplele de gramatică; scriptul audio elimină `**`).
 - **Numerele din replici se scriu în litere** („zweiunddreißig”, nu „32”), ca TTS-ul să le citească corect și elevul să le vadă scrise.
@@ -49,6 +50,6 @@ Când utilizatorul cere „generează săptămâna N”:
 
 - `npm run dev`: aplicația
 - `npm run check`: validarea lecțiilor
-- `npm run audio [-- id …] [--force]`: generarea audio (Azure Speech, cheia în `.env` exclus din git; vocile macOS rămân ca alternativă). Varianta rară 🐢 se face în browser (playbackRate).
+- `npm run audio [-- id …] [--force]`: generarea audio (și `essentials` pentru pagina Esențiale, din `content/essentials.json`; la frazele noi de acolo, rulează `npm run audio -- essentials`) (Azure Speech, cheia în `.env` exclus din git; vocile macOS rămân ca alternativă). Varianta rară 🐢 se face în browser (playbackRate).
 - `npm run claude-project`: generează `claude-project/` (română) și `claude-project/ru/` (rusă): instrucțiunile și fișierele pentru proiectul asistentului AI. Sursa instrucțiunilor: `tools/claude-project-instructions.md` și `tools/claude-project-instructions.ru.md`. Șabloanele „despre mine” (descărcabile din Setări): `tools/despre-mine-template{,.ru}.md`.
 - `npm run build`: verificare TypeScript + build

@@ -3,6 +3,7 @@ import { getSlowRate, play, setSlowRate, SLOW_RATES } from '../lib/audio'
 import { t } from '../lib/i18n'
 import { lang, LANGS, setLang } from '../lib/lang'
 import { rich } from '../lib/text'
+import { getTheme, setTheme, type Theme } from '../lib/theme'
 import { downloadAllAudio, isInstalled, offlineSupported, useAudioCacheStatus, useInstallPrompt } from '../lib/offline'
 
 // Fișierele pentru asistentul de conversație (generate de `npm run claude-project`), în limba aleasă.
@@ -63,6 +64,32 @@ function AssistantCard() {
       </div>
       <p className="muted small">{rich(t.settings.assistantUpdate)}</p>
       <p className="muted small">{rich(t.settings.assistantAbout)}</p>
+    </div>
+  )
+}
+
+function ThemeCard() {
+  const [theme, set] = useState<Theme>(getTheme)
+  return (
+    <div className="card">
+      <h3>{t.settings.theme}</h3>
+      <div className="segmented" role="radiogroup" aria-label={t.settings.theme}>
+        {(['auto', 'light', 'dark'] as Theme[]).map((x) => (
+          <button
+            key={x}
+            role="radio"
+            aria-checked={theme === x}
+            className={theme === x ? 'on' : ''}
+            onClick={() => {
+              setTheme(x)
+              set(x)
+            }}
+          >
+            {t.settings.themes[x]}
+          </button>
+        ))}
+      </div>
+      <p className="muted small">{t.settings.themeText}</p>
     </div>
   )
 }
@@ -151,14 +178,16 @@ export function SettingsPage() {
       <div className="card">
         <h3>{t.settings.language}</h3>
         <p className="muted">{t.settings.languageText}</p>
-        <div className="row wrap">
+        <div className="segmented" role="radiogroup" aria-label={t.settings.language}>
           {LANGS.map((l) => (
-            <button key={l} className={l === lang ? '' : 'ghost'} onClick={() => setLang(l)}>
-              {l === 'ro' ? '🇷🇴 Română' : '🇷🇺 Русский'}
+            <button key={l} role="radio" aria-checked={l === lang} className={l === lang ? 'on' : ''} onClick={() => setLang(l)}>
+              {l === 'ro' ? 'Română' : 'Русский'}
             </button>
           ))}
         </div>
       </div>
+
+      <ThemeCard />
 
       <AssistantCard />
 

@@ -32,15 +32,16 @@ export function splitLit(de: string, lit: string): { w: string; g: string }[] | 
 
 export function Interlinear({ de, lit, className = 'de' }: { de: string; lit?: string; className?: string }) {
   const parts = lit ? splitLit(de, lit) : null
-  if (!parts) return <div className={className}>{de}</div>
+  // <span> (nu <div>): textul stă adesea într-un buton de redare (Say)
+  if (!parts) return <span className={`${className} line-text`}>{de}</span>
   return (
-    <div className={`${className} interlinear`}>
+    <span className={`${className} interlinear`}>
       {parts.map((p, i) => (
         <span key={i} className="w">
           <span>{p.w}</span>
           <span className="gl">{p.g || ' '}</span>
         </span>
       ))}
-    </div>
+    </span>
   )
 }

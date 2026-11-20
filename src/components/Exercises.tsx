@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Exercise, Lesson } from '../lib/types'
-import { normalize, numbersSpelled, rich, sameWithNumbers, shuffle, speechMatch } from '../lib/text'
+import { normalize, numbersSpelled, rich, sameWithNumbers, shuffle, speechMatch, speechSimilarity } from '../lib/text'
 import { t } from '../lib/i18n'
 import { recordExercise, resetExercises, useProgress } from '../lib/store'
 import { AudioButtons } from './Audio'
@@ -22,6 +22,8 @@ export function ExerciseList({ lesson }: { lesson: Lesson }) {
   const progress = useProgress()
   const results = progress.lessons[lesson.id]?.exercises ?? {}
   const [round, setRound] = useState(0)
+  // „Încearcă din nou” pe un singur exercițiu: îl remontăm cu altă cheie
+  const [attempts, setAttempts] = useState<Record<string, number>>({})
   const done = Object.keys(results).length
   const correct = Object.values(results).filter(Boolean).length
   const total = lesson.exercises.length
@@ -44,9 +46,14 @@ export function ExerciseList({ lesson }: { lesson: Lesson }) {
       </div>
       <ol className="exercises">
         {lesson.exercises.map((ex) => (
-          <li key={`${ex.id}-${round}`} className="card exercise">
+          <li key={`${ex.id}-${round}-${attempts[ex.id] ?? 0}`} className="card exercise">
             <div className="ex-type">{TYPE_LABEL[ex.type]}</div>
-            <ExerciseView lesson={lesson} ex={ex} onResult={(ok) => recordExercise(lesson.id, ex.id, ok)} />
+            <ExerciseView
+              lesson={lesson}
+              ex={ex}
+              onResult={(ok) => recordExercise(lesson.id, ex.id, ok)}
+              retry={() => setAttempts((a) => ({ ...a, [ex.id]: (a[ex.id] ?? 0) + 1 }))}
+            />
           </li>
         ))}
       </ol>
@@ -54,7 +61,25 @@ export function ExerciseList({ lesson }: { lesson: Lesson }) {
   )
 }
 
-type ExProps = { lesson: Lesson; onResult: (ok: boolean) => void }
+type ExProps = { lesson: Lesson; onResult: (ok: boolean) => void; retry: () => void }
+
+/** La un răspuns greșit: refaci doar exercițiul acesta (scorul ia ultima încercare). */
+function Retry({ onClick }: { onClick: () => void }) {
+  return (
+    <button type="button" className="ghost retry" onClick={onClick}>
+      ↺ {t.ex.tryAgain}
+    </button>
+  )
+}
+
+/** Dictarea e corectă dacă textul e identic sau are cel puțin 90% din cuvinte corecte. */
+export const DICTATION_PASS = 0.9
+function dictationOk(target: string, typed: string): boolean {
+  if (sameWithNumbers(target, typed)) return true
+  const n = target.split(/\s+/).filter(Boolean).length
+  const m = typed.split(/\s+/).filter(Boolean).length
+  return m <= n + 1 && speechSimilarity(target, typed) >= DICTATION_PASS
+}
 
 function ExerciseView({ ex, ...p }: ExProps & { ex: Exercise }) {
   switch (ex.type) {
@@ -69,7 +94,7 @@ function ExerciseView({ ex, ...p }: ExProps & { ex: Exercise }) {
   }
 }
 
-function Mcq({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, { type: 'mcq' }> }) {
+function Mcq({ ex, lesson, onResult, retry }: ExProps & { ex: Extract<Exercise, { type: 'mcq' }> }) {
   const [picked, setPicked] = useState<number | null>(null)
   return (
     <div>
@@ -95,18 +120,20 @@ function Mcq({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, { type:
         })}
       </div>
       {picked !== null && ex.explain && <p className="explain">{ex.explain}</p>}
+      {picked !== null && picked !== ex.answer && <Retry onClick={retry} />}
     </div>
   )
 }
 
-function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, { type: 'dictation' }> }) {
+function Dictation({ ex, lesson, onResult, retry }: ExProps & { ex: Extract<Exercise, { type: 'dictation' }> }) {
   const [value, setValue] = useState('')
   const [checked, setChecked] = useState(false)
   const result = useMemo(() => (checked ? speechMatch(ex.text, value) : null), [checked, ex.text, value])
   const usedDigits = /\d/.test(value)
+  const ok = checked && dictationOk(ex.text, value)
   const check = () => {
     setChecked(true)
-    onResult(sameWithNumbers(ex.text, value))
+    onResult(dictationOk(ex.text, value))
   }
   return (
     <div>
@@ -138,13 +165,15 @@ function Dictation({ ex, lesson, onResult }: ExProps & { ex: Extract<Exercise, {
             </div>
           )}
           {ex.ro && <div className="muted">{ex.ro}</div>}
+          <div className={ok ? 'good' : 'bad'}>{ok ? t.ex.correct : t.ex.dictationMiss}</div>
         </div>
       )}
+      {result && !ok && <Retry onClick={retry} />}
     </div>
   )
 }
 
-function Order({ ex, onResult }: ExProps & { ex: Extract<Exercise, { type: 'order' }> }) {
+function Order({ ex, onResult, retry }: ExProps & { ex: Extract<Exercise, { type: 'order' }> }) {
   const tokens = useMemo(() => {
     const ws = ex.answer.split(/\s+/)
     let s = shuffle(ws.map((w, i) => ({ w, i })))
@@ -180,13 +209,16 @@ function Order({ ex, onResult }: ExProps & { ex: Extract<Exercise, { type: 'orde
           </button>
         </div>
       ) : (
-        <p className={`explain ${checked ? 'good' : 'bad'}`}>{checked ? t.ex.correct : t.ex.correctIs(ex.answer)}</p>
+        <>
+          <p className={`explain ${checked ? 'good' : 'bad'}`}>{checked ? t.ex.correct : t.ex.correctIs(ex.answer)}</p>
+          {!checked && <Retry onClick={retry} />}
+        </>
       )}
     </div>
   )
 }
 
-function Gap({ ex, onResult }: ExProps & { ex: Extract<Exercise, { type: 'gap' }> }) {
+function Gap({ ex, onResult, retry }: ExProps & { ex: Extract<Exercise, { type: 'gap' }> }) {
   const parts = ex.text.split('___')
   const [vals, setVals] = useState<string[]>(() => ex.answers.map(() => ''))
   const [checked, setChecked] = useState<boolean[] | null>(null)
@@ -225,6 +257,7 @@ function Gap({ ex, onResult }: ExProps & { ex: Extract<Exercise, { type: 'gap' }
       {ex.hint && !checked && <p className="muted small">💡 {ex.hint}</p>}
       {!checked && <button type="submit">{t.ex.check}</button>}
       {checked && <p className={`explain ${checked.every(Boolean) ? 'good' : 'bad'}`}>{checked.every(Boolean) ? t.ex.correct : t.ex.seeFix}</p>}
+      {checked && !checked.every(Boolean) && <Retry onClick={retry} />}
     </form>
   )
 }

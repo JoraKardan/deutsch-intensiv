@@ -1,5 +1,6 @@
 import { flatLessons, hasContent, LESSONS_PER_WEEK, PHASES } from '../lib/content'
-import { streak, todayKey, toggleRoutine, useProgress } from '../lib/store'
+import { FlameIcon } from '../components/Icons'
+import { streak, todayKey, toggleRoutine, useProgress, type Progress } from '../lib/store'
 import { dueCards } from './ReviewPage'
 import { t } from '../lib/i18n'
 
@@ -41,108 +42,112 @@ export const RESOURCES = [
   },
 ]
 
+/** Pașii rutinei bifați automat azi (manual se pot bifa oricând și ceilalți). */
+function autoDone(p: Progress, due: number): Set<string> {
+  const d = p.days[todayKey()]
+  const s = new Set<string>(d?.auto ?? [])
+  if (d && d.reviews > 0 && due === 0) s.add('srs')
+  if (d && d.lessons.length > 0) s.add('lesson')
+  return s
+}
+
 export function Dashboard() {
   const p = useProgress()
   const done = flatLessons.filter((l) => p.lessons[l.id]?.completedAt)
-  const nextLessons = flatLessons.filter((l) => !p.lessons[l.id]?.completedAt).slice(0, 2)
+  const next = flatLessons.find((l) => !p.lessons[l.id]?.completedAt)
   const due = dueCards(p).length
   const s = streak(p)
-  const today = p.days[todayKey()]
-  const routineDone = today?.routine ?? []
+  const routineDone = p.days[todayKey()]?.routine ?? []
+  const auto = autoDone(p, due)
 
   const daysIn = Math.floor((Date.now() - new Date(p.startedAt + 'T00:00:00').getTime()) / 86400000) + 1
   // cât ar fi trebuit terminat până la sfârșitul zilei de ieri
   const expected = Math.min(flatLessons.length, Math.floor(((daysIn - 1) * LESSONS_PER_WEEK) / 7))
   const diff = done.length - expected
 
+  // faza curentă: a lecției următoare (sau ultima, la final)
+  const phase = PHASES.find((ph) => ph.phase === (next ?? flatLessons[flatLessons.length - 1]).phase)!
+  const inPhase = flatLessons.filter((l) => l.phase === phase.phase)
+  const phaseDone = inPhase.filter((l) => p.lessons[l.id]?.completedAt).length
+
   return (
     <div className="dashboard">
-      <div className="hero">
-        <div>
-          <h1>Guten Tag! 👋</h1>
-          <p className="muted">{t.dash.dayOf(daysIn, done.length, flatLessons.length)}</p>
-        </div>
-        <div className="stats">
-          <div className="stat">
-            <div className="v">🔥 {s}</div>
-            <div className="l">{t.dash.streak}</div>
+      <section className="hero">
+        <h1>Guten Tag!</h1>
+        <p className="muted">{t.dash.dayOf(daysIn, done.length, flatLessons.length)}</p>
+        <div className="phase-bar">
+          <div className="row between small">
+            <strong>{phase.label}</strong>
+            <span className="muted">
+              {phaseDone} / {inPhase.length}
+            </span>
           </div>
-          <div className="stat">
-            <div className="v">{due}</div>
-            <div className="l">{t.dash.due}</div>
+          <div className="bar">
+            <div style={{ width: `${(phaseDone / inPhase.length) * 100}%` }} />
           </div>
         </div>
-      </div>
+        <p className="streak">
+          {s >= 3 && <FlameIcon size={18} className="flame" />}
+          <span>
+            <strong>{s}</strong> {t.dash.streak(s)}
+          </span>
+        </p>
+      </section>
 
-      <div className="grid2">
-        <div className="card">
-          <h3>{t.dash.today}</h3>
-          {due > 0 ? (
-            <a className="btn block" href="#/review">
-              {t.dash.reviewBtn(due)}
+      <section className="card">
+        <h3>{t.dash.today}</h3>
+        {due > 0 ? (
+          <a className="btn block primary-action" href="#/review">
+            <span>{t.dash.reviewBtn(due)}</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        ) : (
+          <div className="muted done-line">{t.dash.nothingDue}</div>
+        )}
+        {next &&
+          (hasContent(next.id) ? (
+            <a className={`btn block next-lesson ${due > 0 ? 'ghost' : 'primary-action'}`} href={`#/lesson/${next.id}`}>
+              <span className="grow">
+                <strong>{next.title}</strong>
+                <span className="small sub">{t.dash.nextLesson(next.titleRo)}</span>
+              </span>
+              <span aria-hidden="true">→</span>
             </a>
           ) : (
-            <div className="muted">{t.dash.nothingDue}</div>
-          )}
-          {nextLessons.map((l, i) =>
-            hasContent(l.id) ? (
-              <a key={l.id} className={`btn block ${i ? 'ghost' : ''}`} href={`#/lesson/${l.id}`}>
-                {i === 0 ? '②' : '③'} {l.title} <span className="small">({l.titleRo})</span>
-              </a>
-            ) : (
-              <div key={l.id} className="card note small">
-                {t.dash.notCreated(l.title, l.week)}
-              </div>
-            ),
-          )}
-          <p className={`small ${diff >= 0 ? 'good' : 'warn'}`}>
-            {diff >= 0 ? t.dash.onPace(diff) : t.dash.behind(-diff)}
-          </p>
-        </div>
+            <div className="card note small">{t.dash.notCreated(next.title, next.week)}</div>
+          ))}
+        <p className={`small ${diff >= 0 ? 'good' : 'warn'}`}>{diff >= 0 ? t.dash.onPace(diff) : t.dash.behind(-diff)}</p>
+      </section>
 
-        <div className="card">
-          <h3>{t.dash.routine}</h3>
-          <ul className="routine">
-            {ROUTINE.map((r) => (
+      <section className="card">
+        <h3>{t.dash.routine}</h3>
+        <ul className="routine">
+          {ROUTINE.map((r) => {
+            const isAuto = auto.has(r.key)
+            return (
               <li key={r.key}>
                 <label>
-                  <input type="checkbox" checked={routineDone.includes(r.key)} onChange={() => toggleRoutine(r.key)} />
-                  <span>
+                  <input
+                    type="checkbox"
+                    checked={isAuto || routineDone.includes(r.key)}
+                    disabled={isAuto}
+                    onChange={() => toggleRoutine(r.key)}
+                  />
+                  <span className="grow">
                     <strong>{r.label}</strong> <span className="muted small">· {r.time}</span>
                     <br />
                     <span className="muted small">{r.hint}</span>
                   </span>
+                  {isAuto && <span className="auto-tag">{t.dash.auto}</span>}
                 </label>
               </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+            )
+          })}
+        </ul>
+        <p className="muted small">{t.dash.autoNote}</p>
+      </section>
 
-      <div className="card">
-        <h3>{t.dash.phasesTitle}</h3>
-        {PHASES.map((ph) => {
-          const all = flatLessons.filter((l) => l.phase === ph.phase)
-          const d = all.filter((l) => p.lessons[l.id]?.completedAt).length
-          return (
-            <div key={ph.phase} className="phase-bar">
-              <div className="row between small">
-                <span>
-                  <strong>{ph.label}</strong> <span className="muted">({ph.weeks})</span>
-                </span>
-                <span>
-                  {d} / {all.length}
-                </span>
-              </div>
-              <div className="bar">
-                <div style={{ width: `${(d / all.length) * 100}%` }} />
-              </div>
-            </div>
-          )
-        })}
-      </div>
-
-      <div className="card">
+      <section className="card">
         <h3>{t.dash.resources}</h3>
         <ul className="resources">
           {RESOURCES.map((r) => (
@@ -154,7 +159,7 @@ export function Dashboard() {
             </li>
           ))}
         </ul>
-      </div>
+      </section>
     </div>
   )
 }

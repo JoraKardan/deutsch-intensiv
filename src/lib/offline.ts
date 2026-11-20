@@ -4,6 +4,7 @@ import { flatLessons, lessons } from './content'
 import { audioUrl } from './audio'
 import type { Lesson } from './types'
 import { lessonTableClips } from './tableAudio'
+import { essentials, ESSENTIALS_ID } from './essentials'
 
 const AUDIO_CACHE = 'audio-v3' // același nume ca în public/sw.js
 
@@ -31,6 +32,7 @@ export function allAudioUrls(): string[] {
   return flatLessons
     .filter((l) => lessons[l.id])
     .flatMap((l) => lessonAudioIds(lessons[l.id]).map((id) => new URL(audioUrl(l.id, id), location.href).pathname))
+    .concat(essentials.flatMap((s) => s.items).map((x) => new URL(audioUrl(ESSENTIALS_ID, x.id), location.href).pathname))
 }
 
 export const offlineSupported = () => 'caches' in window && 'serviceWorker' in navigator && import.meta.env.PROD

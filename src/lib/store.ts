@@ -9,8 +9,11 @@ const KEY = 'deutsch-intensiv-v1'
 
 export interface LessonProgress {
   completedAt?: string
+  /** secțiunile efectuate (bifate la apăsarea „→”; exercițiile și shadowing-ul doar de la 80%) */
   sections: string[]
   exercises: Record<string, boolean>
+  /** shadowing: pe replică, cel mai bun scor „Verifică” (0–100) și dacă s-a înregistrat */
+  shadow?: Record<string, { best?: number; rec?: boolean }>
 }
 
 export interface DayLog {
@@ -19,6 +22,8 @@ export interface DayLog {
   newCards?: number
   lessons: string[]
   routine: string[]
+  /** pași din rutină bifați automat în ziua asta: 'shadow' (shadowing trecut), 'speak' (analiza importată) */
+  auto?: string[]
 }
 
 export interface Progress {
@@ -100,11 +105,28 @@ function lessonP(p: Progress, id: string): LessonProgress {
   return (p.lessons[id] ??= { sections: [], exercises: {} })
 }
 
+/** Marchează secțiunea ca efectuată (la „→”). Shadowing-ul efectuat bifează și rutina zilei. */
 export function markSection(lessonId: string, section: string) {
-  if (state.lessons[lessonId]?.sections.includes(section)) return
   update((p) => {
-    lessonP(p, lessonId).sections.push(section)
-    day(p) // marchează ziua ca activă
+    const lp = lessonP(p, lessonId)
+    if (!lp.sections.includes(section)) lp.sections.push(section)
+    const d = day(p) // marchează ziua ca activă
+    if (section === 'shadowing') markAuto(d, 'shadow')
+  })
+}
+
+function markAuto(d: DayLog, key: string) {
+  d.auto ??= []
+  if (!d.auto.includes(key)) d.auto.push(key)
+}
+
+/** Shadowing: păstrează cel mai bun scor al replicii / faptul că s-a înregistrat. */
+export function recordShadow(lessonId: string, lineId: string, r: { score?: number; rec?: boolean }) {
+  update((p) => {
+    const lp = lessonP(p, lessonId)
+    const cur = ((lp.shadow ??= {})[lineId] ??= {})
+    if (r.score !== undefined) cur.best = Math.max(cur.best ?? 0, r.score)
+    if (r.rec) cur.rec = true
   })
 }
 
@@ -155,6 +177,7 @@ export function addCustom(items: CustomItem[], from: string): number {
       }
       added++
     }
+    markAuto(day(p), 'speak')
   })
   return added
 }

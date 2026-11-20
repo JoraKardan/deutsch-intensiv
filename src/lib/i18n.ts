@@ -4,7 +4,7 @@ import { lang, ruPlural } from './lang'
 
 const ro = {
   langName: 'Română',
-  nav: { home: 'Acasă', review: 'Repetiție', plan: 'Plan', grammar: 'Gramatică', progress: 'Setări' },
+  nav: { home: 'Acasă', review: 'Repetiție', plan: 'Plan', grammar: 'Gramatică', essentials: 'Esențiale', settings: 'Setări', label: 'Navigare' },
   phases: {
     A1: 'A1 – Fundația',
     A2: 'A2 – Viața de zi cu zi',
@@ -16,11 +16,14 @@ const ro = {
 
   dash: {
     dayOf: (day: number, done: number, total: number) => `Ziua ${day} din curs · ${done} / ${total} lecții finalizate`,
-    streak: 'zile la rând',
+    streak: (n: number): string => (n === 1 ? 'zi la rând' : 'zile la rând'),
     due: 'fișe de repetat',
     today: 'Azi',
-    reviewBtn: (n: number) => `① Repetiție: ${n} fișe →`,
-    nothingDue: '① Repetiție: nimic scadent acum ✓',
+    reviewBtn: (n: number) => `Repetiție · ${n} ${n === 1 ? 'fișă' : 'fișe'}`,
+    nothingDue: 'Repetiție: nimic scadent acum ✓',
+    nextLesson: (tr: string) => `Lecția următoare · ${tr}`,
+    auto: 'automat',
+    autoNote: 'Repetiția, lecția, shadowing-ul și conversația (când imporți analiza) se bifează singure. Restul le bifezi tu.',
     notCreated: (title: string, week: number) =>
       `Lecția „${title}” (săpt. ${week}) nu e creată încă. Cere-i lui Claude Code: „generează lecțiile pentru săptămâna ${week}”.`,
     onPace: (ahead: number) => `Ești în ritm${ahead > 0 ? ` (+${ahead} lecții înainte)` : ''}. Ritmul cursului: ~8 lecții pe săptămână.`,
@@ -54,6 +57,12 @@ const ro = {
     locked: '🔒 = lecție încă necreată. Lecțiile se generează pe săptămâni, pe măsură ce avansezi.',
     untranslated: '(încă fără traducere)',
   },
+  essentials: {
+    title: 'Esențiale',
+    intro: 'Frazele și cuvintele care apar cel mai des în viața reală. Atinge textul german ca să-l asculți; 🐢 = rar.',
+    later: 'mai târziu',
+    laterNote: '= încă nu e în lecțiile parcurse; vine mai târziu în curs, dar e util ca frază gata făcută.',
+  },
   grammarPage: {
     title: 'Gramatică',
     intro: 'Toate fișele de gramatică din lecțiile create până acum, pe scurt și cu exemple.',
@@ -78,6 +87,10 @@ const ro = {
     backToPlan: '← Planul cursului',
     head: (week: number, day: number) => `Săptămâna ${week} · Lecția ${day}`,
     review: ' · Recapitulare',
+    close: 'Închide lecția',
+    stepOf: (i: number, n: number) => `Pasul ${i} din ${n}`,
+    doneCount: (k: number) => `${k} ${k === 1 ? 'efectuată' : 'efectuate'}`,
+    needPass: (d: number, n: number) => `${d} / ${n}: secțiunea se bifează de la 80%. Poți merge mai departe și reveni oricând.`,
     untranslated: 'Această lecție nu e încă tradusă: explicațiile sunt în română.',
     goals: 'La finalul lecției vei putea:',
     howTo:
@@ -86,7 +99,7 @@ const ro = {
   },
   dialog: {
     steps:
-      '**Pași:** ① Ascultă de 2 ori fără text: ce ai înțeles? ② Ascultă cu textul german. ③ La replicile grele, pornește „Mot-à-mot” ca să vezi ordinea cuvintelor, apoi oprește-l și ascultă din nou. ④ Citește traducerea și ascultă încă o dată. ⑤ Ascultă replicile grele rar (🐢).',
+      '**Pași:** ① Ascultă de 2 ori fără text (▶ jos): ce ai înțeles? ② Pornește „Text” și ascultă din nou. ③ La replicile grele, uită-te la mot-à-mot (ordinea cuvintelor). ④ Atinge o replică s-o auzi din nou, sau 🐢 ca s-o auzi rar.',
     playAll: '▶ Ascultă tot',
     allSlow: '🐢 Tot, rar',
     stop: '⏹ Stop',
@@ -94,6 +107,12 @@ const ro = {
     translation: 'Traducere',
     lit: 'Mot-à-mot',
     litTitle: 'Traducerea fiecărui cuvânt, sub textul german',
+    lineOf: (i: number, n: number) => (i ? `Replica ${i} din ${n}` : `${n} replici`),
+    slowShort: 'Rar',
+    text: 'Text',
+    textWhat: 'Ce arată „Text”',
+    textNote: 'Alegerea se ține minte. Fiecare dialog pornește cu textul ascuns: prima ascultare e la ureche.',
+    done: 'Gata',
   },
   phrases: {
     intro: 'Acestea sunt expresiile de reținut. Când finalizezi lecția, intră automat în repetiția zilnică.',
@@ -164,6 +183,8 @@ const ro = {
     correct: '✓ Corect!',
     correctIs: (a: string) => `✗ Corect: ${a}`,
     seeFix: '✗ Vezi corectura mai sus.',
+    tryAgain: 'Încearcă din nou',
+    dictationMiss: '✗ Sub 90% din cuvinte corecte. Ascultă din nou (și rar) și mai încearcă.',
   },
   shadow: {
     how: 'Cum faci shadowing:',
@@ -186,6 +207,12 @@ const ro = {
     noMic: 'Nu am acces la microfon. Permite-l în browser.',
     noSpeech: 'Nu s-a auzit nimic. Mai încearcă.',
     error: (e: string) => `Eroare recunoaștere: ${e}`,
+    progress: (d: number, n: number, pass: number) =>
+      `Replici trecute: **${d} / ${n}**. O replică e trecută când „Verifică” dă cel puțin ${pass}%; secțiunea se bifează de la 80% din replici. Poți reîncerca oricând: se păstrează cel mai bun scor.`,
+    noRecognition: 'Pe acest browser recunoașterea vocală („Verifică”) nu e disponibilă: aici o replică se numără ca trecută când te înregistrezi (🎙).',
+    spelling: 'Replică pe litere: „Verifică” nu le recunoaște, se numără înregistrarea (🎙).',
+    best: (n: number) => `cel mai bun: ${n}%`,
+    recorded: 'înregistrat',
   },
 
   review: {
@@ -241,6 +268,9 @@ const ro = {
     copyInstructions: '📋 Copiază instrucțiunile',
     copiedInstructions: '✓ Instrucțiunile sunt copiate',
     aboutTemplate: 'despre-mine.md (șablon)',
+    theme: '🌗 Tema',
+    themeText: 'Automat = după setarea telefonului.',
+    themes: { auto: 'Automat', light: 'Luminos', dark: 'Întunecat' },
     language: '🌐 Limba',
     languageText: 'Limba explicațiilor și a traducerilor. Germana și audio rămân aceleași. Progresul se păstrează.',
     app: '📱 Aplicație și offline',
@@ -285,7 +315,7 @@ export type Dict = typeof ro
 
 const ru: Dict = {
   langName: 'Русский',
-  nav: { home: 'Главная', review: 'Повторение', plan: 'План', grammar: 'Грамматика', progress: 'Настройки' },
+  nav: { home: 'Главная', review: 'Повторение', plan: 'План', grammar: 'Грамматика', essentials: 'Шпаргалка', settings: 'Настройки', label: 'Навигация' },
   phases: {
     A1: 'A1 – Основа',
     A2: 'A2 – Повседневная жизнь',
@@ -297,11 +327,14 @@ const ru: Dict = {
 
   dash: {
     dayOf: (day, done, total) => `День ${day} курса · пройдено уроков: ${done} / ${total}`,
-    streak: 'дней подряд',
+    streak: (n) => `${ruPlural(n, 'день', 'дня', 'дней')} подряд`,
     due: 'карточек к повторению',
     today: 'Сегодня',
-    reviewBtn: (n) => `① Повторение: ${n} ${ruPlural(n, 'карточка', 'карточки', 'карточек')} →`,
-    nothingDue: '① Повторение: сейчас ничего нет ✓',
+    reviewBtn: (n) => `Повторение · ${n} ${ruPlural(n, 'карточка', 'карточки', 'карточек')}`,
+    nothingDue: 'Повторение: сейчас ничего нет ✓',
+    nextLesson: (tr) => `Следующий урок · ${tr}`,
+    auto: 'автоматически',
+    autoNote: 'Повторение, урок, шэдоуинг и разговор (когда загружаешь разбор) отмечаются сами. Остальное отмечаешь ты.',
     notCreated: (title, week) => `Урок «${title}» (нед. ${week}) ещё не готов. Новые уроки добавляются постепенно.`,
     onPace: (ahead) =>
       `Ты идёшь по плану${ahead > 0 ? ` (+${ahead} ${ruPlural(ahead, 'урок', 'урока', 'уроков')} впереди)` : ''}. Темп курса: ~8 уроков в неделю.`,
@@ -335,6 +368,12 @@ const ru: Dict = {
     locked: '🔒 = урок ещё не создан. Уроки добавляются по неделям, по мере прохождения курса.',
     untranslated: '(пока без перевода)',
   },
+  essentials: {
+    title: 'Шпаргалка',
+    intro: 'Фразы и слова, которые чаще всего встречаются в жизни. Нажми на немецкий текст, чтобы послушать; 🐢 = медленно.',
+    later: 'позже',
+    laterNote: '= этого ещё нет в пройденных уроках; будет позже, но уже пригодится как готовая фраза.',
+  },
   grammarPage: {
     title: 'Грамматика',
     intro: 'Все грамматические темы из уже созданных уроков, кратко и с примерами.',
@@ -359,6 +398,10 @@ const ru: Dict = {
     backToPlan: '← План курса',
     head: (week, day) => `Неделя ${week} · Урок ${day}`,
     review: ' · Повторение',
+    close: 'Закрыть урок',
+    stepOf: (i, n) => `Шаг ${i} из ${n}`,
+    doneCount: (k) => `пройдено: ${k}`,
+    needPass: (d, n) => `${d} / ${n}: раздел засчитывается от 80%. Можно идти дальше и вернуться в любой момент.`,
     untranslated: 'Этот урок ещё не переведён: объяснения пока на румынском.',
     goals: 'В конце урока ты сможешь:',
     howTo:
@@ -367,7 +410,7 @@ const ru: Dict = {
   },
   dialog: {
     steps:
-      '**Шаги:** ① Послушай 2 раза без текста: что ты понял? ② Послушай с немецким текстом. ③ На трудных репликах включи «Дословно», чтобы увидеть порядок слов, потом выключи и послушай ещё раз. ④ Прочитай перевод и послушай ещё раз. ⑤ Трудные реплики послушай медленно (🐢).',
+      '**Шаги:** ① Послушай 2 раза без текста (▶ внизу): что ты понял? ② Включи «Текст» и послушай ещё раз. ③ На трудных репликах посмотри дословный перевод (порядок слов). ④ Нажми на реплику, чтобы услышать её снова, или на 🐢 — медленно.',
     playAll: '▶ Слушать всё',
     allSlow: '🐢 Всё медленно',
     stop: '⏹ Стоп',
@@ -375,6 +418,12 @@ const ru: Dict = {
     translation: 'Перевод',
     lit: 'Дословно',
     litTitle: 'Перевод каждого слова под немецким текстом',
+    lineOf: (i, n) => (i ? `Реплика ${i} из ${n}` : `${n} ${ruPlural(n, 'реплика', 'реплики', 'реплик')}`),
+    slowShort: 'Медл.',
+    text: 'Текст',
+    textWhat: 'Что показывает «Текст»',
+    textNote: 'Выбор запоминается. Каждый диалог начинается со скрытым текстом: первое прослушивание — на слух.',
+    done: 'Готово',
   },
   phrases: {
     intro: 'Это выражения, которые нужно запомнить. Когда ты завершишь урок, они автоматически попадут в ежедневное повторение.',
@@ -444,6 +493,8 @@ const ru: Dict = {
     correct: '✓ Правильно!',
     correctIs: (a) => `✗ Правильно: ${a}`,
     seeFix: '✗ Исправление см. выше.',
+    tryAgain: 'Попробовать ещё раз',
+    dictationMiss: '✗ Правильно меньше 90% слов. Послушай ещё раз (и медленно) и попробуй снова.',
   },
   shadow: {
     how: 'Как делать шэдоуинг:',
@@ -466,6 +517,12 @@ const ru: Dict = {
     noMic: 'Нет доступа к микрофону. Разреши его в браузере.',
     noSpeech: 'Ничего не слышно. Попробуй ещё раз.',
     error: (e) => `Ошибка распознавания: ${e}`,
+    progress: (d, n, pass) =>
+      `Пройдено реплик: **${d} / ${n}**. Реплика засчитывается, когда «Проверить» даёт не меньше ${pass}%; раздел засчитывается от 80% реплик. Пробовать можно сколько угодно: сохраняется лучший результат.`,
+    noRecognition: 'В этом браузере распознавание речи («Проверить») недоступно: здесь реплика засчитывается, когда ты записываешь себя (🎙).',
+    spelling: 'Реплика по буквам: «Проверить» их не распознаёт, засчитывается запись (🎙).',
+    best: (n) => `лучший: ${n}%`,
+    recorded: 'записано',
   },
 
   review: {
@@ -521,6 +578,9 @@ const ru: Dict = {
     copyInstructions: '📋 Скопировать инструкции',
     copiedInstructions: '✓ Инструкции скопированы',
     aboutTemplate: 'despre-mine.md (шаблон)',
+    theme: '🌗 Тема',
+    themeText: 'Авто = по настройке телефона.',
+    themes: { auto: 'Авто', light: 'Светлая', dark: 'Тёмная' },
     language: '🌐 Язык',
     languageText: 'Язык объяснений и переводов. Немецкий и аудио остаются теми же. Прогресс сохраняется.',
     app: '📱 Приложение и офлайн',

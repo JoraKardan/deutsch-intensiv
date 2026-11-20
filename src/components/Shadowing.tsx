@@ -3,6 +3,8 @@ import type { Lesson } from '../lib/types'
 import { play, stopAll } from '../lib/audio'
 import { isSpelling, rich, speechMatch, speechSimilarity } from '../lib/text'
 import { t } from '../lib/i18n'
+import { recordShadow, useProgress } from '../lib/store'
+import { hasRecognition, LINE_PASS, linePassed, shadowScore } from '../lib/rules'
 
 // Recunoașterea vocală a browserului (Chrome / Safari), fără tipuri oficiale în TS.
 type Recognition = {
@@ -20,8 +22,12 @@ const RecognitionCtor: (new () => Recognition) | undefined =
   (window as unknown as { webkitSpeechRecognition?: new () => Recognition }).webkitSpeechRecognition
 
 export function Shadowing({ lesson }: { lesson: Lesson }) {
+  const lp = useProgress().lessons[lesson.id]
+  const score = shadowScore(lesson, lp)
   return (
     <div>
+      <p className={`small ${score.passed ? 'good' : ''}`}>{rich(t.shadow.progress(score.done, score.total, LINE_PASS))}</p>
+      {!hasRecognition() && <div className="card note small">{t.shadow.noRecognition}</div>}
       <div className="card note">
         <strong>{t.shadow.how}</strong>
         <ol>
@@ -31,13 +37,26 @@ export function Shadowing({ lesson }: { lesson: Lesson }) {
         </ol>
       </div>
       {lesson.dialog.lines.map((l) => (
-        <ShadowLine key={l.id} lessonId={lesson.id} id={l.id} de={l.de} ro={l.ro} />
+        <ShadowLine key={l.id} lessonId={lesson.id} id={l.id} de={l.de} ro={l.ro} result={lp?.shadow?.[l.id]} />
       ))}
     </div>
   )
 }
 
-function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de: string; ro: string }) {
+function ShadowLine({
+  lessonId,
+  id,
+  de,
+  ro,
+  result,
+}: {
+  lessonId: string
+  id: string
+  de: string
+  ro: string
+  result?: { best?: number; rec?: boolean }
+}) {
+  const passed = linePassed(de, result)
   const [rec, setRec] = useState<MediaRecorder | null>(null)
   const [mine, setMine] = useState<string | null>(null)
   const [listening, setListening] = useState(false)
@@ -64,6 +83,7 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
         stream.getTracks().forEach((t) => t.stop())
         setMine(URL.createObjectURL(new Blob(chunks, { type: r.mimeType })))
         setRec(null)
+        recordShadow(lessonId, id, { rec: true })
       }
       r.start()
       setRec(r)
@@ -97,7 +117,11 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
       session.current = null
       setListening(false)
       setPartial('')
-      if (sess.parts.length) setHeard(sess.parts.join(' '))
+      if (sess.parts.length) {
+        const said = sess.parts.join(' ')
+        setHeard(said)
+        recordShadow(lessonId, id, { score: Math.round(speechSimilarity(de, said, true) * 100) })
+      }
       else if (fatal) setErr(fatal)
     }
 
@@ -144,8 +168,17 @@ function ShadowLine({ lessonId, id, de, ro }: { lessonId: string; id: string; de
   const score = heard !== null ? Math.round(speechSimilarity(de, heard, true) * 100) : null
 
   return (
-    <div className="card shadow-line">
-      <div className="de">{de}</div>
+    <div className={`card shadow-line ${passed ? 'passed' : ''}`}>
+      <div className="row between">
+        <div className="de">{de}</div>
+        {(result?.best !== undefined || passed) && (
+          <span className={`best ${passed ? 'good' : 'muted'} small`}>
+            {passed ? '✓ ' : ''}
+            {result?.best !== undefined ? t.shadow.best(result.best) : t.shadow.recorded}
+          </span>
+        )}
+      </div>
+      {isSpelling(de) && <div className="muted small">{t.shadow.spelling}</div>}
       <div className="muted small">{ro}</div>
       <div className="row wrap">
         <button className="ghost" onClick={() => play(lessonId, id, de, true)}>{t.shadow.slow}</button>

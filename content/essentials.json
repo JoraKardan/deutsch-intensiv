@@ -1,0 +1,136 @@
+{
+  "sections": [
+    {
+      "title": { "ro": "Când nu înțelegi", "ru": "Когда не понимаешь" },
+      "note": { "ro": "Cel mai important: cu frazele astea salvezi orice conversație.", "ru": "Самое важное: с этими фразами ты спасёшь любой разговор." },
+      "items": [
+        { "id": "e1", "de": "Wie bitte?", "ro": "Poftim?", "ru": "Простите? / Что-что?" },
+        { "id": "e2", "de": "Noch einmal, bitte.", "ro": "Încă o dată, vă rog.", "ru": "Ещё раз, пожалуйста." },
+        { "id": "e3", "de": "Langsamer, bitte.", "ro": "Mai rar, vă rog.", "ru": "Медленнее, пожалуйста." },
+        { "id": "e4", "de": "Ich verstehe das nicht.", "ro": "Nu înțeleg.", "ru": "Я этого не понимаю." },
+        { "id": "e5", "de": "Was bedeutet das?", "ro": "Ce înseamnă asta?", "ru": "Что это значит?" },
+        { "id": "e6", "de": "Wie sagt man das auf Deutsch?", "ro": "Cum se spune asta în germană?", "ru": "Как это сказать по-немецки?" },
+        { "id": "e7", "de": "Können Sie das bitte aufschreiben?", "ro": "Puteți să-mi scrieți asta?", "ru": "Можете это записать?", "later": true },
+        { "id": "e8", "de": "Habe ich das richtig verstanden?", "ro": "Am înțeles bine?", "ru": "Я правильно понял?", "later": true },
+        { "id": "e9", "de": "Ich spreche nur ein bisschen Deutsch.", "ro": "Vorbesc doar puțin germana.", "ru": "Я говорю по-немецки совсем немного." }
+      ]
+    },
+    {
+      "title": { "ro": "Politețe și saluturi", "ru": "Вежливость и приветствия" },
+      "items": [
+        { "id": "e10", "de": "Moin!", "ro": "Bună! (în nord, la orice oră)", "ru": "Привет! (на севере, в любое время)" },
+        { "id": "e11", "de": "Tschüss! Bis morgen!", "ro": "Pa! Pe mâine!", "ru": "Пока! До завтра!" },
+        { "id": "e12", "de": "Danke! – Bitte! Gern!", "ro": "Mulțumesc! – Cu plăcere!", "ru": "Спасибо! – Пожалуйста!" },
+        { "id": "e13", "de": "Entschuldigung!", "ro": "Scuze! / Scuzați!", "ru": "Извините!" },
+        { "id": "e14", "de": "Kein Problem.", "ro": "Nicio problemă.", "ru": "Без проблем." },
+        { "id": "e15", "de": "Mahlzeit!", "ro": "Poftă bună! (salutul de la prânz, la muncă)", "ru": "Приятного аппетита! (приветствие в обед на работе)" },
+        { "id": "e16", "de": "Schönen Feierabend!", "ro": "O seară bună după muncă!", "ru": "Хорошего вечера после работы!" },
+        { "id": "e17", "de": "Schönes Wochenende!", "ro": "Weekend plăcut!", "ru": "Хороших выходных!" }
+      ]
+    },
+    {
+      "title": { "ro": "La muncă", "ru": "На работе" },
+      "items": [
+        { "id": "e18", "de": "Wann fängt die Schicht an?", "ro": "Când începe tura?", "ru": "Когда начинается смена?" },
+        { "id": "e19", "de": "Wann ist Pause?", "ro": "Când e pauza?", "ru": "Когда перерыв?" },
+        { "id": "e20", "de": "Wann ist Feierabend?", "ro": "Când se termină programul?", "ru": "Когда конец рабочего дня?" },
+        { "id": "e21", "de": "Ich habe eine Frage.", "ro": "Am o întrebare.", "ru": "У меня вопрос." },
+        { "id": "e22", "de": "Was soll ich jetzt machen?", "ro": "Ce să fac acum?", "ru": "Что мне сейчас делать?", "later": true },
+        { "id": "e23", "de": "Kannst du mir helfen?", "ro": "Mă poți ajuta?", "ru": "Можешь мне помочь?" },
+        { "id": "e24", "de": "Zeig mir bitte, wie das geht.", "ro": "Arată-mi, te rog, cum se face.", "ru": "Покажи мне, пожалуйста, как это делается.", "later": true },
+        { "id": "e25", "de": "Ist das so richtig?", "ro": "Așa e bine?", "ru": "Так правильно?" },
+        { "id": "e26", "de": "Ich bin fertig.", "ro": "Am terminat.", "ru": "Я закончил." },
+        { "id": "e27", "de": "Vorsicht! Achtung!", "ro": "Atenție!", "ru": "Осторожно! Внимание!" },
+        { "id": "e28", "de": "Ich bin krank. Ich kann heute nicht kommen.", "ro": "Sunt bolnav. Nu pot veni azi.", "ru": "Я болен. Я не могу сегодня прийти.", "later": true }
+      ]
+    },
+    {
+      "title": { "ro": "Autorități, programări, telefon", "ru": "Учреждения, записи, телефон" },
+      "items": [
+        { "id": "e29", "de": "Ich habe einen Termin um zehn Uhr.", "ro": "Am o programare la ora zece.", "ru": "У меня запись на десять часов." },
+        { "id": "e30", "de": "Ich brauche einen Termin.", "ro": "Am nevoie de o programare.", "ru": "Мне нужна запись.", "later": true },
+        { "id": "e31", "de": "Ich möchte mich anmelden.", "ro": "Aș vrea să-mi înregistrez adresa.", "ru": "Я хотел бы зарегистрироваться по месту жительства.", "later": true },
+        { "id": "e32", "de": "Welche Unterlagen brauche ich?", "ro": "Ce acte îmi trebuie?", "ru": "Какие документы мне нужны?", "later": true },
+        { "id": "e33", "de": "Wo muss ich unterschreiben?", "ro": "Unde trebuie să semnez?", "ru": "Где мне нужно расписаться?", "later": true },
+        { "id": "e34", "de": "Hier ist mein Pass.", "ro": "Poftiți pașaportul meu.", "ru": "Вот мой паспорт." },
+        { "id": "e35", "de": "Hier ist Radu Popescu.", "ro": "Sunt Radu Popescu. (la telefon)", "ru": "Это Раду Попеску. (по телефону)" },
+        { "id": "e36", "de": "Ich rufe wegen meines Termins an.", "ro": "Sun în legătură cu programarea mea.", "ru": "Я звоню по поводу своей записи.", "later": true }
+      ]
+    },
+    {
+      "title": { "ro": "Magazin, cantină, Imbiss", "ru": "Магазин, столовая, закусочная" },
+      "items": [
+        { "id": "e37", "de": "Was kostet das?", "ro": "Cât costă?", "ru": "Сколько это стоит?" },
+        { "id": "e38", "de": "Ich hätte gern einen Kaffee.", "ro": "Aș dori o cafea.", "ru": "Мне, пожалуйста, кофе." },
+        { "id": "e39", "de": "Kann ich mit Karte bezahlen?", "ro": "Pot plăti cu cardul?", "ru": "Можно заплатить картой?" },
+        { "id": "e40", "de": "Nur bar.", "ro": "Doar cash.", "ru": "Только наличными." },
+        { "id": "e41", "de": "Zum Mitnehmen, bitte.", "ro": "La pachet, vă rog.", "ru": "С собой, пожалуйста." },
+        { "id": "e42", "de": "Brauchen Sie eine Tüte?", "ro": "Vă trebuie o pungă?", "ru": "Вам нужен пакет?", "later": true },
+        { "id": "e43", "de": "Die Rechnung, bitte!", "ro": "Nota, vă rog!", "ru": "Счёт, пожалуйста!" }
+      ]
+    },
+    {
+      "title": { "ro": "Cuvintele de întrebare", "ru": "Вопросительные слова" },
+      "items": [
+        { "id": "e44", "de": "wer", "ro": "cine", "ru": "кто" },
+        { "id": "e45", "de": "was", "ro": "ce", "ru": "что" },
+        { "id": "e46", "de": "wo", "ro": "unde", "ru": "где" },
+        { "id": "e47", "de": "wohin", "ro": "încotro", "ru": "куда" },
+        { "id": "e48", "de": "woher", "ro": "de unde", "ru": "откуда" },
+        { "id": "e49", "de": "wann", "ro": "când", "ru": "когда" },
+        { "id": "e50", "de": "wie", "ro": "cum", "ru": "как" },
+        { "id": "e51", "de": "wie viel, wie viele", "ro": "cât, câți", "ru": "сколько" },
+        { "id": "e52", "de": "warum", "ro": "de ce", "ru": "почему", "later": true },
+        { "id": "e53", "de": "welche", "ro": "care", "ru": "какой, который", "later": true }
+      ]
+    },
+    {
+      "title": { "ro": "Cele mai folosite 20 de verbe", "ru": "20 самых нужных глаголов" },
+      "items": [
+        { "id": "e54", "de": "sein", "ro": "a fi", "ru": "быть" },
+        { "id": "e55", "de": "haben", "ro": "a avea", "ru": "иметь" },
+        { "id": "e56", "de": "können", "ro": "a putea", "ru": "мочь" },
+        { "id": "e57", "de": "müssen", "ro": "a trebui", "ru": "быть должным", "later": true },
+        { "id": "e58", "de": "möchten", "ro": "a dori", "ru": "хотеть (вежливо)" },
+        { "id": "e59", "de": "wollen", "ro": "a vrea", "ru": "хотеть", "later": true },
+        { "id": "e60", "de": "machen", "ro": "a face", "ru": "делать" },
+        { "id": "e61", "de": "gehen", "ro": "a merge (pe jos)", "ru": "идти" },
+        { "id": "e62", "de": "kommen", "ro": "a veni", "ru": "приходить" },
+        { "id": "e63", "de": "fahren", "ro": "a merge (cu vehiculul)", "ru": "ехать" },
+        { "id": "e64", "de": "arbeiten", "ro": "a lucra", "ru": "работать" },
+        { "id": "e65", "de": "brauchen", "ro": "a avea nevoie", "ru": "нуждаться" },
+        { "id": "e66", "de": "nehmen", "ro": "a lua", "ru": "брать" },
+        { "id": "e67", "de": "geben – es gibt", "ro": "a da – există", "ru": "давать – есть, имеется" },
+        { "id": "e68", "de": "sagen", "ro": "a spune", "ru": "говорить, сказать" },
+        { "id": "e69", "de": "sprechen", "ro": "a vorbi", "ru": "говорить (на языке)" },
+        { "id": "e70", "de": "verstehen", "ro": "a înțelege", "ru": "понимать" },
+        { "id": "e71", "de": "wissen", "ro": "a ști", "ru": "знать", "later": true },
+        { "id": "e72", "de": "helfen", "ro": "a ajuta", "ru": "помогать", "later": true },
+        { "id": "e73", "de": "anfangen – aufhören", "ro": "a începe – a termina", "ru": "начинать – заканчивать" }
+      ]
+    },
+    {
+      "title": { "ro": "Cuvinte mici care leagă tot", "ru": "Маленькие слова-связки" },
+      "items": [
+        { "id": "e74", "de": "und, aber, oder", "ro": "și, dar, sau", "ru": "и, но, или" },
+        { "id": "e75", "de": "dann", "ro": "apoi, atunci", "ru": "потом, тогда" },
+        { "id": "e76", "de": "auch", "ro": "și, de asemenea", "ru": "тоже, также" },
+        { "id": "e77", "de": "noch, schon", "ro": "încă, deja", "ru": "ещё, уже" },
+        { "id": "e78", "de": "nur, sehr", "ro": "doar, foarte", "ru": "только, очень" },
+        { "id": "e79", "de": "leider, vielleicht", "ro": "din păcate, poate", "ru": "к сожалению, может быть" },
+        { "id": "e80", "de": "genau, also", "ro": "exact, deci", "ru": "точно, итак" },
+        { "id": "e81", "de": "immer, oft, nie", "ro": "mereu, des, niciodată", "ru": "всегда, часто, никогда" }
+      ]
+    },
+    {
+      "title": { "ro": "Timpul", "ru": "Время" },
+      "items": [
+        { "id": "e82", "de": "jetzt, gleich, später", "ro": "acum, imediat, mai târziu", "ru": "сейчас, сейчас же, позже" },
+        { "id": "e83", "de": "heute, morgen", "ro": "azi, mâine", "ru": "сегодня, завтра" },
+        { "id": "e84", "de": "gestern", "ro": "ieri", "ru": "вчера", "later": true },
+        { "id": "e85", "de": "am Montag, um sechs Uhr", "ro": "luni, la ora șase", "ru": "в понедельник, в шесть часов" },
+        { "id": "e86", "de": "diese Woche, nächste Woche", "ro": "săptămâna asta, săptămâna viitoare", "ru": "на этой неделе, на следующей неделе" }
+      ]
+    }
+  ]
+}
